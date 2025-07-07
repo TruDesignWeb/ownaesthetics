@@ -28,7 +28,7 @@ export default function Home() {
       <div className="content-wrapper">
         <Features />
         <Stats />
-        <Programs />
+        {/* <Programs /> */}
         <Membership />
         <Outcomes />
         <Journey />

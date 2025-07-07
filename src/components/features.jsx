@@ -46,9 +46,9 @@ export default function Features() {
             imageSrc="https://i.scdn.co/image/ab67616d0000b273d9985092cd88bffd97653b58"
             altText="Kendrick Lamar - GNX Album Cover"
             captionText="Kendrick Lamar - GNX"
-            containerHeight="400px"
+            containerHeight="250px"
             containerWidth="300px"
-            imageHeight="400px"
+            imageHeight="250px"
             imageWidth="300px"
             rotateAmplitude={12}
             scaleOnHover={1.1}
@@ -66,9 +66,9 @@ export default function Features() {
             imageSrc="https://i.scdn.co/image/ab67616d0000b273d9985092cd88bffd97653b58"
             altText="Kendrick Lamar - GNX Album Cover"
             captionText="Kendrick Lamar - GNX"
-            containerHeight="400px"
+            containerHeight="250px"
             containerWidth="300px"
-            imageHeight="400px"
+            imageHeight="250px"
             imageWidth="300px"
             rotateAmplitude={12}
             scaleOnHover={1.1}
@@ -86,9 +86,9 @@ export default function Features() {
             imageSrc="https://i.scdn.co/image/ab67616d0000b273d9985092cd88bffd97653b58"
             altText="Kendrick Lamar - GNX Album Cover"
             captionText="Kendrick Lamar - GNX"
-            containerHeight="400px"
+            containerHeight="250px"
             containerWidth="300px"
-            imageHeight="400px"
+            imageHeight="250px"
             imageWidth="300px"
             rotateAmplitude={12}
             scaleOnHover={1.1}
@@ -103,14 +103,14 @@ export default function Features() {
             backgroundColor='rgba(0,0,0,0)'
             />
 
-            
+{/*             
           <TiltedCard
             imageSrc="https://i.scdn.co/image/ab67616d0000b273d9985092cd88bffd97653b58"
             altText="Kendrick Lamar - GNX Album Cover"
             captionText="Kendrick Lamar - GNX"
-            containerHeight="400px"
+            containerHeight="250px"
             containerWidth="300px"
-            imageHeight="400px"
+            imageHeight="250px"
             imageWidth="300px"
             rotateAmplitude={12}
             scaleOnHover={1.1}
@@ -128,9 +128,9 @@ export default function Features() {
             imageSrc="https://i.scdn.co/image/ab67616d0000b273d9985092cd88bffd97653b58"
             altText="Kendrick Lamar - GNX Album Cover"
             captionText="Kendrick Lamar - GNX"
-            containerHeight="400px"
+            containerHeight="250px"
             containerWidth="300px"
-            imageHeight="400px"
+            imageHeight="250px"
             imageWidth="300px"
             rotateAmplitude={12}
             scaleOnHover={1.1}
@@ -148,9 +148,9 @@ export default function Features() {
             imageSrc="https://i.scdn.co/image/ab67616d0000b273d9985092cd88bffd97653b58"
             altText="Kendrick Lamar - GNX Album Cover"
             captionText="Kendrick Lamar - GNX"
-            containerHeight="400px"
+            containerHeight="250px"
             containerWidth="300px"
-            imageHeight="400px"
+            imageHeight="250px"
             imageWidth="300px"
             rotateAmplitude={12}
             scaleOnHover={1.1}
@@ -163,7 +163,7 @@ export default function Features() {
                 </p>
             }
             backgroundColor='rgba(0,0,0,0)'
-            />
+            /> */}
 
             
         </div>

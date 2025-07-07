@@ -18,7 +18,7 @@ export default function Banner() {
         <p>Experience cutting-edge treatments with all star doctors</p>
         {/* className="flex justify-center items-center h-screen bg-gray-200" */}
         <a href="#about"><div className="banner-btn" style={{ perspective: 1000 }}>
-            <MagnetButton size="px-12 py-6 text-3xl" shape="rounded-xl">Explore Now</MagnetButton>
+            <MagnetButton size="px-15 py-9 text-3xl" shape="rounded-xl">Explore Now</MagnetButton>
             </div></a>
       </div>
     </div>
