@@ -9,7 +9,7 @@ export default function Banner() {
     <div className="banner">
       <div className="video-background">
         <video autoPlay muted loop>
-          <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4" />
+          <source src="/assets/TotalHealthConstructionVideo.mp4" type="video/mp4" />
         </video>
         <div className="video-overlay" />
       </div>
