@@ -5,6 +5,21 @@ box-sizing: border-box;
 cursor: none;
 }
 
+@font-face {
+    font-family: 'Mundial';
+    src: url('/fonts/MundialRegular.otf') format('otf'),
+        url('/fonts/MundialBold.otf') format('otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Outfit';
+    src: url('/fonts/OutfitRegular.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
 html, body {
     overflow-x: hidden;
     width: 100%;
@@ -12,7 +27,7 @@ html, body {
 }
 
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Mundial' sans-serif;
     line-height: 1.6;
 }
 
