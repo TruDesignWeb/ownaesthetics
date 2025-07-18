@@ -210,27 +210,61 @@
     transition: 0.3s;
     border-radius: 2px;
 }
-
-
-
-/* Responsive behavior */
 @media (max-width: 768px) {
-  .hamburger {
-    display: flex;
+  .nav-menu {
+    display: none;
   }
 
   .nav-links {
-    position: absolute;
-    top: 70px;
-    right: 0;
-    background: black;
-    width: 100%;
+    display: none;
     flex-direction: column;
     align-items: center;
-    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 1rem 0;
+    z-index: 99;
   }
 
   .nav-links.active {
     display: flex;
   }
+
+  .nav-link {
+    font-size: 1.2rem;
+    padding: 1rem;
+    color: white;
+    width: 100%;
+    text-align: center;
+  }
+
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    z-index: 100;
+  }
+
+  .hamburger span {
+    background: white;
+    height: 3px;
+    width: 25px;
+    margin: 4px 0;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+  }
+
+  /* Optional animation for hamburger into "X" */
+  .hamburger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+  .hamburger.active span:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(6px, -6px);
+  }
 }
+

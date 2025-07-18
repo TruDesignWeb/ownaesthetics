@@ -43,6 +43,13 @@ export default function Navbar() {
       <nav className="main-navbar" id="navbar">
         <div className="nav-container">
           <Link to="#" className="logo"><img src="/assets/images/TotalHealthLogo_HorizontalWhite.png" alt="Total Health Logo" className = "logo-img" /></Link>
+          
+          <div className={`hamburger ${menuOpen ? 'active' : ''}`} id="hamburger" onClick={toggleMenu}>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          
           <ul className={`nav-menu ${menuOpen ? 'active' : ''}`} id="nav-menu">
             <li className="nav-item"><Link to="/" className="nav-link">Home</Link></li>
             <li className="nav-item"><Link to="/About" className="nav-link">About</Link></li>
@@ -51,11 +58,7 @@ export default function Navbar() {
             <li className="nav-item"><Link to="/Contact" className="nav-link">Contact</Link></li>
             <li className="nav-item"><Link to="/Appointments" className="nav-link cta">Appointments</Link></li>
           </ul>
-          <div className={`hamburger ${menuOpen ? 'active' : ''}`} id="hamburger" onClick={toggleMenu}>
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
+          
         </div>
       </nav>
     </div>
