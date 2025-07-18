@@ -22,9 +22,9 @@ const featureCards = [
       imageSrc: 'https://i.scdn.co/image/ab67616d0000b273d9985092cd88bffd97653b58',
       altText: 'Kendrick Lamar - GNX Album Cover',
       captionText: 'Kendrick Lamar - GNX',
-      containerHeight: '250px',
+      containerHeight: '350px',
       containerWidth: '300px',
-      imageHeight: '250px',
+      imageHeight: '350px',
       imageWidth: '300px',
       rotateAmplitude: 12,
       scaleOnHover: 1.1,
@@ -37,9 +37,9 @@ const featureCards = [
       imageSrc: 'https://i.scdn.co/image/ab67616d0000b273d9985092cd88bffd97653b58',
       altText: 'Kendrick Lamar - GNX Album Cover',
       captionText: 'Kendrick Lamar - GNX',
-      containerHeight: '250px',
+      containerHeight: '350px',
       containerWidth: '300px',
-      imageHeight: '250px',
+      imageHeight: '350px',
       imageWidth: '300px',
       rotateAmplitude: 12,
       scaleOnHover: 1.1,
@@ -53,9 +53,9 @@ const featureCards = [
       imageSrc: 'https://i.scdn.co/image/ab67616d0000b273d9985092cd88bffd97653b58',
       altText: 'Kendrick Lamar - GNX Album Cover',
       captionText: 'Kendrick Lamar - GNX',
-      containerHeight: '250px',
+      containerHeight: '350px',
       containerWidth: '300px',
-      imageHeight: '250px',
+      imageHeight: '350px',
       imageWidth: '300px',
       rotateAmplitude: 12,
       scaleOnHover: 1.1,
@@ -147,7 +147,7 @@ export default function Home() {
         <Membership />
 
 
-        <InfiniteScroll
+        {/* <InfiniteScroll
           items={[
           { content: "Truman" },
           { content: <p>Vasi</p> },
@@ -160,7 +160,7 @@ export default function Home() {
           autoplaySpeed={0.2}
           autoplayDirection="down"
           pauseOnHover={true}
-        />      
+        />       */}
         
       </div>
 

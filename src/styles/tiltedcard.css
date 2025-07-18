@@ -44,7 +44,14 @@
 
 .tilted-card-overlay {
   position: absolute;
-  top: 0;
+  /* top: 0; */
+
+  margin-top: 95%;
+  background: rgba(247, 250, 255, 0.5);
+  padding: 4px;
+  border-radius: 25px;
+  color: black;
+
   left: 20%;
   z-index: 2;
   will-change: transform;
