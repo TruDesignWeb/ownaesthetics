@@ -9,12 +9,13 @@ export default function Footer() {
     <footer className = "footer">
       <div className="footer-content">
         <div className="footer-section-1">
-          <h3>Medical Center Location</h3>
+          <img className = "logo-img" src = "/assets/images/TotalHealthLogo_HorizontalBlack.png"/>
+          
           <p>7601 Medical Plaza<br />Suite 110<br />West Des Moines, IA 50266</p>
           <p>Phone: (515) 555-CARE<br />Email: care@totalhealthexp.com</p>
         </div>
         <div className="footer-section">
-          <h3 data-icon="⚕️">Medical Services</h3>
+          <h3>Medical Services</h3>
           <p><a href="#">Emergency Medicine</a></p>
           <p><a href="#">Advanced Diagnostics</a></p>
           <p><a href="#">Cardiology Center</a></p>
