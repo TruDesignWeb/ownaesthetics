@@ -78,7 +78,7 @@ export default function Home() {
         <Features
           title="Customized Feature Section"
           cards={featureCards}
-          variant="features--alt" // Optional: for different styles
+          variant="" // Optional: for different styles
         />
         
         

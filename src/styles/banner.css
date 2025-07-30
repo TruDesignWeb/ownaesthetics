@@ -72,17 +72,7 @@
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
 } */
 
-/* NEW CONTENT WRAPPER FOR SLIDING EFFECT */
-.content-wrapper {
-    position: relative;
-    z-index: 2;              /* Higher than banner */
-    margin-top: 100vh;       /* Push content down by full viewport height */
-    transition: transform 0.1s ease-out;
-}
 
-.content {
-    padding: 2rem;
-}
 
 @keyframes fadeInUp {
     from {
