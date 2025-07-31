@@ -19,90 +19,91 @@ import FluidGlass from '../components/fluidglass';
 import "./contact.css";
 import Banner2 from '../components/banner2';
 import { useState, useEffect } from "react";
+import axios from "axios";
 
 
 
 export default function Contact() {
-  const [form, setForm] = useState({
-    firstName: '',
-    lastName: '',
-    email: '',
-    message: ''
+  const [formData, setFormData] = useState({
+    firstName: "",
+    lastName: "",
+    email: "",
+    message: "",
   });
 
   const handleChange = (e) => {
-    setForm({ ...form, [e.target.name]: e.target.value });
+    setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    const response = await fetch('http://localhost:5000/api/contact', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(form),
+    // Send data to backend
+    const res = await fetch("http://localhost:5000/api/contact", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(formData),
     });
 
-    const result = await response.json();
-    alert(result.message);
+    const data = await res.json();
+    console.log("Server Response:", data);
   };
-    useRevealOnScroll()
+
   return (
-    
-        <>
-      <Navbar />
-      <Banner2 />
-      <CustomCursor />
+    <>
+    <Navbar />
+    <Banner2 />
+    <CustomCursor />
 
-      <section className="contact-page">
-        <div className="contact-container">
-          {/* Left Info Panel */}
-          <div className="contact-info">
-            <h2>See how Total Health can help!</h2>
-            <p>7601 Office Plaza Dr. N Suite 115<br />West Des Moines, IA 50266</p>
-            <p>(515) 555-CARE<br />info@totalhealth.com</p>
+    <section className="contact-page">
+      <div className="contact-container">
+        {/* Left Info Panel */}
+        <div className="contact-info">
+          <h2>See how Total Health can help!</h2>
+          <p>7601 Office Plaza Dr. N Suite 115<br />West Des Moines, IA 50266</p>
+          <p>(515) 555-CARE<br />info@totalhealth.com</p>
+        </div>
 
-            <div className="social-icons">
-              <a href="#"><i className="fab fa-facebook-f"></i></a>
-              <a href="#"><i className="fab fa-twitter"></i></a>
-              <a href="#"><i className="fab fa-linkedin-in"></i></a>
-              <a href="#"><i className="fab fa-instagram"></i></a>
-            </div>
-          </div>
-
-          {/* Right Contact Form */}
-          <form className="contact-form" onSubmit={handleSubmit}>
-            <div className="form-row">
-              <input type="text" name="firstName"
+        {/* Right Contact Form */}
+        <form className="contact-form" onSubmit={handleSubmit}>
+          <div className="form-row">
+            <input
+              type="text"
+              name="firstName"
               placeholder="First Name"
-              value={form.firstName}
+              value={formData.firstName}
               onChange={handleChange}
-              required />
-              <input type="text"
+              required
+            />
+            <input
+              type="text"
               name="lastName"
               placeholder="Last Name"
-              value={form.lastName}
-              onChange={handleChange} />
-            </div>
-            <input type="email"
+              value={formData.lastName}
+              onChange={handleChange}
+            />
+          </div>
+          <input
+            type="email"
             name="email"
             placeholder="Email *"
-            value={form.email}
+            value={formData.email}
             onChange={handleChange}
-            required />
-            <textarea  name="message"
+            required
+          />
+          <textarea
+            name="message"
             placeholder="Message"
-            value={form.message}
-            onChange={handleChange}></textarea>
-            <button type="submit">Submit</button>
-          </form>
-        </div>
-      </section>
+            value={formData.message}
+            onChange={handleChange}
+          />
+          <button type="submit">Send</button>
+        </form>
+      </div>
+    </section>
 
-      <Footer />
+    <Footer />
     </>
-
-
   );
 }
 
