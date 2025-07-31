@@ -5,7 +5,7 @@
     background: rgb(69,65,66);
     color: white;
     text-align: center;
-    min-height: 100vh;       /* Ensure full coverage */
+    min-height: 80vh;       /* Ensure full coverage */
     box-shadow: 
         0 -10px 30px rgba(0, 0, 0, 0.1),
         0 -20px 60px rgba(0, 0, 0, 0.05);

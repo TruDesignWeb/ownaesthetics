@@ -11,7 +11,7 @@ export default function Features({
 }) {
   return (
     <section className={`features ${variant}`}>
-      <div className="container">
+      <div className="features-container">
         <h2 className="section-title">{title}</h2>
         <div className="features-grid">
           {cards.map((card, idx) => (
@@ -22,6 +22,9 @@ export default function Features({
     </section>
   );
 }
+
+
+// 
 
 
 

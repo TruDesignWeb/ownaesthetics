@@ -39,6 +39,17 @@ export default function Footer() {
             buttonText="Join Now"
               />
         </div>
+        <div className="footer-section">
+
+          <h3>Other Information</h3>
+          
+          <p><a href="#">Emergency Medicine</a></p>
+          <p><a href="#">Advanced Diagnostics</a></p>
+          <p><a href="#">Cardiology Center</a></p>
+          <p><a href="#">Neurology Services</a></p>
+
+
+        </div>
       </div>
       <div className="footer-bottom">
         <p>&copy; 2025 Total Health Experience. Dedicated to exceptional medical care and patient wellness.</p>

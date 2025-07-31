@@ -7,7 +7,7 @@
   position: relative;
   overflow: hidden;
   min-height: 100vh;
-  width: 100%; /* Ensure full width */
+  width: auto;   /* Ensure full width */
   box-shadow: 
     0 -10px 30px rgba(0, 0, 0, 0.1),
     0 -20px 60px rgba(0, 0, 0, 0.05);
@@ -28,8 +28,9 @@
     100% { transform: translateX(-50px) translateY(-43.4px); }
 }
 
-.features .container {
-  max-width: 2000px;
+.features-container {
+  /* max-width: 1200px; */
+  
   margin: 0 auto;
   width: 100%; /* Ensures the container fills its parent */
 }
@@ -185,4 +186,43 @@
     line-height: 1.7;
     position: relative;
     z-index: 2;
+}
+
+
+
+/* ---------------- MOBILE RESPONSIVENESS ---------------- */
+@media (max-width: 768px) {
+  .features {
+    padding: 3rem 1rem;
+    min-height: auto;
+  }
+
+  .section-title {
+    font-size: 2.2rem;
+    margin-bottom: 2rem;
+  }
+
+  .features-grid {
+    grid-template-columns: 1fr; /* stack cards */
+    gap: 1.5rem;
+    padding: 1rem 0;
+  }
+
+  .feature-card {
+    padding: 2rem 1.5rem;
+    border-radius: 20px;
+  }
+
+  .feature-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+
+  .feature-card h3 {
+    font-size: 1.4rem;
+  }
+
+  .feature-card p {
+    font-size: 1rem;
+  }
 }
