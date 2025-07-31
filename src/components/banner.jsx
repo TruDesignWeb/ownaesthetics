@@ -14,8 +14,9 @@ export default function Banner() {
         <div className="video-overlay" />
       </div>
       <div className="banner-content">
-        <h1>Welcome to Total Health</h1>
-        <p>Experience cutting-edge treatments with all star doctors</p>
+        {/* <h1>Welcome to Total Health</h1> */}
+        <img className="banner-logo" src = "/assets/images/TotalHealthLogo_VerticalWhite.png"/>
+        <p className = "banner-text">Experience cutting-edge treatments with all star doctors</p>
         {/* className="flex justify-center items-center h-screen bg-gray-200" */}
         <a href="#about"><div className="banner-btn" style={{ perspective: 1000 }}>
             <MagnetButton size="px-15 py-9 text-3xl" shape="rounded-xl">Explore Now</MagnetButton>
