@@ -18,7 +18,7 @@ export default function Banner() {
         <img className="banner-logo" src = "/assets/images/TotalHealthLogo_VerticalWhite.png"/>
         <p className = "banner-text">Experience cutting-edge treatments with all star doctors</p>
         {/* className="flex justify-center items-center h-screen bg-gray-200" */}
-        <a href="#about"><div className="banner-btn" style={{ perspective: 1000 }}>
+        <a href="#"><div className="banner-btn" style={{ perspective: 1000 }}>
             <MagnetButton size="px-15 py-9 text-3xl" shape="rounded-xl">Explore Now</MagnetButton>
             </div></a>
       </div>

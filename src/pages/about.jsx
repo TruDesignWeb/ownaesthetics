@@ -16,6 +16,7 @@ import InfiniteScroll from '../components/infinitescroll';
 import TiltedCard from '../components/tiltedcard';
 import FluidGlass from '../components/fluidglass';
 import Banner2 from '../components/banner2';
+import './about.css';
 
 
 export default function About(){
@@ -31,9 +32,18 @@ export default function About(){
             subtitle= "Meet the team that makes your medical dreams possible"
         />
         
+        <section id = "team">
+            <div className = "row">
+                <div className = "col-1">
+                    <img className = "team-img-1" src = "/assets/images/milky-way-full-stars-space.jpg"/>
+                </div>
+                <div className = "col-2">
+                    <p>This is mike alkdsf laskdjf alsdkfjlaskdfj lasdlkasdjf lkadsfjlkasdjf lksd jflksja d</p>
+                </div>
+            </div>
+        </section>
 
-
-        <Features />
+        
         <Stats />
 
         <Footer />

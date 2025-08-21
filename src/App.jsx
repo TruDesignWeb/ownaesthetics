@@ -13,8 +13,8 @@ import ProtectedRoute from './components/protectedroute';
 import GuestRoute from './components/guestroute';
 import Register from './components/register';
 import { useState } from 'react';
-import Partners from './pages/collabpartners';
-import Patients from './pages/patients';
+// import Partners from './pages/collabpartners';
+// import Patients from './pages/patients';
 
 
 export default function App() {
@@ -40,9 +40,9 @@ export default function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/services" element={<Services />} />
-
+{/* 
         <Route path="/partners" element={<Partners />} />
-        <Route path="/patients" element={<Patients />} />
+        <Route path="/patients" element={<Patients />} /> */}
         <Route path="/appointments" element={<About />} />
 
 
