@@ -5,7 +5,7 @@
     background: rgb(69,65,66);
     color: white;
     text-align: center;
-    min-height: 80vh;       /* Ensure full coverage */
+    min-height: 60vh;       /* Ensure full coverage */
     box-shadow: 
         0 -10px 30px rgba(0, 0, 0, 0.1),
         0 -20px 60px rgba(0, 0, 0, 0.05);
@@ -19,7 +19,9 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="medical" patternUnits="userSpaceOnUse" width="20" height="20"><path d="M10 2v16M2 10h16" stroke="rgba(0,212,255,0.1)" stroke-width="1" fill="none"/></pattern></defs><rect width="100" height="100" fill="url(%23medical)"/></svg>');
+    /* background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="medical" patternUnits="userSpaceOnUse" width="20" height="20"><path d="M10 2v16M2 10h16" stroke="rgba(0,212,255,0.1)" stroke-width="1" fill="none"/></pattern></defs><rect width="100" height="100" fill="url(%23medical)"/></svg>'); */
+    background-image: linear-gradient(rgba(32, 32, 32, .39), rgba(32, 32, 32, .39)), url('https://cdn.prod.website-files.com/6490458e2be1642c5448d0bd/6493029b820eac4a5892507e_shutterstock_2059307900.webp');
+    background-size: auto, cover;
     opacity: 0.3;
 }
 
