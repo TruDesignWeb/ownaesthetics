@@ -5,7 +5,7 @@ import Banner from '../components/banner';
 import Features from '../components/features';
 import Stats from '../components/stats';
 import Programs from '../components/programs';
-import Membership from '../components/membership';
+import Membership from '../components/membership-component';
 import Outcomes from '../components/outcomes';
 import Journey from '../components/journey';
 import Footer from '../components/footer';
