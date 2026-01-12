@@ -83,7 +83,11 @@ export default function Home() {
 
       <div className="content-wrapper">
         
-        
+        <Features
+          title="Featured Services"
+          cards={featureCards}
+          variant="" // Optional: for different styles
+        />
         
         
 
@@ -119,11 +123,7 @@ export default function Home() {
 
         <Membership />
 
-        <Features
-          title="Featured Services"
-          cards={featureCards}
-          variant="" // Optional: for different styles
-        />
+        
 
 
         <Stats
