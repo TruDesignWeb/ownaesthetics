@@ -97,6 +97,7 @@ export default function Home() {
   buttonLabel="Learn More"
   imageSrc="/assets/images/images/almost-naked.jpg"
   imageAlt="MRI imaging suite"
+  backgroundColor={"#fffcd8"}
       />
 
         

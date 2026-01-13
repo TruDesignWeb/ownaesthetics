@@ -6,9 +6,20 @@ export default function ShowcaseSection({eyebrow,
   buttonLabel,
   imageSrc,
   imageAlt,
-  reverse = false}){
+  reverse = false, 
+  backgroundImage, 
+  backgroundColor }) {
+
+    const sectionStyle = {
+    backgroundColor: backgroundColor || undefined,
+    backgroundImage: backgroundImage
+      ? `url(${backgroundImage})`
+      : undefined,
+    backgroundSize: backgroundImage ? "cover" : undefined,
+    backgroundPosition: backgroundImage ? "center" : undefined,
+  };
   return (
-<section className="feature-section">
+<section className="feature-section" style={sectionStyle}>
       <div className={`feature-wrapper ${reverse ? "reverse" : ""}`}>
         {/* Text Card */}
         <div className="feature-card">
