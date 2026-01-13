@@ -17,6 +17,7 @@ import TiltedCard from '../components/tiltedcard';
 import FluidGlass from '../components/fluidglass';
 import Register from '../components/register';
 import Login from '../components/login';
+import ShowcaseSection from '../components/showcasesection';
 
 
 const featureCards = [
@@ -89,7 +90,7 @@ export default function Home() {
           variant="" // Optional: for different styles
         />
         
-        
+        <ShowcaseSection />
 
         
 

@@ -29,8 +29,8 @@ export default function Navbar() {
         <div className="top-nav-content">
 
           <ul><Link to="/Membership" className="top-nav-link">Membership</Link></ul>
-          <ul><Link to="/Podcasts" className="top-nav-link">Podcasts</Link></ul>
-          <ul><Link to="/Contact" className="top-nav-link">Contact</Link></ul>
+          <ul><Link to="/Podcasts" className="top-nav-link">Socials</Link></ul>
+          <ul><Link to="/Contact" className="top-nav-link">Contact Us</Link></ul>
           <ul><Link to="/Referring-Partners" className="top-nav-link">Referring Partners</Link></ul>
         </div>
       </div>
@@ -49,9 +49,9 @@ export default function Navbar() {
           <ul className={`nav-menu ${menuOpen ? 'active' : ''}`} id="nav-menu">
             <li className="nav-item"><Link to="/About" className="nav-link">About</Link></li>
             <li className="nav-item"><Link to="/Services" className="nav-link">Services</Link></li>
-            <li className="nav-item"><Link to="/Partners" className="nav-link">Partners</Link></li>
-            <li className="nav-item"><Link to="/Patients" className="nav-link">Patients</Link></li>
-            <li className="nav-item"><Link to="/Appointments" className="nav-link cta">Appointments</Link></li>
+            <li className="nav-item"><Link to="/Patients" className="nav-link">Reviews</Link></li>
+            <li className="nav-item"><Link to="/Partners" className="nav-link">Skincare</Link></li>
+            <li className="nav-item"><Link to="/Appointments" className="nav-link cta">Book Now</Link></li>
           </ul>
           
         </div>
