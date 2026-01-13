@@ -90,7 +90,14 @@ export default function Home() {
           variant="" // Optional: for different styles
         />
         
-        <ShowcaseSection />
+        <ShowcaseSection 
+  eyebrow="Advanced Imaging"
+  title="Precision-Focused Diagnostic Care"
+  text="Innovative Radiology combines cutting-edge imaging technology with board-certified specialists to deliver accurate, timely diagnoses."
+  buttonLabel="Learn More"
+  imageSrc="/assets/images/images/almost-naked.jpg"
+  imageAlt="MRI imaging suite"
+      />
 
         
 

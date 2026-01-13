@@ -1,6 +1,6 @@
 .feature-section {
   padding: 6rem 1.5rem;
-  background: #f8f0da;
+  background: #fafafa;
 }
 
 .feature-wrapper {
@@ -13,9 +13,18 @@
   gap: 2rem;
 }
 
+/* Reverse layout */
+.feature-wrapper.reverse {
+  direction: rtl;
+}
+
+.feature-wrapper.reverse > * {
+  direction: ltr;
+}
+
 /* Text Card */
 .feature-card {
-  background: white;
+  background: #ffffff;
   padding: 3rem;
   max-width: 520px;
   z-index: 2;
@@ -52,7 +61,7 @@
 
 .feature-button {
   background: #1f3a5f;
-  color: white;
+  color: #ffffff;
   border: none;
   padding: 0.75rem 1.5rem;
   font-size: 0.95rem;
@@ -71,11 +80,17 @@
   overflow: hidden;
 }
 
+.feature-wrapper.reverse .feature-image {
+  margin-left: 0;
+  margin-right: -120px;
+}
+
 .feature-image img {
   width: 100%;
   height: auto;
   display: block;
   transition: transform 0.4s ease;
+  border-radius: 25px;
 }
 
 .feature-wrapper:hover .feature-image img {
@@ -89,8 +104,7 @@
   }
 
   .feature-image {
-    margin-left: 0;
-    order: -1;
+    margin: 0;
   }
 
   .feature-card {
