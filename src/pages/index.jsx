@@ -18,6 +18,7 @@ import FluidGlass from '../components/fluidglass';
 import Register from '../components/register';
 import Login from '../components/login';
 import ShowcaseSection from '../components/showcasesection';
+import TestimonialShowcase from '../components/testimonial-showcase';
 
 
 const featureCards = [
@@ -100,9 +101,9 @@ export default function Home() {
   backgroundColor={"#fffcd8"}
       />
 
-        
+        <TestimonialShowcase />
 
-        <Journey
+        {/* <Journey
             title="Start Your Path to Wellness"
             subtitle="Personalized healthcare solutions designed to help you thrive."
             ctaText="Get Started Today"
@@ -128,7 +129,8 @@ export default function Home() {
                 link: 'Podcasts',
               },
             ]}
-        />
+        /> */}
+
 
         <Membership />
 
