@@ -1,0 +1,22 @@
+.social-media-container {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  background-color: #fffcef;
+  min-height: 150px;
+}
+.social-media-title {
+  text-align: center;
+  font-size: 1.2em;
+  margin-bottom: 12px;
+  color: #333;
+}
+.social-media-icon {
+  padding: 8px;
+  width: 40px;
+  height: 40px;
+  transition: transform 0.3s;
+}
+.social-media-icon:hover {
+  transform: scale(1.1);
+}

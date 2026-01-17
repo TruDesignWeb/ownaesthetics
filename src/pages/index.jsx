@@ -19,6 +19,7 @@ import Register from '../components/register';
 import Login from '../components/login';
 import ShowcaseSection from '../components/showcasesection';
 import TestimonialShowcase from '../components/testimonial-showcase';
+import SocialMedia from '../components/social-media';
 
 
 const featureCards = [
@@ -103,6 +104,7 @@ export default function Home() {
 
         <TestimonialShowcase />
 
+        <SocialMedia />
         {/* <Journey
             title="Start Your Path to Wellness"
             subtitle="Personalized healthcare solutions designed to help you thrive."
@@ -132,12 +134,12 @@ export default function Home() {
         /> */}
 
 
-        <Membership />
+        {/* <Membership /> */}
 
         
 
 
-        <Stats
+        {/* <Stats
           title="Our Impact"
           stats={[
             { target: 120, label: 'Employees' },
@@ -202,7 +204,7 @@ export default function Home() {
               description: 'Healthier gut and improved nutrient absorption.',
             },
           ]}
-        />
+        /> */}
 
         {/* <Register />
         <Login /> */}
