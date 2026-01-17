@@ -23,10 +23,6 @@ import { useEffect, useRef, useState } from "react";
 
 export default function About({
 
-     eyebrow = "Philosophy",
-  title = "Look and feel your best naturally",
-  copy = `We want to help you with your health and wellness at Total Health Initiative, I really like being healthy do you?`,
-  image = "/assets/images/milky-way-full-stars-space.jpg",
 }) {
     useRevealOnScroll()
   const imgRef = useRef(null);
@@ -84,11 +80,11 @@ export default function About({
         <div className="philo-wrap">
             {/* Left: text */}
             <div className="philo-copy">
-            <span className="philo-eyebrow">{eyebrow}</span>
+            <span className="philo-eyebrow">Philosophy</span>
             <h2 id="philo-title" className="philo-title">
-                {title}
+                What Makes Us Special?
             </h2>
-            <p className="philo-text">{copy}</p>
+            <p className="philo-text">What makes us different is you. Each person unique, each person valuable and beautiful in their own skin, in their own way. This is skincare for everyone.</p>
             </div>
 
             {/* Right: image stack with sage frame */}
@@ -99,14 +95,41 @@ export default function About({
                 ref={imgRef}
                 style={{ transform: `translateY(${y}px)` }}
             >
-                <img src={image} alt="Spa reception with serene, warm tones" />
+                <img src="/assets/images/images/christmas-staff.jpeg" alt="Spa reception with serene, warm tones" />
             </div>
             </div>
         </div>
     </section>
 
+    <section className="philo-section" aria-labelledby="philo-title">
+        <div className="philo-wrap">
+           {/* left: image stack with sage frame */}
+            <div className="philo-media">
+            <div className="sage-frame" aria-hidden="true" style={{transform: `translateX(10px)`}}/>
+            <div
+                className="image-card"
+                ref={imgRef}
+                style={{ transform: `translateY(${y}px)` }}
+            >
+                <img src="/assets/images/images/christmas-staff.jpeg" alt="Spa reception with serene, warm tones" />
+            </div>
+            </div>
+
+            {/* rihgt: text */}
+            <div className="philo-copy">
+            <span className="philo-eyebrow">Philosophy</span>
+            <h2 id="philo-title" className="philo-title">
+                What Makes Us Special?
+            </h2>
+            <p className="philo-text">What makes us different is you. Each person unique, each person valuable and beautiful in their own skin, in their own way. This is skincare for everyone.</p>
+            </div>
+
+           
+        </div>
+    </section>
+
         
-        <Stats />
+        {/* <Stats /> */}
 
         <Footer />
 
