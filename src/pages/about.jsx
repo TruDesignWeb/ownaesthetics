@@ -76,6 +76,7 @@ export default function About({
             subtitle= "Meet the team that makes your medical dreams possible"
         />
         
+        {/* TEXT FIRST PIC SEC */}
         <section className="philo-section" aria-labelledby="philo-title">
         <div className="philo-wrap">
             {/* Left: text */}
@@ -101,6 +102,20 @@ export default function About({
         </div>
     </section>
 
+        <section className = "highlight-section">
+            <div className="highlight-wrap">
+                <div className="highlight-item">
+                    <h3 className="highlight-title">Our Mission</h3>
+                    <p className="highlight-text">Own Aesthetics mission is to partner with you to enhance your skin health so that you will feel confident to own your aesthetic at any age and always.</p>
+                </div>
+            </div>
+        </section>
+
+        <section className="team-section" aria-labelledby="team-title">
+            <h2 id="team-title" className="team-title">Meet Our Team</h2>
+        </section>
+
+        {/* PIC FIRST TEXT SEC */}
     <section className="philo-section" aria-labelledby="philo-title">
         <div className="philo-wrap">
            {/* left: image stack with sage frame */}

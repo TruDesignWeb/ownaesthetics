@@ -100,3 +100,51 @@
     padding-right: 2rem;
   }
 }
+
+/** Highlight Section */
+.highlight-section {
+    background: #ad6c6c; /* light gray background */
+    padding: clamp(2rem, 5vw, 4rem) 1.5rem;
+    text-align: center;
+}
+
+.highlight-wrap {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fafafa;
+    border-radius: 25px;
+}
+
+.highlight-item {
+    margin-bottom: 1.5rem;
+    padding: 2rem;
+}
+
+.highlight-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.highlight-text {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+/*team section*/
+.team-section {
+    background: #f9f4ef; /* very soft cream */
+    padding: clamp(3rem, 6vw, 6rem) 1.5rem;
+}
+
+.team-title {
+    font-size: clamp(2rem, 3.5vw, 3.25rem);
+    line-height: 1.15;
+    font-weight: 600;
+    color: #111;
+    margin-bottom: 2rem;
+    font-family: ui-serif, Georgia, "Times New Roman", Times, serif;
+    text-align: center;
+}
