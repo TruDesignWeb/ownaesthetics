@@ -153,7 +153,7 @@ const featureCards = [
 
 
 
-export default function About(){
+export default function Partners(){
     useRevealOnScroll()
     return(
         <>
@@ -174,7 +174,7 @@ export default function About(){
             variant="" // Optional: for different styles
         /> */}
 
-         <InfiniteScroll
+         {/* <InfiniteScroll
           items={[
           { content: "Total Health" },
           { content: <p>Total Health</p> },
@@ -187,10 +187,10 @@ export default function About(){
           autoplaySpeed={0.2}
           autoplayDirection="down"
           pauseOnHover={true}
-        />       
+        />        */}
          
 
-        <Outcomes/>
+        {/* <Outcomes/> */}
 
         <Footer />
 

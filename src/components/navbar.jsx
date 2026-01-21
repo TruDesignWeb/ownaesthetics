@@ -3,7 +3,6 @@ import React, { useEffect, useState, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import '../styles/navbar.css';
 import Home from '../pages/index';
-import NavDropdown from './nav-dropdown';
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
