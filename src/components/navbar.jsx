@@ -51,15 +51,7 @@ export default function Navbar() {
             <li className="nav-item"><Link to="/About" className="nav-link">About</Link></li>
             <li className="nav-item"><Link to="/Services" className="nav-link">Services</Link></li>
             <li className="nav-item"><Link to="/Patients" className="nav-link">Reviews</Link></li>
-            <NavDropdown
-              label="Services"
-              items={[
-                { label: "MRI Imaging", href: "/services/mri" },
-                { label: "CT Scans", href: "/services/ct" },
-                { label: "Ultrasound", href: "/services/ultrasound" },
-              ]}
-            />
-
+            <li className="nav-item"><Link to="/Partners" className="nav-link">Skincare</Link></li>
             <li className="nav-item"><Link to="/Appointments" className="nav-link cta">Book Now</Link></li>
           </ul>
           
