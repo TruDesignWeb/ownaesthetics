@@ -3,6 +3,7 @@ import React, { useEffect, useState, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import '../styles/navbar.css';
 import Home from '../pages/index';
+import NavDropdown from './nav-dropdown';
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -50,7 +51,15 @@ export default function Navbar() {
             <li className="nav-item"><Link to="/About" className="nav-link">About</Link></li>
             <li className="nav-item"><Link to="/Services" className="nav-link">Services</Link></li>
             <li className="nav-item"><Link to="/Patients" className="nav-link">Reviews</Link></li>
-            <li className="nav-item"><Link to="/Partners" className="nav-link">Skincare</Link></li>
+            <NavDropdown
+              label="Services"
+              items={[
+                { label: "MRI Imaging", href: "/services/mri" },
+                { label: "CT Scans", href: "/services/ct" },
+                { label: "Ultrasound", href: "/services/ultrasound" },
+              ]}
+            />
+
             <li className="nav-item"><Link to="/Appointments" className="nav-link cta">Book Now</Link></li>
           </ul>
           
