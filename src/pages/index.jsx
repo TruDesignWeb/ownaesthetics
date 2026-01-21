@@ -74,6 +74,38 @@ const featureCards = [
       link: 'Podcasts',
       }];
 
+
+      const testimonials = [
+  {
+    text: "I’ve been seeing Beth for four years now, and she’s the best.",
+    author: "Allie",
+    date: "Aug 7, 2025",
+  },
+  {
+    text:
+      "I am an RN with 25+ years of OR experience. I chose Dr. Folkers.",
+    author: "Anonymous",
+    date: "Jul 22, 2017",
+  },
+  {
+    text:
+      "From the moment I walked in, I was treated with kindness.",
+    author: "Emily R.",
+    date: "Aug 7, 2025",
+  },
+  {
+    text:
+      "Exceptional care and attention to detail. Highly recommend.",
+    author: "Mark T.",
+  },
+  {
+    text:
+      "Professional, calming, and incredibly thorough experience.",
+    author: "Sarah L.",
+  },
+];
+      
+
 export default function Home() {
     useRevealOnScroll();
   return (
@@ -102,7 +134,11 @@ export default function Home() {
   backgroundColor={"#fffcd8"}
       />
 
-        <TestimonialShowcase />
+<TestimonialShowcase
+  testimonials={testimonials}
+  initialCount={3}
+  buttonLabel="View More Testimonials"
+  />
 
         <SocialMedia />
         {/* <Journey

@@ -19,6 +19,7 @@ import Banner2 from '../components/banner2';
 import './patients.css';
 
 import { useEffect, useRef, useState } from "react";
+import TestimonialShowcase from '../components/testimonial-showcase';
 
 
 export default function About({
@@ -70,7 +71,35 @@ export default function About({
   }, 
   []);
 
-
+const testimonials = [
+  {
+    text: "I’ve been seeing Beth for four years now, and she’s the best.",
+    author: "Allie",
+    date: "Aug 7, 2025",
+  },
+  {
+    text:
+      "I am an RN with 25+ years of OR experience. I chose Dr. Folkers.",
+    author: "Anonymous",
+    date: "Jul 22, 2017",
+  },
+  {
+    text:
+      "From the moment I walked in, I was treated with kindness.",
+    author: "Emily R.",
+    date: "Aug 7, 2025",
+  },
+  {
+    text:
+      "Exceptional care and attention to detail. Highly recommend.",
+    author: "Mark T.",
+  },
+  {
+    text:
+      "Professional, calming, and incredibly thorough experience.",
+    author: "Sarah L.",
+  },
+];
     return(
         <>
         <CustomCursor />
@@ -81,64 +110,19 @@ export default function About({
             title = "Patients"
             subtitle= "Meet the team that makes your medical dreams possible"
         />
-        
-        <section className="philo-section" aria-labelledby="philo-title">
-        <div className="philo-wrap">
-            {/* Left: text */}
-            <div className="philo-copy">
-            <span className="philo-eyebrow">{eyebrow}</span>
-            <h2 id="philo-title" className="philo-title">
-                {title}
-            </h2>
-            <p className="philo-text">{copy}</p>
-            </div>
 
-            {/* Right: image stack with sage frame */}
-            <div className="philo-media">
-            <div className="sage-frame" aria-hidden="true" />
-            <div
-                className="image-card"
-                ref={imgRef}
-                style={{ transform: `translateY(${y}px)` }}
-            >
-                <img src={image} alt="Spa reception with serene, warm tones" />
-            </div>
-            </div>
-        </div>
-    </section>
-
-
-
-    <section className="philo-section" aria-labelledby="philo-title">
-    <div className="philo-wrap">
-       {/* Right: image stack with sage frame */}
-        <div className="philo-media">
-        <div className="sage-frame" aria-hidden="true" />
-        <div
-            className="image-card"
-            ref={imgRef}
-            style={{ transform: `translateY(${y}px)` }}
-        >
-            <img src={image} alt="Spa reception with serene, warm tones" />
-        </div>
-        </div>
-        
-        {/* Left: text */}
-        <div className="philo-copy">
-        <span className="philo-eyebrow">{eyebrow}</span>
-        <h2 id="philo-title" className="philo-title">
-            {title}
-        </h2>
-        <p className="philo-text">{copy}</p>
-        </div>
-
-       
-    </div>
-</section>
     
 
+
+<TestimonialShowcase
+  testimonials={testimonials}
+  initialCount={3}
+  buttonLabel="View More Testimonials"
+/>;
+
+
         
-        <Stats />
+        
 
         <Footer />
 

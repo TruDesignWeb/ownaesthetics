@@ -16,6 +16,7 @@ import InfiniteScroll from '../components/infinitescroll';
 import TiltedCard from '../components/tiltedcard';
 import FluidGlass from '../components/fluidglass';
 import Banner2 from '../components/banner2';
+import SocialMedia from '../components/social-media';
 
 
 
@@ -142,7 +143,7 @@ export default function About(){
             variant="" // Optional: for different styles
         />
 
-        <Outcomes/>
+        <SocialMedia />
 
         <Footer />
 
