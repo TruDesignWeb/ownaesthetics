@@ -78,6 +78,7 @@
   position: relative;
   margin-left: -120px;
   overflow: hidden;
+  border-radius: 25px;
 }
 
 .feature-wrapper.reverse .feature-image {
@@ -90,7 +91,7 @@
   height: auto;
   display: block;
   transition: transform 0.4s ease;
-  border-radius: 25px;
+  
 }
 
 .feature-wrapper:hover .feature-image img {
