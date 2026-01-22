@@ -27,6 +27,11 @@ cursor: none;
     font-style: normal;
 }
 
+@font-face {
+  font-family: 'montserrat';
+  src: url('\public\fonts\Montserrat\static\Montserrat-Light.ttf');
+}
+
 html, body {
     overflow-x: hidden;
     width: 100%;
@@ -36,7 +41,7 @@ html, body {
 }
 
 body {
-    font-family: 'Mundial' sans-serif;
+    font-family: montserrat;
     line-height: 1.6;
 }
 
