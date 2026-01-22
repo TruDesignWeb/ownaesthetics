@@ -16,6 +16,7 @@ import InfiniteScroll from '../components/infinitescroll';
 import TiltedCard from '../components/tiltedcard';
 import FluidGlass from '../components/fluidglass';
 import Banner2 from '../components/banner2';
+import Banner3 from '../components/banner3';
 
 
 
@@ -160,13 +161,15 @@ export default function Partners(){
         <CustomCursor />
         
         <Navbar />
-        <Banner2 
+        {/* <Banner2 
             image = "/assets/images/milky-way-full-stars-space.jpg"
             title = "Partners"
             subtitle= "Discover a new path to living with the fountain of youth"
-        />
+        /> */}
         
-
+          <Banner3 image = "/assets/images/milky-way-full-stars-space.jpg"
+          title = "I LOVE JESUS"
+          subtitle = "EVEN THOUGH I FALL I WILL GET UP AND FOLLOW MY LORD" />
 
         {/* <Features
             title="Services"
