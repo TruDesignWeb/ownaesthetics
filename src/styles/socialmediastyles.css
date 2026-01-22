@@ -1,22 +1,33 @@
 .social-media-container {
   display: flex;
+  flex-direction: column;
   gap: 16px;
   justify-content: center;
+  align-items: center;
   background-color: #fffcef;
   min-height: 150px;
 }
 .social-media-title {
   text-align: center;
-  font-size: 1.2em;
-  margin-bottom: 12px;
+  font-size: 1.4em;
+  padding: 4px;
+  margin-top: 12px;
   color: #333;
 }
+
+.icons-container{
+  margin-bottom: 20px;
+  justify-content: center;
+  align-items: center; 
+}
+
 .social-media-icon {
-  padding: 8px;
-  width: 40px;
-  height: 40px;
+  width: 70px;
+  height: 70px;
   transition: transform 0.3s;
 }
+
+
 .social-media-icon:hover {
-  transform: scale(1.1);
+  transform: translateY(-8px);
 }
