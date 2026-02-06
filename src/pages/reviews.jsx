@@ -16,7 +16,7 @@ import InfiniteScroll from '../components/infinitescroll';
 import TiltedCard from '../components/tiltedcard';
 import FluidGlass from '../components/fluidglass';
 import Banner2 from '../components/banner2';
-import './patients.css';
+import './reviews.css';
 
 import { useEffect, useRef, useState } from "react";
 import TestimonialShowcase from '../components/testimonial-showcase';
@@ -73,31 +73,39 @@ export default function About({
 
 const testimonials = [
   {
-    text: "I’ve been seeing Beth for four years now, and she’s the best.",
-    author: "Allie",
-    date: "Aug 7, 2025",
+    text: "Dr. Folkers work exceeded my expectations and I couldn't be happier with the outcome. He is remarkably talented and meticulous about his work. He made me feel very comfortable, was personable, and took his time to answer all of my questions. His nurse, Heidi, and staff were also knowledgeable and compassionate which made for a very positive experience. I will certainly recommend Dr. Folkers to all of my family and friends for their plastic surgery needs.",
+    author: "Amber",
+    date: "Sep 16, 2025",
   },
   {
     text:
-      "I am an RN with 25+ years of OR experience. I chose Dr. Folkers.",
+      "If you really want to know about a surgeon, ask an OR nurse. I am an RN and have worked in the OR for 25+ years. I've worked with countless surgeons and, when it came time for me to need the services of one for reconstructive and plastic surgery, I chose Dr. Folkers. He is friendly, compassionate, took all the time necessary to explain procedures and answer all my questions, and did an excellent job on my surgery. I am confident I made the right choice and would recommend him to anyone.",
     author: "Anonymous",
     date: "Jul 22, 2017",
   },
   {
     text:
-      "From the moment I walked in, I was treated with kindness.",
-    author: "Emily R.",
-    date: "Aug 7, 2025",
+      "I can't say enough good things about my experience with Dr Folkers, his staff, and the team at Broadlawns Hospital! The care I was given before and after my surgery was amazing. They all took the time to listen to me and provide the information and comfort I needed to get me through it. GREAT, GREAT group of people! I highly recommend!",
+    author: "Marianne",
+    date: "Jan 20, 2025",
   },
   {
     text:
-      "Exceptional care and attention to detail. Highly recommend.",
-    author: "Mark T.",
+      "I had 3 procedures done this year, I was very happy with all my results! I'm so glad I did this! The nursing staff was great, friendly, and attentive. Dr Folkers was very down to earth, kind, understanding, and did an excellent job! I would highly recommend him and his team they all are wonderful, such a great experience!",
+    author: "Julie",
+    date: "Oct 28, 2024",
   },
   {
     text:
-      "Professional, calming, and incredibly thorough experience.",
-    author: "Sarah L.",
+      "GREAT, GREAT group of people!",
+    author: "Marianne N.",
+    date: "Jun 2, 2021",
+  },
+  {
+    text:
+      "Dr. Folkers did a wonderful job with my surgery. Him and his staff were able to answer all of my questions, quick to get me in for an appointment if I had any concerns, and very friendly. I'm very happy with both the results of my surgery and my experience!",
+    author: "Danielle",
+    date: "Apr 28, 2020",
   },
 ];
     return(
@@ -116,7 +124,7 @@ const testimonials = [
 
 <TestimonialShowcase
   testimonials={testimonials}
-  initialCount={3}
+  initialCount={6}
   buttonLabel="View More Testimonials"
 />;
 

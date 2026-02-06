@@ -49,7 +49,7 @@ export default function Navbar() {
           <ul className={`nav-menu ${menuOpen ? 'active' : ''}`} id="nav-menu">
             <li className="nav-item"><Link to="/About" className="nav-link">About</Link></li>
             <li className="nav-item"><Link to="/Services" className="nav-link">Services</Link></li>
-            <li className="nav-item"><Link to="/Patients" className="nav-link">Reviews</Link></li>
+            <li className="nav-item"><Link to="/Reviews" className="nav-link">Reviews</Link></li>
             <li className="nav-item"><Link to="/Partners" className="nav-link">Skincare</Link></li>
             <li className="nav-item"><Link to="/Appointments" className="nav-link cta">Book Now</Link></li>
           </ul>
