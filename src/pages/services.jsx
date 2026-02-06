@@ -17,6 +17,7 @@ import TiltedCard from '../components/tiltedcard';
 import FluidGlass from '../components/fluidglass';
 import Banner2 from '../components/banner2';
 import SocialMedia from '../components/social-media';
+import { link } from 'framer-motion/client';
 
 
 
@@ -86,6 +87,7 @@ const featureCards = [
       displayOverlayContent: true,
       overlayContent: <p className="tilted-card-demo-text">Anti-Wrinkle Injections</p>,
       backgroundColor: 'rgba(0,0,0,0)',
+      link: 'services/antiwrinkle.jsx',
     },
     {
     imageSrc: '/assets/images/images/istock-kybella.jpg',
@@ -102,6 +104,7 @@ const featureCards = [
       displayOverlayContent: true,
       overlayContent: <p className="tilted-card-demo-text">Kybella®</p>,
       backgroundColor: 'rgba(0,0,0,0)',
+      link: 'services/kybella.jsx',
     },
         {
     imageSrc: '/assets/images/images/woman-doing-self-care-treatment-indoors.jpg',
@@ -118,6 +121,7 @@ const featureCards = [
       displayOverlayContent: true,
       overlayContent: <p className="tilted-card-demo-text">Sclerotherapy – Spider Veins</p>,
       backgroundColor: 'rgba(0,0,0,0)',
+      link: 'services/sclerotherapy.jsx',
     }, 
     {
     imageSrc: '/assets/images/images/hand-with-latex-glove-holding-vaccine-syringe.jpg',
@@ -134,6 +138,7 @@ const featureCards = [
       displayOverlayContent: true,
       overlayContent: <p className="tilted-card-demo-text">HA Dermal Fillers</p>,
       backgroundColor: 'rgba(0,0,0,0)',
+      link: 'services/juvederm.jsx',
     },
         {
     imageSrc: '/assets/images/images/istock-sculptra.jpg',
@@ -150,6 +155,7 @@ const featureCards = [
       displayOverlayContent: true,
       overlayContent: <p className="tilted-card-demo-text">Sculptra™</p>,
       backgroundColor: 'rgba(0,0,0,0)',
+      link: 'services/sculptra.jsx',
     },
         {
     imageSrc: '/assets/images/images/close-up-doctor-checking-smiley-woman.jpg',
@@ -166,6 +172,7 @@ const featureCards = [
       displayOverlayContent: true,
       overlayContent: <p className="tilted-card-demo-text">PRF/PRF ezGel</p>,
       backgroundColor: 'rgba(0,0,0,0)',
+      link: 'services/cellenis.jsx',
     },
     {
     imageSrc: '/assets/images/images/man-fixed.jpg',
@@ -182,6 +189,7 @@ const featureCards = [
       displayOverlayContent: true,
       overlayContent: <p className="tilted-card-demo-text">Hair Wellness & Restoration</p>,
       backgroundColor: 'rgba(0,0,0,0)',
+      link: 'services/hairtreatments.jsx'
     },
         {
     imageSrc: '/assets/images/images/istock-chem.jpg',
@@ -198,6 +206,7 @@ const featureCards = [
       displayOverlayContent: true,
       overlayContent: <p className="tilted-card-demo-text">Chemical Peels</p>,
       backgroundColor: 'rgba(0,0,0,0)',
+      link: 'services/chemicalpeels.jsx',
     },
         {
     imageSrc: '/assets/images/images/istock-facial_.jpg',
@@ -214,6 +223,7 @@ const featureCards = [
       displayOverlayContent: true,
       overlayContent: <p className="tilted-card-demo-text">Customized Facials</p>,
       backgroundColor: 'rgba(0,0,0,0)',
+      link: 'services/facials.jsx',
     },
     {
     imageSrc: '/assets/images/images/exoe_digital_marketing_kit_-_12.11.2023/EXOE Digital Marketing Kit - 12.11.2023/15.png',
@@ -230,6 +240,7 @@ const featureCards = [
       displayOverlayContent: true,
       overlayContent: <p className="tilted-card-demo-text">EXO|E® Skin Revitalizing Complex</p>,
       backgroundColor: 'rgba(0,0,0,0)',
+      link: 'services/exosomes.jsx',
     },
         {
     imageSrc: '/assets/images/images/istock-salt1.jpg',
@@ -246,6 +257,7 @@ const featureCards = [
       displayOverlayContent: true,
       overlayContent: <p className="tilted-card-demo-text">SaltFacial® Skin Renewal Therapy</p>,
       backgroundColor: 'rgba(0,0,0,0)',
+      link: 'services/saltfacial.jsx',
     },
         {
     imageSrc: '/assets/images/images/istock-skinpen.jpg',
@@ -262,6 +274,7 @@ const featureCards = [
       displayOverlayContent: true,
       overlayContent: <p className="tilted-card-demo-text">SkinPen® Microneedling</p>,
       backgroundColor: 'rgba(0,0,0,0)',
+      link: 'services/skinpen.jsx',
     },
     
     
