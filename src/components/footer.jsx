@@ -17,11 +17,14 @@ export default function Footer() {
           <p>Phone: (515) 672-1860<br />Email: info@ownaesthetics.com</p>
         </div>
         <div className="footer-section">
-          <h3>Medical Services</h3>
-          <p><a href="#">Emergency Medicine</a></p>
-          <p><a href="#">Advanced Diagnostics</a></p>
-          <p><a href="#">Cardiology Center</a></p>
-          <p><a href="#">Neurology Services</a></p>
+          <h3>Hours</h3>
+          <p>Mon&nbsp;&nbsp;&nbsp;&nbsp;10:00am – 5:00pm</p>
+          <p>Tue&nbsp;&nbsp;&nbsp;&nbsp;10:00am – 5:00pm</p>
+          <p>Wed&nbsp;&nbsp;&nbsp;&nbsp;10:00am – 7:00pm</p>
+          <p>Thu&nbsp;&nbsp;&nbsp;&nbsp;10:00am – 5:00pm</p>
+          <p>Fri&nbsp;&nbsp;&nbsp;&nbsp;9:00am – 5:00pm</p>
+          <p>Sat&nbsp;&nbsp;&nbsp;&nbsp;by appt. only</p>
+          <p>Sun&nbsp;&nbsp;&nbsp;&nbsp;closed</p>
         </div>
         {/* <div className="footer-section">
           <h3 data-icon="🔬">Research & Innovation</h3>
