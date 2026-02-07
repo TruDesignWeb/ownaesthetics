@@ -34,12 +34,47 @@ export default function Footer() {
           <p>Leading medical research and clinical trials advancing healthcare technology and treatment methodologies.</p>
           <p><a href="#">Clinical Research</a></p>
           <p><a href="#">Medical Innovation</a></p> */}
-            <ContactForm
+
+
+            {/* <ContactForm
             title="Join Our Health Community"
             subtitle="Sign up and get the latest wellness tips in your inbox."
             placeholder="you@example.com"
             buttonText="Join Now"
-              />
+              /> */}
+            <div className= "newsletter-container">
+              <h2><b>Want to learn more?</b></h2>
+              <p>Enter your information below and we'll get back to you!</p>
+
+              <form className = "newsletter-form" action="https://api.web3forms.com/submit" method="POST">
+                <input
+                  type="hidden"
+                  name="access_key"
+                  value="d2c03bfd-17bb-4683-b096-fc7df9822b38"
+                />
+
+                <input
+                  type="text"
+                  className="form-control"
+                  placeholder="Your name"
+                  name="name"
+                  required
+                />
+
+                <input
+                  type="email"
+                  className="form-control"
+                  placeholder="Your email"
+                  name="email"
+                  required
+                />
+
+                <button type="submit" className="btn btn-primary">
+                  Subscribe
+                </button>
+              </form>
+            </div>
+
         </div>
         <div className="footer-section">
 
