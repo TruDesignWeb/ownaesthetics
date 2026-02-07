@@ -11,10 +11,10 @@ export default function Footer() {
     <footer className = "footer">
       <div className="footer-content">
         <div className="footer-section-1">
-          <img className = "logo-img" src = "/assets/images/TotalHealthLogo_HorizontalBlack.png"/>
+          <img className = "logo-img" src = "\assets\images\OWN Branding\OWN Final Logos\Print CMYK\Logo Icon\PNG\OWN_Icon_CMYK_Black.png"/>
           
-          <p>7601 Medical Plaza<br />Suite 110<br />West Des Moines, IA 50266</p>
-          <p>Phone: (515) 555-CARE<br />Email: care@totalhealthexp.com</p>
+          <p>7601 Medical Plaza<br />Suite 115<br />West Des Moines, IA 50266</p>
+          <p>Phone: (515) 672-1860<br />Email: info@ownaesthetics.com</p>
         </div>
         <div className="footer-section">
           <h3>Medical Services</h3>
@@ -54,7 +54,7 @@ export default function Footer() {
         </div>
       </div>
       <div className="footer-bottom">
-        <p>&copy; 2025 Total Health Experience. Dedicated to exceptional medical care and patient wellness.</p>
+        <p>&copy; 2025 Own Aesthetics. Dedicated to exceptional medical care and patient wellness.</p>
       </div>
     </footer>
   );

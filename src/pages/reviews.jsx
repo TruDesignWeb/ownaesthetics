@@ -126,7 +126,7 @@ const testimonials = [
   testimonials={testimonials}
   initialCount={6}
   buttonLabel="View More Testimonials"
-/>;
+/>
 
 
         
