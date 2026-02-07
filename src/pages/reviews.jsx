@@ -22,7 +22,7 @@ import { useEffect, useRef, useState } from "react";
 import TestimonialShowcase from '../components/testimonial-showcase';
 
 
-export default function About({
+export default function Reviews({
 
      eyebrow = "Philosophy",
   title = "Look and feel your best naturally",
@@ -114,8 +114,8 @@ const testimonials = [
         
         <Navbar />
         <Banner2 
-            image = "/assets/images/milky-way-full-stars-space.jpg"
-            title = "Patients"
+            image = "/assets/images/images/istock-wheat2.jpg"
+            title = "Reviews"
             subtitle= "Meet the team that makes your medical dreams possible"
         />
 

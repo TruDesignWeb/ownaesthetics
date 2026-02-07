@@ -7,16 +7,16 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 60px;
+    margin-bottom: 20px;
     margin-top: 30px;
-    border-bottom: 4px solid #00d4ff;
+    border-bottom: 4px solid #f1f1c2;
 }
 
 .banner2-overlay {
     margin-top: 130px;
     text-align: center;
     color: white;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(21, 102, 35, 0.4);
     padding: 2rem;
     border-radius: 12px;
 }
