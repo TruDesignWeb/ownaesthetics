@@ -109,11 +109,12 @@ export default function Home() {
         />
         
         <ShowcaseSection 
-  eyebrow="Advanced Imaging"
-  title="Precision-Focused Diagnostic Care"
-  text="Innovative Radiology combines cutting-edge imaging technology with board-certified specialists to deliver accurate, timely diagnoses."
+  eyebrow="Facial Treatments"
+  title="NEW Salt Facials"
+  text="Experience the ultimate skin rejuvenation with Salt Facials. This exfoliating treatment combines the power of sea salt,
+        skincare, and technology to detoxify, hydrate, and renew your skin, leaving you with a smooth, glowing, and refreshed complexion."
   buttonLabel="Learn More"
-  imageSrc="/assets/images/images/almost-naked.jpg"
+  imageSrc="/assets/images/images/istock-salt1.jpg"
   imageAlt="MRI imaging suite"
   backgroundColor={"#fffcd8"}
       />
