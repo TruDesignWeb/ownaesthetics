@@ -5,11 +5,13 @@ import '../styles/banner.css';
 import MagnetButton from './magneticbutton';
 
 export default function Banner() {
+
+  
   return (
     <div className="banner">
       <div className="video-background">
         <video autoPlay muted loop>
-          <source src="/assets/images/images/ocean-banner[final].mp4" type="video/mp4" />
+          <source src="https://vuphufywuazudv7y.public.blob.vercel-storage.com/ownbannervideo.mp4" type="video/mp4" />
           {/*https://k5xcne8zxjnniehu.public.blob.vercel-storage.com/TotalHealthConstructionVideo.mp4*/}
         </video>
         <div className="video-overlay" />
