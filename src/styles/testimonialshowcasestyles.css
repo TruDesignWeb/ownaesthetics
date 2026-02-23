@@ -3,7 +3,7 @@
     flex-direction: column;
     align-items: center;
     padding: 40px;
-    background-color: #faf8e5;
+    background: url("/assets/images/testimonialshowcasesvg.svg");
 }
 .testimonial-showcase-title {
     font-size: 2em;

@@ -116,7 +116,7 @@ export default function Home() {
   buttonLabel="Learn More"
   imageSrc="/assets/images/images/istock-salt1.jpg"
   imageAlt="MRI imaging suite"
-  backgroundColor={"#fffcd8"}
+  backgroundColor={"#e8e0d1"}
       />
 
 <TestimonialShowcase
