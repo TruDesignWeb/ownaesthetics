@@ -72,7 +72,16 @@
 .feature-button:hover {
   background: #274c77;
 }
+.feature-image {
+  position: relative;
+  z-index: 1;
+  pointer-events: none;
+}
 
+.feature-card {
+  position: relative;
+  z-index: 2;
+}
 /* Image */
 .feature-image {
   position: relative;

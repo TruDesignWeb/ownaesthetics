@@ -104,7 +104,7 @@ export default function Home() {
                 <Features
                   title="Featured Services"
                   cards={featureCards}
-                  variant="" // Optional: for different styles
+                   // Optional: for different styles variant=""
                 />
                 <ShowcaseSection 
                 reverse={true}
@@ -115,7 +115,7 @@ export default function Home() {
           buttonLabel="Learn More"
           imageSrc=""
           imageAlt="MRI imaging suite"
-          backgroundColor={"#e8e0d1"}
+          backgroundColor={"#133550"}
               />
 
                 <ShowcaseSection 
@@ -126,7 +126,7 @@ export default function Home() {
           buttonLabel="Learn More"
           imageSrc="/assets/images/images/istock-salt1.jpg"
           imageAlt="MRI imaging suite"
-          backgroundColor={"#e8e0d1"}
+          backgroundColor={"#9B5B3E"}
               />
 
         <TestimonialShowcase
