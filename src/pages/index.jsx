@@ -99,7 +99,6 @@ export default function Home() {
       <Banner />
 
 
-    <div style={{ height: "100vh" }} />
     <div className="content-wrapper">
         
                 <Features
