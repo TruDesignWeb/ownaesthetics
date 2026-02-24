@@ -11,7 +11,7 @@ import Journey from '../components/journey';
 import Footer from '../components/footer';
 import CustomCursor from '../components/customcursor';
 import useRevealOnScroll from '../hooks/useRevealOnScroll';
-import './podcasts.css';
+import './socials.css';
 import InfiniteScroll from '../components/infinitescroll';
 import TiltedCard from '../components/tiltedcard';
 import FluidGlass from '../components/fluidglass';
@@ -77,15 +77,15 @@ export default function Home() {
       <Navbar />
       <Banner2 
         image = "/assets/images/milky-way-full-stars-space.jpg"
-        title = "Podcasts"
-        subtitle= "Join our podcasts for our latest info"
+        title = "Socials"
+        subtitle= "Join our socials for our latest info"
     />
 
 
         <Features
           title="Podcast Section - Needs Link"
           cards={featureCards}
-          variant="podcasts" // Optional: for different styles
+          variant="socials" // Optional: for different styles
         />
 
       
