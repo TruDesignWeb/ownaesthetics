@@ -4,12 +4,14 @@ import Navbar from '../../components/navbar';
 import Footer from '../../components/footer';
 import Banner2 from '../../components/banner2';
 import Banner3 from '../../components/banner3';
+import CustomCursor from '../../components/customcursor';
 import './consultation.css';
 
 
 export default function Consultation() {
     return (
         <>
+            <CustomCursor />
             <Navbar />
             
             <Banner3
