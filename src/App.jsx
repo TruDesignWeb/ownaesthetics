@@ -20,6 +20,23 @@ import Appointments from './pages/appointments';
 import Podcasts from './pages/podcasts';
 import Refer from './pages/referringpartners.jsx';
 
+// import AntiWrinkle from './pages/services/antiwrinkle';
+// import Aquafirme from './pages/services/aquafirme';
+// import NouvaDerm from './pages/services/nouvaderm';
+// import SaltFacial from './pages/services/saltfacial';
+// import Cellenis from './pages/services/cellenis';
+// import ChemicalPeels from './pages/services/chemicalpeels';
+import Consultation from './pages/services/consultation';
+// import Exosomes from './pages/services/exosomes';
+// import Facials from './pages/services/facials';
+// import HairTreatments from './pages/services/hairtreatments';
+// import Juvederm from './pages/services/juvederm';
+// import Kybella from './pages/services/kybella';
+// import Sclerotherapy from './pages/services/sclerotherapy';
+// import Sculptra from './pages/services/sculptra';
+// import SkinPen from './pages/services/skinpen';
+// import SkinTypes from './pages/services/skintypes';
+
 
 export default function App() {
    const [isAuthenticated, setIsAuthenticated] = useState(false);
@@ -50,6 +67,26 @@ export default function App() {
         <Route path="/appointments" element={<Appointments />} />
 
 
+
+        {/* <Route path = "services/antiwrinkle" element={<AntiWrinkle />} /> */}
+        {/* <Route path = "services/aquafirme" element={<Aquafirme />} /> */}
+        {/* <Route path = "services/nouvaderm" element={<NouvaDerm />} /> */}
+        {/* <Route path = "services/saltfacial" element={<SaltFacial />} /> */}
+
+        {/* <Route path = "services/cellenis" element={<Cellenis />} /> */}
+        {/* <Route path = "services/chemicalpeels" element={<ChemicalPeels />} /> */}
+        <Route path = "services/consultation" element={<Consultation />} />
+        {/* <Route path = "services/exosomes" element={<Exosomes />} /> */}
+
+        {/* <Route path = "services/facials" element={<Facials />} /> */}
+        {/* <Route path = "services/hairtreatments" element={<HairTreatments />} /> */}
+        {/* <Route path = "services/juvederm" element={<Juvederm />} /> */}
+        {/* <Route path = "services/kybella" element={<Kybella />} /> */}
+
+        {/* <Route path = "services/sclerotherapy" element={<Sclerotherapy />} /> */}
+        {/* <Route path = "services/sculptra" element={<Sculptra />} /> */}
+        {/* <Route path = "services/skinpen" element={<SkinPen />} /> */}
+        {/* <Route path = "services/skintypes" element={<SkinTypes />} /> */}
 
 
 
