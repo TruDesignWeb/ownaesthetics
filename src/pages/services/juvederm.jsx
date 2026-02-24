@@ -17,8 +17,8 @@ export default function Juvederm() {
             <Banner3
             image="/assets/images/images/nic-y-c-It0vaZdSDDw-unsplash.jpg"
             
-            title = "LifeViz® Infinity Pro Consultation"
-            subtitle = "Discover Your Unique Beauty with Our LifeViz® Infinity Pro Consultation"
+            title = "Facial Contouring - Juvederm Collection of Injectable HA Dermal Fillers"
+            subtitle = "Enhance Your Natural Beauty with the Juvederm Collection of Injectable HA Dermal Fillers"
             />
 
             <section id = "services">
