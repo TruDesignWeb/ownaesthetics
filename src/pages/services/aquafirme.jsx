@@ -23,7 +23,7 @@ export default function Aquafirme() {
 
             <section id = "services">
                 <div class="content-wrapper">
-                    <h1 class="title services-animated">AquaFirmeXS</h1>
+                    {/* <h1 class="title services-animated">AquaFirmeXS</h1> */}
                     
                     <div class="main-content">
                         <div class="image-gallery">
