@@ -1,9 +1,14 @@
 import "../styles/showcasesection.css";
+import React from 'react';
+import { Routes, Route } from 'react-router-dom';
+import { Link } from 'react-router-dom';
+
 
 export default function ShowcaseSection({eyebrow,
   title,
   text,
   buttonLabel,
+  buttonLink,
   imageSrc,
   imageAlt,
   reverse = false, 
@@ -29,9 +34,11 @@ export default function ShowcaseSection({eyebrow,
           <h2>{title}</h2>
           <p>{text}</p>
           {buttonLabel && (
+            <Link to={`${buttonLink}`} className="feature-button-link">
             <button className="feature-button">
               {buttonLabel}
             </button>
+            </Link>
           )}
         </div>
 

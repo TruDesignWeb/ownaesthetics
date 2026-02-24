@@ -19,6 +19,12 @@
   }
 }
 
+@font-face {
+  font-family: 'montserrat';
+  src: url("/fonts/Montserrat/static/Montserrat-Light.ttf") format("truetype");
+}
+
+
 /* Text */
 .philo-copy {
   max-width: 680px;
@@ -39,7 +45,7 @@
   font-weight: 600;
   color: #111;
   margin: 0 0 1.25rem 0;
-  font-family: ui-serif, Georgia, "Times New Roman", Times, serif;
+  font-family: montserrat;
 }
 
 .philo-text {
@@ -145,6 +151,6 @@
     font-weight: 600;
     color: #111;
     margin-bottom: 2rem;
-    font-family: ui-serif, Georgia, "Times New Roman", Times, serif;
+    font-family: montserrat;
     text-align: center;
 }
