@@ -24,9 +24,9 @@ import SocialMedia from '../components/social-media';
 
 const featureCards = [
     {
-      imageSrc: '/assets/images/images/woman-doing-self-care-treatment-indoors.jpg',
-      altText: 'Injectables',
-      captionText: 'Injectables',
+      imageSrc: '/assets/images/images/istock-salt1.jpg',
+      altText: 'Salt Facial',
+      captionText: 'Salt Facial',
       containerHeight: '350px',
       containerWidth: '300px',
       imageHeight: '400px',
@@ -36,13 +36,13 @@ const featureCards = [
       showMobileWarning: false,
       showTooltip: true,
       displayOverlayContent: true,
-      overlayContent: <p className="tilted-card-demo-text">Injectables</p>,
+      overlayContent: <p className="tilted-card-demo-text">Salt Facial</p>,
       backgroundColor: 'rgba(0,0,0,0)',
-      link: '/Podcasts',
+      link: '/services/saltfacial',
     },{
-      imageSrc: '/assets/images/images/istock-skinpen.jpg',
-      altText: 'Sclerotherapy',
-      captionText: 'Sclerotherapy',
+      imageSrc: '/assets/images/images/aquafirme4.jpg',
+      altText: 'AquaFiirmeXS',
+      captionText: 'AquaFiirmeXS',
       containerHeight: '350px',
       containerWidth: '300px',
       imageHeight: '400px',
@@ -52,14 +52,14 @@ const featureCards = [
       showMobileWarning: false,
       showTooltip: true,
       displayOverlayContent: true,
-      overlayContent: <p className="tilted-card-demo-text">Sclerotherapy</p>,
+      overlayContent: <p className="tilted-card-demo-text">AquaFirmeXS</p>,
       backgroundColor: 'rgba(0,0,0,0)',
-      link: 'Podcasts',
+      link: 'services/aquafirme',
       },
     {
-      imageSrc: '/assets/images/images/close-up-woman-getting-lip-filler-with-injection.jpg',
-      altText: 'Microneedling',
-      captionText: 'Microneedling',
+      imageSrc: '/assets/images/images/nouva4.jpg',
+      altText: 'NOUVADerm™ Laser Treatment',
+      captionText: 'NOUVADerm™ Laser Treatment',
       containerHeight: '350px',
       containerWidth: '300px',
       imageHeight: '400px',
@@ -69,9 +69,9 @@ const featureCards = [
       showMobileWarning: false,
       showTooltip: true,
       displayOverlayContent: true,
-      overlayContent: <p className="tilted-card-demo-text">Microneedling</p>,
+      overlayContent: <p className="tilted-card-demo-text">NOUVADerm™ Laser Treatment</p>,
       backgroundColor: 'rgba(0,0,0,0)',
-      link: 'Podcasts',
+      link: 'services/nouvaderm',
       }];
 
 
