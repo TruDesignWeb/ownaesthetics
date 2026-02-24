@@ -53,7 +53,7 @@ export default function Contact() {
     <>
     <Navbar />
     <Banner2 
-      image = "/assets/images/milky-way-full-stars-space.jpg"
+      image = "/assets/images/contact.svg"
       title = "Contact Us"
       subtitle= "Get in touch with us today!"
     />

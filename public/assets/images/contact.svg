@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="600" viewBox="0 0 1600 600" role="img" aria-label="Minimal Contact Us banner">
+
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#F7F1EB"/>
+      <stop offset="1" stop-color="#EFE6DD"/>
+    </linearGradient>
+
+    <style>
+      .accent-line {
+        stroke: #9B5B3E;
+        stroke-width: 2;
+        stroke-opacity: 0.25;
+        fill: none;
+      }
+
+      .message-box {
+        fill: #ffffff;
+        stroke: #9B5B3E;
+        stroke-opacity: 0.35;
+        stroke-width: 2;
+      }
+
+      .icon-line {
+        stroke: #9B5B3E;
+        stroke-width: 3;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        fill: none;
+        opacity: 0.7;
+      }
+
+      .soft-fill {
+        fill: #9B5B3E;
+        opacity: 0.08;
+      }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1600" height="600" fill="url(#bg)"/>
+
+  <!-- Subtle Side Accent Shape (right side only) -->
+  <circle cx="1450" cy="300" r="250" class="soft-fill"/>
+
+  <!-- Minimal Curved Line -->
+  <path class="accent-line"
+        d="M150 480 C500 380 1000 380 1450 500"/>
+
+  <!-- Message Box Positioned Off to the Right -->
+  <g transform="translate(1150 180)">
+    <rect x="0" y="0" width="280" height="180" rx="28" class="message-box"/>
+    <polygon points="60,180 100,180 80,215" fill="#ffffff" stroke="#9B5B3E" stroke-opacity="0.35" stroke-width="2"/>
+
+    <!-- Text Lines Inside Box -->
+    <line x1="40" y1="60" x2="240" y2="60" class="icon-line"/>
+    <line x1="40" y1="95" x2="210" y2="95" class="icon-line"/>
+    <line x1="40" y1="130" x2="170" y2="130" class="icon-line"/>
+  </g>
+
+  <!-- Minimal Phone Curve Icon (left side subtle balance) -->
+  <g transform="translate(300 260)">
+    <path d="M0 40 C40 0, 120 0, 160 40"
+          class="icon-line"/>
+    <circle cx="0" cy="40" r="6" fill="#9B5B3E" opacity="0.4"/>
+    <circle cx="160" cy="40" r="6" fill="#9B5B3E" opacity="0.4"/>
+  </g>
+
+</svg>
