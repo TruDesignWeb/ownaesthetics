@@ -83,7 +83,7 @@ export default function Home() {
 
 
         <Features
-          title="Podcast Section - Needs Link"
+          title="Follow Us!"
           cards={featureCards}
           variant="socials" // Optional: for different styles
         />
