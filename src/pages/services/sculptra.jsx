@@ -15,18 +15,20 @@ export default function Sculptra() {
             <Navbar />
             
             <Banner3
-            image="/assets/images/images/nic-y-c-It0vaZdSDDw-unsplash.jpg"
-            
-            title = "Sculptra"
-            subtitle = "Sculptra: The Original Collagen Stimulator for Natural, Long-Lasting Results"
+                image="/assets/images/images/nic-y-c-It0vaZdSDDw-unsplash.jpg"
+                title="Sculptra"
+                subtitle="Sculptra: The Original Collagen Stimulator for Natural, Long-Lasting Results"
             />
 
-            <section id = "services">
-                <div class = "container">
-                    <h1 class = "title servces-animated">Sculptra</h1>
-                    <div class = "row">
-                        <div class = "col-md-auto services-text service-boxes animated">
-                            <p>Sculptra helps restore your skin’s foundation by stimulating natural collagen production,
+            <section id="sculptra-services">
+                <div className="sculptra-container">
+                    <h1 className="sculptra-title sculptra-animated">
+                        Sculptra
+                    </h1>
+                    <div className="sculptra-row">
+                        <div className="sculptra-services-text sculptra-service-boxes sculptra-animated">
+                            <p>
+                                Sculptra helps restore your skin’s foundation by stimulating natural collagen production,
                                 firming and smoothing the entire cheek region, and tightening the skin along the jawline.
                                 Unlike hyaluronic acid fillers, which fill lines, wrinkles, and folds, Sculptra is the original FDA-
                                 approved poly-L-lactic acid (PLLA-SCA) collagen stimulator, which can improve skin glow,
@@ -37,8 +39,6 @@ export default function Sculptra() {
                 </div>
             </section>
 
-
-            
             <Footer />
         </>
     );

@@ -15,18 +15,20 @@ export default function Sclerotherapy() {
             <Navbar />
             
             <Banner3
-            image="/assets/images/images/nic-y-c-It0vaZdSDDw-unsplash.jpg"
-            
-            title = "Sclerotherapy – Spider Veins"
-            subtitle = "Say Goodbye to Spider Veins: Sclerotherapy for Smooth, Clear Legs"
+                image="/assets/images/images/nic-y-c-It0vaZdSDDw-unsplash.jpg"
+                title="Sclerotherapy – Spider Veins"
+                subtitle="Say Goodbye to Spider Veins: Sclerotherapy for Smooth, Clear Legs"
             />
 
-            <section id = "services">
-                <div className = "container">
-                    <h1 className = "title services-animated">Sclerotherapy – Spider Veins</h1>
-                    <div className = "row">
-                        <div className  = "col-md-auto services-text service-boxes animated">
-                            <p>Sclerotherapy is a minimally invasive medical procedure that treats spider veins, usually on your
+            <section id="sclerotherapy-services">
+                <div className="sclerotherapy-container">
+                    <h1 className="sclerotherapy-title sclerotherapy-animated">
+                        Sclerotherapy – Spider Veins
+                    </h1>
+                    <div className="sclerotherapy-row">
+                        <div className="sclerotherapy-services-text sclerotherapy-service-boxes sclerotherapy-animated">
+                            <p>
+                                Sclerotherapy is a minimally invasive medical procedure that treats spider veins, usually on your
                                 legs. A small needle injects a special solution into your spider veins. This chemical solution
                                 irritates your blood vessel lining, expanding, sticking together, and forming a scar. This closes
                                 off your vein, making it look and feel better.<br/><br/>
@@ -39,7 +41,6 @@ export default function Sclerotherapy() {
                 </div>
             </section>
 
-            
             <Footer />
         </>
     );
