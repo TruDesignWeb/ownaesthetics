@@ -1,0 +1,110 @@
+/* =========================
+   AQUAFIRME SECTION
+========================= */
+
+#services {
+  background: #f8f9fa;
+  padding: 90px 0 110px 0;
+}
+
+/* Wrapper centers everything */
+.content-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Title */
+#services .title {
+  text-align: center;
+  font-size: 42px;
+  font-weight: 600;
+  margin-bottom: 60px;
+  color: #2d2d2d;
+  letter-spacing: 0.5px;
+}
+
+/* Main Layout */
+.main-content {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Image Gallery */
+.image-gallery {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.image-gallery img {
+  width: 320px;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  transition: all 0.4s ease;
+}
+
+.image-gallery img:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.12);
+}
+
+/* Text Card */
+.content-text {
+  max-width: 600px;
+  font-size: 19px;
+  line-height: 1.9;
+  color: #444;
+  padding: 45px 50px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+  transition: all 0.4s ease;
+}
+
+.content-text:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.08);
+}
+
+/* Accent for strong words */
+.content-text strong {
+  color: #9f6048;
+  font-weight: 600;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .main-content {
+    flex-direction: column;
+  }
+
+  .image-gallery {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .image-gallery img {
+    width: 45%;
+  }
+
+  .content-text {
+    max-width: 100%;
+    padding: 35px;
+  }
+}
+
+@media (max-width: 600px) {
+  .image-gallery img {
+    width: 100%;
+  }
+
+  #services .title {
+    font-size: 32px;
+  }
+}
