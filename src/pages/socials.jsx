@@ -76,7 +76,7 @@ export default function Home() {
       <CustomCursor />
       <Navbar />
       <Banner2 
-        image = "/assets/images/milky-way-full-stars-space.jpg"
+        image = "/assets/images/socials.svg"
         title = "Socials"
         subtitle= "Join our socials for our latest info"
     />
