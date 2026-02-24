@@ -10,7 +10,7 @@ export default function Navbar() {
 
   
 
-  
+  function click(){
     (function (a) {
       var b = {
         businessId: 'fa0706b5-be29-4bdb-92d2-2baec823e0fe',
@@ -27,7 +27,7 @@ export default function Navbar() {
  
       d.parentNode.insertBefore(c, d);
     })(document);
- 
+  }
 
 
 
@@ -73,7 +73,7 @@ export default function Navbar() {
             <li className="nav-item"><Link to="/Services" className="nav-link">Services</Link></li>
             <li className="nav-item"><Link to="/Reviews" className="nav-link">Reviews</Link></li>
             <li className="nav-item"><Link to="/Skincare" className="nav-link">Skincare</Link></li>
-            <li className="nav-item"><Link to="#book-now" className="nav-link cta">Book Now</Link></li>
+            <li className="nav-item" onClick={click}><Link to="#book-now" className="nav-link cta">Book Now</Link></li>
           {/* /Appointments */}
           </ul>
           
