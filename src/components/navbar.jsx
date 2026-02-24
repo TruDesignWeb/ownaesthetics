@@ -8,6 +8,28 @@ export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
 
+  
+
+  
+    (function (a) {
+      var b = {
+        businessId: 'fa0706b5-be29-4bdb-92d2-2baec823e0fe',
+      };
+ 
+      var c = a.createElement('script');
+      var d = a.querySelector('script');
+ 
+      c.src = 'https://static.joinboulevard.com/injector.min.js';
+      c.async = true;
+      c.onload = function () {
+        blvd.init(b);
+      };
+ 
+      d.parentNode.insertBefore(c, d);
+    })(document);
+ 
+
+
 
   useEffect(() => {
     const handleScroll = () => {
@@ -50,8 +72,9 @@ export default function Navbar() {
             <li className="nav-item"><Link to="/About" className="nav-link">About</Link></li>
             <li className="nav-item"><Link to="/Services" className="nav-link">Services</Link></li>
             <li className="nav-item"><Link to="/Reviews" className="nav-link">Reviews</Link></li>
-            <li className="nav-item"><Link to="/Partners" className="nav-link">Skincare</Link></li>
-            <li className="nav-item"><Link to="/Appointments" className="nav-link cta">Book Now</Link></li>
+            <li className="nav-item"><Link to="/Skincare" className="nav-link">Skincare</Link></li>
+            <li className="nav-item"><Link to="#book-now" className="nav-link cta">Book Now</Link></li>
+          {/* /Appointments */}
           </ul>
           
         </div>

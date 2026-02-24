@@ -13,7 +13,7 @@ import ProtectedRoute from './components/protectedroute';
 import GuestRoute from './components/guestroute';
 import Register from './components/register';
 import { useState } from 'react';
-import Partners from './pages/collabpartners';
+import Skincare from './pages/collabpartners';
 import Reviews from './pages/reviews.jsx';
 import Membership from './pages/membership';
 import Appointments from './pages/appointments';
@@ -62,7 +62,7 @@ export default function App() {
         <Route path="/about" element={<About />} />
         <Route path="/services" element={<Services />} />
 
-        <Route path="/partners" element={<Partners />} />
+        <Route path="/skincare" element={<Skincare />} />
         <Route path="/reviews" element={<Reviews />} />
         <Route path="/appointments" element={<Appointments />} />
 
