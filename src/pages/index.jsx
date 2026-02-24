@@ -99,33 +99,34 @@ export default function Home() {
       <Banner />
 
 
-
-      <div className="content-wrapper">
+    <div style={{ height: "100vh" }} />
+    <div className="content-wrapper">
         
-        <Features
-          title="Featured Services"
-          cards={featureCards}
-          variant="" // Optional: for different styles
-        />
-        
-        <ShowcaseSection 
-  eyebrow="Facial Treatments"
-  title="NEW Salt Facials"
-  text="Experience the ultimate skin rejuvenation with Salt Facials. This exfoliating treatment combines the power of sea salt,
-        skincare, and technology to detoxify, hydrate, and renew your skin, leaving you with a smooth, glowing, and refreshed complexion."
-  buttonLabel="Learn More"
-  imageSrc="/assets/images/images/istock-salt1.jpg"
-  imageAlt="MRI imaging suite"
-  backgroundColor={"#e8e0d1"}
-      />
+                <Features
+                  title="Featured Services"
+                  cards={featureCards}
+                  variant="" // Optional: for different styles
+                />
+                
+                <ShowcaseSection 
+          eyebrow="Facial Treatments"
+          title="NEW Salt Facials"
+          text="Experience the ultimate skin rejuvenation with Salt Facials. This exfoliating treatment combines the power of sea salt,
+                skincare, and technology to detoxify, hydrate, and renew your skin, leaving you with a smooth, glowing, and refreshed complexion."
+          buttonLabel="Learn More"
+          imageSrc="/assets/images/images/istock-salt1.jpg"
+          imageAlt="MRI imaging suite"
+          backgroundColor={"#e8e0d1"}
+              />
 
-<TestimonialShowcase
-  testimonials={testimonials}
-  initialCount={2}
-  buttonLabel="View More Testimonials"
-  />
+        <TestimonialShowcase
+          testimonials={testimonials}
+          initialCount={2}
+          buttonLabel="View More Testimonials"
+          />
 
-        <SocialMedia />
+                <SocialMedia />
+        </div>
         {/* <Journey
             title="Start Your Path to Wellness"
             subtitle="Personalized healthcare solutions designed to help you thrive."
@@ -246,7 +247,7 @@ export default function Home() {
           pauseOnHover={true}
         />       */}
         
-      </div>
+      
 
       <Footer />
     </>
