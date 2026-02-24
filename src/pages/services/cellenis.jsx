@@ -23,7 +23,7 @@ export default function Cellenis() {
 
             <section id = "services">
                 <div class = "container">
-                    {/* <h1 class = "title servces-animated">Cellenis® Derma PRP</h1> */}
+                    <h1 class = "title servces-animated">Cellenis® Derma PRP</h1>
                     <div class = "row">
                         <div class = "col-md-auto services-text service-boxes animated">
                             <p>Cellenis® Derma PRP is a skin rejuvenation treatment that uses Platelet-Rich Plasma (PRP)

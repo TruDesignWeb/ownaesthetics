@@ -23,7 +23,7 @@ export default function AntiWrinkle() {
 
             <section id = "services">
                 <div class = "container">
-                    {/* <h1 class = "title servces-animated">Anti-Wrinkle Injections</h1> */}
+                    <h1 class = "title servces-animated">Anti-Wrinkle Injections</h1>
                     <div class = "row">
                         <div class = "col-md-auto services-text service-boxes animated">
                             <p>BOTOX ® Cosmetic, Dysport, and other neurotoxins are prescription medicines that are injected

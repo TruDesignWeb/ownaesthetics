@@ -23,7 +23,7 @@ export default function Consultation() {
 
             <div id = "services">
                 <div class = "container">
-                    {/* <h1 class = "title servces-animated">LifeViz® Infinity Pro Consultation</h1> */}
+                    <h1 class = "title servces-animated">LifeViz® Infinity Pro Consultation</h1>
                     <div class = "row">
                         <div class = "col-md-auto services-text service-boxes animated">
                             <p>Our philosophy is that every person is unique, valuable, and beautiful in their own skin, in their

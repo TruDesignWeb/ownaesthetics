@@ -23,7 +23,7 @@ export default function Chemicalpeels() {
 
             <section id = "services">
                 <div class = "container">
-                    {/* <h1 class = "title servces-animated">Chemical Peels</h1> */}
+                    <h1 class = "title servces-animated">Chemical Peels</h1>
                     <div class = "row">
                         <div class = "col-md-auto services-text service-boxes animated">
                             <p>We get it, ‘acid’, ‘peel’, and ‘chemical’ can sound a bit scary. Did you know that there is a
