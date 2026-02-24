@@ -1,14 +1,14 @@
 /* =========================
-   SERVICES SECTION
+   SKIN TYPE SOLUTIONS SECTION
 ========================= */
 
-#services {
+#skintypesolutions-services {
   background: #f8f9fa;
   padding: 80px 0 100px 0;
 }
 
-/* Section Title */
-#services .title {
+/* Title */
+.skintypesolutions-title {
   font-size: 42px;
   font-weight: 600;
   text-align: center;
@@ -17,51 +17,84 @@
   letter-spacing: 0.5px;
 }
 
-#services .row {
-  display: flex;
-  justify-content: center;
+/* Layout */
+.skintypesolutions-main-content {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 60px;
+  align-items: start;
 }
 
+.skintypesolutions-content-wrapper {
+  padding: 0 20px;
+}
 
-/* Text Container */
-.services-text {
-    max-width: 900px;
+/* Image Gallery */
+.skintypesolutions-image-gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.skintypesolutions-image-gallery img {
   width: 100%;
-  font-size: 20px;
-  line-height: 1.9;
-  color: #444;
-  padding: 40px 50px;
-  background: white;
-  border-radius: 12px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+  border-radius: 20px;
+  object-fit: cover;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.1);
   transition: all 0.4s ease;
 }
 
-/* Subtle hover polish */
-.services-text:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.08);
+.skintypesolutions-image-gallery img:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 25px 50px rgba(0,0,0,0.15);
 }
 
-/* Session highlight */
-.services-text p strong,
-.services-text p:last-child {
-  font-weight: 600;
-  color: #9f6048;
+.skintypesolutions-first-img {
+  grid-column: 1 / -1;
 }
 
-/* Optional scroll animation */
-@keyframes fadeUp {
-  from {
-    opacity: 0;
-    transform: translateY(40px);
+/* Content */
+.skintypesolutions-content-text {
+  background: white;
+  padding: 45px;
+  border-radius: 20px;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.08);
+  font-size: 18px;
+  line-height: 1.8;
+  color: #444;
+}
+
+/* Highlight */
+.skintypesolutions-highlight-section {
+  background: linear-gradient(135deg, #9f6048, #bd725b);
+  color: white;
+  padding: 25px;
+  border-radius: 15px;
+  margin: 25px 0;
+}
+
+/* Animation */
+@keyframes skintypesolutions-fadeUp {
+  from { opacity: 0; transform: translateY(40px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.skintypesolutions-animated {
+  animation: skintypesolutions-fadeUp 0.8s ease forwards;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .skintypesolutions-main-content {
+    grid-template-columns: 1fr;
+    gap: 40px;
   }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
 
-.servces-animated {
-  animation: fadeUp 0.8s ease forwards;
+  .skintypesolutions-title {
+    font-size: 32px;
+  }
+
+  .skintypesolutions-content-text {
+    padding: 30px;
+  }
 }
