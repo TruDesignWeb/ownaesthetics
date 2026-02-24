@@ -1,258 +1,49 @@
-// File: src/pages/Home.jsx
-import React from 'react';
-import Navbar from '../components/navbar';
-import Banner from '../components/banner';
-import Features from '../components/features';
-import Stats from '../components/stats';
-import Programs from '../components/programs';
-import Membership from '../components/membership-component';
-import Outcomes from '../components/outcomes';
-import Journey from '../components/journey';
-import Footer from '../components/footer';
-import CustomCursor from '../components/customcursor';
-import useRevealOnScroll from '../hooks/useRevealOnScroll';
-import '../styles/animations.css';
-import InfiniteScroll from '../components/infinitescroll';
-import TiltedCard from '../components/tiltedcard';
-import FluidGlass from '../components/fluidglass';
-import Banner2 from '../components/banner2';
-import Banner3 from '../components/banner3';
+import React from "react";
+import Navbar from "../components/navbar";
+import Footer from "../components/footer";
+import ShowcaseSection from "../components/showcasesection";
+import Banner3 from "../components/banner3";
+import CustomCursor from "../components/customcursor";
 
+export default function ServiceHub() {
+  return (
+    <>
+      <CustomCursor />
+      <Navbar />
 
+      <Banner3
+        image="/assets/images/images/nic-y-c-It0vaZdSDDw-unsplash.jpg"
+        title="Explore Our Advanced Treatments"
+        subtitle="Personalized solutions designed for your unique goals"
+      />
 
-const featureCards = [
-    {
-      imageSrc: 'https://i.scdn.co/image/ab67616d0000b273d9985092cd88bffd97653b58',
-      altText: 'Comprehensive Whole Body Assessment',
-      captionText: 'Whole Body Assessment',
-      containerHeight: '350px',
-      containerWidth: '300px',
-      imageHeight: '350px',
-      imageWidth: '300px',
-      rotateAmplitude: 12,
-      scaleOnHover: 1.1,
-      showMobileWarning: false,
-      showTooltip: true,
-      displayOverlayContent: true,
-      overlayContent: <p className="tilted-card-demo-text">Whole Body Assessment</p>,
-      backgroundColor: 'rgba(0,0,0,0)',
-    },{
-      imageSrc: 'https://i.scdn.co/image/ab67616d0000b273d9985092cd88bffd97653b58',
-      altText: 'Treatments, Therapies, and Interventions',
-      captionText: 'Treatments, Therapies, Interventions',
-      containerHeight: '350px',
-      containerWidth: '300px',
-      imageHeight: '350px',
-      imageWidth: '300px',
-      rotateAmplitude: 12,
-      scaleOnHover: 1.1,
-      showMobileWarning: false,
-      showTooltip: true,
-      displayOverlayContent: true,
-      overlayContent: <p className="tilted-card-demo-text">Treatments, Therapies, Interventions</p>,
-      backgroundColor: 'rgba(0,0,0,0)',
-      },
-    {
-      imageSrc: 'https://i.scdn.co/image/ab67616d0000b273d9985092cd88bffd97653b58',
-      altText: 'Imaging and Diagnostics',
-      captionText: 'Imaging and Diagnostics',
-      containerHeight: '350px',
-      containerWidth: '300px',
-      imageHeight: '350px',
-      imageWidth: '300px',
-      rotateAmplitude: 12,
-      scaleOnHover: 1.1,
-      showMobileWarning: false,
-      showTooltip: true,
-      displayOverlayContent: true,
-      overlayContent: <p className="tilted-card-demo-text">Imaging and Diagnostics</p>,
-      backgroundColor: 'rgba(0,0,0,0)',
+      {/* SECTION 1 */}
+      <ShowcaseSection
+        eyebrow="Skin Health"
+        title="Skin Type Solutions"
+        text="Discover your personalized skincare routine based on your unique Baumann Skin Type®. Take the quiz and unlock targeted treatments."
+        buttonLabel="Take the Quiz"
+        buttonLink="services/skintypes"
+        imageSrc="/assets/images/images/stsimg.webp"
+        reverse={false}
+        backgroundColor="#f8f9fa"
+      />
+
+      {/* SECTION 2 */}
+      <ShowcaseSection
+        eyebrow="Rejuvenation"
+        title="AlumierMD "
+        text="AlumierMD is a professionally dispensed skincare brand with a rapidly expanding global network of partner clinics. Our mission is to empower you to feel confident and powerful in your own skin. We achieve this by pushing the boundaries of skincare science and combining clinically proven ingredients with advanced technologies that deliver transformative results. Our goal is to connect you to our global community of trusted skincare professionals and unlock your skin's potential with a 360° approach to skin health."
+        buttonLabel="Learn More"
+        buttonLink="https://www.alumiermd.com?code=28FZHTV9"
+        imageSrc="assets\images\images\wetransfer_photos_2025-04-09_1731\PHOTOS\HP 1 AlumierMD Pigmentation.jpg"
+        reverse={true}
+        backgroundColor="#ffffff"
+      />
+
       
-      },
-    {
-    imageSrc: 'https://i.scdn.co/image/ab67616d0000b273d9985092cd88bffd97653b58',
-      altText: 'Collaborative Care Partners',
-      captionText: 'Collaborative Care Partners',
-      containerHeight: '350px',
-      containerWidth: '300px',
-      imageHeight: '350px',
-      imageWidth: '300px',
-      rotateAmplitude: 12,
-      scaleOnHover: 1.1,
-      showMobileWarning: false,
-      showTooltip: true,
-      displayOverlayContent: true,
-      overlayContent: <p className="tilted-card-demo-text">Collaborative Care Partners</p>,
-      backgroundColor: 'rgba(0,0,0,0)',
-    },
-        {
-      imageSrc: 'https://i.scdn.co/image/ab67616d0000b273d9985092cd88bffd97653b58',
-      altText: 'Comprehensive Whole Body Assessment',
-      captionText: 'Whole Body Assessment',
-      containerHeight: '350px',
-      containerWidth: '300px',
-      imageHeight: '350px',
-      imageWidth: '300px',
-      rotateAmplitude: 12,
-      scaleOnHover: 1.1,
-      showMobileWarning: false,
-      showTooltip: true,
-      displayOverlayContent: true,
-      overlayContent: <p className="tilted-card-demo-text">Whole Body Assessment</p>,
-      backgroundColor: 'rgba(0,0,0,0)',
-    },{
-      imageSrc: 'https://i.scdn.co/image/ab67616d0000b273d9985092cd88bffd97653b58',
-      altText: 'Treatments, Therapies, and Interventions',
-      captionText: 'Treatments, Therapies, Interventions',
-      containerHeight: '350px',
-      containerWidth: '300px',
-      imageHeight: '350px',
-      imageWidth: '300px',
-      rotateAmplitude: 12,
-      scaleOnHover: 1.1,
-      showMobileWarning: false,
-      showTooltip: true,
-      displayOverlayContent: true,
-      overlayContent: <p className="tilted-card-demo-text">Treatments, Therapies, Interventions</p>,
-      backgroundColor: 'rgba(0,0,0,0)',
-      },
-    {
-      imageSrc: 'https://i.scdn.co/image/ab67616d0000b273d9985092cd88bffd97653b58',
-      altText: 'Imaging and Diagnostics',
-      captionText: 'Imaging and Diagnostics',
-      containerHeight: '350px',
-      containerWidth: '300px',
-      imageHeight: '350px',
-      imageWidth: '300px',
-      rotateAmplitude: 12,
-      scaleOnHover: 1.1,
-      showMobileWarning: false,
-      showTooltip: true,
-      displayOverlayContent: true,
-      overlayContent: <p className="tilted-card-demo-text">Imaging and Diagnostics</p>,
-      backgroundColor: 'rgba(0,0,0,0)',
-      
-      },
-    {
-    imageSrc: 'https://i.scdn.co/image/ab67616d0000b273d9985092cd88bffd97653b58',
-      altText: 'Collaborative Care Partners',
-      captionText: 'Collaborative Care Partners',
-      containerHeight: '350px',
-      containerWidth: '300px',
-      imageHeight: '350px',
-      imageWidth: '300px',
-      rotateAmplitude: 12,
-      scaleOnHover: 1.1,
-      showMobileWarning: false,
-      showTooltip: true,
-      displayOverlayContent: true,
-      overlayContent: <p className="tilted-card-demo-text">Collaborative Care Partners</p>,
-      backgroundColor: 'rgba(0,0,0,0)',
-    }
-    
-    ];
 
-
-
-export default function Partners(){
-    useRevealOnScroll()
-    return(
-        <>
-        <CustomCursor />
-        
-        <Navbar />
-        {/* <Banner2 
-            image = "/assets/images/milky-way-full-stars-space.jpg"
-            title = "Partners"
-            subtitle= "Discover a new path to living with the fountain of youth"
-        /> */}
-        
-          <Banner3 image = "/assets/images/milky-way-full-stars-space.jpg"
-          title = "I LOVE JESUS"
-          subtitle = "EVEN THOUGH I FALL I WILL GET UP AND FOLLOW MY LORD" />
-
-
-{/* TEXT FIRST PIC SEC */}
-        <section className="philo-section" aria-labelledby="philo-title">
-        <div className="philo-wrap">
-            {/* Left: text */}
-            <div className="philo-copy">
-            <span className="philo-eyebrow">Philosophy</span>
-            <h2 id="philo-title" className="philo-title">
-                What Makes Us Special?
-            </h2>
-            <p className="philo-text">What makes us different is you. Each person unique, each person valuable and beautiful in their own skin, in their own way. This is skincare for everyone.</p>
-            </div>
-
-            {/* Right: image stack with sage frame */}
-            <div className="philo-media">
-            <div className="sage-frame" aria-hidden="true" />
-            <div
-                className="image-card"
-                // ref={imgRef}
-                // style={{ transform: `translateY(${y}px)` }}
-            >
-                <img src="/assets/images/images/christmas-staff.jpeg" alt="Spa reception with serene, warm tones" />
-            </div>
-            </div>
-        </div>
-    </section>
-
-
-        {/* PIC FIRST TEXT SEC */}
-    <section className="philo-section" aria-labelledby="philo-title">
-        <div className="philo-wrap">
-           {/* left: image stack with sage frame */}
-            <div className="philo-media">
-            <div className="sage-frame" aria-hidden="true" style={{transform: `translateX(10px)`}}/>
-            <div
-                className="image-card"
-                // ref={imgRef}
-                // style={{ transform: `translateY(${y}px)` }}
-            >
-                <img src="/assets/images/images/christmas-staff.jpeg" alt="Spa reception with serene, warm tones" />
-            </div>
-            </div>
-
-            {/* rihgt: text */}
-            <div className="philo-copy">
-            <span className="philo-eyebrow">Philosophy</span>
-            <h2 id="philo-title" className="philo-title">
-                What Makes Us Special?
-            </h2>
-            <p className="philo-text">What makes us different is you. Each person unique, each person valuable and beautiful in their own skin, in their own way. This is skincare for everyone.</p>
-            </div>
-
-           
-        </div>
-    </section>
-        {/* <Features
-            title="Services"
-            cards={featureCards}
-            variant="" // Optional: for different styles
-        /> */}
-
-         {/* <InfiniteScroll
-          items={[
-          { content: "Total Health" },
-          { content: <p>Total Health</p> },
-          { content: "Initiative" },
-          { content: <p>Initiative</p> }
-          ]}
-          isTilted={true}
-          tiltDirection='right'
-          autoplay={true}
-          autoplaySpeed={0.2}
-          autoplayDirection="down"
-          pauseOnHover={true}
-        />        */}
-         
-
-        {/* <Outcomes/> */}
-
-        <Footer />
-
-
-        </>
-    );
+      <Footer />
+    </>
+  );
 }
