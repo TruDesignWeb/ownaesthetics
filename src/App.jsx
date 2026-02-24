@@ -20,7 +20,7 @@ import Appointments from './pages/appointments';
 import Podcasts from './pages/podcasts';
 import Refer from './pages/referringpartners.jsx';
 
-// import AntiWrinkle from './pages/services/antiwrinkle';
+import AntiWrinkle from './pages/services/antiwrinkle';
 // import Aquafirme from './pages/services/aquafirme';
 // import NouvaDerm from './pages/services/nouvaderm';
 // import SaltFacial from './pages/services/saltfacial';
@@ -68,7 +68,7 @@ export default function App() {
 
 
 
-        {/* <Route path = "services/antiwrinkle" element={<AntiWrinkle />} /> */}
+        <Route path = "services/antiwrinkle" element={<AntiWrinkle />} />
         {/* <Route path = "services/aquafirme" element={<Aquafirme />} /> */}
         {/* <Route path = "services/nouvaderm" element={<NouvaDerm />} /> */}
         {/* <Route path = "services/saltfacial" element={<SaltFacial />} /> */}
