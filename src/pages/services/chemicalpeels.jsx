@@ -15,18 +15,20 @@ export default function Chemicalpeels() {
             <Navbar />
             
             <Banner3
-            image="/assets/images/images/nic-y-c-It0vaZdSDDw-unsplash.jpg"
-            
-            title = "Chemical Peels"
-            subtitle = "Reveal Your Radiance with Our Expert Chemical Peels"
+                image="/assets/images/images/nic-y-c-It0vaZdSDDw-unsplash.jpg"
+                title="Chemical Peels"
+                subtitle="Reveal Your Radiance with Our Expert Chemical Peels"
             />
 
-            <section id = "services">
-                <div class = "container">
-                    <h1 class = "title servces-animated">Chemical Peels</h1>
-                    <div class = "row">
-                        <div class = "col-md-auto services-text service-boxes animated">
-                            <p>We get it, ‘acid’, ‘peel’, and ‘chemical’ can sound a bit scary. Did you know that there is a
+            <section id="chemicalpeels-services">
+                <div className="chemicalpeels-container">
+                    <h1 className="chemicalpeels-title chemicalpeels-animated">
+                        Chemical Peels
+                    </h1>
+                    <div className="chemicalpeels-row">
+                        <div className="chemicalpeels-services-text chemicalpeels-service-boxes chemicalpeels-animated">
+                            <p>
+                                We get it, ‘acid’, ‘peel’, and ‘chemical’ can sound a bit scary. Did you know that there is a
                                 chemical peel for the most sensitive skin types? You can choose to have no downtime.<br/><br/>
                                 Chemical peels are a minimally invasive and affordable way to dramatically improve the
                                 appearance of skin. They help diminish the appearance of fine lines and wrinkles. They also
@@ -45,7 +47,6 @@ export default function Chemicalpeels() {
                 </div>
             </section>
 
-            
             <Footer />
         </>
     );

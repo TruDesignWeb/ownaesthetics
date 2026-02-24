@@ -1,14 +1,14 @@
 /* =========================
-   SERVICES SECTION
+   CHEMICAL PEELS SECTION
 ========================= */
 
-#services {
+#chemicalpeels-services {
   background: #f8f9fa;
   padding: 80px 0 100px 0;
 }
 
 /* Section Title */
-#services .title {
+#chemicalpeels-services .chemicalpeels-title {
   font-size: 42px;
   font-weight: 600;
   text-align: center;
@@ -17,15 +17,14 @@
   letter-spacing: 0.5px;
 }
 
-#services .row {
+#chemicalpeels-services .chemicalpeels-row {
   display: flex;
   justify-content: center;
 }
 
-
 /* Text Container */
-.services-text {
-    max-width: 900px;
+.chemicalpeels-services-text {
+  max-width: 900px;
   width: 100%;
   font-size: 20px;
   line-height: 1.9;
@@ -37,21 +36,21 @@
   transition: all 0.4s ease;
 }
 
-/* Subtle hover polish */
-.services-text:hover {
+/* Hover polish */
+.chemicalpeels-services-text:hover {
   transform: translateY(-4px);
   box-shadow: 0 18px 40px rgba(0, 0, 0, 0.08);
 }
 
-/* Session highlight */
-.services-text p strong,
-.services-text p:last-child {
+/* Highlight */
+.chemicalpeels-services-text p strong,
+.chemicalpeels-services-text p:last-child {
   font-weight: 600;
   color: #9f6048;
 }
 
-/* Optional scroll animation */
-@keyframes fadeUp {
+/* Animation */
+@keyframes chemicalpeels-fadeUp {
   from {
     opacity: 0;
     transform: translateY(40px);
@@ -62,6 +61,6 @@
   }
 }
 
-.servces-animated {
-  animation: fadeUp 0.8s ease forwards;
+.chemicalpeels-animated {
+  animation: chemicalpeels-fadeUp 0.8s ease forwards;
 }

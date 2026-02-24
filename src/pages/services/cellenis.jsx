@@ -15,18 +15,20 @@ export default function Cellenis() {
             <Navbar />
             
             <Banner3
-            image="/assets/images/images/nic-y-c-It0vaZdSDDw-unsplash.jpg"
-            
-            title = "Cellenis® Derma PRP/PRF"
-            subtitle = "Rejuvenate Your Skin with Cellenis® Derma PRP/PRF: A Natural Approach to Radiant, Youthful Skin"
+                image="/assets/images/images/nic-y-c-It0vaZdSDDw-unsplash.jpg"
+                title="Cellenis® Derma PRP/PRF"
+                subtitle="Rejuvenate Your Skin with Cellenis® Derma PRP/PRF: A Natural Approach to Radiant, Youthful Skin"
             />
 
-            <section id = "services">
-                <div class = "container">
-                    <h1 class = "title servces-animated">Cellenis® Derma PRP</h1>
-                    <div class = "row">
-                        <div class = "col-md-auto services-text service-boxes animated">
-                            <p>Cellenis® Derma PRP is a skin rejuvenation treatment that uses Platelet-Rich Plasma (PRP)
+            <section id="cellenis-services">
+                <div className="cellenis-container">
+                    <h1 className="cellenis-title cellenis-animated">
+                        Cellenis® Derma PRP
+                    </h1>
+                    <div className="cellenis-row">
+                        <div className="cellenis-services-text cellenis-service-boxes cellenis-animated">
+                            <p>
+                                Cellenis® Derma PRP is a skin rejuvenation treatment that uses Platelet-Rich Plasma (PRP)
                                 derived from the patient’s blood to stimulate collagen production and improve skin texture.
                                 The process begins with a small blood draw, which is then spun in a centrifuge to separate the
                                 PRP. The concentrated plasma contains abundant growth factors, which are injected into
@@ -44,7 +46,6 @@ export default function Cellenis() {
                 </div>
             </section>
 
-            
             <Footer />
         </>
     );
