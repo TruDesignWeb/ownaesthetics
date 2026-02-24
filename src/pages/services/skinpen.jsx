@@ -17,8 +17,8 @@ export default function Skinpen() {
             <Banner3
             image="/assets/images/images/nic-y-c-It0vaZdSDDw-unsplash.jpg"
             
-            title = "LifeViz® Infinity Pro Consultation"
-            subtitle = "Discover Your Unique Beauty with Our LifeViz® Infinity Pro Consultation"
+            title = "SkinPen® Microneedling"
+            subtitle = "Beautiful skin – naturally!"
             />
 
             <section id = "services">
