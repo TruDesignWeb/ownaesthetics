@@ -52,7 +52,11 @@ export default function Contact() {
   return (
     <>
     <Navbar />
-    <Banner2 />
+    <Banner2 
+      image = "/assets/images/milky-way-full-stars-space.jpg"
+      title = "Contact Us"
+      subtitle= "Get in touch with us today!"
+    />
     <CustomCursor />
 
     <section className="contact-page">
