@@ -290,15 +290,15 @@ export default function About(){
         
         <Navbar />
         <Banner2 
-            image = "/assets/images/milky-way-full-stars-space.jpg"
-            title = "Your Wellness starts here"
-            subtitle= "Discover a new path to living with the fountain of youth"
+            image = "/assets/images/images/sumner-mahaffey-7Y0NshQLohk-unsplash.jpg"
+            title = "Services"
+            subtitle= "Reveal your best self with our expert-led, medical-grade treatments designed to rejuvenate, restore, and enhance your natural beauty."
         />
         
 
 
         <Features
-            title="Services"
+            title=""
             cards={featureCards}
             variant="" // Optional: for different styles
         />
