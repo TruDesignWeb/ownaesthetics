@@ -15,19 +15,20 @@ export default function Facials() {
             <Navbar />
             
             <Banner3
-            image="/assets/images/images/nic-y-c-It0vaZdSDDw-unsplash.jpg"
-            
-            title = "Customized Facials"
-            subtitle = "Experience the Ultimate in Skincare with Our Customized Facials"
+                image="/assets/images/images/nic-y-c-It0vaZdSDDw-unsplash.jpg"
+                title="Customized Facials"
+                subtitle="Experience the Ultimate in Skincare with Our Customized Facials"
             />
 
-            
-            <section id = "services">
-                <div class = "container">
-                    <h1 class = "title servces-animated">Customized Facials</h1>
-                    <div class = "row">
-                        <div class = "col-md-auto services-text service-boxes animated">
-                            <p>A customized facial is a fantastic experience and a great place to start your skin health journey!
+            <section id="facials-services">
+                <div className="facials-container">
+                    <h1 className="facials-title facials-animated">
+                        Customized Facials
+                    </h1>
+                    <div className="facials-row">
+                        <div className="facials-services-text facials-service-boxes facials-animated">
+                            <p>
+                                A customized facial is a fantastic experience and a great place to start your skin health journey!
                                 Once considered a luxury, it is now a treatment that helps educate and experience medical-
                                 grade skincare chosen to target your specific concerns. It is all about you and your unique skin.
                                 A consultation before the facial helps us understand your goals and evaluate your skin type,
@@ -46,7 +47,6 @@ export default function Facials() {
                 </div>
             </section>
 
-            
             <Footer />
         </>
     );

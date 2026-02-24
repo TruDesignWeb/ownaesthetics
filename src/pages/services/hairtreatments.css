@@ -1,14 +1,14 @@
 /* =========================
-   SERVICES SECTION
+   HAIR TREATMENTS SECTION
 ========================= */
 
-#services {
+#hairtreatments-services {
   background: #f8f9fa;
   padding: 80px 0 100px 0;
 }
 
 /* Section Title */
-#services .title {
+#hairtreatments-services .hairtreatments-title {
   font-size: 42px;
   font-weight: 600;
   text-align: center;
@@ -17,15 +17,14 @@
   letter-spacing: 0.5px;
 }
 
-#services .row {
+#hairtreatments-services .hairtreatments-row {
   display: flex;
   justify-content: center;
 }
 
-
 /* Text Container */
-.services-text {
-    max-width: 900px;
+.hairtreatments-services-text {
+  max-width: 900px;
   width: 100%;
   font-size: 20px;
   line-height: 1.9;
@@ -37,21 +36,21 @@
   transition: all 0.4s ease;
 }
 
-/* Subtle hover polish */
-.services-text:hover {
+/* Hover polish */
+.hairtreatments-services-text:hover {
   transform: translateY(-4px);
   box-shadow: 0 18px 40px rgba(0, 0, 0, 0.08);
 }
 
-/* Session highlight */
-.services-text p strong,
-.services-text p:last-child {
+/* Highlight */
+.hairtreatments-services-text p strong,
+.hairtreatments-services-text p:last-child {
   font-weight: 600;
   color: #9f6048;
 }
 
-/* Optional scroll animation */
-@keyframes fadeUp {
+/* Animation */
+@keyframes hairtreatments-fadeUp {
   from {
     opacity: 0;
     transform: translateY(40px);
@@ -62,6 +61,6 @@
   }
 }
 
-.servces-animated {
-  animation: fadeUp 0.8s ease forwards;
+.hairtreatments-animated {
+  animation: hairtreatments-fadeUp 0.8s ease forwards;
 }
