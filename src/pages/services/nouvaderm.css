@@ -1,14 +1,14 @@
 /* =========================
-   SERVICES SECTION
+   NOUVADERM SECTION
 ========================= */
 
-#services {
+#nouvaderm-services {
   background: #f8f9fa;
   padding: 80px 0 100px 0;
 }
 
-/* Section Title */
-#services .title {
+/* Title */
+#nouvaderm-services .nouvaderm-title {
   font-size: 42px;
   font-weight: 600;
   text-align: center;
@@ -17,41 +17,61 @@
   letter-spacing: 0.5px;
 }
 
-#services .row {
+/* Main Layout */
+.nouvaderm-main-content {
   display: flex;
+  gap: 50px;
+  align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
+/* Image Gallery */
+.nouvaderm-image-gallery {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
 
-/* Text Container */
-.services-text {
-    max-width: 900px;
-  width: 100%;
-  font-size: 20px;
+.nouvaderm-image-gallery img {
+  width: 320px;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  transition: all 0.4s ease;
+}
+
+.nouvaderm-image-gallery img:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.12);
+}
+
+/* Text Card */
+.nouvaderm-content-text {
+  max-width: 600px;
+  font-size: 19px;
   line-height: 1.9;
   color: #444;
-  padding: 40px 50px;
+  padding: 45px 50px;
   background: white;
   border-radius: 12px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
   transition: all 0.4s ease;
 }
 
-/* Subtle hover polish */
-.services-text:hover {
+.nouvaderm-content-text:hover {
   transform: translateY(-4px);
   box-shadow: 0 18px 40px rgba(0, 0, 0, 0.08);
 }
 
-/* Session highlight */
-.services-text p strong,
-.services-text p:last-child {
-  font-weight: 600;
+/* Accent */
+.nouvaderm-content-text strong {
   color: #9f6048;
+  font-weight: 600;
 }
 
-/* Optional scroll animation */
-@keyframes fadeUp {
+/* Animation */
+@keyframes nouvaderm-fadeUp {
   from {
     opacity: 0;
     transform: translateY(40px);
@@ -62,6 +82,38 @@
   }
 }
 
-.servces-animated {
-  animation: fadeUp 0.8s ease forwards;
+.nouvaderm-animated {
+  animation: nouvaderm-fadeUp 0.8s ease forwards;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .nouvaderm-main-content {
+    flex-direction: column;
+  }
+
+  .nouvaderm-image-gallery {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .nouvaderm-image-gallery img {
+    width: 45%;
+  }
+
+  .nouvaderm-content-text {
+    max-width: 100%;
+    padding: 35px;
+  }
+}
+
+@media (max-width: 600px) {
+  .nouvaderm-image-gallery img {
+    width: 100%;
+  }
+
+  #nouvaderm-services .nouvaderm-title {
+    font-size: 32px;
+  }
 }
