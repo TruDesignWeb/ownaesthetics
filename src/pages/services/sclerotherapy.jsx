@@ -5,10 +5,10 @@ import Footer from '../../components/footer';
 import Banner2 from '../../components/banner2';
 import Banner3 from '../../components/banner3';
 import CustomCursor from '../../components/customcursor';
-import './consultation.css';
+import './sclerotherapy.css';
 
 
-export default function Consultation() {
+export default function Sclerotherapy() {
     return (
         <>
             <CustomCursor />
