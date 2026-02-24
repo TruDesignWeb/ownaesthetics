@@ -50,8 +50,8 @@ export default function Navbar() {
       <div className="top-navbar">
         <div className="top-nav-content">
 
-          <ul><Link to="/Membership" className="top-nav-link">Membership</Link></ul>
-          <ul><Link to="/Podcasts" className="top-nav-link">Socials</Link></ul>
+          {/* <ul><Link to="/Membership" className="top-nav-link">Membership</Link></ul> */}
+          <ul><Link to="/Socials" className="top-nav-link">Socials</Link></ul>
           <ul><Link to="/Contact" className="top-nav-link">Contact Us</Link></ul>
           <ul><Link to="/Referring-Partners" className="top-nav-link">Referring Partners</Link></ul>
         </div>

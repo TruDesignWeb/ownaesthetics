@@ -17,7 +17,7 @@ import Skincare from './pages/collabpartners';
 import Reviews from './pages/reviews.jsx';
 import Membership from './pages/membership';
 import Appointments from './pages/appointments';
-import Podcasts from './pages/podcasts';
+import Socials from './pages/socials.jsx';
 import Refer from './pages/referringpartners.jsx';
 
 import AntiWrinkle from './pages/services/antiwrinkle';
@@ -53,7 +53,7 @@ export default function App() {
       <Navbar />
       <Routes>
         <Route path="/membership" element={<Membership />} />
-        <Route path="/podcasts" element={<Podcasts />} />
+        <Route path="/Socials" element={<Socials />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/referring-partners" element={<Refer />} />
 
