@@ -99,7 +99,7 @@ export default function Home() {
       <Banner />
 
 
-    <div className="content-wrapper">
+    <div className="content-wrapper" id="content">
         
                 <Features
                   title="Featured Services"
