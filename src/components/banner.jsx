@@ -11,7 +11,7 @@ export default function Banner() {
     <div className="banner">
       <div className="video-background">
         <video autoPlay muted loop>
-          <source src="https://drive.google.com/file/d/1xBSlMvXHPKb2Bp6u6_ucojDy5wzlYo7F/view?usp=FILE_ID" type="video/mp4" />
+          <source src="/assets/ownbannervideo.mp4" type="video/mp4" />
           
         </video>
         {/* https://vuphufywuazudv7y.public.blob.vercel-storage.com/ownbannervideo.mp4 */}
