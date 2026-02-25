@@ -107,6 +107,12 @@ const testimonials = [
     author: "Danielle",
     date: "Apr 28, 2020",
   },
+  {
+    text:
+      "Dr. Folkers is the best plastic surgeon and aesthetic expert in the country, in my opinion. I live in LA, very close to Beverly Hills. I bypassed all of Los Angeles and Beverly Hills to choose Dr. Folkers for my procedures. I left LA and flew to Des Moines because Dr. Folkers was in residence there. Not only is he board certified and Chief of Plastic Surgery at a respected medical institution but he has been performing skilled surgeries for 25 years and the results speak for themselves. If you are reading this, rest assured you are in good hands. Don’t lose a second of sleep. Dr. Folkers isn’t just an artist but a Doctor who cares. That combination is nearly impossible to find in today’s world. It should be added, I loved the Own Aesthetics team. I specifically worked with Janet Calhoun and Lexi Majors. I will be flying to Des Moines again soon to see the Own Aesthetics team I’ve grown to respect.",
+    author: "Dr. Dan",
+    date: "Feb 25, 2026",
+  },
 ];
     return(
         <>
