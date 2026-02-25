@@ -12,7 +12,8 @@ export default function Banner() {
       <div className="video-background">
         <video autoPlay muted loop>
           <source src="/assets/ownbannervideo.mp4" type="video/mp4" />
-          
+          {/* https://vuphufywuazudv7y.public.blob.vercel-storage.com/ownbannervideo.mp4 */}
+          {/*https://k5xcne8zxjnniehu.public.blob.vercel-storage.com/TotalHealthConstructionVideo.mp4*/}
         </video>
         {/* https://vuphufywuazudv7y.public.blob.vercel-storage.com/ownbannervideo.mp4 */}
           {/*https://k5xcne8zxjnniehu.public.blob.vercel-storage.com/TotalHealthConstructionVideo.mp4*/}
