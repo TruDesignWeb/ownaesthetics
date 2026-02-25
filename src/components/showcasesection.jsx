@@ -34,8 +34,8 @@ export default function ShowcaseSection({eyebrow,
           <h2>{title}</h2>
           <p>{text}</p>
           {buttonLabel && (
-            <Link to={`${buttonLink}`} className="feature-button-link">
-            <button className="feature-button">
+            <Link to={buttonLink} className="feature-button-link">
+            <button className="feature-button" onClick={() => console.log("clicked")}>
               {buttonLabel}
             </button>
             </Link>
