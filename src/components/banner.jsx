@@ -23,7 +23,7 @@ export default function Banner() {
       <div className="banner-content">
         {/* <h1>Welcome to Total Health</h1> */}
         <img className="banner-logo" src = "\assets\images\OWN Branding\OWN Final Logos\Print CMYK\Primary Logo\PNG\OWN_Primary Logo_CMYK_White_JustText.png" />
-        <p className = "banner-text">Experience cutting-edge treatments with all star doctors</p>
+        <p className = "banner-text">where artistry enhances authenticity™</p>
         {/* className="flex justify-center items-center h-screen bg-gray-200" */}
         <a href="#content"><div className="banner-btn" style={{ perspective: 1000 }}>
             <MagnetButton href = "#content" size="px-15 py-9 text-3xl" shape="rounded-xl">Explore Now</MagnetButton>
