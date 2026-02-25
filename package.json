@@ -5,7 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "git lfs pull && vite build",
+    "vercel-build": "git lfs pull && vite build",
+    "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview"
   },
