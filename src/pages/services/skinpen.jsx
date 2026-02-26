@@ -23,7 +23,7 @@ export default function Skinpen() {
             <section id="skinpen-services">
                 <div className="skinpen-container">
                     <h1 className="skinpen-title skinpen-animated">
-                        SkinPen® Microneedling
+                        {/* SkinPen® Microneedling */}
                     </h1>
                     <div className="skinpen-row">
                         <div className="skinpen-services-text skinpen-service-boxes skinpen-animated">

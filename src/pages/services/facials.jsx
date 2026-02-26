@@ -23,7 +23,7 @@ export default function Facials() {
             <section id="facials-services">
                 <div className="facials-container">
                     <h1 className="facials-title facials-animated">
-                        Customized Facials
+                        {/* Customized Facials */}
                     </h1>
                     <div className="facials-row">
                         <div className="facials-services-text facials-service-boxes facials-animated">

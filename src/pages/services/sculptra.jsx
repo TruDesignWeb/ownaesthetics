@@ -23,7 +23,7 @@ export default function Sculptra() {
             <section id="sculptra-services">
                 <div className="sculptra-container">
                     <h1 className="sculptra-title sculptra-animated">
-                        Sculptra
+                        {/* Sculptra */}
                     </h1>
                     <div className="sculptra-row">
                         <div className="sculptra-services-text sculptra-service-boxes sculptra-animated">

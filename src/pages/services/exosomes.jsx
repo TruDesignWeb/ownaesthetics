@@ -23,7 +23,7 @@ export default function Exosomes() {
             <section id="exosomes-services">
                 <div className="exosomes-content-wrapper">
                     <h1 className="exosomes-title exosomes-animated">
-                        EXO|E® Skin Revitalizing Complex
+                        {/* EXO|E® Skin Revitalizing Complex */}
                     </h1>
                     
                     <div className="exosomes-main-content">

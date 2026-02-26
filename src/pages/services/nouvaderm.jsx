@@ -23,7 +23,7 @@ export default function NouvaDerm() {
             <section id="nouvaderm-services">
                 <div className="nouvaderm-content-wrapper">
                     <h1 className="nouvaderm-title nouvaderm-animated">
-                        NOUVADerm™ Laser Treatment
+                        {/* NOUVADerm™ Laser Treatment */}
                     </h1>
 
                     <div className="nouvaderm-main-content">

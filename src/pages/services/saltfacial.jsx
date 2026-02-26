@@ -23,7 +23,7 @@ export default function SaltFacial() {
             <section id="saltfacial-services">
                 <div className="saltfacial-content-wrapper">
                     <h1 className="saltfacial-title saltfacial-services-animated">
-                        SaltFacial® Skin Renewal Therapy
+                        {/* SaltFacial® Skin Renewal Therapy */}
                     </h1>
                     
                     <div className="saltfacial-main-content">

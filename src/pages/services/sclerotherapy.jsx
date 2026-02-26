@@ -23,7 +23,7 @@ export default function Sclerotherapy() {
             <section id="sclerotherapy-services">
                 <div className="sclerotherapy-container">
                     <h1 className="sclerotherapy-title sclerotherapy-animated">
-                        Sclerotherapy – Spider Veins
+                        {/* Sclerotherapy – Spider Veins */}
                     </h1>
                     <div className="sclerotherapy-row">
                         <div className="sclerotherapy-services-text sclerotherapy-service-boxes sclerotherapy-animated">

@@ -23,7 +23,7 @@ export default function Juvederm() {
             <section id="juvederm-services">
                 <div className="juvederm-container">
                     <h1 className="juvederm-title juvederm-animated">
-                        Facial Contouring - Juvederm Collection of Injectable HA Dermal Fillers
+                        {/* Facial Contouring - Juvederm Collection of Injectable HA Dermal Fillers */}
                     </h1>
                     <div className="juvederm-row">
                         <div className="juvederm-services-text juvederm-service-boxes juvederm-animated">

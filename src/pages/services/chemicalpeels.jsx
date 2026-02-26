@@ -23,7 +23,7 @@ export default function Chemicalpeels() {
             <section id="chemicalpeels-services">
                 <div className="chemicalpeels-container">
                     <h1 className="chemicalpeels-title chemicalpeels-animated">
-                        Chemical Peels
+                        {/* Chemical Peels */}
                     </h1>
                     <div className="chemicalpeels-row">
                         <div className="chemicalpeels-services-text chemicalpeels-service-boxes chemicalpeels-animated">

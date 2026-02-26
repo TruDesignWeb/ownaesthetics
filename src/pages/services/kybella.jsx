@@ -23,7 +23,7 @@ export default function Kybella() {
             <section id="kybella-services">
                 <div className="kybella-container">
                     <h1 className="kybella-title kybella-animated">
-                        Kybella®
+                        {/* Kybella® */}
                     </h1>
                     <div className="kybella-row">
                         <div className="kybella-services-text kybella-service-boxes kybella-animated">

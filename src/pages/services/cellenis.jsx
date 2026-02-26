@@ -23,7 +23,7 @@ export default function Cellenis() {
             <section id="cellenis-services">
                 <div className="cellenis-container">
                     <h1 className="cellenis-title cellenis-animated">
-                        Cellenis® Derma PRP
+                        {/* Cellenis® Derma PRP */}
                     </h1>
                     <div className="cellenis-row">
                         <div className="cellenis-services-text cellenis-service-boxes cellenis-animated">

@@ -23,7 +23,7 @@ export default function HairTreatments() {
             <section id="hairtreatments-services">
                 <div className="hairtreatments-container">
                     <h1 className="hairtreatments-title hairtreatments-animated">
-                        Hair Wellness & Restoration
+                        {/* Hair Wellness & Restoration */}
                     </h1>
                     <div className="hairtreatments-row">
                         <div className="hairtreatments-services-text hairtreatments-service-boxes hairtreatments-animated">

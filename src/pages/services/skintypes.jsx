@@ -23,7 +23,7 @@ export default function Skinpen() {
             <section id="skintypesolutions-services">
                 <div className="skintypesolutions-content-wrapper">
                     <h1 className="skintypesolutions-title skintypesolutions-animated">
-                        About Skin Type Solutions
+                        {/* About Skin Type Solutions */}
                     </h1>
                     
                     <div className="skintypesolutions-main-content">

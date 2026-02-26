@@ -24,7 +24,7 @@ export default function AntiWrinkle() {
             <section id="antiwrinkle-services">
                 <div className="antiwrinkle-container">
                     <h1 className="antiwrinkle-title antiwrinkle-animated">
-                        Anti-Wrinkle Injections
+                        {/* Anti-Wrinkle Injections */}
                     </h1>
                     <div className="antiwrinkle-row">
                         <div className="antiwrinkle-services-text antiwrinkle-service-boxes antiwrinkle-animated">
