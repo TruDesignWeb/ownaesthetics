@@ -109,7 +109,7 @@ export default function Home() {
                 <ShowcaseSection 
                 reverse={true}
           eyebrow=""
-          buttonLink="services/saltfacials"
+          buttonLink="services/saltfacial"
           title="Our Vision"
           text="Own Aesthetics is a medical spa born from a desire to serve those who want to Own their Aesthetic. We desire to serve those who embrace life’s journey while enhancing that experience. With knowledgeable expertise, we offer the best and latest options for skin health, sorting trends from reliable solutions."
           buttonLabel="Learn More"
