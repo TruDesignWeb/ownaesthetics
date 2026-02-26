@@ -28,9 +28,9 @@ export default function Aquafirme() {
                     
                     <div className="aquafirme-main-content">
                         <div className="aquafirme-image-gallery">
-                            <img src="/assets/images/images/DERIVE 2023 Presentation copy-19 (dragged).JPG" alt="Salt Facial Before & After 1"/>
+                            {/* <img src="/assets/images/images/DERIVE 2023 Presentation copy-19 (dragged).JPG" alt="Salt Facial Before & After 1"/>
                             <img src="/assets/images/images/ABB4D0E0-2BF2-4275-A151-655022AC1C04.JPG" alt="Salt Facial Before & After 2"/>
-                            <img src="/assets/images/images/2136DDF0-9B26-4CAE-952F-DA37AE07590D.JPG" alt="Salt Facial Before & After 3"/>
+                            <img src="/assets/images/images/2136DDF0-9B26-4CAE-952F-DA37AE07590D.JPG" alt="Salt Facial Before & After 3"/> */}
                         </div>
                         
                         <div className="aquafirme-content-text aquafirme-animated">
