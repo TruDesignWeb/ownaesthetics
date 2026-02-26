@@ -23,7 +23,7 @@ export default function ServiceHub() {
         title="Skin Type Solutions"
         text="Discover your personalized skincare routine based on your unique Baumann Skin Type®. Take the quiz and unlock targeted treatments."
         buttonLabel="Take the Quiz"
-        buttonLink="services/skintypes"
+        buttonLink="https://skintypesolutions.com/pages/skin-type-quiz?code=OWNAESTHETICS"
         imageSrc="/assets/images/images/stsimg.webp"
         reverse={false}
         backgroundColor="#f8f9fa"
