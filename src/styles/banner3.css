@@ -1,6 +1,6 @@
 .banner3-container {
   position: relative;
-  min-height: 430px;
+  min-height: 500px;
   width: 100%;
   display: flex;
   align-items: flex-end;   /* 👈 push content to bottom */
@@ -50,7 +50,7 @@
 /* Responsive */
 @media (max-width: 900px) {
   .banner3-container {
-    min-height: 330px;
+    min-height: 360px;
     padding: 6% 6%;
   }
 
