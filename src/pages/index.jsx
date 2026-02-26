@@ -41,8 +41,8 @@ const featureCards = [
       link: '/services/saltfacial',
     },{
       imageSrc: '/assets/images/images/aquafirme4.jpg',
-      altText: 'AquaFiirmeXS',
-      captionText: 'AquaFiirmeXS',
+      altText: 'AquaFirmeXS',
+      captionText: 'AquaFirmeXS',
       containerHeight: '350px',
       containerWidth: '300px',
       imageHeight: '400px',
