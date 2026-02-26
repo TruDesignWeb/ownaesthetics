@@ -15,7 +15,7 @@ export default function AntiWrinkle() {
             <Navbar />
             
             <Banner3
-            image="/assets/images/images/nic-y-c-It0vaZdSDDw-unsplash.jpg"
+            image="/assets/images/images/sumner-mahaffey-7Y0NshQLohk-unsplash.jpg"
             
             title="Anti-Wrinkle Injections"
             subtitle="Smooth and Rejuvenate Your Skin with Our Expert Anti-Wrinkle Injections"

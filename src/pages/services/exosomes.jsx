@@ -15,7 +15,7 @@ export default function Exosomes() {
             <Navbar />
             
             <Banner3
-                image="/assets/images/images/nic-y-c-It0vaZdSDDw-unsplash.jpg"
+                image="/assets/images/images/sumner-mahaffey-7Y0NshQLohk-unsplash.jpg"
                 title="EXO|E® Skin Revitalizing Complex"
                 subtitle="Discover the Power of EXO|E®: A Revolutionary Skin Revitalizing Complex for Radiant, Youthful Skin"
             />

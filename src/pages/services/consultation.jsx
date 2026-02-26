@@ -15,7 +15,7 @@ export default function Consultation() {
             <Navbar />
             
             <Banner3
-                image="/assets/images/images/nic-y-c-It0vaZdSDDw-unsplash.jpg"
+                image="/assets/images/images/sumner-mahaffey-7Y0NshQLohk-unsplash.jpg"
                 title="LifeViz® Infinity Pro Consultation"
                 subtitle="Discover Your Unique Beauty with Our LifeViz® Infinity Pro Consultation"
             />

@@ -15,7 +15,7 @@ export default function Aquafirme() {
             <Navbar />
             
             <Banner3
-                image="/assets/images/images/nic-y-c-It0vaZdSDDw-unsplash.jpg"
+                image="/assets/images/images/sumner-mahaffey-7Y0NshQLohk-unsplash.jpg"
                 title="AquaFirmeXS"
                 subtitle="Experience the Ultimate Skin Rejuvenation with AquaFirmeXS: A Revolutionary Treatment for Radiant, Youthful Skin"
             />

@@ -15,7 +15,7 @@ export default function Cellenis() {
             <Navbar />
             
             <Banner3
-                image="/assets/images/images/nic-y-c-It0vaZdSDDw-unsplash.jpg"
+                image="/assets/images/images/sumner-mahaffey-7Y0NshQLohk-unsplash.jpg"
                 title="Cellenis® Derma PRP/PRF"
                 subtitle="Rejuvenate Your Skin with Cellenis® Derma PRP/PRF: A Natural Approach to Radiant, Youthful Skin"
             />
