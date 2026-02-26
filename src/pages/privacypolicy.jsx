@@ -79,6 +79,7 @@ export default function Home() {
         image = "/assets/images/milky-way-full-stars-space.jpg"
         title = "Podcasts"
         subtitle= "Join our podcasts for our latest info"
+        variant = ""
     />
 
 

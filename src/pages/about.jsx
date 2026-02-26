@@ -74,6 +74,7 @@ export default function About({
             image = "/assets/images/images/istock-brownplant.jpg"
             title = "About Us"
             subtitle= "We are committed to serving our community as a trusted resource, offering care from well-trained, highly educated practitioners — all under the guidance of Dr. Bryan Folkers, a reputable, board-certified Plastic and Reconstructive surgeon"
+            variant = " about"
         />
         
         {/* TEXT FIRST PIC SEC */}

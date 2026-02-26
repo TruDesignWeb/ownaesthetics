@@ -79,6 +79,7 @@ export default function Home() {
         image = "/assets/images/images/someimagestotry1/daniel-j-schwarz-UK-EzGvEZIk-unsplash.jpg"
         title = "Socials"
         subtitle= "Join our socials for our latest info"
+        variant = ""
     />
 
 

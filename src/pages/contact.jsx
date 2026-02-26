@@ -56,6 +56,7 @@ export default function Contact() {
       image = "/assets/images/contact.svg"
       title = "Contact Us"
       subtitle= "Get in touch with us today!"
+        variant = ""
     />
     <CustomCursor />
 

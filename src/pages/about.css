@@ -70,7 +70,7 @@
 .sage-frame {
   position: absolute;
   inset: 0;
-  background: #9fb0a6; /* muted sage */
+  background: #A0AD93; /* muted sage */
   border-radius: 8px;
   /* shift like the reference */
   transform: translate(6%, -6%);
@@ -109,7 +109,7 @@
 
 /** Highlight Section */
 .highlight-section {
-    background: #ad6c6c; /* light gray background */
+    background: #9B5B3E; /* light gray background */
     padding: clamp(2rem, 5vw, 4rem) 1.5rem;
     text-align: center;
 }

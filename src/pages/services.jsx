@@ -293,6 +293,7 @@ export default function About(){
             image = "/assets/images/images/sumner-mahaffey-7Y0NshQLohk-unsplash.jpg"
             title = "Services"
             subtitle= "Reveal your best self with our expert-led, medical-grade treatments designed to rejuvenate, restore, and enhance your natural beauty."
+            variant = ""
         />
         
 

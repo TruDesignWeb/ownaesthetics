@@ -123,6 +123,7 @@ const testimonials = [
             image = "/assets/images/images/istock-wheat2.jpg"
             title = "Reviews"
             subtitle= "Meet the team that makes your medical dreams possible"
+            variant = ""
         />
 
     

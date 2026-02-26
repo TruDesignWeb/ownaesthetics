@@ -78,6 +78,7 @@ export default function About({
             image = "/assets/images/milky-way-full-stars-space.jpg"
             title = "Membership"
             subtitle= "Meet the team that makes your medical dreams possible"
+            variant = ""
         />
         
         <section className="philo-section" aria-labelledby="philo-title">
