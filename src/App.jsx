@@ -36,6 +36,8 @@ import Sclerotherapy from './pages/services/sclerotherapy';
 import Sculptra from './pages/services/sculptra';
 import SkinPen from './pages/services/skinpen';
 import SkinTypes from './pages/services/skintypes';
+import Terms from './pages/termsofservice';
+import Privacy from './pages/privacypolicy';
 
 
 export default function App() {
@@ -88,6 +90,9 @@ export default function App() {
         <Route path = "services/skinpen" element={<SkinPen />} />
         <Route path = "services/skintypes" element={<SkinTypes />} />
 
+
+        <Route path = "/terms" element={<Terms />} />
+        <Route path = "/privacy" element={<Privacy />} />
 
 
 

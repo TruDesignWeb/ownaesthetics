@@ -5,6 +5,7 @@ import '../styles/footer.css';
 import ContactForm from '../components/contactform';
 import { useState } from 'react';
 import axios from 'axios';
+import { Link } from 'react-router-dom';
 
 export default function Footer() {
   return (
@@ -83,7 +84,9 @@ export default function Footer() {
 
       </div>
       <div className="footer-bottom">
-        <p>&copy; 2025 Own Aesthetics. Dedicated to exceptional medical care and patient wellness.</p>
+        <p>&copy; 2025 Own Aesthetics.</p>
+        <Link to="/terms" style={{ color: 'white', textDecoration: 'none', marginRight: '15px' }}>Terms of Service</Link>
+        <Link to="/privacy" style={{ color: 'white', textDecoration: 'none' }}>Privacy Policy</Link>
       </div>
     </footer>
   );
