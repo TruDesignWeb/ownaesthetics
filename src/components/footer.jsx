@@ -87,6 +87,8 @@ export default function Footer() {
         <p>&copy; 2025 Own Aesthetics.</p>
         <Link to="/terms" style={{ color: 'white', textDecoration: 'none', marginRight: '15px' }}>Terms of Service</Link>
         <Link to="/privacy" style={{ color: 'white', textDecoration: 'none' }}>Privacy Policy</Link>
+        <Link to="/cancellation" style={{ color: 'white', textDecoration: 'none', marginLeft: '15px' }}>Cancellation Policy</Link>
+
       </div>
     </footer>
   );

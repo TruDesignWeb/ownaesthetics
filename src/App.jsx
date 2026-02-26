@@ -38,6 +38,7 @@ import SkinPen from './pages/services/skinpen';
 import SkinTypes from './pages/services/skintypes';
 import Terms from './pages/termsofservice';
 import Privacy from './pages/privacypolicy';
+import CancellationPolicy from './pages/cancellationpolicy';
 
 
 export default function App() {
@@ -93,6 +94,7 @@ export default function App() {
 
         <Route path = "/terms" element={<Terms />} />
         <Route path = "/privacy" element={<Privacy />} />
+        <Route path = "/cancellation" element={<CancellationPolicy />} />
 
 
 

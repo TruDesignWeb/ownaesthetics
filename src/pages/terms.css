@@ -1,0 +1,105 @@
+.tos-container {
+  background: #f8f9fa;
+  padding: 80px 0 100px 0;
+}
+
+.tos-container h1 {
+  font-size: 42px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 40px;
+  color: #2d2d2d;
+  letter-spacing: 0.5px;
+}
+
+.tos-container h2 {
+  font-size: 22px;
+  font-weight: 600;
+  color: #2d2d2d;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.tos-container h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #2d2d2d;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.tos-container p,
+.tos-container li {
+  font-size: 16px;
+  line-height: 1.9;
+  color: #444;
+}
+
+.tos-container ul,
+.tos-container ol {
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.tos-container a {
+  color: #9f6048;
+  text-decoration: underline;
+}
+
+.tos-container a:hover {
+  color: #7a4535;
+}
+
+.tos-container p strong {
+  font-weight: 600;
+  color: #9f6048;
+}
+
+.tos-container-text {
+  max-width: 900px;
+  width: 100%;
+  padding: 40px 50px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+  transition: all 0.4s ease;
+  margin: 0 auto;
+}
+
+.tos-container-text:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.08);
+}
+
+@keyframes tos-fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.tos-animated {
+  animation: tos-fadeUp 0.8s ease forwards;
+}
+
+@media (max-width: 768px) {
+  .tos-container {
+    padding: 50px 0 70px 0;
+  }
+
+  .tos-container-text {
+    padding: 30px 24px;
+  }
+
+  .tos-container h1 {
+    font-size: 28px;
+  }
+
+  .tos-container h2 {
+    font-size: 18px;
+  }
+}
