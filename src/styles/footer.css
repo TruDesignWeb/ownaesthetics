@@ -1,7 +1,7 @@
 
 /* Footer section */
 .footer {
-    background: linear-gradient(135deg, #454142, #454142);
+    background-image: linear-gradient(to right, #133550, #8193A0);
     padding: 80px 50px 40px;
     text-align: center;
     position: relative;
@@ -85,4 +85,13 @@
     padding-top: 20px;
     opacity: 0.6;
     color: burlywood;
+}
+
+.dir-btn {
+    box-shadow: none;
+    border: none;
+    border-radius: 0;
+    margin: 10px;
+    background-image: linear-gradient(to right, #bd725b, #9f6048);
+    border-radius: 50px;
 }

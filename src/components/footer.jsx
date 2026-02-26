@@ -14,7 +14,8 @@ export default function Footer() {
           <img className = "logo-img" src = "\assets\images\OWN Branding\OWN Final Logos\Print CMYK\Logo Icon\PNG\OWN_Icon_CMYK_Black.png"/>
           
           <p>7601 Medical Plaza<br />Suite 115<br />West Des Moines, IA 50266</p>
-          <p>Phone: (515) 672-1860<br />Email: info@ownaesthetics.com</p>
+          <a href = "https://www.google.com/maps/place/Own+Aesthetics+PLC/@41.5868727,-94.9654378,9z/data=!4m10!1m2!2m1!1sown+aesthetics!3m6!1s0x87ec2183bd08ca1d:0x769a96c0fa498807!8m2!3d41.5868727!4d-93.8118733!15sCg5vd24gYWVzdGhldGljc5IBC21lZGljYWxfc3BhqgFLEAEqEiIOb3duIGFlc3RoZXRpY3MoADIfEAEiGxQYyzhi_LQcyRViqag_cSExnuB2n5YyK36nMDISEAIiDm93biBhZXN0aGV0aWNz4AEA!16s%2Fg%2F11mdb849vx?entry=ttu&g_ep=EgoyMDI1MDQyMy4wIKXMDSoASAFQAw%3D%3D"><button type = "button" class = "dir-btn">Directions</button></a>
+          <p><a href = "tel:5156721860" style = {{textDecoration: 'none', color: 'white'}}>(515)-672-1860</a><br /><a href = "mailto:info@ownaesthetics.com" style = {{textDecoration: 'none', color: 'white'}}>Email: info@ownaesthetics.com</a></p>
         </div>
         <div className="footer-section">
           <h3>Hours</h3>
@@ -79,17 +80,7 @@ export default function Footer() {
             </div>
 
         </div>
-        <div className="footer-section">
 
-          <h3>Other Information</h3>
-          
-          <p><a href="#">Emergency Medicine</a></p>
-          <p><a href="#">Advanced Diagnostics</a></p>
-          <p><a href="#">Cardiology Center</a></p>
-          <p><a href="#">Neurology Services</a></p>
-
-
-        </div>
       </div>
       <div className="footer-bottom">
         <p>&copy; 2025 Own Aesthetics. Dedicated to exceptional medical care and patient wellness.</p>
