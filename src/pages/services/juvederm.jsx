@@ -16,7 +16,7 @@ export default function Juvederm() {
             
             <Banner3
                 image="/assets/images/images/sumner-mahaffey-7Y0NshQLohk-unsplash.jpg"
-                title="Facial Contouring - Juvederm Collection of Injectable HA Dermal Fillers"
+                title="Juvederm Collection of Injectable HA Dermal Fillers"
                 subtitle="Enhance Your Natural Beauty with the Juvederm Collection of Injectable HA Dermal Fillers"
             />
 
