@@ -14,9 +14,9 @@ import Banner2 from '../components/banner2';
 
 const featureCards = [
     {
-      imageSrc: '/assets/images/facebook-home-image.png',
-      altText: 'Kendrick Lamar - GNX Album Cover',
-      captionText: 'Kendrick Lamar - GNX',
+      imageSrc: '/assets/images/own-fb-hom.png',
+      altText: 'Facebook',
+      captionText: 'Facebook',
       containerHeight: '350px',
       containerWidth: '300px',
       imageHeight: '350px',
@@ -26,12 +26,13 @@ const featureCards = [
       showMobileWarning: false,
       showTooltip: true,
       displayOverlayContent: true,
-      overlayContent: <p className="tilted-card-demo-text">Kendrick Lamar - GNX</p>,
+      overlayContent: <p className="tilted-card-demo-text">Facebook</p>,
       backgroundColor: 'rgba(0,0,0,0)',
+      link: 'https://www.facebook.com/p/Own-Aesthetics-61576022630962/'
     },{
-      imageSrc: '/assets/images/insta-home-image.png',
-      altText: 'Kendrick Lamar - GNX Album Cover',
-      captionText: 'Kendrick Lamar - GNX',
+      imageSrc: '/assets/images/own-insta-hom.png',
+      altText: 'Instagram',
+      captionText: 'Instagram',
       containerHeight: '350px',
       containerWidth: '300px',
       imageHeight: '350px',
@@ -41,8 +42,9 @@ const featureCards = [
       showMobileWarning: false,
       showTooltip: true,
       displayOverlayContent: true,
-      overlayContent: <p className="tilted-card-demo-text">Kendrick Lamar - GNX</p>,
+      overlayContent: <p className="tilted-card-demo-text">Instagram</p>,
       backgroundColor: 'rgba(0,0,0,0)',
+      link: 'https://www.instagram.com/ownaestheticsdsm/'
       }
     ];
 
