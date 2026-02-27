@@ -30,6 +30,9 @@
   z-index: 2;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  z-index: 2;
+  isolation: isolate;
 }
 
 .feature-wrapper:hover .feature-card {
@@ -65,17 +68,17 @@
   border: none;
   padding: 0.75rem 1.5rem;
   font-size: 0.95rem;
-  cursor: pointer;
+  cursor: none;
   transition: background 0.3s ease;
 }
 
 .feature-button:hover {
   background: #274c77;
 }
-.feature-image {
+.feature-button-link {
+  display: inline-block; /* ensures it wraps tightly around the button */
+  z-index: 3;
   position: relative;
-  z-index: 1;
-  pointer-events: none;
 }
 
 .feature-card {
@@ -85,6 +88,8 @@
 /* Image */
 .feature-image {
   position: relative;
+  z-index: 1;
+  pointer-events: none; /* keeps image from blocking button */
   margin-left: -120px;
   overflow: hidden;
   border-radius: 25px;
@@ -100,7 +105,7 @@
   height: auto;
   display: block;
   transition: transform 0.4s ease;
-  
+  pointer-events: none;
 }
 
 .feature-wrapper:hover .feature-image img {
