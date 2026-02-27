@@ -20,6 +20,7 @@ import Login from '../components/login';
 import ShowcaseSection from '../components/showcasesection';
 import TestimonialShowcase from '../components/testimonial-showcase';
 import SocialMedia from '../components/social-media';
+import { Helmet } from "react-helmet";
 
 
 const featureCards = [
@@ -94,6 +95,95 @@ export default function Home() {
     useRevealOnScroll();
   return (
     <>
+    <Helmet>
+        <title>Medspa in West Des Moines | Own Aesthetics</title>
+        <meta
+          name="description"
+          content="Own Aesthetics is a premier medical spa in West Des Moines, offering advanced skincare treatments and rejuvenation services to help you look and feel your best."
+        />
+        <meta name="keywords" content="own aesthetics, west des moines, iowa, medspa, skincare, botox, fillers, med spa, facial treatments, beauty services" />
+
+
+        <meta property="og:title" content="Med Spa in West Des Moines | Own Aesthetics" />
+        <meta
+          property="og:description"
+          content="Own Aesthetics is a premier medical spa in West Des Moines, offering advanced skincare treatments and rejuvenation services to help you look and feel your best."
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://ownaesthetics.com/" />
+        <meta property="og:image" content="https://ownaesthetics.com/images/OWN%20Branding/OWN%20Final%20Logos/Print%20CMYK/Logo%20Icon/PNG/OWN_Icon_CMYK_Black.png" />
+
+        <link rel="canonical" href="https://ownaesthetics.com/" />
+
+          <script type="application/ld+json">
+        {JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "MedicalBusiness",
+        "name": "Own Aesthetics",
+        "url": "https://ownaesthetics.com",
+        "logo": "https://ownaesthetics.com/assets/logo.png",
+        "image": "https://ownaesthetics.com/assets/clinic.jpg",
+        "description": "Own Aesthetics provides expert skincare, injectables, and med spa treatments to help you feel confident and beautiful.",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "7601 Office Plaza Dr. N Norwood 1, Suite 115",
+            "addressLocality": "West Des Moines",
+            "addressRegion": "IA",
+            "postalCode": "50266",
+            "addressCountry": "US"
+        },
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+1-515-672-1860",
+            "contactType": "Customer Service",
+            "email": "info@ownaesthetics.com"
+        },
+        "openingHoursSpecification": [
+        {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": "Monday",
+            "opens": "10:00",
+            "closes": "17:00"
+        },
+        {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": "Tuesday",
+            "opens": "10:00",
+            "closes": "17:00"
+        },
+        {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": "Wednesday",
+            "opens": "10:00",
+            "closes": "19:00"
+        },
+        {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": "Thursday",
+            "opens": "10:00",
+            "closes": "19:00"
+        },
+        {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": "Friday",
+            "opens": "10:00",
+            "closes": "17:00"
+        },
+        {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": "Saturday",
+            "opens": "00:00",
+            "closes": "23:59",
+            "description": "By appointment only"
+        }
+        ],
+        "sameAs": [
+            "https://www.instagram.com/ownaesthetics",
+            "https://www.facebook.com/ownaesthetics"
+        ]
+        })}
+      </script>
+      </Helmet>
       <CustomCursor />
       <Navbar />
       <Banner />
