@@ -225,6 +225,7 @@
   .main-navbar {
     position: relative;
     z-index: 5000;
+    padding: 0 0;
   }
 
     .nav-menu {

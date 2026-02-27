@@ -61,13 +61,13 @@ body {
 
 
 /* Mobile Responsive */
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
     .banner {
-        height: 100vh;         /* Keep full height on mobile */
+        height: 100vh;         
     }
     
     .content-wrapper {
-        margin-top: 100vh;     /* Maintain spacing on mobile */
+        margin-top: 100vh;     
     }
     
     .banner h1 {
@@ -136,7 +136,7 @@ body {
     .section-title {
         font-size: 2.5rem;
     }
-}
+} */
 
 /* Scroll animations */
 .reveal {
@@ -158,4 +158,152 @@ body {
 @keyframes heartbeat {
     0%, 100% { transform: scale(1); }
     50% { transform: scale(1.1); }
+}
+
+
+
+
+@media (max-width: 1024px) {
+
+  .feature-wrapper {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .feature-image {
+    margin: 0;
+  }
+
+  .feature-card {
+    max-width: 100%;
+  }
+
+  .nav-container {
+    padding: 0 1.5rem;
+  }
+
+}
+
+@media (max-width: 900px) {
+
+  /* ===== NAVBAR ===== */
+
+  .navbar-container {
+    z-index: 9999;
+  }
+
+  .main-navbar {
+    padding: 1rem 0;
+  }
+
+  .logo-img {
+    width: 120px;
+  }
+
+  .nav-link {
+    font-size: 1.1rem;
+  }
+
+  /* ===== SHOWCASE SECTION ===== */
+
+  .feature-wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .feature-card {
+    padding: 2rem;
+  }
+
+  .feature-card h2 {
+    font-size: 1.7rem;
+  }
+
+  .feature-card p {
+    font-size: 0.95rem;
+  }
+
+  /* ===== BANNER ===== */
+
+  .banner3-container {
+    min-height: 320px;
+    padding: 0 6% 40px 6%;
+    align-items: flex-end;
+  }
+
+  .banner3-heading {
+    font-size: 1.9rem;
+  }
+
+  .banner3-subheading {
+    font-size: 1rem;
+  }
+
+  /* ===== NEWSLETTER ===== */
+
+  .newsletter-container {
+    padding: 2rem 1rem;
+  }
+
+  .newsletter-form {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .newsletter-form input,
+  .newsletter-form button {
+    width: 100%;
+  }
+  /* Prevent horizontal scroll bugs */
+html, body {
+  overflow-x: hidden;
+}
+
+/* Make all images safe */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Standard container padding */
+section,
+.feature-section,
+.banner3-container,
+.newsletter-container {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+}
+
+@media (max-width: 600px) {
+
+  body {
+    font-size: 15px;
+  }
+
+  .feature-section {
+    padding: 3rem 0;
+  }
+
+  .feature-card {
+    padding: 1.5rem;
+  }
+
+  .feature-card h2 {
+    font-size: 1.5rem;
+  }
+
+  .banner3-container {
+    min-height: 260px;
+  }
+
+  .banner3-heading {
+    font-size: 1.6rem;
+  }
+
+  .banner3-subheading {
+    font-size: 0.95rem;
+  }
+
 }
