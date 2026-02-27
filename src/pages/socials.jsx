@@ -65,7 +65,7 @@ export default function Home() {
         <Features
           title="Follow Us!"
           cards={featureCards}
-          variant="socials" // Optional: for different styles
+        
         />
 
       
