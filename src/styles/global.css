@@ -206,5 +206,20 @@ body {
     font-size: 1.1rem;
   }
 
+  /* ===== Showcase ===== */
+
+  .feature-wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .feature-image {
+    margin: 0;
+  }
+
+  .feature-card {
+    max-width: 100%;
+  }
 
 }
+
+
