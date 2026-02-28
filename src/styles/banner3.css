@@ -67,7 +67,7 @@
 
 @media (max-width: 600px) {
   .banner3-container {
-    min-height: 300px;
-    padding: 0 5%;
+    min-height: 350px;
+    padding: 5% 5%;
   }
 }
