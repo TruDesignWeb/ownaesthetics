@@ -11,7 +11,7 @@ import '../styles/animations.css';
 import Banner2 from '../components/banner2';
 import SocialMedia from '../components/social-media';
 import { link } from 'framer-motion/client';
-import { Helmet } from 'react-helmet-async';
+import { Helmet } from 'react-helmet';
 
 
 

@@ -12,7 +12,7 @@ import './reviews.css';
 
 import { useEffect, useRef, useState } from "react";
 import TestimonialShowcase from '../components/testimonial-showcase';
-import { Helmet } from 'react-helmet-async';
+import { Helmet } from 'react-helmet';
 
 
 export default function Reviews({

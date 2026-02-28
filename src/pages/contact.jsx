@@ -10,7 +10,7 @@ import '../styles/animations.css';
 
 import "./contact.css";
 import Banner2 from '../components/banner2';
-import { Helmet } from 'react-helmet-async';
+import { Helmet } from 'react-helmet';
 import { useState } from "react";
 
 

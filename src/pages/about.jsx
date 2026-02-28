@@ -9,7 +9,7 @@ import '../styles/animations.css';
 
 import Banner2 from '../components/banner2';
 import './about.css';
-import { Helmet } from 'react-helmet-async';
+import { Helmet } from 'react-helmet';
 
 
 import { useEffect, useRef, useState } from "react";

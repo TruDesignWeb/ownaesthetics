@@ -8,7 +8,7 @@ import Footer from '../components/footer';
 import CustomCursor from '../components/customcursor';
 import useRevealOnScroll from '../hooks/useRevealOnScroll';
 import './socials.css';
-import { Helmet } from 'react-helmet-async';
+import { Helmet } from 'react-helmet';
 
 import Banner2 from '../components/banner2';
 

@@ -4,7 +4,7 @@ import Footer from "../components/footer";
 import ShowcaseSection from "../components/showcasesection";
 import Banner3 from "../components/banner3";
 import CustomCursor from "../components/customcursor";
-import { Helmet } from "react-helmet-async";
+import { Helmet } from "react-helmet";
 
 export default function ServiceHub() {
   return (
