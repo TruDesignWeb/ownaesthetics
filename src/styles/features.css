@@ -205,44 +205,59 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 
 
 /* ---------------- MOBILE RESPONSIVENESS ---------------- */
-@media (max-width: 900px) {
-  .features {
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .features- {
     padding: 3rem 1rem;
     min-height: auto;
   }
 
+  .features-container {
+    width: 100%;
+    padding: 0 1rem;
+  }
+
   .section-title {
-    font-size: 2.2rem;
+    font-size: 2rem;
     margin-bottom: 2rem;
   }
 
   .features-grid {
-    grid-template-columns: 1fr; /* stack cards */
-    gap: 1.5rem;
+    grid-template-columns: 1fr;
+    gap: 1rem;
     padding: 1rem 0;
-    padding-left: 6vw;
+    padding-left: 0;
   }
 
   .feature-card {
-    padding: 2rem 1.5rem;
+    padding: 1.5rem 1rem;
     border-radius: 20px;
   }
 
   .feature-icon {
-    font-size: 3rem;
+    font-size: 2.5rem;
     margin-bottom: 1rem;
   }
 
   .feature-card h3 {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
   }
 
   .feature-card p {
-    font-size: 1rem;
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+
+  .features-podcasts {
+    padding: 3rem 1rem;
+    min-height: auto;
+  }
+
+  .features-socials {
+    padding: 3rem 1rem;
   }
 }
-
-
 
 /*-----------------------Podcasts specific------------------------------*/
 
