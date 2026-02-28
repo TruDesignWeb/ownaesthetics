@@ -227,6 +227,10 @@
 
 
 @media (max-width: 900px) {
+  .th-logo {
+    height: 15px;
+    display: none;
+  }
   .main-navbar {
     position: relative;
     z-index: 5000;
