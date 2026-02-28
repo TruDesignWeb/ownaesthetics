@@ -14,13 +14,13 @@ export default function Footer() {
         <div className="footer-section-1">
           <img className = "logo-img" src = "\assets\images\OWN Branding\OWN Final Logos\Print CMYK\Logo Icon\PNG\OWN_Icon_CMYK_Black.png"/>
           
-          <p>7601 Medical Plaza<br />Suite 115<br />West Des Moines, IA 50266</p>
+          <p>7601 Office Plaza Dr. N<br />Norwood 1, Suite 115<br />West Des Moines, IA 50266</p>
           <a href = "https://www.google.com/maps/place/Own+Aesthetics+PLC/@41.5868727,-94.9654378,9z/data=!4m10!1m2!2m1!1sown+aesthetics!3m6!1s0x87ec2183bd08ca1d:0x769a96c0fa498807!8m2!3d41.5868727!4d-93.8118733!15sCg5vd24gYWVzdGhldGljc5IBC21lZGljYWxfc3BhqgFLEAEqEiIOb3duIGFlc3RoZXRpY3MoADIfEAEiGxQYyzhi_LQcyRViqag_cSExnuB2n5YyK36nMDISEAIiDm93biBhZXN0aGV0aWNz4AEA!16s%2Fg%2F11mdb849vx?entry=ttu&g_ep=EgoyMDI1MDQyMy4wIKXMDSoASAFQAw%3D%3D"><button type = "button" className = "dir-btn">Directions</button></a>
           <p><a href = "tel:5156721860" style = {{textDecoration: 'none', color: 'white'}}>(515)-672-1860</a><br /><a href = "mailto:info@ownaesthetics.com" style = {{textDecoration: 'none', color: 'white'}}>Email: info@ownaesthetics.com</a></p>
         </div>
         <div className="footer-section">
           <h3>Hours</h3>
-          <p>Mon&nbsp;&nbsp;&nbsp;&nbsp;10:00am – 5:00pm</p>
+          <p>Mon&nbsp;&nbsp;&nbsp;&nbsp;By appt. only</p>
           <p>Tue&nbsp;&nbsp;&nbsp;&nbsp;10:00am – 5:00pm</p>
           <p>Wed&nbsp;&nbsp;&nbsp;&nbsp;10:00am – 7:00pm</p>
           <p>Thu&nbsp;&nbsp;&nbsp;&nbsp;10:00am – 5:00pm</p>
