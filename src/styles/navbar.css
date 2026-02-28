@@ -236,6 +236,9 @@
     z-index: 5000;
     padding: 0 0;
   }
+  .video-background {
+    pointer-events: none;
+  }
 
     .nav-menu {
     position: absolute;
