@@ -1,25 +1,17 @@
 // File: src/pages/Home.jsx
-import React from 'react';
+
 import Navbar from '../components/navbar';
-import Banner from '../components/banner';
-import Features from '../components/features';
-import Stats from '../components/stats';
-import Programs from '../components/programs';
-import Membership from '../components/membership-component';
-import Outcomes from '../components/outcomes';
-import Journey from '../components/journey';
+
 import Footer from '../components/footer';
 import CustomCursor from '../components/customcursor';
-import useRevealOnScroll from '../hooks/useRevealOnScroll';
+
 import '../styles/animations.css';
-import InfiniteScroll from '../components/infinitescroll';
-import TiltedCard from '../components/tiltedcard';
-import FluidGlass from '../components/fluidglass';
+
 
 import "./contact.css";
 import Banner2 from '../components/banner2';
-import { useState, useEffect } from "react";
-import axios from "axios";
+import { useState } from "react";
+
 
 
 
@@ -30,6 +22,9 @@ export default function Contact() {
     email: "",
     message: "",
   });
+  const [submitted, setSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false);
+const [error, setError] = useState(null);
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -38,16 +33,26 @@ export default function Contact() {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    // Send data to backend
-    const res = await fetch("http://localhost:5000/api/contact", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(formData),
-    });
+    // Send data to backend - if need database storage
+    //change if need: Custom database storage
 
-    const data = await res.json();
-    console.log("Server Response:", data);
-  };
+// HIPAA-compliant data handling
+
+// CRM integrations beyond email
+
+// Custom spam logic
+
+// Full backend control
+
+
+    // const res = await fetch("http://localhost:5000/api/contact", {
+    //   method: "POST",
+    //   headers: { "Content-Type": "application/json" },
+    //   body: JSON.stringify(formData),
+    // });
+
+};
+
 
   return (
     <>
@@ -68,9 +73,18 @@ export default function Contact() {
           <p>7601 Office Plaza Dr. N, Norwood 1, Suite 115<br />West Des Moines, IA 50266</p>
           <p>(515) 672-1860<br />info@ownaesthetics.com</p>
         </div>
-
+                  {submitted && (
+            <p className="success-message">
+              Thank you! We'll be in touch shortly.
+            </p>
+          )}
         {/* Right Contact Form */}
-        <form className="contact-form" onSubmit={handleSubmit}>
+        <form className="contact-form" action="https://api.web3forms.com/submit" method="POST">
+          <input
+              type="hidden"
+              name="access_key"
+              value="d2c03bfd-17bb-4683-b096-fc7df9822b38"
+            />
           <div className="form-row">
             <input
               type="text"
@@ -102,7 +116,9 @@ export default function Contact() {
             value={formData.message}
             onChange={handleChange}
           />
-          <button type="submit">Send</button>
+          <button type="submit" >
+            Send
+          </button>
         </form>
       </div>
     </section>
