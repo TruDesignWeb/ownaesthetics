@@ -1,23 +1,17 @@
 // File: src/pages/Home
 import React from 'react';
 import Navbar from '../components/navbar';
-import Banner from '../components/banner';
 import Features from '../components/features';
-import Stats from '../components/stats';
-import Programs from '../components/programs';
-import Membership from '../components/membership-component';
-import Outcomes from '../components/outcomes';
-import Journey from '../components/journey';
+
 import Footer from '../components/footer';
 import CustomCursor from '../components/customcursor';
 import useRevealOnScroll from '../hooks/useRevealOnScroll';
 import '../styles/animations.css';
-import InfiniteScroll from '../components/infinitescroll';
-import TiltedCard from '../components/tiltedcard';
-import FluidGlass from '../components/fluidglass';
+
 import Banner2 from '../components/banner2';
 import SocialMedia from '../components/social-media';
 import { link } from 'framer-motion/client';
+import { Helmet } from 'react-helmet-async';
 
 
 
@@ -286,6 +280,103 @@ export default function About(){
     useRevealOnScroll()
     return(
         <>
+                  <Helmet>
+            <title>Services | Own Aesthetics</title>
+            <meta
+              name="description"
+              content="Explore the full range of medical‑grade services at Own Aesthetics – from injectables to laser treatments, tailored to help you look and feel your best."
+            />
+            <meta
+              name="keywords"
+              content="med spa services, botox, fillers, laser, aquafirmexs, skincare treatments, own aesthetics"
+            />
+
+            <meta property="og:title" content="Own Aesthetics Services" />
+            <meta
+              property="og:description"
+              content="Discover our comprehensive menu of expert-led treatments designed to rejuvenate and enhance your natural beauty."
+            />
+            <meta property="og:type" content="website" />
+            <meta property="og:url" content="https://ownaesthetics.com/services" />
+            <meta
+              property="og:image"
+              content="https://ownaesthetics.com/assets/clinic.jpg"
+            />
+
+            <link rel="canonical" href="https://ownaesthetics.com/services" />
+
+            <script type="application/ld+json">
+              {JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "MedicalBusiness",
+                name: "Own Aesthetics",
+                url: "https://ownaesthetics.com",
+                logo: "https://ownaesthetics.com/assets/logo.png",
+                image: "https://ownaesthetics.com/assets/clinic.jpg",
+                description:
+                  "Own Aesthetics provides expert skincare, injectables and med spa treatments in West Des Moines.",
+                address: {
+                  "@type": "PostalAddress",
+                  streetAddress:
+                    "7601 Office Plaza Dr. N Norwood 1, Suite 115",
+                  addressLocality: "West Des Moines",
+                  addressRegion: "IA",
+                  postalCode: "50266",
+                  addressCountry: "US",
+                },
+                contactPoint: {
+                  "@type": "ContactPoint",
+                  telephone: "+1-515-672-1860",
+                  contactType: "Customer Service",
+                  email: "info@ownaesthetics.com",
+                },
+                openingHoursSpecification: [
+                  {
+                    "@type": "OpeningHoursSpecification",
+                    dayOfWeek: "Monday",
+                    opens: "00:00",
+                    closes: "23:59",
+                    description: "by appointment only",
+                  },
+                  {
+                    "@type": "OpeningHoursSpecification",
+                    dayOfWeek: "Tuesday",
+                    opens: "10:00",
+                    closes: "17:00",
+                  },
+                  {
+                    "@type": "OpeningHoursSpecification",
+                    dayOfWeek: "Wednesday",
+                    opens: "10:00",
+                    closes: "19:00",
+                  },
+                  {
+                    "@type": "OpeningHoursSpecification",
+                    dayOfWeek: "Thursday",
+                    opens: "10:00",
+                    closes: "19:00",
+                  },
+                  {
+                    "@type": "OpeningHoursSpecification",
+                    dayOfWeek: "Friday",
+                    opens: "10:00",
+                    closes: "17:00",
+                  },
+                  {
+                    "@type": "OpeningHoursSpecification",
+                    dayOfWeek: "Saturday",
+                    opens: "00:00",
+                    closes: "23:59",
+                    description: "By appointment only",
+                  },
+                ],
+                sameAs: [
+                  "https://www.instagram.com/ownaesthetics",
+                  "https://www.facebook.com/ownaesthetics",
+                ],
+              })}
+            </script>
+          </Helmet>
         <CustomCursor />
         
         <Navbar />

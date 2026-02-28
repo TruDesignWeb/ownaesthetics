@@ -20,7 +20,7 @@ import "./contact.css";
 import Banner2 from '../components/banner2';
 import { useState, useEffect } from "react";
 import axios from "axios";
-
+import { Helmet } from 'react-helmet-async';
 
 
 export default function Contact() {
@@ -51,6 +51,103 @@ export default function Contact() {
 
   return (
     <>
+          <Helmet>
+        <title>Contact | Own Aesthetics</title>
+        <meta
+          name="description"
+          content="Get in touch with Own Aesthetics. Reach us by phone, email or the contact form for appointments and questions about our med spa services in West Des Moines."
+        />
+        <meta
+          name="keywords"
+          content="contact own aesthetics, med spa contact, west des moines, skincare questions"
+        />
+
+        <meta property="og:title" content="Contact Own Aesthetics" />
+        <meta
+          property="og:description"
+          content="Have a question or ready to book? Contact Own Aesthetics today."
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://ownaesthetics.com/contact" />
+        <meta
+          property="og:image"
+          content="https://ownaesthetics.com/assets/clinic.jpg"
+        />
+
+        <link rel="canonical" href="https://ownaesthetics.com/contact" />
+
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "MedicalBusiness",
+            name: "Own Aesthetics",
+            url: "https://ownaesthetics.com",
+            logo: "https://ownaesthetics.com/assets/logo.png",
+            image: "https://ownaesthetics.com/assets/clinic.jpg",
+            description:
+              "Own Aesthetics provides expert skincare, injectables and med spa treatments in West Des Moines.",
+            address: {
+              "@type": "PostalAddress",
+              streetAddress:
+                "7601 Office Plaza Dr. N Norwood 1, Suite 115",
+              addressLocality: "West Des Moines",
+              addressRegion: "IA",
+              postalCode: "50266",
+              addressCountry: "US",
+            },
+            contactPoint: {
+              "@type": "ContactPoint",
+              telephone: "+1-515-672-1860",
+              contactType: "Customer Service",
+              email: "info@ownaesthetics.com",
+            },
+            openingHoursSpecification: [
+              {
+                "@type": "OpeningHoursSpecification",
+                dayOfWeek: "Monday",
+                opens: "00:00",
+                closes: "23:59",
+                description: "by appointment only",
+              },
+              {
+                "@type": "OpeningHoursSpecification",
+                dayOfWeek: "Tuesday",
+                opens: "10:00",
+                closes: "17:00",
+              },
+              {
+                "@type": "OpeningHoursSpecification",
+                dayOfWeek: "Wednesday",
+                opens: "10:00",
+                closes: "19:00",
+              },
+              {
+                "@type": "OpeningHoursSpecification",
+                dayOfWeek: "Thursday",
+                opens: "10:00",
+                closes: "19:00",
+              },
+              {
+                "@type": "OpeningHoursSpecification",
+                dayOfWeek: "Friday",
+                opens: "10:00",
+                closes: "17:00",
+              },
+              {
+                "@type": "OpeningHoursSpecification",
+                dayOfWeek: "Saturday",
+                opens: "00:00",
+                closes: "23:59",
+                description: "By appointment only",
+              },
+            ],
+            sameAs: [
+              "https://www.instagram.com/ownaesthetics",
+              "https://www.facebook.com/ownaesthetics",
+            ],
+          })}
+        </script>
+      </Helmet>
     <Navbar />
     <Banner2 
       image = "/assets/images/contact.svg"

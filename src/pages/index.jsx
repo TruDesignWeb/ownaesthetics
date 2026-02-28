@@ -142,8 +142,9 @@ export default function Home() {
         {
             "@type": "OpeningHoursSpecification",
             "dayOfWeek": "Monday",
-            "opens": "10:00",
-            "closes": "17:00"
+            "opens": "00:00",
+            "closes": "23:59",
+            "description": "by appointment only"
         },
         {
             "@type": "OpeningHoursSpecification",
