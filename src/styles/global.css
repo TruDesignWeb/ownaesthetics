@@ -176,49 +176,11 @@ body {
   }
 
 
-  .feature-card {
-    max-width: 100%;
-  }
-
   .nav-container {
     padding: 0 1.5rem;
   }
+  
 
-}
-
-@media (max-width: 900px) {
-
-  /* ===== NAVBAR ===== */
-
-  .navbar-container {
-    z-index: 9999;
-  }
-
-  .main-navbar {
-    padding: 1rem 0;
-  }
-
-  .logo-img {
-    width: 120px;
-  }
-
-  .nav-link {
-    font-size: 1.1rem;
-  }
-
-  /* ===== Showcase ===== */
-
-  .feature-wrapper {
-    grid-template-columns: 1fr;
-  }
-
-  .feature-image {
-    margin: 0;
-  }
-
-  .feature-card {
-    max-width: 100%;
-  }
 
 }
 
