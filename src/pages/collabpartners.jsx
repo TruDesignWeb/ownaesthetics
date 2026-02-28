@@ -4,10 +4,111 @@ import Footer from "../components/footer";
 import ShowcaseSection from "../components/showcasesection";
 import Banner3 from "../components/banner3";
 import CustomCursor from "../components/customcursor";
+import { Helmet } from "react-helmet-async";
 
 export default function ServiceHub() {
   return (
     <>
+          <Helmet>
+        <title>Skincare Treatments | Own Aesthetics</title>
+        <meta
+          name="description"
+          content="Explore advanced skincare treatments and personalised solutions at Own Aesthetics. From skin‑type quizzes to professional-grade products, discover what’s right for you."
+        />
+        <meta
+          name="keywords"
+          content="skincare treatments, alumiermd, skin type quiz, med spa, own aesthetics"
+        />
+
+        <meta property="og:title" content="Skincare Treatments at Own Aesthetics" />
+        <meta
+          property="og:description"
+          content="Learn about our customised skincare services and partner brands designed for your unique goals."
+        />
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:url"
+          content="https://ownaesthetics.com/skincare"
+        />
+        <meta
+          property="og:image"
+          content="https://ownaesthetics.com/assets/clinic.jpg"
+        />
+
+        <link rel="canonical" href="https://ownaesthetics.com/skincare" />
+
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "MedicalBusiness",
+            name: "Own Aesthetics",
+            url: "https://ownaesthetics.com",
+            logo: "https://ownaesthetics.com/assets/logo.png",
+            image: "https://ownaesthetics.com/assets/clinic.jpg",
+            description:
+              "Own Aesthetics provides expert skincare, injectables and med spa treatments in West Des Moines.",
+            address: {
+              "@type": "PostalAddress",
+              streetAddress:
+                "7601 Office Plaza Dr. N Norwood 1, Suite 115",
+              addressLocality: "West Des Moines",
+              addressRegion: "IA",
+              postalCode: "50266",
+              addressCountry: "US",
+            },
+            contactPoint: {
+              "@type": "ContactPoint",
+              telephone: "+1-515-672-1860",
+              contactType: "Customer Service",
+              email: "info@ownaesthetics.com",
+            },
+            openingHoursSpecification: [
+              {
+                "@type": "OpeningHoursSpecification",
+                dayOfWeek: "Monday",
+                opens: "00:00",
+                closes: "23:59",
+                description: "by appointment only",
+              },
+              {
+                "@type": "OpeningHoursSpecification",
+                dayOfWeek: "Tuesday",
+                opens: "10:00",
+                closes: "17:00",
+              },
+              {
+                "@type": "OpeningHoursSpecification",
+                dayOfWeek: "Wednesday",
+                opens: "10:00",
+                closes: "19:00",
+              },
+              {
+                "@type": "OpeningHoursSpecification",
+                dayOfWeek: "Thursday",
+                opens: "10:00",
+                closes: "19:00",
+              },
+              {
+                "@type": "OpeningHoursSpecification",
+                dayOfWeek: "Friday",
+                opens: "10:00",
+                closes: "17:00",
+              },
+              {
+                "@type": "OpeningHoursSpecification",
+                dayOfWeek: "Saturday",
+                opens: "00:00",
+                closes: "23:59",
+                description: "By appointment only",
+              },
+            ],
+            sameAs: [
+              "https://www.instagram.com/ownaesthetics",
+              "https://www.facebook.com/ownaesthetics",
+            ],
+          })}
+        </script>
+      </Helmet>
       <CustomCursor />
       <Navbar />
 
