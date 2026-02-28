@@ -64,9 +64,9 @@ export default function Contact() {
       <div className="contact-container">
         {/* Left Info Panel */}
         <div className="contact-info">
-          <h2>See how Total Health can help!</h2>
-          <p>7601 Office Plaza Dr. N Suite 115<br />West Des Moines, IA 50266</p>
-          <p>(515) 555-CARE<br />info@totalhealth.com</p>
+          <h2>See how Own Aesthetics can help!</h2>
+          <p>7601 Office Plaza Dr. N, Norwood 1, Suite 115<br />West Des Moines, IA 50266</p>
+          <p>(515) 672-1860<br />info@ownaesthetics.com</p>
         </div>
 
         {/* Right Contact Form */}
