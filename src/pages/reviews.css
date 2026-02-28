@@ -39,7 +39,7 @@
   font-weight: 600;
   color: #111;
   margin: 0 0 1.25rem 0;
-  font-family: ui-serif, Georgia, "Times New Roman", Times, serif;
+  /* font-family: ui-serif, Georgia, "Times New Roman", Times, serif; */
 }
 
 .philo-text {
