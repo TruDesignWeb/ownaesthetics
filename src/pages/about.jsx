@@ -86,7 +86,10 @@ export default function About({
             <h2 id="philo-title" className="philo-title">
                 What Makes Us Special?
             </h2>
-            <p className="philo-text">What makes us different is you. Each person unique, each person valuable and beautiful in their own skin, in their own way. This is skincare for everyone.</p>
+            <p className="philo-text">What makes us different is you. Each person unique, each person valuable and beautiful in their own skin, in their own way. This is skincare for everyone.
+            <br /><br />Own Aesthetics is closely connected to Total Health Initiative through a shared commitment to comprehensive wellness in Iowa. While Own Aesthetics focuses on advanced aesthetic and skincare treatments that enhance confidence and outward well-being, Total Health Initiative emphasizes holistic, patient-centered care—together reflecting a unified approach to supporting total health across physical, aesthetic, and preventative dimensions in the community.
+            <br /></p>
+            <a href = "https://www.totalhealthexperience.com/" target = "_blank" rel="noopener noreferrer"><button className="learn-more-btn">Learn More about Total Health Initiative</button></a>
             </div>
 
             {/* Right: image stack with sage frame */}

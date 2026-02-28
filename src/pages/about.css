@@ -99,6 +99,17 @@
   display: block;
 }
 
+.learn-more-btn {
+  margin-top: 1.5rem;
+  padding: 0.75rem 1.5rem;
+  background-color: #A0AD93; /* muted sage */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
 /* Nice spacing alignment for very wide screens */
 @media (min-width: 1280px) {
   .philo-section {

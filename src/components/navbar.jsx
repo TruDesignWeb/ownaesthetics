@@ -53,6 +53,7 @@ export default function Navbar() {
           {/* <ul><Link to="/Membership" className="top-nav-link">Membership</Link></ul> */}
           <ul><Link to="/Socials" className="top-nav-link">Socials</Link></ul>
           <ul><Link to="/Contact" className="top-nav-link">Contact Us</Link></ul>
+          <ul><Link to="/About" className="top-nav-link"><img className = "th-logo" src = "/assets/images/TotalHealthLogo_HorizontalWhite.png"/></Link></ul>
           {/* <ul><Link to="/Referring-Partners" className="top-nav-link">Referring Partners</Link></ul> */}
         </div>
       </div>
