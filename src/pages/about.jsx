@@ -177,13 +177,13 @@ export default function About({
             <h2 id="philo-title" className="philo-title">
                 What Makes Us Special?
             </h2>
-            <p className="philo-text">What makes us different is you. Each person unique, each person valuable and beautiful in their own skin, in their own way. This is skincare for everyone.
+            <p className="philo-text">What makes us different, is you. You are unique, valuable, and beautiful in your own way. We provide skin health for everyone.
             <br /><br /></p>
 
             <h2 id="philo-title" className="philo-title-2">
                 Total Health Experience
             </h2>
-            <p className = "philo-text">Own Aesthetics is directly connected to Total Health Experience in West Des Moines, Iowa, as it serves as the skin aesthetics division of the broader medical practice. While Total Health Experience focuses on comprehensive care such as hormone optimization, functional wellness, and concierge medicine, Own Aesthetics enhances that mission by providing advanced, medical-grade skin aesthetic treatments designed to support confidence and overall well-being. Together, they offer an integrated approach that combines internal health optimization with expert aesthetic care, supported by what many consider to be the best collection of doctors in the area, all working collaboratively to deliver a seamless and elevated patient experience.
+            <p className = "philo-text">Own Aesthetics is apart of Total Health Experience in West Des Moines, Iowa, as it serves as the skin aesthetics division of the broader medical practice. Total Health Experience provides comprehensive care such as hormone optimization, functional wellness, and concierge medicine, Own Aesthetics enhances that mission by providing advanced, medical-grade skin aesthetic treatments designed to support confidence and overall well-being. Together, they offer an integrated approach that combines internal health optimization with expert aesthetic care, supported by what many consider to be the best collection of doctors in the area, all working collaboratively to deliver a seamless and elevated patient experience.
             </p>
             <a href = "https://www.totalhealthexperience.com/" target = "_blank" rel="noopener noreferrer"><button className="learn-more-btn">Learn More about Total Health Initiative</button></a>
             </div>
