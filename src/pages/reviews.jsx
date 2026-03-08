@@ -66,46 +66,57 @@ export default function Reviews({
 
 const testimonials = [
   {
+    text:
+      "Dr. Folkers is the best plastic surgeon and aesthetic expert in the country, in my opinion. I live in LA, very close to Beverly Hills. I bypassed all of Los Angeles and Beverly Hills to choose Dr. Folkers for my procedures. I left LA and flew to Des Moines because Dr. Folkers was in residence there. Not only is he board certified and Chief of Plastic Surgery at a respected medical institution but he has been performing skilled surgeries for 25 years and the results speak for themselves. If you are reading this, rest assured you are in good hands. Don’t lose a second of sleep. Dr. Folkers isn’t just an artist but a Doctor who cares. That combination is nearly impossible to find in today’s world. It should be added, I loved the Own Aesthetics team. I specifically worked with Janet Calhoun and Lexi Majors. I will be flying to Des Moines again soon to see the Own Aesthetics team I’ve grown to respect.",
+    author: "Dr. Dan",
+    date: "",
+  },
+  {
+    text:"I had such a great experience with Beth Pohl at Own Aesthetics in West Des Moines. From start to finish, she was incredibly professional, caring, and attentive. I came in looking for a solution to help soften my expression lines, and Beth took the time to truly understand my goals. She explained the Botox treatment thoroughly, made me feel completely at ease, and delivered beautiful, natural-looking results. Since my appointment, I’ve received so many compliments on my skin—friends keep telling me how refreshed and radiant I look! I was so impressed with how smooth and natural everything turned out, without ever appearing overdone. Beth has a unique ability to combine medical expertise with a compassionate approach, which is rare to find in this industry. She genuinely cares about her patients and goes above and beyond to make sure you’re happy with your results. If you’re considering Botox or aesthetic treatments in West Des Moines, I highly recommend seeing Beth at Own Aesthetics. She’s absolutely wonderful to work with, and I couldn’t be more pleased with my experience and results.",
+    author:"Toni",
+    date: "",
+  },
+  {
+    text:"Absolutely love my results! Beth and the rest of the staff is so knowledgeable and makes the whole experience comfortable and easy. My Botox looks natural, and my skin has never looked better after the laser treatment! Would recommend 110%",
+    author:"Staci",
+    date: "",
+  },
+  {
     text: "Dr. Folkers work exceeded my expectations and I couldn't be happier with the outcome. He is remarkably talented and meticulous about his work. He made me feel very comfortable, was personable, and took his time to answer all of my questions. His nurse, Heidi, and staff were also knowledgeable and compassionate which made for a very positive experience. I will certainly recommend Dr. Folkers to all of my family and friends for their plastic surgery needs.",
     author: "Amber",
-    date: "Sep 16, 2025",
+    date: "",
   },
   {
     text:
       "If you really want to know about a surgeon, ask an OR nurse. I am an RN and have worked in the OR for 25+ years. I've worked with countless surgeons and, when it came time for me to need the services of one for reconstructive and plastic surgery, I chose Dr. Folkers. He is friendly, compassionate, took all the time necessary to explain procedures and answer all my questions, and did an excellent job on my surgery. I am confident I made the right choice and would recommend him to anyone.",
     author: "Anonymous",
-    date: "Jul 22, 2017",
+    date: "",
   },
   {
     text:
       "I can't say enough good things about my experience with Dr Folkers, his staff, and the team at Broadlawns Hospital! The care I was given before and after my surgery was amazing. They all took the time to listen to me and provide the information and comfort I needed to get me through it. GREAT, GREAT group of people! I highly recommend!",
     author: "Marianne",
-    date: "Jan 20, 2025",
+    date: "",
   },
   {
     text:
       "I had 3 procedures done this year, I was very happy with all my results! I'm so glad I did this! The nursing staff was great, friendly, and attentive. Dr Folkers was very down to earth, kind, understanding, and did an excellent job! I would highly recommend him and his team they all are wonderful, such a great experience!",
     author: "Julie",
-    date: "Oct 28, 2024",
+    date: "",
   },
   {
     text:
       "GREAT, GREAT group of people!",
     author: "Marianne N.",
-    date: "Jun 2, 2021",
+    date: "",
   },
   {
     text:
       "Dr. Folkers did a wonderful job with my surgery. Him and his staff were able to answer all of my questions, quick to get me in for an appointment if I had any concerns, and very friendly. I'm very happy with both the results of my surgery and my experience!",
     author: "Danielle",
-    date: "Apr 28, 2020",
+    date: "",
   },
-  {
-    text:
-      "Dr. Folkers is the best plastic surgeon and aesthetic expert in the country, in my opinion. I live in LA, very close to Beverly Hills. I bypassed all of Los Angeles and Beverly Hills to choose Dr. Folkers for my procedures. I left LA and flew to Des Moines because Dr. Folkers was in residence there. Not only is he board certified and Chief of Plastic Surgery at a respected medical institution but he has been performing skilled surgeries for 25 years and the results speak for themselves. If you are reading this, rest assured you are in good hands. Don’t lose a second of sleep. Dr. Folkers isn’t just an artist but a Doctor who cares. That combination is nearly impossible to find in today’s world. It should be added, I loved the Own Aesthetics team. I specifically worked with Janet Calhoun and Lexi Majors. I will be flying to Des Moines again soon to see the Own Aesthetics team I’ve grown to respect.",
-    author: "Dr. Dan",
-    date: "Feb 25, 2026",
-  },
+  
 ];
     return(
         <>
