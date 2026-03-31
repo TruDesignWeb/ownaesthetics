@@ -41,6 +41,26 @@
   transform: translateY(-4px);
   box-shadow: 0 18px 40px rgba(0, 0, 0, 0.08);
 }
+/* Image Gallery */
+.kybella-image-gallery {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+}
+
+.kybella-image-gallery img {
+  width: 320px;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  transition: all 0.4s ease;
+}
+
+.kybella-image-gallery img:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.12);
+}
 
 /* Highlight */
 .kybella-services-text p strong,
