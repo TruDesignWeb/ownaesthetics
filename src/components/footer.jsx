@@ -105,11 +105,40 @@ export default function Footer() {
               />
 
               <input
+                type="tel"
+                className="form-control"
+                placeholder="Your phone number"
+                name="phone"
+                required
+              />
+
+              <input
                 type="text"
                 className="form-control"
-                placeholder="What are you interested in?"
+                placeholder="How can we help?"
                 name="interest"
               />
+
+              {/* ✅ Checkbox group */}
+              <div className="checkbox-group">
+                <label>
+                  <input
+                    type="checkbox"
+                    name="preferences[]"
+                    value="newsletter"
+                  />
+                  Please add me to your newsletter/special offer email list
+                </label>
+
+                <label>
+                  <input
+                    type="checkbox"
+                    name="preferences[]"
+                    value="information"
+                  />
+                  I would like more information about a service or product
+                </label>
+              </div>
 
               <button type="submit" className="btn btn-primary">
                 Subscribe
