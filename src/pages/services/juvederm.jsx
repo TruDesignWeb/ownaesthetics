@@ -1,46 +1,61 @@
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route } from "react-router-dom";
 
-import Navbar from '../../components/navbar';
-import Footer from '../../components/footer';
-import Banner2 from '../../components/banner2';
-import Banner3 from '../../components/banner3';
-import CustomCursor from '../../components/customcursor';
-import './juvederm.css';
-
+import Navbar from "../../components/navbar";
+import Footer from "../../components/footer";
+import Banner2 from "../../components/banner2";
+import Banner3 from "../../components/banner3";
+import CustomCursor from "../../components/customcursor";
+import "./juvederm.css";
 
 export default function Juvederm() {
-    return (
-        <>
-            <CustomCursor />
-            <Navbar />
-            
-            <Banner3
-                image="/assets/images/images/sumner-mahaffey-7Y0NshQLohk-unsplash.jpg"
-                title="Juvederm Collection of Injectable HA Dermal Fillers"
-                subtitle="Enhance Your Natural Beauty with the Juvederm Collection of Injectable HA Dermal Fillers"
-            />
+  return (
+    <>
+      <CustomCursor />
+      <Navbar />
 
-            <section id="juvederm-services">
-                <div className="juvederm-container">
-                    <h1 className="juvederm-title juvederm-animated">
-                        {/* Facial Contouring - Juvederm Collection of Injectable HA Dermal Fillers */}
-                    </h1>
-                    <div className="juvederm-row">
-                        <div className="juvederm-services-text juvederm-service-boxes juvederm-animated">
-                            <p>
-                                Injectable dermal fillers are approved treatments that temporarily add volume to certain areas
-                                of the face, including the cheeks, lips, and nasolabial folds. They are made from various
-                                substances, but the primary ingredient in most injectable fillers is hyaluronic acid (HA), a water-
-                                loving molecule found naturally in the skin. A modified form of HA is the backbone of many
-                                clear, colorless, gel-like injectable fillers. The results can last anywhere from 8 months to 2
-                                years.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </section>
+      <Banner3
+        image="/assets/images/images/sumner-mahaffey-7Y0NshQLohk-unsplash.jpg"
+        title="Juvederm Collection of Injectable HA Dermal Fillers"
+        subtitle="Enhance Your Natural Beauty with the Juvederm Collection of Injectable HA Dermal Fillers"
+      />
 
-            <Footer />
-        </>
-    );
+      <section id="juvederm-services">
+        <div className="juvederm-container">
+          <h1 className="juvederm-title juvederm-animated">
+            {/* Facial Contouring - Juvederm Collection of Injectable HA Dermal Fillers */}
+          </h1>
+          <div className="juvederm-row">
+            <div className="juvederm-image-gallery">
+              <img
+                src="/assets/images/fillerbefore+after.jpeg"
+                alt="Juvederm Before & After"
+              />
+              <img
+                src="/assets/images/fillerb4+after2.jpeg"
+                alt="Juvederm before and After"
+              />
+              <img
+                src="/assets/images/fillerb4+after3.jpeg"
+                alt="Juvederm Before and After"
+              />
+            </div>
+            <div className="juvederm-services-text juvederm-service-boxes juvederm-animated">
+              <p>
+                Injectable dermal fillers are approved treatments that
+                temporarily add volume to certain areas of the face, including
+                the cheeks, lips, and nasolabial folds. They are made from
+                various substances, but the primary ingredient in most
+                injectable fillers is hyaluronic acid (HA), a water- loving
+                molecule found naturally in the skin. A modified form of HA is
+                the backbone of many clear, colorless, gel-like injectable
+                fillers. The results can last anywhere from 8 months to 2 years.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <Footer />
+    </>
+  );
 }
