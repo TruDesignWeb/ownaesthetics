@@ -34,6 +34,10 @@ export default function Skinpen() {
                 src="/assets/images/SkinPen Before & after 1.jpg"
                 alt="SkinPen before and After"
               />
+              <img
+                src="/assets/images/Procedure-036_maxWidth_1200_maxHeight_1200_ppi_72.png"
+                alt="SkinPen before and After"
+              />
             </div>
             <div className="skinpen-services-text skinpen-service-boxes skinpen-animated">
               <p>
