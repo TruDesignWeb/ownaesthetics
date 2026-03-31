@@ -22,11 +22,19 @@ export default function AntiWrinkle() {
             />
 
             <section id="antiwrinkle-services">
+                
                 <div className="antiwrinkle-container">
-                    <h1 className="antiwrinkle-title antiwrinkle-animated">
-                        {/* Anti-Wrinkle Injections */}
-                    </h1>
+                    {/* <h1 className="antiwrinkle-title antiwrinkle-animated">
+                         Anti-Wrinkle Injections 
+                    </h1> */}
+                     
                     <div className="antiwrinkle-row">
+
+                        <div className="antiwrinkle-image-gallery">
+                            <img src="/assets/images/antiwrinklebefore+after.jpeg" alt="Antiwrinkle Before & After"/>
+                            <img src="/assets/images/antiwrinklebefore+after2.jpeg" alt="Antiwrinkle before and After"/>
+                            <img src="/assets/images/antiwrinklebefore+after3.jpeg" alt="Antiwrinkle Before and After"/>
+                    </div>
                         <div className="antiwrinkle-services-text antiwrinkle-service-boxes antiwrinkle-animated">
                             <p>
                                 BOTOX ® Cosmetic, Dysport, and other neurotoxins are prescription medicines that are injected
