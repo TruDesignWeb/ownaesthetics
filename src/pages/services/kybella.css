@@ -84,3 +84,35 @@
 .kybella-animated {
   animation: kybella-fadeUp 0.8s ease forwards;
 }
+
+/* Responsive */
+@media (max-width: 992px) {
+  .kybella-row {
+    flex-direction: column;
+  }
+
+  .kybella-image-gallery {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .kybella-image-gallery img {
+    width: 45%;
+  }
+
+  .kybella-content-text {
+    max-width: 100%;
+    padding: 35px;
+  }
+}
+
+@media (max-width: 600px) {
+  .kybella-image-gallery img {
+    width: 100%;
+  }
+
+  #kybella-services .kybella-title {
+    font-size: 32px;
+  }
+}
