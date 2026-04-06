@@ -84,3 +84,35 @@
 .cellenis-animated {
   animation: cellenis-fadeUp 0.8s ease forwards;
 }
+
+/* Responsive */
+@media (max-width: 992px) {
+  .cellenis-row {
+    flex-direction: column;
+  }
+
+  .cellenis-image-gallery {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .cellenis-image-gallery img {
+    width: 45%;
+  }
+
+  .cellenis-content-text {
+    max-width: 100%;
+    padding: 35px;
+  }
+}
+
+@media (max-width: 600px) {
+  .cellenis-image-gallery img {
+    width: 100%;
+  }
+
+  #cellenis-services .cellenis-title {
+    font-size: 32px;
+  }
+}
