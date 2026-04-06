@@ -85,3 +85,35 @@
 .facials-animated {
   animation: facials-fadeUp 0.8s ease forwards;
 }
+
+/* Responsive */
+@media (max-width: 992px) {
+  .facials-row {
+    flex-direction: column;
+  }
+
+  .facials-image-gallery {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .facials-image-gallery img {
+    width: 45%;
+  }
+
+  .facials-content-text {
+    max-width: 100%;
+    padding: 35px;
+  }
+}
+
+@media (max-width: 600px) {
+  .facials-image-gallery img {
+    width: 100%;
+  }
+
+  #facials-services .facials-title {
+    font-size: 32px;
+  }
+}

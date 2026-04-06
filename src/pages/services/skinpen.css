@@ -85,3 +85,35 @@
 .skinpen-animated {
   animation: skinpen-fadeUp 0.8s ease forwards;
 }
+
+/* Responsive */
+@media (max-width: 992px) {
+  .skinpen-row {
+    flex-direction: column;
+  }
+
+  .skinpen-image-gallery {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .skinpen-image-gallery img {
+    width: 45%;
+  }
+
+  .skinpen-content-text {
+    max-width: 100%;
+    padding: 35px;
+  }
+}
+
+@media (max-width: 600px) {
+  .skinpen-image-gallery img {
+    width: 100%;
+  }
+
+  #skinpen-services .skinpen-title {
+    font-size: 32px;
+  }
+}

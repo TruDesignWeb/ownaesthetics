@@ -84,3 +84,35 @@
 .juvederm-animated {
   animation: juvederm-fadeUp 0.8s ease forwards;
 }
+
+/* Responsive */
+@media (max-width: 992px) {
+  .juvederm-row {
+    flex-direction: column;
+  }
+
+  .juvederm-image-gallery {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .juvederm-image-gallery img {
+    width: 45%;
+  }
+
+  .juvederm-content-text {
+    max-width: 100%;
+    padding: 35px;
+  }
+}
+
+@media (max-width: 600px) {
+  .juvederm-image-gallery img {
+    width: 100%;
+  }
+
+  #juvederm-services .juvederm-title {
+    font-size: 32px;
+  }
+}
