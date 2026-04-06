@@ -20,12 +20,12 @@ export default function AntiWrinkle() {
       />
 
       <section id="antiwrinkle-services">
-        <div className="antiwrinkle-container">
+        <div className="antiwrinkle-content-wrapper">
           {/* <h1 className="antiwrinkle-title antiwrinkle-animated">
                         Anti-Wrinkle Injections 
                     </h1> */}
 
-          <div className="antiwrinkle-row">
+          <div className="antiwrinkle-main-content">
             <div className="antiwrinkle-image-gallery">
               <img
                 src="/assets/images/antiwrinklebefore+after.jpeg"
