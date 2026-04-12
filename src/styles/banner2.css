@@ -74,4 +74,7 @@
   .banner2-content.about {
     padding: 0 1.5rem 1.5rem;
   }
+  .banner2-content {
+    padding-bottom: 2rem;
+  }
 }
