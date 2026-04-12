@@ -50,14 +50,6 @@ export default function RSVP() {
     }));
   };
 
-  const handleSubmit = async (event) => {
-    event.preventDefault();
-
-    // Backend placeholder: replace this local success state with an API call
-    // when the RSVP endpoint is ready.
-    setSubmitted(true);
-  };
-
   return (
     <>
       <Helmet>
@@ -167,12 +159,40 @@ export default function RSVP() {
             <div className="rsvp-form-panel">
               {submitted && (
                 <p className="rsvp-success-message">
-                  Thanks for RSVPing. Backend submission is still a placeholder,
-                  but your page flow is ready to connect.
+                  Thanks for RSVPing. Your confirmation has been sent.
                 </p>
               )}
 
-              <form className="rsvp-form" onSubmit={handleSubmit}>
+              <form
+                className="rsvp-form"
+                action="https://api.web3forms.com/submit"
+                method="POST"
+                onSubmit={() => setSubmitted(true)}
+              >
+                <input
+                  type="hidden"
+                  name="access_key"
+                  value="d2c03bfd-17bb-4683-b096-fc7df9822b38"
+                />
+                {/*Janet: d2c03bfd-17bb-4683-b096-fc7df9822b38 
+                  Truman: b0ca7a60-ef74-4f6b-adc2-8c50339be692*/}
+                <input
+                  type="hidden"
+                  name="subject"
+                  value="RSVP: Own Aesthetics Turns One"
+                />
+                <input
+                  type="hidden"
+                  name="from_name"
+                  value="Own Aesthetics RSVP"
+                />
+                <input
+                  type="checkbox"
+                  name="botcheck"
+                  style={{ display: "none" }}
+                  tabIndex="-1"
+                  autoComplete="off"
+                />
                 <div className="rsvp-form-row">
                   <input
                     type="text"
@@ -212,7 +232,9 @@ export default function RSVP() {
                 </div>
 
                 <div className="rsvp-field-group">
-                  <label htmlFor="currentClient">Are you a current client?</label>
+                  <label htmlFor="currentClient">
+                    Are you a current client?
+                  </label>
                   <select
                     id="currentClient"
                     name="currentClient"
