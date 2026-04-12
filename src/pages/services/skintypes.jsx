@@ -5,6 +5,7 @@ import Footer from '../../components/footer';
 import Banner2 from '../../components/banner2';
 import Banner3 from '../../components/banner3';
 import CustomCursor from '../../components/customcursor';
+import ServiceHighlightBox from '../../components/servicehighlightbox';
 import './skinpen.css';
 
 
@@ -57,6 +58,11 @@ export default function Skinpen() {
                                     </button>
                                 </a>
                             </p>
+                            <ServiceHighlightBox
+                                summary="Personalized skincare recommendations built around your unique Baumann Skin Type®."
+                                treatmentAreas={["Face"]}
+                                supportingNote="Start with the Skin Type Quiz to build a routine tailored to your skin's needs."
+                            />
                         </div>
                     </div>
                 </div>

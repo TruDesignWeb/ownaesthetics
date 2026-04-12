@@ -1,0 +1,112 @@
+.service-highlight-box {
+  background: linear-gradient(135deg, #9ead93, #bd725b);
+  color: white;
+  padding: 30px;
+  border-radius: 15px;
+  margin-top: 30px;
+  position: relative;
+  overflow: hidden;
+}
+
+.service-highlight-box::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  right: -50%;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.1) 0%,
+    transparent 70%
+  );
+  animation: service-highlight-shimmer 3s ease-in-out infinite;
+}
+
+.service-highlight-summary,
+.service-highlight-label,
+.service-highlight-meta,
+.service-highlight-note {
+  position: relative;
+  z-index: 1;
+}
+
+.service-highlight-summary,
+.service-highlight-note,
+.service-highlight-label,
+.service-highlight-meta {
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.service-highlight-meta {
+  color: #ffffff;
+}
+
+.service-highlight-summary {
+  margin-bottom: 0.9rem;
+}
+
+.service-highlight-label {
+  margin-bottom: 0.75rem;
+}
+
+.service-highlight-box strong,
+.service-highlight-box .service-highlight-meta,
+.service-highlight-box .service-highlight-meta strong,
+.service-highlight-box .service-highlight-summary,
+.service-highlight-box .service-highlight-label,
+.service-highlight-box .service-highlight-note {
+  color: white;
+}
+
+.service-highlight-areas {
+  display: flex;
+  gap: 20px;
+  margin: 0 0 1.25rem;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 1;
+}
+
+.service-highlight-area {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 15px 25px;
+  border-radius: 25px;
+  font-weight: 600;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* .service-highlight-note {
+  margin-top: 0.85rem;
+}
+
+@keyframes service-highlight-shimmer {
+  0% {
+    transform: translate3d(20%, -20%, 0);
+    opacity: 0.18;
+  }
+  50% {
+    transform: translate3d(0%, 0%, 0);
+    opacity: 0.28;
+  }
+  100% {
+    transform: translate3d(-20%, 20%, 0);
+    opacity: 0.18;
+  }
+} */
+
+@media (max-width: 768px) {
+  .service-highlight-box {
+    padding: 24px;
+  }
+
+  .service-highlight-areas {
+    gap: 12px;
+  }
+
+  .service-highlight-area {
+    padding: 12px 20px;
+  }
+}

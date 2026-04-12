@@ -2,6 +2,7 @@ import Navbar from "../../components/navbar";
 import Footer from "../../components/footer";
 import Banner3 from "../../components/banner3";
 import CustomCursor from "../../components/customcursor";
+import ServiceHighlightBox from "../../components/servicehighlightbox";
 import "./antiwrinkle.css";
 
 export default function AntiWrinkle() {
@@ -46,13 +47,12 @@ export default function AntiWrinkle() {
                 Treatment results last an average of 3-5 months. It is best to
                 schedule maintenance treatments when you see more movement in
                 your expression lines.
-                <br />
-                <br />
-                <strong>Treatment Area:</strong> Upper Face, Lower Face, Neck
-                <br />
-                <br />
-                <strong>Sessions:</strong> 30 minutes
               </p>
+              <ServiceHighlightBox
+                summary="Personalized neurotoxin treatments designed for refreshed, natural-looking results."
+                treatmentAreas={["Upper Face", "Lower Face", "Neck"]}
+                sessions="30 minutes"
+              />
             </div>
           </div>
         </div>

@@ -2,6 +2,7 @@ import Navbar from '../../components/navbar';
 import Footer from '../../components/footer';
 import Banner3 from '../../components/banner3';
 import CustomCursor from '../../components/customcursor';
+import ServiceHighlightBox from '../../components/servicehighlightbox';
 import './hairtreatments.css';
 
 export default function HairTreatments() {
@@ -27,10 +28,13 @@ export default function HairTreatments() {
                                 Hair changes over time, but there are affordable, non-surgical, specialized solutions available. These treatments and protocols range from
                                 in-office treatments using microneedling, peptides, PRP, exosomes, or biologics with take-home
                                 applications to comprehensively support hair and scalp health. We also offer effective hair care
-                                products and regimens to improve hair growth.<br/><br/>
-                                <strong>Treatment Area:</strong> Head<br/><br/>
-                                <strong>Sessions:</strong> 45 min- 1 hr.
+                                products and regimens to improve hair growth.
                             </p>
+                            <ServiceHighlightBox
+                                summary="Scalp-focused support designed to encourage healthier, stronger hair growth."
+                                treatmentAreas={["Scalp"]}
+                                sessions="45 min- 1 hr."
+                            />
                         </div>
                     </div>
                 </div>

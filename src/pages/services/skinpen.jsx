@@ -2,6 +2,7 @@ import Navbar from "../../components/navbar";
 import Footer from "../../components/footer";
 import Banner3 from "../../components/banner3";
 import CustomCursor from "../../components/customcursor";
+import ServiceHighlightBox from "../../components/servicehighlightbox";
 import "./skinpen.css";
 
 export default function Skinpen() {
@@ -54,13 +55,12 @@ export default function Skinpen() {
                 acne scarring. Ask about our packages! Results can be further
                 enhanced by adding platelet-rich plasma (PRP) or exosomes to
                 support healing and optimize outcomes.
-                <br />
-                <br />
-                <strong>Treatment Area:</strong> Face, Neck, Chest
-                <br />
-                <br />
-                <strong>Sessions:</strong> 1 hour
               </p>
+              <ServiceHighlightBox
+                summary="Add platelet-rich plasma (PRP) or exosomes to support healing and optimize outcomes."
+                treatmentAreas={["Face", "Neck", "Chest"]}
+                sessions="1 hour"
+              />
             </div>
           </div>
         </div>

@@ -2,6 +2,7 @@ import Navbar from "../../components/navbar";
 import Footer from "../../components/footer";
 import Banner3 from "../../components/banner3";
 import CustomCursor from "../../components/customcursor";
+import ServiceHighlightBox from "../../components/servicehighlightbox";
 import "./cellenis.css";
 
 export default function Cellenis() {
@@ -40,13 +41,12 @@ export default function Cellenis() {
                 treat areas such as the face, neck, hands, and décolletage,
                 helping to reduce fine lines, wrinkles, and scars. Results can
                 last up to 18 months.
-                <br />
-                <br />
-                <strong>Treatment Area:</strong> Upper Face, Lower Face
-                <br />
-                <br />
-                <strong>Sessions:</strong> 30 min - 1 hr.
               </p>
+              <ServiceHighlightBox
+                summary="A natural regenerative treatment that supports skin renewal using your own platelet-rich plasma."
+                treatmentAreas={["Face", "Neck", "Hands", "Decollete"]}
+                sessions="30 min - 1 hr."
+              />
             </div>
           </div>
         </div>

@@ -2,6 +2,7 @@ import Navbar from "../../components/navbar";
 import Footer from "../../components/footer";
 import Banner3 from "../../components/banner3";
 import CustomCursor from "../../components/customcursor";
+import ServiceHighlightBox from "../../components/servicehighlightbox";
 import "./facials.css";
 
 export default function Facials() {
@@ -50,13 +51,12 @@ export default function Facials() {
                 <br />
                 For optimal results, facials are recommended every six weeks to
                 monitor progress and maintain healthy, balanced skin.
-                <br />
-                <br />
-                <strong>Treatment Area:</strong> Face, Neck, Decollete, Back
-                <br />
-                <br />
-                <strong>Sessions:</strong> 60 min. or 90 min.
               </p>
+              <ServiceHighlightBox
+                summary="Personalized, results-driven facials tailored to your skin goals."
+                treatmentAreas={["Face", "Neck", "Decollete", "Back"]}
+                sessions="60 min. or 90 min."
+              />
             </div>
           </div>
         </div>

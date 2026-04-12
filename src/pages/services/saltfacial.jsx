@@ -2,6 +2,7 @@ import Navbar from '../../components/navbar';
 import Footer from '../../components/footer';
 import Banner3 from '../../components/banner3';
 import CustomCursor from '../../components/customcursor';
+import ServiceHighlightBox from '../../components/servicehighlightbox';
 import './saltfacial.css';
 
 export default function SaltFacial() {
@@ -42,10 +43,11 @@ export default function SaltFacial() {
 
                             <p>The SaltFacial is safe and effective for many different skin types. It can help improve the appearance of acne, redness, age spots, sun damage, fine lines, and wrinkles. Ask about adding Exosomes or topical platelet-rich plasma (PRP) for additional regenerative benefits!</p>
 
-                            <div className="saltfacial-highlight-section">
-                                <p><strong>Treatment Area:</strong> Face, Body</p>
-                                <p><strong>Sessions:</strong> 45 minutes - 1 hour</p>
-                            </div>
+                            <ServiceHighlightBox
+                                summary="Ask about adding Exosomes or topical platelet-rich plasma (PRP) for additional regenerative benefits."
+                                treatmentAreas={["Face", "Body"]}
+                                sessions="45 minutes - 1 hour"
+                            />
                         </div>
                     </div>
                 </div>

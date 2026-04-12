@@ -2,6 +2,7 @@ import Navbar from "../../components/navbar";
 import Footer from "../../components/footer";
 import Banner3 from "../../components/banner3";
 import CustomCursor from "../../components/customcursor";
+import ServiceHighlightBox from "../../components/servicehighlightbox";
 import "./kybella.css";
 
 export default function Kybella() {
@@ -45,13 +46,12 @@ export default function Kybella() {
                 Multiple treatments may be needed to achieve the desired
                 results, with some patients seeing noticeable improvements after
                 just a few sessions.
-                <br />
-                <br />
-                <strong>Treatment Area:</strong> Neck
-                <br />
-                <br />
-                <strong>Sessions:</strong> 45 min. - 1hr.
               </p>
+              <ServiceHighlightBox
+                summary="A targeted injectable treatment designed to refine the profile under the chin."
+                treatmentAreas={["Neck"]}
+                sessions="45 min. - 1hr."
+              />
             </div>
           </div>
         </div>

@@ -5,6 +5,7 @@ import Footer from '../../components/footer';
 import Banner2 from '../../components/banner2';
 import Banner3 from '../../components/banner3';
 import CustomCursor from '../../components/customcursor';
+import ServiceHighlightBox from '../../components/servicehighlightbox';
 import './nouvaderm.css';
 
 
@@ -62,6 +63,10 @@ export default function NouvaDerm() {
                                 lesions such as, but not limited to, lentigos (age spots), solar
                                 lentigos (sun spots), and ephelides (freckles).
                             </p>
+                            <ServiceHighlightBox
+                                summary="A flexible laser platform designed for customized skin revitalization and scalp-support treatments."
+                                treatmentAreas={["Face", "Scalp", "Body"]}
+                            />
                         </div>
                     </div>
                 </div>

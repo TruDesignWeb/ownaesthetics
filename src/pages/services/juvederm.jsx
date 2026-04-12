@@ -2,6 +2,7 @@ import Navbar from "../../components/navbar";
 import Footer from "../../components/footer";
 import Banner3 from "../../components/banner3";
 import CustomCursor from "../../components/customcursor";
+import ServiceHighlightBox from "../../components/servicehighlightbox";
 import "./juvederm.css";
 
 export default function Juvederm() {
@@ -53,6 +54,11 @@ export default function Juvederm() {
                 Results are immediate and can last anywhere from 8 months to 2
                 years, depending on the treatment area and product used.
               </p>
+              <ServiceHighlightBox
+                summary="Immediate, natural-looking volume restoration with hyaluronic acid fillers."
+                treatmentAreas={["Cheeks", "Lips", "Nasolabial Folds"]}
+                supportingNote="Results can last anywhere from 8 months to 2 years, depending on the treatment area and product used."
+              />
             </div>
           </div>
         </div>

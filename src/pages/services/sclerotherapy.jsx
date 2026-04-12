@@ -2,6 +2,7 @@ import Navbar from '../../components/navbar';
 import Footer from '../../components/footer';
 import Banner3 from '../../components/banner3';
 import CustomCursor from '../../components/customcursor';
+import ServiceHighlightBox from '../../components/servicehighlightbox';
 import './sclerotherapy.css';
 
 export default function Sclerotherapy() {
@@ -27,10 +28,13 @@ export default function Sclerotherapy() {
                                 Sclerotherapy is a minimally invasive treatment designed to improve the appearance of spider
                                 veins, most often found on the legs. Using a fine needle, a specialized solution is injected into
                                 the vein, causing it to collapse and gradually be reabsorbed by the body. The result is smoother,
-                                clearer-looking skin with a more even tone.<br/><br/>
-                                <strong>Treatment Area:</strong> Legs<br/><br/>
-                                <strong>Sessions:</strong> 45 min. - 1hr.
+                                clearer-looking skin with a more even tone.
                             </p>
+                            <ServiceHighlightBox
+                                summary="A minimally invasive treatment for smoother, clearer-looking legs."
+                                treatmentAreas={["Legs"]}
+                                sessions="45 min. - 1hr."
+                            />
                         </div>
                     </div>
                 </div>

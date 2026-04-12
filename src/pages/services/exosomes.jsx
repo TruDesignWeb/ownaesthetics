@@ -2,6 +2,7 @@ import Navbar from '../../components/navbar';
 import Footer from '../../components/footer';
 import Banner3 from '../../components/banner3';
 import CustomCursor from '../../components/customcursor';
+import ServiceHighlightBox from '../../components/servicehighlightbox';
 import './exosomes.css';
 
 export default function Exosomes() {
@@ -44,6 +45,10 @@ export default function Exosomes() {
                                 This gentle, water-based system is suitable for sensitive skin and is ideal for anyone looking to
                                 enhance results while maintaining a natural, healthy look.
                             </p>
+                            <ServiceHighlightBox
+                                summary="A restorative add-on that supports healing, calms inflammation, and enhances results."
+                                treatmentAreas={["Laser Treatments", "Facial Treatments", "Sensitive Skin"]}
+                            />
                         </div>
                     </div>
                 </div>

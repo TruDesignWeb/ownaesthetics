@@ -2,6 +2,7 @@ import Navbar from '../../components/navbar';
 import Footer from '../../components/footer';
 import Banner3 from '../../components/banner3';
 import CustomCursor from '../../components/customcursor';
+import ServiceHighlightBox from '../../components/servicehighlightbox';
 import './consultation.css';
 
 export default function Consultation() {
@@ -35,9 +36,13 @@ export default function Consultation() {
                                 photos over time. This allows us to track progress, evaluate results, and refine your treatment
                                 plan with precision.<br/><br/>
                                 These insights guide a personalized skin analysis and treatment plan tailored specifically to you
-                                - ensuring thoughtful, effective, and natural-looking results.<br/><br/>
-                                <strong>Sessions:</strong> 50 minutes to 1 hour
+                                - ensuring thoughtful, effective, and natural-looking results.
                             </p>
+                            <ServiceHighlightBox
+                                summary="Advanced 3D imaging and skin analysis designed to guide a fully personalized treatment plan."
+                                treatmentAreas={["Face", "Body"]}
+                                sessions="50 minutes to 1 hour"
+                            />
                         </div>
                     </div>
                 </div>

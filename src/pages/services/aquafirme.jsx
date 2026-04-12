@@ -2,6 +2,7 @@ import Navbar from '../../components/navbar';
 import Footer from '../../components/footer';
 import Banner3 from '../../components/banner3';
 import CustomCursor from '../../components/customcursor';
+import ServiceHighlightBox from '../../components/servicehighlightbox';
 import './aquafirme.css';
 
 export default function Aquafirme() {
@@ -40,6 +41,10 @@ export default function Aquafirme() {
                                 AquaFirmeXS also supports scalp and hair health. Specialized serums work to reduce
                                 inflammation and reenergize hair follicles for healthier, stronger growth.
                             </p>
+                            <ServiceHighlightBox
+                                summary="No-downtime skin and scalp rejuvenation with customizable treatment protocols."
+                                treatmentAreas={["Face", "Scalp"]}
+                            />
                         </div>
                     </div>
                 </div>

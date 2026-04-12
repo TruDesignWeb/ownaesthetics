@@ -2,6 +2,7 @@ import Navbar from '../../components/navbar';
 import Footer from '../../components/footer';
 import Banner3 from '../../components/banner3';
 import CustomCursor from '../../components/customcursor';
+import ServiceHighlightBox from '../../components/servicehighlightbox';
 import './sculptra.css';
 
 export default function Sculptra() {
@@ -30,6 +31,11 @@ export default function Sculptra() {
                                 poly-L-lactic acid (PLLA-SCA) collagen stimulator, which can improve skin glow,
                                 tightness, and jawline contour for up to two years.
                             </p>
+                            <ServiceHighlightBox
+                                summary="Collagen-stimulating injectable designed for gradual, long-lasting rejuvenation."
+                                treatmentAreas={["Cheeks", "Jawline"]}
+                                supportingNote="Results can support skin glow, tightness, and jawline contour for up to two years."
+                            />
                         </div>
                     </div>
                 </div>
