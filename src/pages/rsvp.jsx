@@ -1,4 +1,4 @@
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { useSearchParams } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import Navbar from "../components/navbar";
@@ -26,10 +26,10 @@ export default function RSVP() {
   const prefilledEmail = searchParams.get("email") || "";
 
   const [formData, setFormData] = useState({
-    firstName: "",
-    lastName: "",
+    firstName: searchParams.get("firstName") || "",
+    lastName: searchParams.get("lastName") || "",
     email: prefilledEmail,
-    phoneNumber: "",
+    phoneNumber: searchParams.get("phoneNumber") || "",
     currentClient: "Yes",
     interest: interestOptions[0],
   });
@@ -49,6 +49,16 @@ export default function RSVP() {
       [name]: value,
     }));
   };
+
+  useEffect(() => {
+    setFormData((current) => ({
+      ...current,
+      firstName: searchParams.get("firstName") || "",
+      lastName: searchParams.get("lastName") || "",
+      email: searchParams.get("email") || "",
+      phoneNumber: searchParams.get("phoneNumber") || "",
+    }));
+  }, [searchParams]);
 
   return (
     <>

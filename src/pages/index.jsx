@@ -21,6 +21,7 @@ import ShowcaseSection from '../components/showcasesection';
 import TestimonialShowcase from '../components/testimonial-showcase';
 import SocialMedia from '../components/social-media';
 import { Helmet } from "react-helmet";
+import RSVPPopup from '../components/rsvppopup';
 
 
 const featureCards = [
@@ -187,6 +188,7 @@ export default function Home() {
       </Helmet>
       <CustomCursor />
       <Navbar />
+      <RSVPPopup />
       <Banner />
 
 
