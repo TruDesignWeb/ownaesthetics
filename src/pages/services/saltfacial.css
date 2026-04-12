@@ -118,6 +118,13 @@
   overflow: hidden;
 }
 
+.saltfacial-intro-title {
+  font-size: 1.55rem;
+  font-weight: 700;
+  line-height: 1.5;
+  color: #2c3e50;
+}
+
 @keyframes saltfacial-shimmer {
   0%,100% { transform: rotate(0deg); }
   50% { transform: rotate(180deg); }

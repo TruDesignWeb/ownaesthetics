@@ -1,8 +1,5 @@
-import { Routes, Route } from "react-router-dom";
-
 import Navbar from "../../components/navbar";
 import Footer from "../../components/footer";
-import Banner2 from "../../components/banner2";
 import Banner3 from "../../components/banner3";
 import CustomCursor from "../../components/customcursor";
 import "./skinpen.css";
@@ -16,7 +13,7 @@ export default function Skinpen() {
       <Banner3
         image="/assets/images/images/sumner-mahaffey-7Y0NshQLohk-unsplash.jpg"
         title="SkinPen® Microneedling"
-        subtitle="Beautiful skin – naturally!"
+        subtitle="Beautiful skin - naturally!"
       />
 
       <section id="skinpen-services">
@@ -41,44 +38,28 @@ export default function Skinpen() {
             </div>
             <div className="skinpen-services-text skinpen-service-boxes skinpen-animated">
               <p>
-                Beautiful skin – naturally!
-                <br />
-                <br />
                 Microneedling, also known as collagen induction therapy, is a
                 minimally invasive procedure that uses tiny needles to create
-                controlled punctures in the skin, stimulating the body's natural
+                controlled punctures in the skin, stimulating the body&apos;s natural
                 healing process to produce more collagen and elastin. This helps
                 reduce wrinkles and fine lines, improve skin tone and texture,
                 treat acne scars, decrease hyperpigmentation, and improve the
-                skin's overall appearance.
+                skin&apos;s overall appearance.
                 <br />
                 <br />
-                Treatment Areas:
+                With little to no downtime, microneedling is a safe and
+                effective option for achieving smoother, more refined skin. A
+                series of 1 to 3 treatments is recommended for overall skin
+                improvement, while 3 to 6 sessions may be needed to address
+                acne scarring. Ask about our packages! Results can be further
+                enhanced by adding platelet-rich plasma (PRP) or exosomes to
+                support healing and optimize outcomes.
                 <br />
                 <br />
-                Face
+                <strong>Treatment Area:</strong> Face, Neck, Chest
                 <br />
                 <br />
-                Neck
-                <br />
-                <br />
-                Chest
-                <br />
-                <br />
-                Sessions: 1 hour
-                <br />
-                <br />
-                Designed to work without chemicals, heat, or stress, SkinPen®
-                uses fine needles to create micro-openings in the skin that
-                naturally remodel it. This minimally invasive treatment
-                significantly improves the appearance of acne scars and neck
-                wrinkles. There is little to no downtime. Suggested sessions are
-                1 to 3 for a more refined skin complexion and 3 to 6 sessions
-                for acne scars. Packages are available.
-                <br />
-                <br />
-                Optimize your microneedling results by adding topical
-                platelet-rich plasma (PRP) or Exosomes.
+                <strong>Sessions:</strong> 1 hour
               </p>
             </div>
           </div>

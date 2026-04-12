@@ -1,19 +1,15 @@
-import { Routes, Route } from 'react-router-dom';
-
 import Navbar from '../../components/navbar';
 import Footer from '../../components/footer';
-import Banner2 from '../../components/banner2';
 import Banner3 from '../../components/banner3';
 import CustomCursor from '../../components/customcursor';
 import './consultation.css';
-
 
 export default function Consultation() {
     return (
         <>
             <CustomCursor />
             <Navbar />
-            
+
             <Banner3
                 image="/assets/images/images/sumner-mahaffey-7Y0NshQLohk-unsplash.jpg"
                 title="LifeViz® Infinity Pro Consultation"
@@ -28,22 +24,19 @@ export default function Consultation() {
                     <div className="consultation-row">
                         <div className="consultation-services-text consultation-service-boxes consultation-animated">
                             <p>
-                                Our philosophy is that every person is unique, valuable, and beautiful in their own skin, in their
-                                own way. We believe we are unique in our approach to serving you. We want you to feel
-                                empowered and encouraged, believing that aging is a good and natural process. We invested in
-                                LifeViz® Infinity Pro 3D imaging, the best technology in aesthetic medicine to capture and
-                                record the details of your unique beauty. These 3D images allow us to design unique treatment
-                                plans and personal skin analysis consultations.<br/><br/>
-                                The LifeViz® Infinity Pro imaging system scans your face or body using advanced technology to
-                                target skin concerns such as wrinkles, volume loss, fat pad shifting, sun damage, enlarged
-                                pores, and redness. This camera enables a unique visualization of facial shapes from any angle.<br/><br/>
-
-                                This advanced technology utilizes anatomical reference points to obtain standardized and
-                                comparable pictures throughout visits to evaluate and measure the results of your treatments.
-                                
-                                <br/><br/>We want you to feel empowered and encouraged, believing that aging is a good and natural
-                                process.<br/><br/>
-                                Session 50 minutes to 1 hour
+                                We believe every person is valuable and beautiful in their own skin. Our approach is centered
+                                on individualized care - helping you feel empowered, confident, and supported as you embrace
+                                the natural process of aging.<br/><br/>
+                                Using LifeViz® Infinity Pro 3D imaging, we capture highly detailed images that allow for in-depth
+                                skin analysis and fully personalized treatment planning. This system captures highly detailed
+                                images of your face or body, allowing us to assess concerns such as wrinkles, volume loss, fat
+                                pad shifting, sun damage, enlarged pores, and redness.<br/><br/>
+                                Using anatomical reference points, the imaging system creates standardized, comparable
+                                photos over time. This allows us to track progress, evaluate results, and refine your treatment
+                                plan with precision.<br/><br/>
+                                These insights guide a personalized skin analysis and treatment plan tailored specifically to you
+                                - ensuring thoughtful, effective, and natural-looking results.<br/><br/>
+                                <strong>Sessions:</strong> 50 minutes to 1 hour
                             </p>
                         </div>
                     </div>

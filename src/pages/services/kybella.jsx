@@ -1,8 +1,5 @@
-import { Routes, Route } from "react-router-dom";
-
 import Navbar from "../../components/navbar";
 import Footer from "../../components/footer";
-import Banner2 from "../../components/banner2";
 import Banner3 from "../../components/banner3";
 import CustomCursor from "../../components/customcursor";
 import "./kybella.css";
@@ -34,10 +31,10 @@ export default function Kybella() {
                 KYBELLA® is the only FDA-approved injectable treatment for
                 adults that destroys fat cells to gradually improve the
                 appearance and profile of moderate to severe fat below the chin
-                (submental fat), also called “double chin.”
+                (submental fat), also called "double chin."
                 <br />
                 <br />
-                The deoxycholic acid in Kybella disrupts the fat cell&#39;s
+                The deoxycholic acid in Kybella disrupts the fat cell&apos;s
                 membrane, causing them to be broken down and naturally
                 eliminated by the body. This gradually reduces submental fat,
                 leading to a more defined chin line and a smoother, more
@@ -50,13 +47,10 @@ export default function Kybella() {
                 just a few sessions.
                 <br />
                 <br />
-                Treatment Area:
+                <strong>Treatment Area:</strong> Neck
                 <br />
                 <br />
-                Neck
-                <br />
-                <br />
-                Sessions: 45 min. – 1hr.
+                <strong>Sessions:</strong> 45 min. - 1hr.
               </p>
             </div>
           </div>

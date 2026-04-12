@@ -1,8 +1,5 @@
-import { Routes, Route } from "react-router-dom";
-
 import Navbar from "../../components/navbar";
 import Footer from "../../components/footer";
-import Banner2 from "../../components/banner2";
 import Banner3 from "../../components/banner3";
 import CustomCursor from "../../components/customcursor";
 import "./antiwrinkle.css";
@@ -21,10 +18,6 @@ export default function AntiWrinkle() {
 
       <section id="antiwrinkle-services">
         <div className="antiwrinkle-content-wrapper">
-          {/* <h1 className="antiwrinkle-title antiwrinkle-animated">
-                        Anti-Wrinkle Injections 
-                    </h1> */}
-
           <div className="antiwrinkle-main-content">
             <div className="antiwrinkle-image-gallery">
               <img
@@ -45,7 +38,7 @@ export default function AntiWrinkle() {
                 BOTOX ® Cosmetic, Dysport, and other neurotoxins are
                 prescription medicines that are injected into muscles and used
                 to temporarily soften and improve the look of moderate to severe
-                forehead lines, crow’s-feet lines, frown lines between the
+                forehead lines, crow&apos;s-feet lines, frown lines between the
                 eyebrows, and vertical bands connecting the jaw and neck
                 (platysma bands) in adults.
                 <br />
@@ -55,19 +48,10 @@ export default function AntiWrinkle() {
                 your expression lines.
                 <br />
                 <br />
-                Treatment Areas:
+                <strong>Treatment Area:</strong> Upper Face, Lower Face, Neck
                 <br />
                 <br />
-                Upper Face
-                <br />
-                <br />
-                Lower Face
-                <br />
-                <br />
-                Neck
-                <br />
-                <br />
-                Sessions: 30 minutes
+                <strong>Sessions:</strong> 30 minutes
               </p>
             </div>
           </div>

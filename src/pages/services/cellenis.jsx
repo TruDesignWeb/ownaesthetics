@@ -1,8 +1,5 @@
-import { Routes, Route } from "react-router-dom";
-
 import Navbar from "../../components/navbar";
 import Footer from "../../components/footer";
-import Banner2 from "../../components/banner2";
 import Banner3 from "../../components/banner3";
 import CustomCursor from "../../components/customcursor";
 import "./cellenis.css";
@@ -34,7 +31,7 @@ export default function Cellenis() {
             <div className="cellenis-services-text cellenis-service-boxes cellenis-animated">
               <p>
                 Cellenis® Derma PRP is a skin rejuvenation treatment that uses
-                Platelet-Rich Plasma (PRP) derived from the patient’s blood to
+                Platelet-Rich Plasma (PRP) derived from the patient&apos;s blood to
                 stimulate collagen production and improve skin texture. The
                 process begins with a small blood draw, which is then spun in a
                 centrifuge to separate the PRP. The concentrated plasma contains
@@ -45,16 +42,10 @@ export default function Cellenis() {
                 last up to 18 months.
                 <br />
                 <br />
-                Treatment Area:
+                <strong>Treatment Area:</strong> Upper Face, Lower Face
                 <br />
                 <br />
-                Upper Face
-                <br />
-                <br />
-                Lower Face
-                <br />
-                <br />
-                Sessions: 30 min – 1 hr.
+                <strong>Sessions:</strong> 30 min - 1 hr.
               </p>
             </div>
           </div>

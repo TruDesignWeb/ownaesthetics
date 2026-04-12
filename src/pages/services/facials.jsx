@@ -1,8 +1,5 @@
-import { Routes, Route } from "react-router-dom";
-
 import Navbar from "../../components/navbar";
 import Footer from "../../components/footer";
-import Banner2 from "../../components/banner2";
 import Banner3 from "../../components/banner3";
 import CustomCursor from "../../components/customcursor";
 import "./facials.css";
@@ -33,35 +30,32 @@ export default function Facials() {
             </div>
             <div className="facials-services-text facials-service-boxes facials-animated">
               <p>
-                A customized facial is a fantastic experience and a great place
-                to start your skin health journey! Once considered a luxury, it
-                is now a treatment that helps educate and experience medical-
-                grade skincare chosen to target your specific concerns. It is
-                all about you and your unique skin. A consultation before the
-                facial helps us understand your goals and evaluate your skin
-                type, which will guide the professional products we choose for
-                your facial. The facial includes a deep cleanse, exfoliation,
-                mask, massage, targeted serums, moisturizer, and sun protection.
-                Facials should be repeated every six weeks to evaluate progress
-                and see the best results.
+                Our customized facials are designed to support your skin health
+                with a personalized, results-driven approach. Each treatment is
+                tailored to your specific concerns, ensuring a thoughtful and
+                effective experience.
                 <br />
                 <br />
-                Treatment Area:
+                Your appointment begins with a consultation to assess your skin
+                and understand your goals. From there, we select
+                professional-grade products and techniques to create a treatment
+                suited to your needs.
                 <br />
                 <br />
-                Face
+                Each facial includes a deep cleanse, exfoliation, mask,
+                massage, targeted serums, moisturizer, and sun protection -
+                working together to improve tone, texture, and overall skin
+                health.
                 <br />
                 <br />
-                Neck
+                For optimal results, facials are recommended every six weeks to
+                monitor progress and maintain healthy, balanced skin.
                 <br />
                 <br />
-                Decolette
+                <strong>Treatment Area:</strong> Face, Neck, Decollete, Back
                 <br />
                 <br />
-                Back
-                <br />
-                <br />
-                Sessions: 60 min. or 90 min.
+                <strong>Sessions:</strong> 60 min. or 90 min.
               </p>
             </div>
           </div>

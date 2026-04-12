@@ -1,19 +1,15 @@
-import { Routes, Route } from 'react-router-dom';
-
 import Navbar from '../../components/navbar';
 import Footer from '../../components/footer';
-import Banner2 from '../../components/banner2';
 import Banner3 from '../../components/banner3';
 import CustomCursor from '../../components/customcursor';
 import './chemicalpeels.css';
-
 
 export default function Chemicalpeels() {
     return (
         <>
             <CustomCursor />
             <Navbar />
-            
+
             <Banner3
                 image="/assets/images/images/sumner-mahaffey-7Y0NshQLohk-unsplash.jpg"
                 title="Chemical Peels"
@@ -28,19 +24,14 @@ export default function Chemicalpeels() {
                     <div className="chemicalpeels-row">
                         <div className="chemicalpeels-services-text chemicalpeels-service-boxes chemicalpeels-animated">
                             <p>
-                                We get it, ‘acid’, ‘peel’, and ‘chemical’ can sound a bit scary. Did you know that there is a
-                                chemical peel for the most sensitive skin types? You can choose to have no downtime.<br/><br/>
-                                Chemical peels are a minimally invasive and affordable way to dramatically improve the
-                                appearance of skin. They help diminish the appearance of fine lines and wrinkles. They also
-                                work to improve the appearance of discoloration, uneven skin tone, and sun damage because
-                                the peel action removes damaged, dead skin. Your skin could look younger and plumper after
-                                just seven days.<br/><br/>
-                                Treatment Area:<br/><br/>
-                                Face<br/><br/>
-                                Neck<br/><br/>
-                                Décolleté<br/><br/>
-                                Back<br/><br/>
-                                Sessions: 25 min- 1 hr.
+                                Chemical peels are a minimally invasive, effective treatment designed to improve overall skin
+                                tone and texture. Formulations can be tailored to all skin types, including sensitive skin, with
+                                options that require little to no downtime.<br/><br/>
+                                By gently exfoliating the outer layers of skin, chemical peels help reduce the appearance of fine
+                                lines, wrinkles, discoloration, and sun damage. This process reveals smoother, brighter, and
+                                more even-looking skin, with visible improvement in as little as seven days.<br/><br/>
+                                <strong>Treatment Area:</strong> Face, Neck, Decollete, Back<br/><br/>
+                                <strong>Sessions:</strong> 25 min- 1 hr.
                             </p>
                         </div>
                     </div>

@@ -1,40 +1,35 @@
-import { Routes, Route } from 'react-router-dom';
-
 import Navbar from '../../components/navbar';
 import Footer from '../../components/footer';
-import Banner2 from '../../components/banner2';
 import Banner3 from '../../components/banner3';
 import CustomCursor from '../../components/customcursor';
 import './sclerotherapy.css';
-
 
 export default function Sclerotherapy() {
     return (
         <>
             <CustomCursor />
             <Navbar />
-            
+
             <Banner3
                 image="/assets/images/images/sumner-mahaffey-7Y0NshQLohk-unsplash.jpg"
-                title="Sclerotherapy – Spider Veins"
+                title="Sclerotherapy - Spider Veins"
                 subtitle="Say Goodbye to Spider Veins: Sclerotherapy for Smooth, Clear Legs"
             />
 
             <section id="sclerotherapy-services">
                 <div className="sclerotherapy-container">
                     <h1 className="sclerotherapy-title sclerotherapy-animated">
-                        {/* Sclerotherapy – Spider Veins */}
+                        {/* Sclerotherapy - Spider Veins */}
                     </h1>
                     <div className="sclerotherapy-row">
                         <div className="sclerotherapy-services-text sclerotherapy-service-boxes sclerotherapy-animated">
                             <p>
-                                Sclerotherapy is a minimally invasive medical procedure that treats spider veins, usually on your
-                                legs. A small needle injects a special solution into your spider veins. This chemical solution
-                                irritates your blood vessel lining, expanding, sticking together, and forming a scar. This closes
-                                off your vein, making it look and feel better.<br/><br/>
-                                Treatment Area<br/><br/>
-                                Legs<br/><br/>
-                                Sessions: 45 min. – 1hr.
+                                Sclerotherapy is a minimally invasive treatment designed to improve the appearance of spider
+                                veins, most often found on the legs. Using a fine needle, a specialized solution is injected into
+                                the vein, causing it to collapse and gradually be reabsorbed by the body. The result is smoother,
+                                clearer-looking skin with a more even tone.<br/><br/>
+                                <strong>Treatment Area:</strong> Legs<br/><br/>
+                                <strong>Sessions:</strong> 45 min. - 1hr.
                             </p>
                         </div>
                     </div>

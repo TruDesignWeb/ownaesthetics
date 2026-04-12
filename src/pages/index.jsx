@@ -27,8 +27,8 @@ import RSVPPopup from '../components/rsvppopup';
 const featureCards = [
     {
       imageSrc: '/assets/images/images/istock-salt1.jpg',
-      altText: 'Salt Facial',
-      captionText: 'Salt Facial',
+      altText: 'The SaltFacial®',
+      captionText: 'The SaltFacial®',
       containerHeight: '350px',
       containerWidth: '300px',
       imageHeight: '400px',
@@ -38,7 +38,7 @@ const featureCards = [
       showMobileWarning: false,
       showTooltip: true,
       displayOverlayContent: true,
-      overlayContent: <p className="tilted-card-demo-text">Salt Facial</p>,
+      overlayContent: <p className="tilted-card-demo-text">The SaltFacial®</p>,
       backgroundColor: 'rgba(0,0,0,0)',
       link: '/services/saltfacial',
     },{
@@ -204,7 +204,7 @@ export default function Home() {
           eyebrow=""
           buttonLink="about"
           title="Our Vision"
-          text="Own Aesthetics is a medical spa born from a desire to serve those who want to Own their Aesthetic. We desire to serve those who embrace life’s journey while enhancing that experience. With knowledgeable expertise, we offer the best and latest options for skin health, sorting trends from reliable solutions."
+          text="Own Aesthetics is a medical spa born from a desire to serve those who want to Own their Aesthetic. We believe in enhancing your natural evolution, so you feel like your best self through every phase of life. With knowledgeable expertise, we offer the best and latest options for skin health, sorting trends from reliable solutions."
           buttonLabel="Learn More"
           imageSrc="/assets/images/christmas-staff.jpeg"
           imageAlt="MRI imaging suite"
@@ -213,9 +213,9 @@ export default function Home() {
 
                 <ShowcaseSection 
           eyebrow="Facial Treatments"
-          title="NEW Salt Facials"
+          title="NEW: The SaltFacial®"
           buttonLink = "services/saltfacial"
-          text="Experience the ultimate skin rejuvenation with Salt Facials. This exfoliating treatment combines the power of sea salt,
+          text="Experience the ultimate skin rejuvenation with the SaltFacial®. This exfoliating treatment combines the power of sea salt,
                 skincare, and technology to detoxify, hydrate, and renew your skin, leaving you with a smooth, glowing, and refreshed complexion."
           buttonLabel="Learn More"
           imageSrc="/assets/images/images/istock-salt1.jpg"

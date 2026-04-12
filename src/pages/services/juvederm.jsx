@@ -1,8 +1,5 @@
-import { Routes, Route } from "react-router-dom";
-
 import Navbar from "../../components/navbar";
 import Footer from "../../components/footer";
-import Banner2 from "../../components/banner2";
 import Banner3 from "../../components/banner3";
 import CustomCursor from "../../components/customcursor";
 import "./juvederm.css";
@@ -15,14 +12,14 @@ export default function Juvederm() {
 
       <Banner3
         image="/assets/images/images/sumner-mahaffey-7Y0NshQLohk-unsplash.jpg"
-        title="Juvederm Injectable HA Dermal Fillers"
-        subtitle="Enhance Your Natural Beauty with the Juvederm Collection of Injectable HA Dermal Fillers"
+        title="JUVÉDERM® Injectable HA Dermal Fillers"
+        subtitle="Enhance Your Natural Beauty with the JUVÉDERM® Collection of Injectable HA Dermal Fillers"
       />
 
       <section id="juvederm-services">
         <div className="juvederm-container">
           <h1 className="juvederm-title juvederm-animated">
-            {/* Facial Contouring - Juvederm Collection of Injectable HA Dermal Fillers */}
+            {/* Facial Contouring - JUVÉDERM® Collection of Injectable HA Dermal Fillers */}
           </h1>
           <div className="juvederm-row">
             <div className="juvederm-image-gallery">
@@ -41,14 +38,20 @@ export default function Juvederm() {
             </div>
             <div className="juvederm-services-text juvederm-service-boxes juvederm-animated">
               <p>
-                Injectable dermal fillers are approved treatments that
-                temporarily add volume to certain areas of the face, including
-                the cheeks, lips, and nasolabial folds. They are made from
-                various substances, but the primary ingredient in most
-                injectable fillers is hyaluronic acid (HA), a water- loving
-                molecule found naturally in the skin. A modified form of HA is
-                the backbone of many clear, colorless, gel-like injectable
-                fillers. The results can last anywhere from 8 months to 2 years.
+                JUVÉDERM® is a collection of hyaluronic acid (HA) dermal fillers
+                designed to restore volume, smooth lines, and enhance facial
+                contours. Common treatment areas include the cheeks, lips, and
+                nasolabial folds.
+                <br />
+                <br />
+                Hyaluronic acid is a naturally occurring substance in the skin
+                that helps maintain hydration and volume. JUVÉDERM® fillers use
+                a refined form of HA to create smooth, natural-looking results
+                that enhance - rather than change - your features.
+                <br />
+                <br />
+                Results are immediate and can last anywhere from 8 months to 2
+                years, depending on the treatment area and product used.
               </p>
             </div>
           </div>

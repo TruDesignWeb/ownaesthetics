@@ -1,19 +1,15 @@
-import { Routes, Route } from 'react-router-dom';
-
 import Navbar from '../../components/navbar';
 import Footer from '../../components/footer';
-import Banner2 from '../../components/banner2';
 import Banner3 from '../../components/banner3';
 import CustomCursor from '../../components/customcursor';
 import './exosomes.css';
-
 
 export default function Exosomes() {
     return (
         <>
             <CustomCursor />
             <Navbar />
-            
+
             <Banner3
                 image="/assets/images/images/sumner-mahaffey-7Y0NshQLohk-unsplash.jpg"
                 title="EXO|E® Skin Revitalizing Complex"
@@ -25,29 +21,28 @@ export default function Exosomes() {
                     <h1 className="exosomes-title exosomes-animated">
                         {/* EXO|E® Skin Revitalizing Complex */}
                     </h1>
-                    
+
                     <div className="exosomes-main-content">
                         <div className="exosomes-image-gallery">
                             <img src="/assets/images/images/IMG_8380.JPG" alt="EXO|E Before & After 1"/>
                             <img src="/assets/images/images/exoe_digital_marketing_kit_-_12.11.2023/EXOE Digital Marketing Kit - 12.11.2023/15.png" alt="EXO|E Before & After 2"/>
                             <img src="/assets/images/images/exoe_digital_marketing_kit_-_12.11.2023/EXOE Digital Marketing Kit - 12.11.2023/ex3.png" alt="EXO|E Before & After 3"/>
                         </div>
-                        
+
                         <div className="exosomes-content-text exosomes-animated">
                             <p>
-                                <strong>EXO|E® Skin Revitalizing Complex</strong>
-                                A complete and perfectly formulated set of active naturally occurring secretory factors from plants: plant factors, liposomes, growth factors, & anti-stressing factors.<br/><br/>
-
-                                <strong>EXO|E®</strong> is a three-step process. This system is chemical-free, water-based, and made in the USA, making it one of the most prized recent skincare lines available. Patients appreciate less downtime and enhanced results enabling them to do more aggressive treatments minimizing social downtime while optimizing procedure results.
-
-                                <br/><br/><strong>D|TOX®</strong>
-                                helps hydrate and prep your skin for your upcoming aesthetic treatment. D|TOX® provides hydration support to your skin when needed.
-
-                                <br/><br/>
-                                <strong>EXO|E®</strong> is a consortia of active plant-based secretory factors chosen for perfect compatibility with the skin and leading to targeted results and desired outcomes.
-
-                                <br/><br/><strong>RE|PAIR®</strong>
-                                reinforces the work of EXO|E® with fourteen additional applications of the full complement of plant factors found in nature's restorative processes—a home run for the skin. RE|PAIR® provides continuous support for sensitive skin.
+                                Exosome therapy is an advanced treatment designed to support skin repair, improve treatment
+                                recovery, and enhance overall results. Using plant-based ingredients, this system helps calm
+                                the skin, reduce inflammation, and promote a smoother, healthier appearance.<br/><br/>
+                                This treatment is often used alongside other aesthetic services, typically our laser or facial
+                                treatments, to improve outcomes and minimize downtime. It works by supporting your skin&apos;s
+                                natural ability to restore and renew - helping you heal faster and see more refined results.<br/><br/>
+                                The process includes three steps designed to prepare, treat, and support your skin. First, the
+                                skin is hydrated and prepped to optimize treatment. Next, targeted ingredients are applied to
+                                help improve skin function and recovery. Finally, continued support helps maintain results and
+                                keep skin balanced and resilient.<br/><br/>
+                                This gentle, water-based system is suitable for sensitive skin and is ideal for anyone looking to
+                                enhance results while maintaining a natural, healthy look.
                             </p>
                         </div>
                     </div>
