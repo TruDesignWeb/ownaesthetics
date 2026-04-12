@@ -1,0 +1,245 @@
+.rsvp-page {
+  background: #fffdf0;
+}
+
+.rsvp-intro-section,
+.rsvp-form-section {
+  padding: clamp(3.5rem, 7vw, 6rem) 1.5rem;
+}
+
+.rsvp-intro-wrap,
+.rsvp-form-wrap {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: clamp(2rem, 5vw, 4rem);
+  align-items: stretch;
+}
+
+.rsvp-eyebrow {
+  display: inline-block;
+  margin-bottom: 1rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  font-size: 0.875rem;
+  color: #6b6b6b;
+}
+
+.rsvp-title {
+  font-size: clamp(2rem, 3.6vw, 3.2rem);
+  line-height: 1.15;
+  font-weight: 600;
+  color: #111;
+  margin-bottom: 1.25rem;
+}
+
+.rsvp-text {
+  font-size: 1.05rem;
+  line-height: 1.75;
+  color: #2b2b2b;
+  margin-bottom: 1rem;
+  max-width: 680px;
+}
+
+.rsvp-event-card {
+  background: linear-gradient(180deg, #133550 0%, #244760 100%);
+  color: white;
+  border-radius: 18px;
+  padding: clamp(2rem, 4vw, 3rem);
+  box-shadow: 0 20px 50px rgba(19, 53, 80, 0.18);
+  align-self: center;
+}
+
+.rsvp-card-label {
+  font-size: 0.8rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: rgba(241, 241, 194, 0.82);
+  margin-bottom: 0.75rem;
+}
+
+.rsvp-event-card h3 {
+  font-size: clamp(1.8rem, 3vw, 2.5rem);
+  font-weight: 500;
+  margin-bottom: 1.25rem;
+}
+
+.rsvp-detail-list {
+  list-style: none;
+  display: grid;
+  gap: 0.9rem;
+  padding: 0;
+  margin: 0;
+}
+
+.rsvp-detail-list li {
+  font-size: 1.02rem;
+  line-height: 1.6;
+  padding-bottom: 0.9rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.rsvp-detail-list li:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.rsvp-highlight-section {
+  background: #9b5b3e;
+  padding: clamp(2rem, 5vw, 4rem) 1.5rem;
+  text-align: center;
+}
+
+.rsvp-highlight-wrap {
+  max-width: 860px;
+  margin: 0 auto;
+  background: #faf7f2;
+  border-radius: 26px;
+}
+
+.rsvp-highlight-item {
+  padding: 2rem;
+}
+
+.rsvp-highlight-title {
+  font-size: clamp(1.8rem, 3vw, 2.4rem);
+  color: #333;
+  margin-bottom: 0.75rem;
+}
+
+.rsvp-highlight-text {
+  font-size: 1.05rem;
+  color: #555;
+  line-height: 1.7;
+}
+
+.rsvp-perks-section {
+  background: #f9f4ef;
+  padding: clamp(3rem, 6vw, 5rem) 1.5rem;
+}
+
+.rsvp-perks-wrap {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.5rem;
+}
+
+.rsvp-perk-card {
+  background: white;
+  border: 1px solid rgba(19, 53, 80, 0.08);
+  border-radius: 18px;
+  padding: 1.75rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.04);
+}
+
+.rsvp-perk-card p {
+  color: #2b2b2b;
+  line-height: 1.7;
+  font-size: 1rem;
+}
+
+.rsvp-form-section {
+  background: #ebe1d2;
+}
+
+.rsvp-form-panel {
+  background: #f7f1e8;
+  border-radius: 18px;
+  padding: clamp(1.75rem, 4vw, 2.5rem);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.06);
+}
+
+.rsvp-success-message {
+  background: rgba(160, 173, 147, 0.18);
+  border: 1px solid rgba(160, 173, 147, 0.55);
+  color: #1f3424;
+  border-radius: 12px;
+  padding: 0.9rem 1rem;
+  margin-bottom: 1rem;
+}
+
+.rsvp-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.rsvp-form-row {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.rsvp-form input,
+.rsvp-form select {
+  width: 100%;
+  padding: 0.95rem 1rem;
+  border: 1px solid #d7cec2;
+  border-radius: 10px;
+  font-size: 1rem;
+  background: white;
+  color: #2b2b2b;
+}
+
+.rsvp-form input:focus,
+.rsvp-form select:focus {
+  outline: none;
+  border-color: #9e9c8d;
+  box-shadow: 0 0 0 3px rgba(158, 156, 141, 0.16);
+}
+
+.rsvp-field-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+}
+
+.rsvp-field-group label {
+  font-size: 0.95rem;
+  color: #39434d;
+}
+
+.rsvp-submit-button {
+  border: none;
+  border-radius: 999px;
+  padding: 0.95rem 1.5rem;
+  background: linear-gradient(135deg, #133550 0%, #35586d 100%);
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.rsvp-submit-button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 12px 24px rgba(19, 53, 80, 0.18);
+}
+
+@media (max-width: 900px) {
+  .rsvp-intro-wrap,
+  .rsvp-form-wrap,
+  .rsvp-perks-wrap,
+  .rsvp-form-row {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .rsvp-intro-section,
+  .rsvp-form-section,
+  .rsvp-perks-section,
+  .rsvp-highlight-section {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .rsvp-highlight-item,
+  .rsvp-event-card,
+  .rsvp-perk-card,
+  .rsvp-form-panel {
+    padding: 1.5rem;
+  }
+}

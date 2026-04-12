@@ -40,6 +40,7 @@ import Terms from './pages/termsofservice';
 import Privacy from './pages/privacypolicy';
 import CancellationPolicy from './pages/cancellationpolicy';
 import ScrollToTop from './components/scrolltotop.jsx';
+import RSVP from './pages/rsvp.jsx';
 
 
 export default function App() {
@@ -61,6 +62,7 @@ export default function App() {
         <Route path="/membership" element={<Membership />} />
         <Route path="/Socials" element={<Socials />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/rsvp" element={<RSVP />} />
         <Route path="/referring-partners" element={<Refer />} />
 
         
