@@ -13,6 +13,7 @@
 
 .rsvp-popup-card {
   width: min(980px, 100%);
+  max-height: min(90vh, 860px);
   display: grid;
   grid-template-columns: 1.05fr 0.95fr;
   background: #f7f1e8;
@@ -27,6 +28,7 @@
   padding: 2.5rem;
   background: linear-gradient(180deg, #133550 0%, #35586d 100%);
   color: white;
+  overflow-y: auto;
 }
 
 .rsvp-popup-eyebrow {
@@ -82,6 +84,7 @@
   justify-content: center;
   gap: 1rem;
   background: linear-gradient(180deg, #f7f1e8 0%, #ebe1d2 100%);
+  overflow-y: auto;
 }
 
 .rsvp-popup-form-row {
@@ -177,25 +180,110 @@
 @media (max-width: 900px) {
   .rsvp-popup-card {
     grid-template-columns: 1fr;
+    max-width: 620px;
   }
 }
 
 @media (max-width: 768px) {
   .rsvp-popup-overlay {
-    padding: 1rem;
+    align-items: flex-start;
+    padding: 0.75rem;
   }
 
-  .rsvp-popup-copy,
+  .rsvp-popup-card {
+    max-height: calc(100vh - 1.5rem);
+    border-radius: 20px;
+  }
+
+  .rsvp-popup-copy {
+    padding: 1.25rem 1.25rem 1rem;
+  }
+
   .rsvp-popup-form {
-    padding: 1.5rem;
+    padding: 1rem 1.25rem 1.25rem;
+    justify-content: flex-start;
+    gap: 0.85rem;
+  }
+
+  .rsvp-popup-eyebrow {
+    font-size: 0.68rem;
+    margin-bottom: 0.6rem;
+  }
+
+  .rsvp-popup-title {
+    font-size: 1.7rem;
+    line-height: 1.05;
+    margin-bottom: 0.7rem;
+  }
+
+  .rsvp-popup-subtitle {
+    font-size: 0.98rem;
+    line-height: 1.45;
+    margin-bottom: 0.75rem;
+  }
+
+  .rsvp-popup-text,
+  .rsvp-popup-details p {
+    font-size: 0.92rem;
+    line-height: 1.45;
+  }
+
+  .rsvp-popup-details {
+    gap: 0.45rem;
+  }
+
+  .rsvp-popup-details p {
+    padding-bottom: 0.45rem;
   }
 
   .rsvp-popup-form-row {
     grid-template-columns: 1fr;
+    gap: 0.85rem;
+  }
+
+  .rsvp-popup-field input {
+    padding: 0.9rem 0.95rem;
+    font-size: 0.98rem;
+  }
+
+  .rsvp-popup-button {
+    width: 100%;
+    padding: 0.9rem 1.2rem;
+    font-size: 0.98rem;
   }
 
   .rsvp-popup-close {
-    top: 0.75rem;
-    right: 0.75rem;
+    top: 0.7rem;
+    right: 0.7rem;
+    width: 2.1rem;
+    height: 2.1rem;
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .rsvp-popup-overlay {
+    padding: 0.5rem;
+  }
+
+  .rsvp-popup-card {
+    max-height: calc(100vh - 1rem);
+    border-radius: 18px;
+  }
+
+  .rsvp-popup-copy {
+    padding: 1.1rem 1rem 0.9rem;
+  }
+
+  .rsvp-popup-form {
+    padding: 0.9rem 1rem 1rem;
+  }
+
+  .rsvp-popup-title {
+    font-size: 1.45rem;
+  }
+
+  .rsvp-popup-subtitle {
+    font-size: 0.93rem;
   }
 }
