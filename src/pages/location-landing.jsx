@@ -92,7 +92,7 @@ export default function LocationLandingPage() {
       <CustomCursor />
       <Navbar />
       <Banner3
-        image="/assets/images/christmas-staff.jpeg"
+        image="/assets/images/images/sumner-mahaffey-7Y0NshQLohk-unsplash.jpg"
         title={page.heroTitle}
         subtitle={page.heroSubtitle}
       />
@@ -128,7 +128,11 @@ export default function LocationLandingPage() {
                 <h2>Explore Related Pages</h2>
                 <div className="seo-page__links">
                   {page.relatedLinks.map((link) => (
-                    <Link className="seo-page__link-pill" key={link.to} to={link.to}>
+                    <Link
+                      className="seo-page__link-pill"
+                      key={link.to}
+                      to={link.to}
+                    >
                       {link.label}
                     </Link>
                   ))}
@@ -158,7 +162,8 @@ export default function LocationLandingPage() {
                 <h2>Start Here</h2>
                 <p>
                   If you are not sure which treatment to book first, a skincare
-                  analysis or consultation is the easiest way to compare options.
+                  analysis or consultation is the easiest way to compare
+                  options.
                 </p>
                 <Link className="seo-page__link-button" to="/contact">
                   Request an appointment

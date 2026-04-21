@@ -1,103 +1,142 @@
 .seo-page {
-  background: linear-gradient(180deg, #f5efe8 0%, #fcfaf7 100%);
-  color: #143247;
-  padding: 4.5rem 1.5rem 6rem;
+  background: #f8f9fa;
+  color: #444;
+  padding: 80px 0 100px 0;
 }
 
 .seo-page__shell {
   margin: 0 auto;
-  max-width: 1220px;
+  max-width: 1280px;
+  padding: 0 20px;
 }
 
 .seo-page__header {
-  margin-bottom: 2.5rem;
-  max-width: 860px;
+  margin: 0 auto 40px;
+  max-width: 900px;
+  text-align: center;
 }
 
 .seo-page__title {
-  color: #143247;
-  font-family: Mundial, sans-serif;
-  font-size: clamp(2.2rem, 4vw, 4rem);
-  line-height: 1.02;
-  margin: 0 0 1rem;
+  color: #2d2d2d;
+  font-size: 42px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  line-height: 1.15;
+  margin: 0 0 18px;
 }
 
 .seo-page__lede {
-  color: rgba(20, 50, 71, 0.82);
-  font-size: 1.08rem;
-  line-height: 1.8;
+  color: #444;
+  font-size: 20px;
+  line-height: 1.9;
   margin: 0;
 }
 
 .seo-page__layout {
+  align-items: start;
   display: grid;
-  gap: 2rem;
-  grid-template-columns: minmax(0, 1.7fr) minmax(280px, 0.9fr);
+  gap: 24px;
+  grid-template-columns: minmax(0, 1.7fr) minmax(280px, 0.85fr);
 }
 
 .seo-page__content {
   min-width: 0;
 }
 
+.seo-page__section,
+.seo-page__card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+  transition: all 0.4s ease;
+}
+
 .seo-page__section {
-  background: rgba(255, 255, 255, 0.82);
-  border: 1px solid rgba(20, 50, 71, 0.1);
-  border-radius: 28px;
-  box-shadow: 0 20px 44px rgba(20, 50, 71, 0.08);
-  margin-bottom: 1.5rem;
-  padding: 2rem;
+  margin-bottom: 24px;
+  padding: 40px 50px;
+}
+
+.seo-page__card {
+  color: #444;
+  padding: 32px 34px;
+}
+
+.seo-page__section:hover,
+.seo-page__card:hover {
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.08);
+  transform: translateY(-4px);
+}
+
+.seo-page__section h2,
+.seo-page__card h2 {
+  color: #2d2d2d;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 1.2;
+  margin: 0 0 18px;
 }
 
 .seo-page__section h2 {
-  color: #143247;
-  font-family: Mundial, sans-serif;
-  font-size: 1.65rem;
-  line-height: 1.1;
-  margin: 0 0 1rem;
+  font-size: 32px;
 }
 
-.seo-page__section p {
-  color: rgba(20, 50, 71, 0.88);
-  font-size: 1rem;
+.seo-page__section p,
+.seo-page__card p {
+  color: #444;
+  font-size: 20px;
   line-height: 1.9;
-  margin: 0 0 1rem;
+  margin: 0 0 18px;
 }
 
-.seo-page__section p:last-child {
+.seo-page__section p:last-child,
+.seo-page__card p:last-child {
   margin-bottom: 0;
 }
 
 .seo-page__list,
 .seo-page__steps {
-  color: rgba(20, 50, 71, 0.88);
-  display: grid;
-  gap: 0.8rem;
-  line-height: 1.8;
+  color: #444;
+  font-size: 20px;
+  line-height: 1.9;
   margin: 0;
-  padding-left: 1.2rem;
+  padding-left: 1.3rem;
+}
+
+.seo-page__list li,
+.seo-page__steps li {
+  margin-bottom: 12px;
+}
+
+.seo-page__list li:last-child,
+.seo-page__steps li:last-child {
+  margin-bottom: 0;
 }
 
 .seo-page__list--tight {
-  gap: 0.55rem;
+  font-size: 18px;
 }
 
 .seo-page__faq-grid {
   display: grid;
-  gap: 1rem;
+  gap: 20px;
 }
 
 .seo-page__faq-card {
-  background: rgba(242, 232, 219, 0.65);
-  border-radius: 22px;
-  padding: 1.35rem;
+  border-top: 1px solid #ececec;
+  padding-top: 20px;
+}
+
+.seo-page__faq-card:first-child {
+  border-top: none;
+  padding-top: 0;
 }
 
 .seo-page__faq-card h3 {
-  color: #143247;
-  font-family: Mundial, sans-serif;
-  font-size: 1.1rem;
-  line-height: 1.25;
-  margin: 0 0 0.7rem;
+  color: #2d2d2d;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.35;
+  margin: 0 0 10px;
 }
 
 .seo-page__faq-card p {
@@ -107,56 +146,34 @@
 .seo-page__links {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.8rem;
+  gap: 14px;
 }
 
 .seo-page__link-pill,
 .seo-page__link-button {
-  background: #143247;
-  border-radius: 999px;
-  color: #f8f2ea;
+  color: #444;
   display: inline-flex;
-  padding: 0.75rem 1.15rem;
-  text-decoration: none;
-  transition: transform 0.2s ease, background-color 0.2s ease;
+  font-size: 18px;
+  line-height: 1.6;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: opacity 0.2s ease;
 }
 
 .seo-page__link-pill:hover,
 .seo-page__link-button:hover {
-  background: #9b5b3e;
-  color: #fff6ef;
-  transform: translateY(-1px);
+  color: #444;
+  opacity: 0.7;
 }
 
 .seo-page__aside {
   display: grid;
   align-content: start;
-  gap: 1rem;
-}
-
-.seo-page__card {
-  background: rgba(20, 50, 71, 0.96);
-  border-radius: 24px;
-  box-shadow: 0 22px 44px rgba(20, 50, 71, 0.18);
-  color: rgba(255, 248, 240, 0.92);
-  padding: 1.5rem;
-}
-
-.seo-page__card h2 {
-  color: #fff7f0;
-  font-family: Mundial, sans-serif;
-  font-size: 1.25rem;
-  line-height: 1.15;
-  margin: 0 0 1rem;
-}
-
-.seo-page__card p {
-  line-height: 1.75;
-  margin: 0 0 0.55rem;
+  gap: 20px;
 }
 
 .seo-page__fact {
-  margin-bottom: 1rem;
+  margin-bottom: 18px;
 }
 
 .seo-page__fact:last-child {
@@ -164,36 +181,57 @@
 }
 
 .seo-page__fact-label {
-  color: rgba(255, 230, 211, 0.78);
+  color: #2d2d2d;
   display: block;
-  font-size: 0.82rem;
-  letter-spacing: 0.12em;
-  margin-bottom: 0.3rem;
-  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 8px;
 }
 
 .seo-page--missing {
   min-height: 55vh;
 }
 
-@media (max-width: 980px) {
+@media (max-width: 992px) {
   .seo-page__layout {
     grid-template-columns: 1fr;
   }
+
+  .seo-page__section,
+  .seo-page__card {
+    padding: 35px;
+  }
 }
 
-@media (max-width: 700px) {
-  .seo-page {
-    padding: 3.5rem 1rem 5rem;
+@media (max-width: 600px) {
+  .seo-page__title {
+    font-size: 32px;
   }
 
-  .seo-page__section {
-    border-radius: 22px;
-    padding: 1.35rem;
+  .seo-page__lede,
+  .seo-page__section p,
+  .seo-page__card p,
+  .seo-page__list,
+  .seo-page__steps {
+    font-size: 18px;
   }
 
+  .seo-page__section h2,
+  .seo-page__card h2 {
+    font-size: 28px;
+  }
+
+  .seo-page__faq-card h3 {
+    font-size: 22px;
+  }
+
+  .seo-page__section,
   .seo-page__card {
-    border-radius: 20px;
-    padding: 1.25rem;
+    padding: 28px 24px;
+  }
+
+  .seo-page__link-pill,
+  .seo-page__link-button {
+    font-size: 17px;
   }
 }

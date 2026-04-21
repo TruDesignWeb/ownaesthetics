@@ -22,6 +22,7 @@ import TestimonialShowcase from "../components/testimonial-showcase";
 import SocialMedia from "../components/social-media";
 import { Helmet } from "react-helmet";
 import RSVPPopup from "../components/rsvppopup";
+import { Link } from "react-router-dom";
 
 const featureCards = [
   {
@@ -678,6 +679,38 @@ export default function Home() {
                 Answers about pricing, timing, location, and what to expect at
                 Own Aesthetics in West Des Moines.
               </p>
+              <div className="homepage-faq__links">
+                <Link className="homepage-faq__link-pill" to="/services/injectables">
+                  Injectables
+                </Link>
+                <Link className="homepage-faq__link-pill" to="/services/facials">
+                  Facials
+                </Link>
+                <Link
+                  className="homepage-faq__link-pill"
+                  to="/services/nouvaderm-laser-resurfacing"
+                >
+                  NOUVADerm Laser Resurfacing
+                </Link>
+                <Link
+                  className="homepage-faq__link-pill"
+                  to="/services/skincare-analysis"
+                >
+                  Skincare Analysis
+                </Link>
+                <Link className="homepage-faq__link-pill" to="/locations/des-moines">
+                  Des Moines
+                </Link>
+                <Link
+                  className="homepage-faq__link-pill"
+                  to="/locations/west-des-moines"
+                >
+                  West Des Moines
+                </Link>
+                <Link className="homepage-faq__link-pill" to="/locations/waukee">
+                  Waukee
+                </Link>
+              </div>
             </div>
 
             <div className="homepage-faq__grid">

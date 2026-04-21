@@ -168,6 +168,44 @@ export default function Footer() {
         >
           Cancellation Policy
         </Link>
+        <div style={{ marginTop: "12px" }}>
+          <Link
+            to="/services/injectables"
+            style={{ color: "white", textDecoration: "none", marginRight: "15px" }}
+          >
+            Injectables
+          </Link>
+          <Link
+            to="/services/facials"
+            style={{ color: "white", textDecoration: "none", marginRight: "15px" }}
+          >
+            Facials
+          </Link>
+          <Link
+            to="/services/nouvaderm-laser-resurfacing"
+            style={{ color: "white", textDecoration: "none", marginRight: "15px" }}
+          >
+            NOUVADerm Laser
+          </Link>
+          <Link
+            to="/locations/des-moines"
+            style={{ color: "white", textDecoration: "none", marginRight: "15px" }}
+          >
+            Des Moines
+          </Link>
+          <Link
+            to="/locations/west-des-moines"
+            style={{ color: "white", textDecoration: "none", marginRight: "15px" }}
+          >
+            West Des Moines
+          </Link>
+          <Link
+            to="/locations/waukee"
+            style={{ color: "white", textDecoration: "none" }}
+          >
+            Waukee
+          </Link>
+        </div>
       </div>
     </footer>
   );

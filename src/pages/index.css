@@ -72,6 +72,29 @@ body {
   max-width: 680px;
 }
 
+.homepage-faq__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  margin-top: 1.35rem;
+}
+
+.homepage-faq__link-pill {
+  background: rgba(22, 48, 65, 0.08);
+  border-radius: 999px;
+  color: #163041;
+  display: inline-flex;
+  padding: 0.72rem 1rem;
+  text-decoration: none;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.homepage-faq__link-pill:hover {
+  background: rgba(22, 48, 65, 0.14);
+  color: #163041;
+  transform: translateY(-1px);
+}
+
 .homepage-faq__grid {
   display: grid;
   gap: 1.25rem;
