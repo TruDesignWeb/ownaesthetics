@@ -3,6 +3,7 @@ import Footer from "../../components/footer";
 import Banner3 from "../../components/banner3";
 import CustomCursor from "../../components/customcursor";
 import ServiceHighlightBox from "../../components/servicehighlightbox";
+import { Link } from "react-router-dom";
 import "./facials.css";
 
 export default function Facials() {
@@ -57,6 +58,10 @@ export default function Facials() {
                 treatmentAreas={["Face", "Neck", "Decollete", "Back"]}
                 sessions="60 min. or 90 min."
               />
+              <p>
+                Want a broader breakdown of who facials are for, what they include, and how they compare with other skin treatments?{" "}
+                <Link to="/services/facials-guide">Read our facials guide.</Link>
+              </p>
             </div>
           </div>
         </div>
