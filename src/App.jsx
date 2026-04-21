@@ -41,6 +41,7 @@ import Privacy from './pages/privacypolicy';
 import CancellationPolicy from './pages/cancellationpolicy';
 import ScrollToTop from './components/scrolltotop.jsx';
 import RSVP from './pages/rsvp.jsx';
+import ServiceRouteSeo from './components/service-route-seo.jsx';
 
 
 export default function App() {
@@ -57,6 +58,7 @@ export default function App() {
     <>
       <Navbar />
       <ScrollToTop />
+      <ServiceRouteSeo />
       <Routes>
         
         <Route path="/membership" element={<Membership />} />
