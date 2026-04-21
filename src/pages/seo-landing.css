@@ -1,0 +1,199 @@
+.seo-page {
+  background: linear-gradient(180deg, #f5efe8 0%, #fcfaf7 100%);
+  color: #143247;
+  padding: 4.5rem 1.5rem 6rem;
+}
+
+.seo-page__shell {
+  margin: 0 auto;
+  max-width: 1220px;
+}
+
+.seo-page__header {
+  margin-bottom: 2.5rem;
+  max-width: 860px;
+}
+
+.seo-page__title {
+  color: #143247;
+  font-family: Mundial, sans-serif;
+  font-size: clamp(2.2rem, 4vw, 4rem);
+  line-height: 1.02;
+  margin: 0 0 1rem;
+}
+
+.seo-page__lede {
+  color: rgba(20, 50, 71, 0.82);
+  font-size: 1.08rem;
+  line-height: 1.8;
+  margin: 0;
+}
+
+.seo-page__layout {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: minmax(0, 1.7fr) minmax(280px, 0.9fr);
+}
+
+.seo-page__content {
+  min-width: 0;
+}
+
+.seo-page__section {
+  background: rgba(255, 255, 255, 0.82);
+  border: 1px solid rgba(20, 50, 71, 0.1);
+  border-radius: 28px;
+  box-shadow: 0 20px 44px rgba(20, 50, 71, 0.08);
+  margin-bottom: 1.5rem;
+  padding: 2rem;
+}
+
+.seo-page__section h2 {
+  color: #143247;
+  font-family: Mundial, sans-serif;
+  font-size: 1.65rem;
+  line-height: 1.1;
+  margin: 0 0 1rem;
+}
+
+.seo-page__section p {
+  color: rgba(20, 50, 71, 0.88);
+  font-size: 1rem;
+  line-height: 1.9;
+  margin: 0 0 1rem;
+}
+
+.seo-page__section p:last-child {
+  margin-bottom: 0;
+}
+
+.seo-page__list,
+.seo-page__steps {
+  color: rgba(20, 50, 71, 0.88);
+  display: grid;
+  gap: 0.8rem;
+  line-height: 1.8;
+  margin: 0;
+  padding-left: 1.2rem;
+}
+
+.seo-page__list--tight {
+  gap: 0.55rem;
+}
+
+.seo-page__faq-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.seo-page__faq-card {
+  background: rgba(242, 232, 219, 0.65);
+  border-radius: 22px;
+  padding: 1.35rem;
+}
+
+.seo-page__faq-card h3 {
+  color: #143247;
+  font-family: Mundial, sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.25;
+  margin: 0 0 0.7rem;
+}
+
+.seo-page__faq-card p {
+  margin: 0;
+}
+
+.seo-page__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+}
+
+.seo-page__link-pill,
+.seo-page__link-button {
+  background: #143247;
+  border-radius: 999px;
+  color: #f8f2ea;
+  display: inline-flex;
+  padding: 0.75rem 1.15rem;
+  text-decoration: none;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.seo-page__link-pill:hover,
+.seo-page__link-button:hover {
+  background: #9b5b3e;
+  color: #fff6ef;
+  transform: translateY(-1px);
+}
+
+.seo-page__aside {
+  display: grid;
+  align-content: start;
+  gap: 1rem;
+}
+
+.seo-page__card {
+  background: rgba(20, 50, 71, 0.96);
+  border-radius: 24px;
+  box-shadow: 0 22px 44px rgba(20, 50, 71, 0.18);
+  color: rgba(255, 248, 240, 0.92);
+  padding: 1.5rem;
+}
+
+.seo-page__card h2 {
+  color: #fff7f0;
+  font-family: Mundial, sans-serif;
+  font-size: 1.25rem;
+  line-height: 1.15;
+  margin: 0 0 1rem;
+}
+
+.seo-page__card p {
+  line-height: 1.75;
+  margin: 0 0 0.55rem;
+}
+
+.seo-page__fact {
+  margin-bottom: 1rem;
+}
+
+.seo-page__fact:last-child {
+  margin-bottom: 0;
+}
+
+.seo-page__fact-label {
+  color: rgba(255, 230, 211, 0.78);
+  display: block;
+  font-size: 0.82rem;
+  letter-spacing: 0.12em;
+  margin-bottom: 0.3rem;
+  text-transform: uppercase;
+}
+
+.seo-page--missing {
+  min-height: 55vh;
+}
+
+@media (max-width: 980px) {
+  .seo-page__layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 700px) {
+  .seo-page {
+    padding: 3.5rem 1rem 5rem;
+  }
+
+  .seo-page__section {
+    border-radius: 22px;
+    padding: 1.35rem;
+  }
+
+  .seo-page__card {
+    border-radius: 20px;
+    padding: 1.25rem;
+  }
+}

@@ -4,12 +4,17 @@ import {
   buildServiceSchema,
   getServicePageConfig,
 } from "../lib/serviceSeo";
+import { coreServicePages } from "../lib/landingPages";
 
 const DEFAULT_OG_IMAGE =
   "https://ownaesthetics.com/images/OWN%20Branding/OWN%20Final%20Logos/Print%20CMYK/Logo%20Icon/PNG/OWN_Icon_CMYK_Black.png";
 
 export default function ServiceRouteSeo() {
   const { pathname } = useLocation();
+  const coreServicePath = pathname.replace(/^\/services\//, "");
+  if (coreServicePages[coreServicePath]) {
+    return null;
+  }
   const config = getServicePageConfig(pathname);
 
   if (!config) return null;
