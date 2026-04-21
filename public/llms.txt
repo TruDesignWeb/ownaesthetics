@@ -1,7 +1,18 @@
 # Own Aesthetics
-
 ## About
 Own Aesthetics is a medical spa in West Des Moines, Iowa. The practice focuses on skin health, patient education, and individualized treatment plans. Services include medical-grade aesthetic treatments and skin products for acne, rosacea, fine lines, wrinkles, age spots, dry skin, and general cosmetic concerns.
+
+## Project Details
+- Website: [Own Aesthetics](https://ownaesthetics.com)
+- Primary location: [West Des Moines, Iowa](https://ownaesthetics.com/locations/west-des-moines)
+- Contact: [Contact page](https://ownaesthetics.com/contact)
+- Reviews and social proof: [Reviews](https://ownaesthetics.com/reviews)
+
+## Core Pages
+- [Home](https://ownaesthetics.com/)
+- [About](https://ownaesthetics.com/about)
+- [Services](https://ownaesthetics.com/services)
+- [Contact](https://ownaesthetics.com/contact)
 
 ## Services and Pricing
 - LifeViz Infinity Pro Consultation: $100
@@ -78,3 +89,47 @@ Yes. The practice says it works with concerns including acne, rosacea, fine line
 
 ### Do you offer a warranty or guarantee on treatments?
 No warranty or guarantee policy was provided in the business details. Patients should ask about follow-up care, expected results, and product-specific policies before treatment.
+- [Reviews](https://ownaesthetics.com/reviews)
+- [Socials](https://ownaesthetics.com/socials)
+- [Skincare](https://ownaesthetics.com/skincare)
+
+## Service Pages
+- [Consultation](https://ownaesthetics.com/services/consultation)
+- [Anti-Wrinkle Treatments](https://ownaesthetics.com/services/antiwrinkle)
+- [AquaFirmeXS](https://ownaesthetics.com/services/aquafirme)
+- [NOUVADerm Laser Resurfacing](https://ownaesthetics.com/services/nouvaderm)
+- [SaltFacial](https://ownaesthetics.com/services/saltfacial)
+- [Cellenis](https://ownaesthetics.com/services/cellenis)
+- [Chemical Peels](https://ownaesthetics.com/services/chemicalpeels)
+- [Exosomes](https://ownaesthetics.com/services/exosomes)
+- [Facials](https://ownaesthetics.com/services/facials)
+- [Hair Treatments](https://ownaesthetics.com/services/hairtreatments)
+- [Juvederm](https://ownaesthetics.com/services/juvederm)
+- [Kybella](https://ownaesthetics.com/services/kybella)
+- [Sclerotherapy](https://ownaesthetics.com/services/sclerotherapy)
+- [Sculptra](https://ownaesthetics.com/services/sculptra)
+- [SkinPen Microneedling](https://ownaesthetics.com/services/skinpen)
+- [Skin Types](https://ownaesthetics.com/services/skintypes)
+- [Injectables Landing Page](https://ownaesthetics.com/services/injectables)
+- [NOUVADerm Laser Resurfacing Landing Page](https://ownaesthetics.com/services/nouvaderm-laser-resurfacing)
+- [Hair Restoration Landing Page](https://ownaesthetics.com/services/hair-restoration)
+- [Skincare Analysis Landing Page](https://ownaesthetics.com/services/skincare-analysis)
+- [SaltFacial Guide](https://ownaesthetics.com/services/saltfacial-guide)
+- [Facials Guide](https://ownaesthetics.com/services/facials-guide)
+
+## Location Pages
+- [Des Moines](https://ownaesthetics.com/locations/des-moines)
+- [West Des Moines](https://ownaesthetics.com/locations/west-des-moines)
+- [Waukee](https://ownaesthetics.com/locations/waukee)
+
+## Policies And Access
+- [Terms of Service](https://ownaesthetics.com/terms)
+- [Privacy Policy](https://ownaesthetics.com/privacy)
+- [Cancellation Policy](https://ownaesthetics.com/cancellation)
+- [RSVP](https://ownaesthetics.com/rsvp)
+- [Referring Partners](https://ownaesthetics.com/referring-partners)
+
+## Business Notes
+- Own Aesthetics offers medical-grade aesthetic services for concerns including acne, rosacea, fine lines, wrinkles, age spots, dry skin, and general cosmetic goals.
+- The practice emphasizes education, individualized recommendations, and natural-looking outcomes.
+- Listed service pricing includes consultation, facials, microneedling, injectables, laser resurfacing, sclerotherapy, and hair restoration offerings.
