@@ -89,13 +89,13 @@ export const coreServicePages = {
       { to: "/services/nouvaderm-laser-resurfacing", label: "NOUVADerm Laser Resurfacing" },
     ],
   },
-  facials: {
-    slug: "facials",
+  "facials-guide": {
+    slug: "facials-guide",
     h1: "Facials",
     heroTitle: "Facials",
     heroSubtitle:
       "Customized facial treatments built around skin condition, skin goals, and realistic maintenance.",
-    metaTitle: "Facials | Own Aesthetics",
+    metaTitle: "Facials Guide | Own Aesthetics",
     metaDescription:
       "Learn what facials include at Own Aesthetics, who they are for, what they cost, how long they take, and how they fit into a long-term skin plan.",
     description:
@@ -269,13 +269,13 @@ export const coreServicePages = {
       { to: "/services/saltfacial", label: "The SaltFacial" },
     ],
   },
-  saltfacial: {
-    slug: "saltfacial",
+  "saltfacial-guide": {
+    slug: "saltfacial-guide",
     h1: "The SaltFacial",
     heroTitle: "The SaltFacial",
     heroSubtitle:
       "A three-part medical-grade treatment that exfoliates, hydrates, and supports skin renewal.",
-    metaTitle: "The SaltFacial | Own Aesthetics",
+    metaTitle: "The SaltFacial Guide | Own Aesthetics",
     metaDescription:
       "Learn how The SaltFacial works at Own Aesthetics, including cost, timing, what is included, who it is for, and how the treatment is performed.",
     description:

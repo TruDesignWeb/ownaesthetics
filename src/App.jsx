@@ -19,10 +19,12 @@ import Refer from './pages/referringpartners.jsx';
 import AntiWrinkle from './pages/services/antiwrinkle';
 import Aquafirme from './pages/services/aquafirme';
 import NouvaDerm from './pages/services/nouvaderm';
+import SaltFacial from './pages/services/saltfacial';
 import Cellenis from './pages/services/cellenis';
 import ChemicalPeels from './pages/services/chemicalpeels';
 import Consultation from './pages/services/consultation';
 import Exosomes from './pages/services/exosomes';
+import Facials from './pages/services/facials';
 import HairTreatments from './pages/services/hairtreatments';
 import Juvederm from './pages/services/juvederm';
 import Kybella from './pages/services/kybella';
@@ -68,12 +70,14 @@ export default function App() {
         <Route path = "services/antiwrinkle" element={<AntiWrinkle />} />
         <Route path = "services/aquafirme" element={<Aquafirme />} />
         <Route path = "services/nouvaderm" element={<NouvaDerm />} />
+        <Route path = "services/saltfacial" element={<SaltFacial />} />
 
         <Route path = "services/cellenis" element={<Cellenis />} />
         <Route path = "services/chemicalpeels" element={<ChemicalPeels />} />
         <Route path = "services/consultation" element={<Consultation />} />
         <Route path = "services/exosomes" element={<Exosomes />} />
 
+        <Route path = "services/facials" element={<Facials />} />
         <Route path = "services/hairtreatments" element={<HairTreatments />} />
         <Route path = "services/juvederm" element={<Juvederm />} />
         <Route path = "services/kybella" element={<Kybella />} />

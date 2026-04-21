@@ -3,6 +3,7 @@ import Footer from '../../components/footer';
 import Banner3 from '../../components/banner3';
 import CustomCursor from '../../components/customcursor';
 import ServiceHighlightBox from '../../components/servicehighlightbox';
+import { Link } from 'react-router-dom';
 import './saltfacial.css';
 
 export default function SaltFacial() {
@@ -48,6 +49,10 @@ export default function SaltFacial() {
                                 treatmentAreas={["Face", "Body"]}
                                 sessions="45 minutes - 1 hour"
                             />
+                            <p>
+                                Want a broader breakdown of pricing, timing, and how this treatment fits into a long-term skin plan?{" "}
+                                <Link to="/services/saltfacial-guide">Read our SaltFacial guide.</Link>
+                            </p>
                         </div>
                     </div>
                 </div>
