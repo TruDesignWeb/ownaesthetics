@@ -343,6 +343,40 @@ export default function About({}) {
         </div>
       </section>
 
+      {/* TEXT FIRST PIC SEC */}
+      <section className="philo-section" aria-labelledby="philo-title">
+        <div className="philo-wrap">
+          {/* Left: text */}
+          <div className="philo-copy">
+            <span className="philo-eyebrow">LE</span>
+            <h2 id="philo-title" className="philo-title">
+              Jennifer Jensen
+            </h2>
+            <p className="philo-text">
+              We're so excited to welcome Jen to our team! Jen is passionate
+              about skin health and has a talent for helping clients feel
+              confident and refreshed. Jen brings 15 years of experience and a
+              peronalized, results-driven approach to every treatment.
+            </p>
+          </div>
+
+          {/* Right: image stack with sage frame */}
+          <div className="philo-media">
+            <div className="sage-frame" aria-hidden="true" />
+            <div
+              className="image-card"
+              ref={imgRef}
+              style={{ transform: `translateY(${y}px)` }}
+            >
+              <img
+                src="/assets/images/Jenjensen.JPG"
+                alt="Spa reception with serene, warm tones"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* <Stats /> */}
 
       <Footer />
