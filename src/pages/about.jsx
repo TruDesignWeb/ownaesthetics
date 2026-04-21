@@ -9,7 +9,6 @@ import "../styles/animations.css";
 
 import Banner2 from "../components/banner2";
 import "./about.css";
-import { Helmet } from "react-helmet";
 
 import { useEffect, useRef, useState } from "react";
 
@@ -56,32 +55,6 @@ export default function About({}) {
 
   return (
     <>
-      <Helmet>
-        <title>About Us | Own Aesthetics</title>
-        <meta
-          name="description"
-          content="Learn about Own Aesthetics, our mission and team of skincare professionals dedicated to helping you feel confident in your own skin."
-        />
-        <meta
-          name="keywords"
-          content="about own aesthetics, medspa team, west des moines, skincare professionals, medical spa about us"
-        />
-
-        <meta property="og:title" content="About Own Aesthetics" />
-        <meta
-          property="og:description"
-          content="Discover the story behind Own Aesthetics and meet our experienced team serving the West Des Moines community."
-        />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://ownaesthetics.com/about" />
-        <meta
-          property="og:image"
-          content="https://ownaesthetics.com/assets/clinic.jpg"
-        />
-
-        <link rel="canonical" href="https://ownaesthetics.com/about" />
-
-      </Helmet>
       <CustomCursor />
 
       <Navbar />

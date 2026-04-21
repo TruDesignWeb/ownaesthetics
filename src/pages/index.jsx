@@ -20,9 +20,9 @@ import Login from "../components/login";
 import ShowcaseSection from "../components/showcasesection";
 import TestimonialShowcase from "../components/testimonial-showcase";
 import SocialMedia from "../components/social-media";
-import { Helmet } from "react-helmet";
 import RSVPPopup from "../components/rsvppopup";
 import { Link } from "react-router-dom";
+import Seo from "../components/seo";
 
 const featureCards = [
   {
@@ -594,38 +594,12 @@ export default function Home() {
   useRevealOnScroll();
   return (
     <>
-      <Helmet>
-        <title>Medspa in West Des Moines | Own Aesthetics</title>
-        <meta
-          name="description"
-          content="Own Aesthetics is a premier medical spa in West Des Moines, offering advanced skincare treatments and rejuvenation services to help you look and feel your best."
-        />
-        <meta
-          name="keywords"
-          content="own aesthetics, west des moines, iowa, medspa, skincare, botox, fillers, med spa, facial treatments, beauty services"
-        />
-
-        <meta
-          property="og:title"
-          content="Med Spa in West Des Moines | Own Aesthetics"
-        />
-        <meta
-          property="og:description"
-          content="Own Aesthetics is a premier medical spa in West Des Moines, offering advanced skincare treatments and rejuvenation services to help you look and feel your best."
-        />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://ownaesthetics.com/" />
-        <meta
-          property="og:image"
-          content="https://ownaesthetics.com/images/OWN%20Branding/OWN%20Final%20Logos/Print%20CMYK/Logo%20Icon/PNG/OWN_Icon_CMYK_Black.png"
-        />
-
-        <link rel="canonical" href="https://ownaesthetics.com/" />
-
-        <script type="application/ld+json">
-          {JSON.stringify(homepageSchema)}
-        </script>
-      </Helmet>
+      <Seo
+        title="Med Spa in West Des Moines, IA | Own Aesthetics"
+        description="Own Aesthetics is a medical spa in West Des Moines offering injectables, facials, laser resurfacing, skincare analysis, and personalized treatment planning."
+        path="/"
+        schema={homepageSchema}
+      />
       <CustomCursor />
       <Navbar />
       <RSVPPopup />

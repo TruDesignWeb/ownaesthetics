@@ -11,10 +11,8 @@ import '../styles/animations.css';
 import Banner2 from '../components/banner2';
 import SocialMedia from '../components/social-media';
 import { link } from 'framer-motion/client';
-import { Helmet } from 'react-helmet';
+import Seo from '../components/seo';
 import { serviceCollectionSchema } from '../lib/serviceSeo';
-
-
 
 const featureCards = [
     {
@@ -52,8 +50,8 @@ const featureCards = [
       },
     {
       imageSrc: '/assets/images/images/nouva4.jpg',
-      altText: 'NOUVADerm™ Laser Treatment',
-      captionText: 'NOUVADerm™ Laser Treatment',
+      altText: 'NOUVADermâ„¢ Laser Treatment',
+      captionText: 'NOUVADermâ„¢ Laser Treatment',
       containerHeight: '350px',
       containerWidth: '300px',
       imageHeight: '350px',
@@ -63,7 +61,7 @@ const featureCards = [
       showMobileWarning: false,
       showTooltip: true,
       displayOverlayContent: true,
-      overlayContent: <p className="tilted-card-demo-text">NOUVADerm™ Laser Treatment</p>,
+      overlayContent: <p className="tilted-card-demo-text">NOUVADermâ„¢ Laser Treatment</p>,
       backgroundColor: 'rgba(0,0,0,0)',
       link: '/services/nouvaderm'
       },
@@ -86,8 +84,8 @@ const featureCards = [
     },
     {
     imageSrc: '/assets/images/images/istock-kybella.jpg',
-      altText: 'Kybella®',
-      captionText: 'Kybella®',
+      altText: 'KybellaÂ®',
+      captionText: 'KybellaÂ®',
       containerHeight: '350px',
       containerWidth: '300px',
       imageHeight: '350px',
@@ -97,14 +95,14 @@ const featureCards = [
       showMobileWarning: false,
       showTooltip: true,
       displayOverlayContent: true,
-      overlayContent: <p className="tilted-card-demo-text">Kybella®</p>,
+      overlayContent: <p className="tilted-card-demo-text">KybellaÂ®</p>,
       backgroundColor: 'rgba(0,0,0,0)',
       link: '/services/kybella',
     },
         {
     imageSrc: '/assets/images/images/woman-doing-self-care-treatment-indoors.jpg',
-      altText: 'Sclerotherapy – Spider Veins',
-      captionText: 'Sclerotherapy – Spider Veins',
+      altText: 'Sclerotherapy â€“ Spider Veins',
+      captionText: 'Sclerotherapy â€“ Spider Veins',
       containerHeight: '350px',
       containerWidth: '300px',
       imageHeight: '350px',
@@ -114,7 +112,7 @@ const featureCards = [
       showMobileWarning: false,
       showTooltip: true,
       displayOverlayContent: true,
-      overlayContent: <p className="tilted-card-demo-text">Sclerotherapy – Spider Veins</p>,
+      overlayContent: <p className="tilted-card-demo-text">Sclerotherapy â€“ Spider Veins</p>,
       backgroundColor: 'rgba(0,0,0,0)',
       link: '/services/sclerotherapy',
     }, 
@@ -137,8 +135,8 @@ const featureCards = [
     },
         {
     imageSrc: '/assets/images/images/istock-sculptra.jpg',
-      altText: 'Sculptra™',
-      captionText: 'Sculptra™',
+      altText: 'Sculptraâ„¢',
+      captionText: 'Sculptraâ„¢',
       containerHeight: '350px',
       containerWidth: '300px',
       imageHeight: '350px',
@@ -148,7 +146,7 @@ const featureCards = [
       showMobileWarning: false,
       showTooltip: true,
       displayOverlayContent: true,
-      overlayContent: <p className="tilted-card-demo-text">Sculptra™</p>,
+      overlayContent: <p className="tilted-card-demo-text">Sculptraâ„¢</p>,
       backgroundColor: 'rgba(0,0,0,0)',
       link: '/services/sculptra',
     },
@@ -222,8 +220,8 @@ const featureCards = [
     },
     {
     imageSrc: '/assets/images/images/exoe_digital_marketing_kit_-_12.11.2023/EXOE Digital Marketing Kit - 12.11.2023/15.png',
-      altText: 'EXO|E® Skin Revitalizing Complex',
-      captionText: 'EXO|E® Skin Revitalizing Complex',
+      altText: 'EXO|EÂ® Skin Revitalizing Complex',
+      captionText: 'EXO|EÂ® Skin Revitalizing Complex',
       containerHeight: '350px',
       containerWidth: '300px',
       imageHeight: '350px',
@@ -233,14 +231,14 @@ const featureCards = [
       showMobileWarning: false,
       showTooltip: true,
       displayOverlayContent: true,
-      overlayContent: <p className="tilted-card-demo-text">EXO|E® Skin Revitalizing Complex</p>,
+      overlayContent: <p className="tilted-card-demo-text">EXO|EÂ® Skin Revitalizing Complex</p>,
       backgroundColor: 'rgba(0,0,0,0)',
       link: '/services/exosomes',
     },
         {
     imageSrc: '/assets/images/images/istock-salt1.jpg',
-      altText: 'SaltFacial® Skin Renewal Therapy',
-      captionText: 'SaltFacial® Skin Renewal Therapy',
+      altText: 'SaltFacialÂ® Skin Renewal Therapy',
+      captionText: 'SaltFacialÂ® Skin Renewal Therapy',
       containerHeight: '350px',
       containerWidth: '300px',
       imageHeight: '350px',
@@ -250,14 +248,14 @@ const featureCards = [
       showMobileWarning: false,
       showTooltip: true,
       displayOverlayContent: true,
-      overlayContent: <p className="tilted-card-demo-text">SaltFacial® Skin Renewal Therapy</p>,
+      overlayContent: <p className="tilted-card-demo-text">SaltFacialÂ® Skin Renewal Therapy</p>,
       backgroundColor: 'rgba(0,0,0,0)',
       link: '/services/saltfacial',
     },
         {
     imageSrc: '/assets/images/images/istock-skinpen.jpg',
-      altText: 'SkinPen® Microneedling',
-      captionText: 'SkinPen® Microneedling',
+      altText: 'SkinPenÂ® Microneedling',
+      captionText: 'SkinPenÂ® Microneedling',
       containerHeight: '350px',
       containerWidth: '300px',
       imageHeight: '350px',
@@ -267,49 +265,22 @@ const featureCards = [
       showMobileWarning: false,
       showTooltip: true,
       displayOverlayContent: true,
-      overlayContent: <p className="tilted-card-demo-text">SkinPen® Microneedling</p>,
+      overlayContent: <p className="tilted-card-demo-text">SkinPenÂ® Microneedling</p>,
       backgroundColor: 'rgba(0,0,0,0)',
       link: '/services/skinpen',
     },
-    
-    
-    ];
-
-
+];
 
 export default function About(){
     useRevealOnScroll()
     return(
         <>
-                  <Helmet>
-            <title>Services | Own Aesthetics</title>
-            <meta
-              name="description"
-              content="Explore the full range of medical‑grade services at Own Aesthetics – from injectables to laser treatments, tailored to help you look and feel your best."
-            />
-            <meta
-              name="keywords"
-              content="med spa services, botox, fillers, laser, aquafirmexs, skincare treatments, own aesthetics"
-            />
-
-            <meta property="og:title" content="Own Aesthetics Services" />
-            <meta
-              property="og:description"
-              content="Discover our comprehensive menu of expert-led treatments designed to rejuvenate and enhance your natural beauty."
-            />
-            <meta property="og:type" content="website" />
-            <meta property="og:url" content="https://ownaesthetics.com/services" />
-            <meta
-              property="og:image"
-              content="https://ownaesthetics.com/assets/clinic.jpg"
-            />
-
-            <link rel="canonical" href="https://ownaesthetics.com/services" />
-
-            <script type="application/ld+json">
-              {JSON.stringify(serviceCollectionSchema)}
-            </script>
-          </Helmet>
+          <Seo
+            title="Medical Spa Services | Own Aesthetics"
+            description="Explore injectables, facials, chemical peels, laser resurfacing, microneedling, and other medical spa services at Own Aesthetics in West Des Moines."
+            path="/services"
+            schema={serviceCollectionSchema}
+          />
         <CustomCursor />
         
         <Navbar />

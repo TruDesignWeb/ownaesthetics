@@ -1,14 +1,11 @@
-import { Helmet } from "react-helmet";
 import { Link, useParams } from "react-router-dom";
 import Banner3 from "../components/banner3";
 import CustomCursor from "../components/customcursor";
 import Footer from "../components/footer";
 import Navbar from "../components/navbar";
+import Seo from "../components/seo";
 import { locationPages } from "../lib/landingPages";
 import "./seo-landing.css";
-
-const DEFAULT_IMAGE =
-  "https://ownaesthetics.com/images/OWN%20Branding/OWN%20Final%20Logos/Print%20CMYK/Logo%20Icon/PNG/OWN_Icon_CMYK_Black.png";
 
 function buildLocationSchema(page) {
   return {
@@ -77,17 +74,13 @@ export default function LocationLandingPage() {
 
   return (
     <>
-      <Helmet>
-        <title>{page.metaTitle}</title>
-        <meta name="description" content={page.metaDescription} />
-        <meta property="og:title" content={page.metaTitle} />
-        <meta property="og:description" content={page.metaDescription} />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content={canonicalUrl} />
-        <meta property="og:image" content={DEFAULT_IMAGE} />
-        <link rel="canonical" href={canonicalUrl} />
-        <script type="application/ld+json">{JSON.stringify(schema)}</script>
-      </Helmet>
+      <Seo
+        title={page.metaTitle}
+        description={page.metaDescription}
+        path={`/locations/${page.slug}`}
+        canonicalUrl={canonicalUrl}
+        schema={schema}
+      />
 
       <CustomCursor />
       <Navbar />

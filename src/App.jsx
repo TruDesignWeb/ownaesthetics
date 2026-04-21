@@ -1,4 +1,4 @@
-import { Routes, Route } from 'react-router-dom';
+import { Navigate, Routes, Route } from 'react-router-dom';
 import Home from './pages/index';
 import About from './pages/about';
 import Services from './pages/services';
@@ -38,6 +38,7 @@ import CancellationPolicy from './pages/cancellationpolicy';
 import ScrollToTop from './components/scrolltotop.jsx';
 import RSVP from './pages/rsvp.jsx';
 import ServiceRouteSeo from './components/service-route-seo.jsx';
+import AppRouteSeo from './components/app-route-seo.jsx';
 import CoreServiceLandingPage from './pages/core-service-landing.jsx';
 import LocationLandingPage from './pages/location-landing.jsx';
 
@@ -46,11 +47,13 @@ export default function App() {
   return (
     <>
       <ScrollToTop />
+      <AppRouteSeo />
       <ServiceRouteSeo />
       <Routes>
         
         <Route path="/membership" element={<Membership />} />
-        <Route path="/Socials" element={<Socials />} />
+        <Route path="/socials" element={<Socials />} />
+        <Route path="/Socials" element={<Navigate to="/socials" replace />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/rsvp" element={<RSVP />} />
         <Route path="/referring-partners" element={<Refer />} />

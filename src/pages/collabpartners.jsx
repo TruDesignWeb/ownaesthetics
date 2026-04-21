@@ -4,40 +4,10 @@ import Footer from "../components/footer";
 import ShowcaseSection from "../components/showcasesection";
 import Banner3 from "../components/banner3";
 import CustomCursor from "../components/customcursor";
-import { Helmet } from "react-helmet";
 
 export default function ServiceHub() {
   return (
     <>
-          <Helmet>
-        <title>Skincare Treatments | Own Aesthetics</title>
-        <meta
-          name="description"
-          content="Explore advanced skincare treatments and personalised solutions at Own Aesthetics. From skin‑type quizzes to professional-grade products, discover what’s right for you."
-        />
-        <meta
-          name="keywords"
-          content="skincare treatments, alumiermd, skin type quiz, med spa, own aesthetics"
-        />
-
-        <meta property="og:title" content="Skincare Treatments at Own Aesthetics" />
-        <meta
-          property="og:description"
-          content="Learn about our customised skincare services and partner brands designed for your unique goals."
-        />
-        <meta property="og:type" content="website" />
-        <meta
-          property="og:url"
-          content="https://ownaesthetics.com/skincare"
-        />
-        <meta
-          property="og:image"
-          content="https://ownaesthetics.com/assets/clinic.jpg"
-        />
-
-        <link rel="canonical" href="https://ownaesthetics.com/skincare" />
-
-      </Helmet>
       <CustomCursor />
       <Navbar />
 
@@ -51,7 +21,7 @@ export default function ServiceHub() {
       <ShowcaseSection
         eyebrow="Skin Health"
         title="Skin Type Solutions"
-        text="Discover your personalized skincare routine based on your unique Baumann Skin Type®. Take the quiz and unlock targeted treatments."
+        text="Discover your personalized skincare routine based on your unique Baumann Skin TypeÂ®. Take the quiz and unlock targeted treatments."
         buttonLabel="Take the Quiz"
         buttonLink="https://skintypesolutions.com/pages/skin-type-quiz?code=OWNAESTHETICS"
         imageSrc="/assets/images/images/stsimg.webp"
@@ -63,15 +33,13 @@ export default function ServiceHub() {
       <ShowcaseSection
         eyebrow="Rejuvenation"
         title="AlumierMD "
-        text="AlumierMD is a professionally dispensed skincare brand with a rapidly expanding global network of partner clinics. Our mission is to empower you to feel confident and powerful in your own skin. We achieve this by pushing the boundaries of skincare science and combining clinically proven ingredients with advanced technologies that deliver transformative results. Our goal is to connect you to our global community of trusted skincare professionals and unlock your skin's potential with a 360° approach to skin health."
+        text="AlumierMD is a professionally dispensed skincare brand with a rapidly expanding global network of partner clinics. Our mission is to empower you to feel confident and powerful in your own skin. We achieve this by pushing the boundaries of skincare science and combining clinically proven ingredients with advanced technologies that deliver transformative results. Our goal is to connect you to our global community of trusted skincare professionals and unlock your skin's potential with a 360Â° approach to skin health."
         buttonLabel="Shop Now"
         buttonLink="https://www.alumiermd.com?code=28FZHTV9"
         imageSrc="assets\images\images\wetransfer_photos_2025-04-09_1731\PHOTOS\HP 1 AlumierMD Pigmentation.jpg"
         reverse={true}
         backgroundColor="#ffffff"
       />
-
-      
 
       <Footer />
     </>

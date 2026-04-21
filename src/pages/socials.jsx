@@ -8,10 +8,8 @@ import Footer from '../components/footer';
 import CustomCursor from '../components/customcursor';
 import useRevealOnScroll from '../hooks/useRevealOnScroll';
 import './socials.css';
-import { Helmet } from 'react-helmet';
 
 import Banner2 from '../components/banner2';
-
 
 const featureCards = [
     {
@@ -69,32 +67,6 @@ export default function Home() {
     useRevealOnScroll();
   return (
     <>
-    <Helmet>
-        <title>Socials | Own Aesthetics</title>
-        <meta
-          name="description"
-          content="Connect with Own Aesthetics on Facebook and Instagram for the latest updates, specials, and skincare tips."
-        />
-        <meta
-          name="keywords"
-          content="own aesthetics social media, facebook, instagram, follow us, med spa updates"
-        />
-
-        <meta property="og:title" content="Own Aesthetics on Social Media" />
-        <meta
-          property="og:description"
-          content="Follow us on Facebook and Instagram to stay in the loop with news and promotions from Own Aesthetics."
-        />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://ownaesthetics.com/socials" />
-        <meta
-          property="og:image"
-          content="https://ownaesthetics.com/assets/clinic.jpg"
-        />
-
-        <link rel="canonical" href="https://ownaesthetics.com/socials" />
-
-      </Helmet>
       <CustomCursor />
       <Navbar />
       <Banner2 
@@ -110,8 +82,6 @@ export default function Home() {
           cards={featureCards}
         
         />
-
-      
 
       <Footer />
     </>

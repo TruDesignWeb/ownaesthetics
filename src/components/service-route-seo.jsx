@@ -1,13 +1,10 @@
-import { Helmet } from "react-helmet";
 import { useLocation } from "react-router-dom";
+import Seo from "./seo";
 import {
   buildServiceSchema,
   getServicePageConfig,
 } from "../lib/serviceSeo";
 import { coreServicePages } from "../lib/landingPages";
-
-const DEFAULT_OG_IMAGE =
-  "https://ownaesthetics.com/images/OWN%20Branding/OWN%20Final%20Logos/Print%20CMYK/Logo%20Icon/PNG/OWN_Icon_CMYK_Black.png";
 
 export default function ServiceRouteSeo() {
   const { pathname } = useLocation();
@@ -23,16 +20,12 @@ export default function ServiceRouteSeo() {
   const schema = buildServiceSchema(config);
 
   return (
-    <Helmet>
-      <title>{config.pageTitle}</title>
-      <meta name="description" content={config.metaDescription} />
-      <meta property="og:title" content={config.pageTitle} />
-      <meta property="og:description" content={config.metaDescription} />
-      <meta property="og:type" content="website" />
-      <meta property="og:url" content={url} />
-      <meta property="og:image" content={DEFAULT_OG_IMAGE} />
-      <link rel="canonical" href={url} />
-      <script type="application/ld+json">{JSON.stringify(schema)}</script>
-    </Helmet>
+    <Seo
+      title={config.pageTitle}
+      description={config.metaDescription}
+      path={config.path}
+      canonicalUrl={url}
+      schema={schema}
+    />
   );
 }

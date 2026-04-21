@@ -1,6 +1,5 @@
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useState } from "react";
 import { useSearchParams } from "react-router-dom";
-import { Helmet } from "react-helmet";
 import Navbar from "../components/navbar";
 import Footer from "../components/footer";
 import CustomCursor from "../components/customcursor";
@@ -35,13 +34,6 @@ export default function RSVP() {
   });
   const [submitted, setSubmitted] = useState(false);
 
-  const canonicalUrl = useMemo(() => {
-    const email = searchParams.get("email");
-    return email
-      ? `https://ownaesthetics.com/rsvp?email=${encodeURIComponent(email)}`
-      : "https://ownaesthetics.com/rsvp";
-  }, [searchParams]);
-
   const handleChange = (event) => {
     const { name, value } = event.target;
     setFormData((current) => ({
@@ -62,30 +54,6 @@ export default function RSVP() {
 
   return (
     <>
-      <Helmet>
-        <title>RSVP | Own Aesthetics Turns One</title>
-        <meta
-          name="description"
-          content="RSVP for Own Aesthetics Turns One and join us for our Glow-Up Birthday Bash in West Des Moines on Thursday, April 30th from 4-7 pm."
-        />
-        <meta
-          name="keywords"
-          content="Own Aesthetics RSVP, glow-up birthday bash, med spa event, West Des Moines event, aesthetics event"
-        />
-        <meta property="og:title" content="Own Aesthetics Turns One" />
-        <meta
-          property="og:description"
-          content="You're invited to our Glow-Up Birthday Bash. RSVP to join us for beauty, skin expertise, giveaways, and event-only specials."
-        />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content={canonicalUrl} />
-        <meta
-          property="og:image"
-          content="https://ownaesthetics.com/assets/clinic.jpg"
-        />
-        <link rel="canonical" href={canonicalUrl} />
-      </Helmet>
-
       <CustomCursor />
       <Navbar />
 

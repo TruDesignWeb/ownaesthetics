@@ -7,13 +7,9 @@ import CustomCursor from '../components/customcursor';
 
 import '../styles/animations.css';
 
-
 import "./contact.css";
 import Banner2 from '../components/banner2';
-import { Helmet } from 'react-helmet';
 import { useState } from "react";
-
-
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -24,7 +20,7 @@ export default function Contact() {
   });
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
-const [error, setError] = useState(null);
+  const [error, setError] = useState(null);
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -36,52 +32,23 @@ const [error, setError] = useState(null);
     // Send data to backend - if need database storage
     //change if need: Custom database storage
 
-// HIPAA-compliant data handling
+    // HIPAA-compliant data handling
 
-// CRM integrations beyond email
+    // CRM integrations beyond email
 
-// Custom spam logic
+    // Custom spam logic
 
-// Full backend control
-
+    // Full backend control
 
     // const res = await fetch("http://localhost:5000/api/contact", {
     //   method: "POST",
     //   headers: { "Content-Type": "application/json" },
     //   body: JSON.stringify(formData),
     // });
-
-};
-
+  };
 
   return (
     <>
-          <Helmet>
-        <title>Contact | Own Aesthetics</title>
-        <meta
-          name="description"
-          content="Get in touch with Own Aesthetics. Reach us by phone, email or the contact form for appointments and questions about our med spa services in West Des Moines."
-        />
-        <meta
-          name="keywords"
-          content="contact own aesthetics, med spa contact, west des moines, skincare questions"
-        />
-
-        <meta property="og:title" content="Contact Own Aesthetics" />
-        <meta
-          property="og:description"
-          content="Have a question or ready to book? Contact Own Aesthetics today."
-        />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://ownaesthetics.com/contact" />
-        <meta
-          property="og:image"
-          content="https://ownaesthetics.com/assets/clinic.jpg"
-        />
-
-        <link rel="canonical" href="https://ownaesthetics.com/contact" />
-
-      </Helmet>
     <Navbar />
     <Banner2 
       image = "/assets/images/contact.svg"
