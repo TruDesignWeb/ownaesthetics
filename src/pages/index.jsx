@@ -602,7 +602,7 @@ export default function Home() {
       />
       <CustomCursor />
       <Navbar />
-      <RSVPPopup />
+      {/* <RSVPPopup /> */}
       <Banner />
 
       <div className="content-wrapper" id="content">
@@ -654,10 +654,16 @@ export default function Home() {
                 Own Aesthetics in West Des Moines.
               </p>
               <div className="homepage-faq__links">
-                <Link className="homepage-faq__link-pill" to="/services/injectables">
+                <Link
+                  className="homepage-faq__link-pill"
+                  to="/services/injectables"
+                >
                   Injectables
                 </Link>
-                <Link className="homepage-faq__link-pill" to="/services/facials">
+                <Link
+                  className="homepage-faq__link-pill"
+                  to="/services/facials"
+                >
                   Facials
                 </Link>
                 <Link
@@ -672,7 +678,10 @@ export default function Home() {
                 >
                   Skincare Analysis
                 </Link>
-                <Link className="homepage-faq__link-pill" to="/locations/des-moines">
+                <Link
+                  className="homepage-faq__link-pill"
+                  to="/locations/des-moines"
+                >
                   Des Moines
                 </Link>
                 <Link
@@ -681,7 +690,10 @@ export default function Home() {
                 >
                   West Des Moines
                 </Link>
-                <Link className="homepage-faq__link-pill" to="/locations/waukee">
+                <Link
+                  className="homepage-faq__link-pill"
+                  to="/locations/waukee"
+                >
                   Waukee
                 </Link>
               </div>

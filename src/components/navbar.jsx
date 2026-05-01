@@ -49,11 +49,11 @@ export default function Navbar() {
       <div className="top-navbar">
         <div className="top-nav-content">
           {/* <ul><Link to="/Membership" className="top-nav-link">Membership</Link></ul> */}
-          <ul>
+          {/* <ul>
             <Link to="/rsvp" className="top-nav-link">
               1 Year Anniversary!
             </Link>
-          </ul>
+          </ul> */}
           <ul>
             <Link to="/Socials" className="top-nav-link">
               Socials
