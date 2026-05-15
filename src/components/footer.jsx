@@ -50,6 +50,7 @@ export default function Footer() {
               aria-label="Own Aesthetics on Facebook"
             >
               <img src="/assets/images/images/facebook-icon.png" alt="" />
+              <span>Facebook</span>
             </a>
             <a
               href="https://www.instagram.com/ownaestheticsdsm/"
@@ -58,6 +59,7 @@ export default function Footer() {
               aria-label="Own Aesthetics on Instagram"
             >
               <img src="/assets/images/images/instagram-icon.png" alt="" />
+              <span>Instagram</span>
             </a>
           </div>
         </div>
