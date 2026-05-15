@@ -12,7 +12,7 @@ import './skinpen.css';
 export default function Skinpen() {
     return (
         <>
-            <CustomCursor />
+            {/* <CustomCursor /> */}
             <Navbar />
             
             <Banner3
@@ -61,6 +61,7 @@ export default function Skinpen() {
                             <ServiceHighlightBox
                                 summary="Personalized skincare recommendations built around your unique Baumann Skin Type®."
                                 treatmentAreas={["Face"]}
+                                price="Skin Type Quiz is complimentary; product pricing varies"
                                 supportingNote="Start with the Skin Type Quiz to build a routine tailored to your skin's needs."
                             />
                         </div>

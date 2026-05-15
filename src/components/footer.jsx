@@ -42,6 +42,26 @@ export default function Footer() {
               Email: info@ownaesthetics.com
             </a>
           </p>
+          <div className="footer-social-links" aria-label="Social media links">
+            <a
+              href="https://www.facebook.com/p/Own-Aesthetics-61576022630962/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Own Aesthetics on Facebook"
+            >
+              <img src="/assets/images/images/facebook-icon.png" alt="" />
+              <span>Facebook</span>
+            </a>
+            <a
+              href="https://www.instagram.com/ownaestheticsdsm/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Own Aesthetics on Instagram"
+            >
+              <img src="/assets/images/images/instagram-icon.png" alt="" />
+              <span>Instagram</span>
+            </a>
+          </div>
         </div>
         <div className="footer-section">
           <h3>Hours</h3>

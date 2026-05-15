@@ -8,7 +8,7 @@ import './exosomes.css';
 export default function Exosomes() {
     return (
         <>
-            <CustomCursor />
+            {/* <CustomCursor /> */}
             <Navbar />
 
             <Banner3
@@ -48,6 +48,7 @@ export default function Exosomes() {
                             <ServiceHighlightBox
                                 summary="A restorative add-on that supports healing, calms inflammation, and enhances results."
                                 treatmentAreas={["Laser Treatments", "Facial Treatments", "Sensitive Skin"]}
+                                price="$200"
                             />
                         </div>
                     </div>

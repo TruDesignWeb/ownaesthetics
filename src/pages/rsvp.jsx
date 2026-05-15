@@ -54,7 +54,7 @@ export default function RSVP() {
 
   return (
     <>
-      <CustomCursor />
+      {/* <CustomCursor /> */}
       <Navbar />
 
       <Banner2

@@ -1,11 +1,11 @@
 .banner3-container {
   position: relative;
-  min-height: 500px;
+  min-height: 430px;
   width: 100%;
   display: flex;
   align-items: flex-end;   /* 👈 push content to bottom */
-  padding: 0 8% 60px 8%;   /* 👈 add bottom padding for spacing */
-  margin-top: 30px;
+  padding: 0 8% 44px 8%;
+  margin-top: 18px;
   border-bottom: 4px solid #f1f1c2;
   overflow: hidden;
   background-size: cover;
@@ -56,8 +56,8 @@
 /* Responsive */
 @media (max-width: 900px) {
   .banner3-container {
-    min-height: 360px;
-    padding: 6% 6%;
+    min-height: 320px;
+    padding: 5% 6%;
   }
 
   .banner3-content {
@@ -67,7 +67,7 @@
 
 @media (max-width: 600px) {
   .banner3-container {
-    min-height: 350px;
+    min-height: 300px;
     padding: 5% 5%;
   }
 }

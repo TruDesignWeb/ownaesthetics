@@ -1,6 +1,6 @@
 .banner2 {
   position: relative;
-  height: 500px;
+  height: 440px;
   width: 100%;
   background-size: cover;
   background-position: center;
@@ -71,6 +71,10 @@
 }
 
 @media (max-width: 768px) {
+  .banner2 {
+    height: 360px;
+  }
+
   .banner2-content.about {
     padding: 0 1.5rem 1.5rem;
   }

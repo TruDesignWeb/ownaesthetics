@@ -9,7 +9,7 @@ import './saltfacial.css';
 export default function SaltFacial() {
     return (
         <>
-            <CustomCursor />
+            {/* <CustomCursor /> */}
             <Navbar />
 
             <Banner3
@@ -48,6 +48,7 @@ export default function SaltFacial() {
                                 summary="Ask about adding Exosomes or topical platelet-rich plasma (PRP) for additional regenerative benefits."
                                 treatmentAreas={["Face", "Body"]}
                                 sessions="45 minutes - 1 hour"
+                                price="$300"
                             />
                             <p>
                                 Want a broader breakdown of pricing, timing, and how this treatment fits into a long-term skin plan?{" "}

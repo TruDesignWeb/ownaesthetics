@@ -8,7 +8,7 @@ import './consultation.css';
 export default function Consultation() {
     return (
         <>
-            <CustomCursor />
+            {/* <CustomCursor /> */}
             <Navbar />
 
             <Banner3
@@ -42,6 +42,7 @@ export default function Consultation() {
                                 summary="Advanced 3D imaging and skin analysis designed to guide a fully personalized treatment plan."
                                 treatmentAreas={["Face", "Body"]}
                                 sessions="50 minutes to 1 hour"
+                                price="$100"
                             />
                         </div>
                     </div>

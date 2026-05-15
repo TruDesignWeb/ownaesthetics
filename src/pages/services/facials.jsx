@@ -9,7 +9,7 @@ import "./facials.css";
 export default function Facials() {
   return (
     <>
-      <CustomCursor />
+      {/* <CustomCursor /> */}
       <Navbar />
 
       <Banner3
@@ -57,6 +57,7 @@ export default function Facials() {
                 summary="Personalized, results-driven facials tailored to your skin goals."
                 treatmentAreas={["Face", "Neck", "Decollete", "Back"]}
                 sessions="60 min. or 90 min."
+                price="$125 - $175"
               />
               <p>
                 Want a broader breakdown of who facials are for, what they include, and how they compare with other skin treatments?{" "}

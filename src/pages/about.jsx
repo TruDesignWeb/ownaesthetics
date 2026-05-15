@@ -55,7 +55,7 @@ export default function About({}) {
 
   return (
     <>
-      <CustomCursor />
+      {/* <CustomCursor /> */}
 
       <Navbar />
       <Banner2

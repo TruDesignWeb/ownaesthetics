@@ -12,7 +12,7 @@ import './nouvaderm.css';
 export default function NouvaDerm() {
     return (
         <>
-            <CustomCursor />
+            {/* <CustomCursor /> */}
             <Navbar />
             
             <Banner3
@@ -66,6 +66,7 @@ export default function NouvaDerm() {
                             <ServiceHighlightBox
                                 summary="A flexible laser platform designed for customized skin revitalization and scalp-support treatments."
                                 treatmentAreas={["Face", "Scalp", "Body"]}
+                                price="$750"
                             />
                         </div>
                     </div>

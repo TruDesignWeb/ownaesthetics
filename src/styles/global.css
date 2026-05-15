@@ -1,8 +1,8 @@
 * {
-margin: 0;
-padding: 0;
-box-sizing: border-box;
-cursor: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* cursor: none; */
 }
 
 #root {
@@ -13,52 +13,64 @@ cursor: none;
 /*fixed width problem!!*/
 
 @font-face {
-    font-family: 'Mundial';
-    src: url('/fonts/MundialRegular.otf') format('otf'),
-        url('/fonts/MundialBold.otf') format('otf');
-    font-weight: normal;
-    font-style: normal;
+  font-family: "Mundial";
+  src:
+    url("/fonts/MundialRegular.otf") format("otf"),
+    url("/fonts/MundialBold.otf") format("otf");
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'Outfit';
-    src: url('/fonts/OutfitRegular.ttf') format('ttf');
-    font-weight: normal;
-    font-style: normal;
+  font-family: "Outfit";
+  src: url("/fonts/OutfitRegular.ttf") format("ttf");
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-  font-family: 'montserrat';
+  font-family: "montserrat";
   src: url("/fonts/Montserrat/static/Montserrat-Light.ttf") format("truetype");
 }
 
-html, body {
-    overflow-x: hidden;
-    width: 100%;
-    scroll-behavior: smooth;
-    margin: 0;
-    padding: 0;
+html,
+body {
+  overflow-x: hidden;
+  width: 100%;
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    font-family: montserrat;
-    line-height: 1.6;
+  font-family: montserrat;
+  line-height: 1.6;
 }
 
+@media (max-width: 900px), (max-height: 760px) {
+  html {
+    font-size: 93.75%;
+  }
+}
+
+@media (max-width: 600px) {
+  html {
+    font-size: 90%;
+  }
+}
 
 /* NEW CONTENT WRAPPER FOR SLIDING EFFECT */
 .content-wrapper {
-    position: relative;
-    z-index: 2;              /* Higher than banner */
-    margin-top: 100vh;       /* Push content down by full viewport height */
-    transition: transform 0.1s ease-out;
-    width: 100%;
+  position: relative;
+  z-index: 2; /* Higher than banner */
+  margin-top: 100vh; /* Push content down by full viewport height */
+  transition: transform 0.1s ease-out;
+  width: 100%;
 }
 
 .content {
-    padding: 2rem;
+  padding: 2rem;
 }
-
 
 /*Mobile Responsive */
 /* @media (max-width: 768px) {
@@ -140,48 +152,256 @@ body {
 
 /* Scroll animations */
 .reveal {
-    opacity: 0;
-    transform: translateY(50px);
-    transition: all 0.8s ease;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.8s ease;
 }
 
 .reveal.active {
-    opacity: 1;
-    transform: translateY(0);
+  opacity: 1;
+  transform: translateY(0);
 }
 
 /* Medical animation effects */
 .heartbeat {
-    animation: heartbeat 1.5s ease-in-out infinite;
+  animation: heartbeat 1.5s ease-in-out infinite;
 }
 
 @keyframes heartbeat {
-    0%, 100% { transform: scale(1); }
-    50% { transform: scale(1.1); }
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
 }
 
-
-
-
 @media (max-width: 1024px) {
-  #root{
+  #root {
     flex-direction: column;
     width: 100%;
     overflow-x: hidden;
-
   }
-  body, html {
+  body,
+  html {
     width: 100%;
     overflow-x: hidden;
   }
-
 
   .nav-container {
     padding: 0 1.5rem;
   }
-  
-
-
 }
 
+/* Sitewide density pass: keeps the page feeling closer to a 70% browser zoom
+   without scaling fixed hero/banner compositions. */
+:where(
+  .features-,
+  .features-podcasts,
+  .features-socials,
+  .feature-section,
+  .testimonial-showcase-container,
+  .homepage-faq,
+  .footer,
+  .philo-section,
+  .highlight-section,
+  .team-section,
+  .reviews-section,
+  .rsvp-hero,
+  .rsvp-details-section,
+  .rsvp-perks-section,
+  .rsvp-form-section,
+  .contact-page,
+  .appointments-page,
+  .terms-page,
+  .privacy-page,
+  .cancellation-page,
+  .seo-landing-page
+) {
+  padding-top: clamp(2.5rem, 4.5vw, 4.4rem) !important;
+  padding-bottom: clamp(2.5rem, 4.5vw, 4.4rem) !important;
+}
 
+:where(
+  .features-container,
+  .feature-wrapper,
+  .testimonial-cards-wrapper,
+  .homepage-faq__inner,
+  .footer-content,
+  .philo-wrap,
+  .highlight-wrap,
+  .team-wrap,
+  .reviews-wrap,
+  .rsvp-wrap,
+  .rsvp-perks-wrap,
+  .contact-container,
+  .appointments-container,
+  .seo-landing-container
+) {
+  max-width: 1060px !important;
+}
+
+:where(
+  .feature-card,
+  .testimonial-card,
+  .homepage-faq__card,
+  .newsletter-container,
+  .contact-info,
+  .contact-form,
+  .appointments-info,
+  .appointments-form,
+  .highlight-wrap,
+  .rsvp-card,
+  .rsvp-perk-card
+) {
+  padding: clamp(1.35rem, 2.4vw, 2.35rem) !important;
+}
+
+:where(
+  .feature-card p,
+  .testimonial-text,
+  .homepage-faq__answer p,
+  .philo-text,
+  .highlight-text,
+  .contact-info p,
+  .footer-section p,
+  .footer-section a,
+  .footer-section-1 p,
+  .footer-section-1 a,
+  .seo-landing-page p
+) {
+  font-size: clamp(0.88rem, 1vw, 0.98rem) !important;
+  line-height: 1.6 !important;
+}
+
+:where(
+  .section-title,
+  .feature-card h2,
+  .homepage-faq__title,
+  .philo-title,
+  .philo-title-2,
+  .team-title,
+  .highlight-title,
+  .testimonial-showcase-title,
+  .contact-info h2,
+  .seo-landing-page h1,
+  .seo-landing-page h2
+) {
+  font-size: clamp(1.6rem, 2.8vw, 2.65rem) !important;
+  line-height: 1.12 !important;
+}
+
+:where(.service-highlight-box) {
+  margin-top: 1.25rem !important;
+  padding: 1.35rem !important;
+}
+
+/* Service pages keep their original roomy treatment, with centered readable cards. */
+[id$="-services"] {
+  padding-top: clamp(4rem, 6vw, 5.5rem) !important;
+  padding-bottom: clamp(4.5rem, 7vw, 6.5rem) !important;
+}
+
+[id$="-services"] > div {
+  margin-left: auto !important;
+  margin-right: auto !important;
+  max-width: 1180px !important;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+[id$="-services"] [class*="-row"],
+[id$="-services"] [class*="-main-content"] {
+  align-items: center !important;
+  display: flex !important;
+  flex-direction: row !important;
+  flex-wrap: nowrap !important;
+  justify-content: center !important;
+  gap: clamp(1.5rem, 3vw, 2.5rem) !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+[id$="-services"] [class*="-services-text"],
+[id$="-services"] [class*="-content-text"] {
+  color: #444 !important;
+  font-size: clamp(1.05rem, 1.15vw, 1.18rem) !important;
+  line-height: 1.78 !important;
+  max-width: 900px !important;
+  padding: clamp(2rem, 3.4vw, 3rem) !important;
+}
+
+[id$="-services"] [class*="-services-text"] > p,
+[id$="-services"] [class*="-content-text"] > p {
+  color: #444 !important;
+  font-size: clamp(1.05rem, 1.15vw, 1.18rem) !important;
+  font-weight: 400 !important;
+  line-height: 1.78 !important;
+}
+
+[id$="-services"] [class*="-services-text"] > p a,
+[id$="-services"] [class*="-content-text"] > p a {
+  color: #163041 !important;
+  text-decoration: underline;
+}
+
+[id$="-services"] [class*="-image-gallery"] {
+  gap: 18px !important;
+  padding: 18px !important;
+}
+
+[id$="-services"] [class*="-image-gallery"] img {
+  max-width: min(320px, 88vw) !important;
+}
+
+[id$="-services"] .service-highlight-box,
+[id$="-services"] .service-highlight-box p,
+[id$="-services"] .service-highlight-box strong {
+  color: white !important;
+}
+
+[id$="-services"] .service-highlight-book {
+  color: #163041 !important;
+}
+
+@media (max-width: 768px) {
+  :where(
+    .features-,
+    .features-podcasts,
+    .features-socials,
+    .feature-section,
+    .testimonial-showcase-container,
+    .homepage-faq,
+    .footer,
+    .philo-section,
+    .highlight-section,
+    .team-section,
+    .reviews-section,
+    .rsvp-hero,
+    .rsvp-details-section,
+    .rsvp-perks-section,
+    .rsvp-form-section,
+    .contact-page,
+    .appointments-page
+  ) {
+    padding-top: 2rem !important;
+    padding-bottom: 2rem !important;
+  }
+
+  [id$="-services"] {
+    padding-top: 2.75rem !important;
+    padding-bottom: 3.25rem !important;
+  }
+
+  [id$="-services"] [class*="-row"],
+  [id$="-services"] [class*="-main-content"] {
+    flex-direction: column !important;
+    flex-wrap: nowrap !important;
+  }
+
+  [id$="-services"] [class*="-services-text"],
+  [id$="-services"] [class*="-content-text"] {
+    padding: 1.5rem !important;
+  }
+}

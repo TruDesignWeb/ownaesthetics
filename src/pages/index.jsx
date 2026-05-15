@@ -600,12 +600,12 @@ export default function Home() {
         path="/"
         schema={homepageSchema}
       />
-      <CustomCursor />
+      {/* <CustomCursor /> */}
       <Navbar />
       {/* <RSVPPopup /> */}
       <Banner />
 
-      <div className="content-wrapper" id="content">
+      <div className="content-wrapper home-density" id="content">
         {/* luh comment so i can push sm  */}
         <Features
           title="Featured Services"

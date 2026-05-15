@@ -8,7 +8,7 @@ import './aquafirme.css';
 export default function Aquafirme() {
     return (
         <>
-            <CustomCursor />
+            {/* <CustomCursor /> */}
             <Navbar />
 
             <Banner3
@@ -44,6 +44,7 @@ export default function Aquafirme() {
                             <ServiceHighlightBox
                                 summary="No-downtime skin and scalp rejuvenation with customizable treatment protocols."
                                 treatmentAreas={["Face", "Scalp"]}
+                                price="$200 - $400"
                             />
                         </div>
                     </div>

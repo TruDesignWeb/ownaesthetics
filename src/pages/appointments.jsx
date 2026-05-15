@@ -55,7 +55,7 @@ export default function Contact() {
     <Banner2 
     title="Make an Appointment"
     />
-    <CustomCursor />
+    {/* <CustomCursor /> */}
 
     <section className="contact-page">
       <div className="contact-container">

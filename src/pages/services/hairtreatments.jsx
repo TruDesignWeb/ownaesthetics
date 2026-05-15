@@ -8,7 +8,7 @@ import './hairtreatments.css';
 export default function HairTreatments() {
     return (
         <>
-            <CustomCursor />
+            {/* <CustomCursor /> */}
             <Navbar />
 
             <Banner3
@@ -34,6 +34,7 @@ export default function HairTreatments() {
                                 summary="Scalp-focused support designed to encourage healthier, stronger hair growth."
                                 treatmentAreas={["Scalp"]}
                                 sessions="45 min- 1 hr."
+                                price="$3000 and up"
                             />
                         </div>
                     </div>

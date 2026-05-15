@@ -8,7 +8,7 @@ import './sculptra.css';
 export default function Sculptra() {
     return (
         <>
-            <CustomCursor />
+            {/* <CustomCursor /> */}
             <Navbar />
 
             <Banner3
@@ -34,6 +34,7 @@ export default function Sculptra() {
                             <ServiceHighlightBox
                                 summary="Collagen-stimulating injectable designed for gradual, long-lasting rejuvenation."
                                 treatmentAreas={["Cheeks", "Jawline"]}
+                                price="$600 per vial"
                                 supportingNote="Results can support skin glow, tightness, and jawline contour for up to two years."
                             />
                         </div>
