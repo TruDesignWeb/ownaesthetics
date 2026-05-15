@@ -8,7 +8,7 @@ import "./antiwrinkle.css";
 export default function AntiWrinkle() {
   return (
     <>
-      <CustomCursor />
+      {/* <CustomCursor /> */}
       <Navbar />
 
       <Banner3
@@ -52,6 +52,7 @@ export default function AntiWrinkle() {
                 summary="Personalized neurotoxin treatments designed for refreshed, natural-looking results."
                 treatmentAreas={["Upper Face", "Lower Face", "Neck"]}
                 sessions="30 minutes"
+                price="BOTOX Cosmetic and Dysport: $14 per unit"
               />
             </div>
           </div>

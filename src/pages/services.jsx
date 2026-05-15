@@ -300,7 +300,7 @@ export default function About() {
         path="/services"
         schema={serviceCollectionSchema}
       />
-      <CustomCursor />
+      {/* <CustomCursor /> */}
 
       <Navbar />
       <Banner2

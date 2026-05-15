@@ -77,7 +77,7 @@ export default function CoreServiceLandingPage() {
         schema={schema}
       />
 
-      <CustomCursor />
+      {/* <CustomCursor /> */}
       <Navbar />
       <Banner3
         image="/assets/images/images/sumner-mahaffey-7Y0NshQLohk-unsplash.jpg"

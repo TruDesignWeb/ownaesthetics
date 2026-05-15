@@ -26,7 +26,8 @@
 .service-highlight-summary,
 .service-highlight-label,
 .service-highlight-meta,
-.service-highlight-note {
+.service-highlight-note,
+.service-highlight-book {
   position: relative;
   z-index: 1;
 }
@@ -58,6 +59,26 @@
 .service-highlight-box .service-highlight-label,
 .service-highlight-box .service-highlight-note {
   color: white;
+}
+
+.service-highlight-book {
+  align-items: center;
+  background: rgba(255, 255, 255, 0.92);
+  border-radius: 999px;
+  color: #163041;
+  display: inline-flex;
+  font-weight: 700;
+  justify-content: center;
+  margin-top: 1rem;
+  padding: 0.75rem 1.15rem;
+  text-decoration: none;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.service-highlight-book:hover {
+  background: white;
+  color: #163041;
+  transform: translateY(-1px);
 }
 
 .service-highlight-areas {

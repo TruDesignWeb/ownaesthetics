@@ -600,7 +600,7 @@ export default function Home() {
         path="/"
         schema={homepageSchema}
       />
-      <CustomCursor />
+      {/* <CustomCursor /> */}
       <Navbar />
       {/* <RSVPPopup /> */}
       <Banner />

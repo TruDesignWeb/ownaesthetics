@@ -67,7 +67,7 @@ export default function Home() {
     useRevealOnScroll();
   return (
     <>
-      <CustomCursor />
+      {/* <CustomCursor /> */}
       <Navbar />
       <Banner2 
         image = "/assets/images/images/someimagestotry1/daniel-j-schwarz-UK-EzGvEZIk-unsplash.jpg"

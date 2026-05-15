@@ -19,7 +19,7 @@ export default function Home() {
     useRevealOnScroll();
   return (
     <>
-      <CustomCursor />
+      {/* <CustomCursor /> */}
       <Navbar />
       <Banner2 
         image = "/assets/images/contact.svg"

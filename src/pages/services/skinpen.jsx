@@ -8,7 +8,7 @@ import "./skinpen.css";
 export default function Skinpen() {
   return (
     <>
-      <CustomCursor />
+      {/* <CustomCursor /> */}
       <Navbar />
 
       <Banner3
@@ -60,6 +60,7 @@ export default function Skinpen() {
                 summary="Add platelet-rich plasma (PRP) or exosomes to support healing and optimize outcomes."
                 treatmentAreas={["Face", "Neck", "Chest"]}
                 sessions="1 hour"
+                price="$350"
               />
             </div>
           </div>

@@ -4,7 +4,10 @@ export default function ServiceHighlightBox({
   summary,
   treatmentAreas = [],
   sessions,
+  price,
   supportingNote,
+  bookHref = "#book-now",
+  bookLabel = "Book This Service",
 }) {
   const hasAreas = treatmentAreas.length > 0;
 
@@ -31,9 +34,19 @@ export default function ServiceHighlightBox({
         </p>
       )}
 
+      {price && (
+        <p className="service-highlight-meta">
+          <strong>Price:</strong> {price}
+        </p>
+      )}
+
       {supportingNote && (
         <p className="service-highlight-note">{supportingNote}</p>
       )}
+
+      <a className="service-highlight-book" href={bookHref}>
+        {bookLabel}
+      </a>
     </div>
   );
 }

@@ -56,7 +56,7 @@ export default function Contact() {
       subtitle= "Get in touch with us today!"
         variant = ""
     />
-    <CustomCursor />
+    {/* <CustomCursor /> */}
 
     <section className="contact-page">
       <div className="contact-container">

@@ -82,7 +82,7 @@ export default function LocationLandingPage() {
         schema={schema}
       />
 
-      <CustomCursor />
+      {/* <CustomCursor /> */}
       <Navbar />
       <Banner3
         image="/assets/images/images/sumner-mahaffey-7Y0NshQLohk-unsplash.jpg"

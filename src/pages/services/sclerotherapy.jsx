@@ -8,7 +8,7 @@ import './sclerotherapy.css';
 export default function Sclerotherapy() {
     return (
         <>
-            <CustomCursor />
+            {/* <CustomCursor /> */}
             <Navbar />
 
             <Banner3
@@ -34,6 +34,7 @@ export default function Sclerotherapy() {
                                 summary="A minimally invasive treatment for smoother, clearer-looking legs."
                                 treatmentAreas={["Legs"]}
                                 sessions="45 min. - 1hr."
+                                price="$400 - $800"
                             />
                         </div>
                     </div>

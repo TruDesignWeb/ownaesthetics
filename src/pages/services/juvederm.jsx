@@ -8,7 +8,7 @@ import "./juvederm.css";
 export default function Juvederm() {
   return (
     <>
-      <CustomCursor />
+      {/* <CustomCursor /> */}
       <Navbar />
 
       <Banner3
@@ -57,6 +57,7 @@ export default function Juvederm() {
               <ServiceHighlightBox
                 summary="Immediate, natural-looking volume restoration with hyaluronic acid fillers."
                 treatmentAreas={["Cheeks", "Lips", "Nasolabial Folds"]}
+                price="$750 - $875"
                 supportingNote="Results can last anywhere from 8 months to 2 years, depending on the treatment area and product used."
               />
             </div>

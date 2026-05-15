@@ -118,7 +118,7 @@ const testimonials = [
 ];
     return(
         <>
-        <CustomCursor />
+        {/* <CustomCursor /> */}
         
         <Navbar />
         <Banner2 

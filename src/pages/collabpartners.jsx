@@ -8,7 +8,7 @@ import CustomCursor from "../components/customcursor";
 export default function ServiceHub() {
   return (
     <>
-      <CustomCursor />
+      {/* <CustomCursor /> */}
       <Navbar />
 
       <Banner3

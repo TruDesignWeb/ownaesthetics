@@ -8,7 +8,7 @@ import './chemicalpeels.css';
 export default function Chemicalpeels() {
     return (
         <>
-            <CustomCursor />
+            {/* <CustomCursor /> */}
             <Navbar />
 
             <Banner3
@@ -36,6 +36,7 @@ export default function Chemicalpeels() {
                                 summary="Customized peel options designed to refresh tone, texture, and radiance with little to no downtime."
                                 treatmentAreas={["Face", "Neck", "Decollete", "Back"]}
                                 sessions="25 min- 1 hr."
+                                price="$150"
                             />
                         </div>
                     </div>

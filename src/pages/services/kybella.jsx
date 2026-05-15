@@ -8,7 +8,7 @@ import "./kybella.css";
 export default function Kybella() {
   return (
     <>
-      <CustomCursor />
+      {/* <CustomCursor /> */}
       <Navbar />
 
       <Banner3
@@ -51,6 +51,7 @@ export default function Kybella() {
                 summary="A targeted injectable treatment designed to refine the profile under the chin."
                 treatmentAreas={["Neck"]}
                 sessions="45 min. - 1hr."
+                price="$750 per vial"
               />
             </div>
           </div>

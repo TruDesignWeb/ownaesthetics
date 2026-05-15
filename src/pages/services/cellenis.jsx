@@ -8,7 +8,7 @@ import "./cellenis.css";
 export default function Cellenis() {
   return (
     <>
-      <CustomCursor />
+      {/* <CustomCursor /> */}
       <Navbar />
 
       <Banner3
@@ -46,6 +46,7 @@ export default function Cellenis() {
                 summary="A natural regenerative treatment that supports skin renewal using your own platelet-rich plasma."
                 treatmentAreas={["Face", "Neck", "Hands", "Decollete"]}
                 sessions="30 min - 1 hr."
+                price="PRF: $600; PRF ezGEL: $800"
               />
             </div>
           </div>
