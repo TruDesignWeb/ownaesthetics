@@ -167,7 +167,7 @@
 .nav-link {
   color: white;
   text-decoration: none;
-  font-size: 1.08rem;
+  font-size: 1.25rem;
   font-weight: 400;
   padding: 0.45rem 0.85rem;
   border-radius: 25px;
@@ -184,7 +184,7 @@
 }
 
 .navbar-container.scrolled .nav-link {
-  font-size: 1rem;
+  font-size: 1.1rem;
   transform: translateY(5px);
 }
 
