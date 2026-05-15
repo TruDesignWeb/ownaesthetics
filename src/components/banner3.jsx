@@ -1,10 +1,21 @@
 import "../styles/banner3.css";
 
-export default function Banner3({ image, title, subtitle }) {
+export default function Banner3({
+  image,
+  title,
+  subtitle,
+  className = "",
+  backgroundPosition,
+  backgroundSize,
+}) {
   return (
     <div
-      className="banner3-container"
-      style={{ backgroundImage: `url(${image})` }}
+      className={`banner3-container ${className}`.trim()}
+      style={{
+        backgroundImage: `url(${image})`,
+        ...(backgroundPosition ? { backgroundPosition } : {}),
+        ...(backgroundSize ? { backgroundSize } : {}),
+      }}
     >
       <div className="banner3-underlay"></div>
       <div className="banner3-content">

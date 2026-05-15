@@ -4,6 +4,7 @@ import Footer from "../components/footer";
 import ShowcaseSection from "../components/showcasesection";
 import Banner3 from "../components/banner3";
 import CustomCursor from "../components/customcursor";
+import "./collabpartners.css";
 
 export default function ServiceHub() {
   return (
@@ -12,9 +13,11 @@ export default function ServiceHub() {
       <Navbar />
 
       <Banner3
-        image="/assets/images/images/nic-y-c-It0vaZdSDDw-unsplash.jpg"
+        image="/assets/images/servicebannertry4.jpg"
         title="Explore Our Advanced Treatments"
         subtitle="Personalized solutions designed for your unique goals"
+        className="collabpartners-banner"
+        backgroundPosition="center 18%"
       />
 
       {/* SECTION 1 */}

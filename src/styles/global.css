@@ -196,4 +196,153 @@ body {
 
 }
 
+/* Sitewide density pass: keeps the page feeling closer to a 70% browser zoom
+   without scaling fixed hero/banner compositions. */
+:where(
+  .features-,
+  .features-podcasts,
+  .features-socials,
+  .feature-section,
+  .testimonial-showcase-container,
+  .homepage-faq,
+  .footer,
+  .philo-section,
+  .highlight-section,
+  .team-section,
+  .reviews-section,
+  .rsvp-hero,
+  .rsvp-details-section,
+  .rsvp-perks-section,
+  .rsvp-form-section,
+  .contact-page,
+  .appointments-page,
+  .terms-page,
+  .privacy-page,
+  .cancellation-page,
+  .seo-landing-page,
+  [id$="-services"]
+) {
+  padding-top: clamp(2.5rem, 4.5vw, 4.4rem) !important;
+  padding-bottom: clamp(2.5rem, 4.5vw, 4.4rem) !important;
+}
+
+:where(
+  .features-container,
+  .feature-wrapper,
+  .testimonial-cards-wrapper,
+  .homepage-faq__inner,
+  .footer-content,
+  .philo-wrap,
+  .highlight-wrap,
+  .team-wrap,
+  .reviews-wrap,
+  .rsvp-wrap,
+  .rsvp-perks-wrap,
+  .contact-container,
+  .appointments-container,
+  .seo-landing-container,
+  [id$="-services"] > div
+) {
+  max-width: 1060px !important;
+}
+
+:where(
+  .feature-card,
+  .testimonial-card,
+  .homepage-faq__card,
+  .newsletter-container,
+  .contact-info,
+  .contact-form,
+  .appointments-info,
+  .appointments-form,
+  .highlight-wrap,
+  .rsvp-card,
+  .rsvp-perk-card,
+  [id$="-services"] [class*="-services-text"],
+  [id$="-services"] [class*="-content-text"]
+) {
+  padding: clamp(1.35rem, 2.4vw, 2.35rem) !important;
+}
+
+:where(
+  .feature-card p,
+  .testimonial-text,
+  .homepage-faq__answer p,
+  .philo-text,
+  .highlight-text,
+  .contact-info p,
+  .footer-section p,
+  .footer-section a,
+  .footer-section-1 p,
+  .footer-section-1 a,
+  [id$="-services"] [class*="-services-text"],
+  [id$="-services"] [class*="-content-text"],
+  .seo-landing-page p
+) {
+  font-size: clamp(0.88rem, 1vw, 0.98rem) !important;
+  line-height: 1.6 !important;
+}
+
+:where(
+  .section-title,
+  .feature-card h2,
+  .homepage-faq__title,
+  .philo-title,
+  .philo-title-2,
+  .team-title,
+  .highlight-title,
+  .testimonial-showcase-title,
+  .contact-info h2,
+  [id$="-services"] h1,
+  .seo-landing-page h1,
+  .seo-landing-page h2
+) {
+  font-size: clamp(1.6rem, 2.8vw, 2.65rem) !important;
+  line-height: 1.12 !important;
+}
+
+:where(
+  [id$="-services"] [class*="-image-gallery"]
+) {
+  gap: 14px !important;
+  padding: 14px !important;
+}
+
+:where(
+  [id$="-services"] [class*="-image-gallery"] img
+) {
+  max-width: min(280px, 86vw) !important;
+}
+
+:where(.service-highlight-box) {
+  margin-top: 1.25rem !important;
+  padding: 1.35rem !important;
+}
+
+@media (max-width: 768px) {
+  :where(
+    .features-,
+    .features-podcasts,
+    .features-socials,
+    .feature-section,
+    .testimonial-showcase-container,
+    .homepage-faq,
+    .footer,
+    .philo-section,
+    .highlight-section,
+    .team-section,
+    .reviews-section,
+    .rsvp-hero,
+    .rsvp-details-section,
+    .rsvp-perks-section,
+    .rsvp-form-section,
+    .contact-page,
+    .appointments-page,
+    [id$="-services"]
+  ) {
+    padding-top: 2rem !important;
+    padding-bottom: 2rem !important;
+  }
+}
+
 

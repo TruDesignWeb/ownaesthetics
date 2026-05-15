@@ -1,0 +1,9 @@
+.collabpartners-banner {
+  background-size: cover;
+}
+
+@media (min-width: 900px) {
+  .collabpartners-banner {
+    min-height: 480px;
+  }
+}
