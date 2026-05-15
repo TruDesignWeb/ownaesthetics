@@ -33,17 +33,17 @@ body {
 .homepage-faq {
   background: linear-gradient(180deg, #f6efe8 0%, #efe1d3 100%);
   color: #163041;
-  padding: 5.5rem 1.5rem;
+  padding: 3.8rem 1.25rem;
 }
 
 .homepage-faq__inner {
   margin: 0 auto;
-  max-width: 1220px;
+  max-width: 1040px;
 }
 
 .homepage-faq__heading {
-  margin-bottom: 2.5rem;
-  max-width: 760px;
+  margin-bottom: 1.7rem;
+  max-width: 660px;
 }
 
 .homepage-faq__eyebrow {
@@ -59,14 +59,14 @@ body {
 .homepage-faq__title {
   color: #163041;
 
-  font-size: clamp(2.1rem, 4vw, 3.5rem);
+  font-size: clamp(1.8rem, 3vw, 2.75rem);
   line-height: 1;
   margin: 0 0 1rem;
 }
 
 .homepage-faq__intro {
   color: rgba(22, 48, 65, 0.82);
-  font-size: 1.05rem;
+  font-size: 0.96rem;
   line-height: 1.75;
   margin: 0;
   max-width: 680px;
@@ -97,31 +97,31 @@ body {
 
 .homepage-faq__grid {
   display: grid;
-  gap: 1.25rem;
+  gap: 1rem;
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .homepage-faq__card {
   background: rgba(255, 255, 255, 0.82);
   border: 1px solid rgba(22, 48, 65, 0.1);
-  border-radius: 28px;
+  border-radius: 18px;
   box-shadow: 0 22px 48px rgba(22, 48, 65, 0.08);
-  padding: 1.75rem;
+  padding: 1.35rem;
   backdrop-filter: blur(10px);
 }
 
 .homepage-faq__question {
   color: #163041;
 
-  font-size: 1.2rem;
+  font-size: 1.02rem;
   line-height: 1.25;
   margin: 0 0 0.9rem;
 }
 
 .homepage-faq__answer p {
   color: rgba(22, 48, 65, 0.86);
-  font-size: 0.98rem;
-  line-height: 1.75;
+  font-size: 0.9rem;
+  line-height: 1.62;
   margin: 0 0 0.7rem;
 }
 
