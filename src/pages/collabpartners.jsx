@@ -13,7 +13,7 @@ export default function ServiceHub() {
       <Navbar />
 
       <Banner3
-        image="/assets/images/servicebannertry4.jpg"
+        image="/assets/images/skincarebannerimg.jpg"
         title="Explore Our Advanced Treatments"
         subtitle="Personalized solutions designed for your unique goals"
         className="collabpartners-banner"
