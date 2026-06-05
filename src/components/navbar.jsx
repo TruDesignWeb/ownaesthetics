@@ -65,6 +65,11 @@ export default function Navbar() {
             </Link>
           </ul>
           <ul>
+            <a href="tel:15156721860" className="top-nav-link">
+              (515) 672-1860
+            </a>
+          </ul>
+          <ul>
             <Link to="/About" className="top-nav-link">
               <img
                 className="th-logo"
