@@ -590,19 +590,6 @@ const homepageSchema = {
   ],
 };
 
-const faqSchema = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  mainEntity: homepageFaqs.map((item) => ({
-    "@type": "Question",
-    name: item.question,
-    acceptedAnswer: {
-      "@type": "Answer",
-      text: item.answers.join(" "),
-    },
-  })),
-};
-
 export default function Home() {
   useRevealOnScroll();
   return (
@@ -613,10 +600,7 @@ export default function Home() {
         path="/"
         schema={homepageSchema}
       />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-      />
+      {/* FAQ structured data is included inside `homepageSchema` (passed to Seo). */}
       {/* <CustomCursor /> */}
       <Navbar />
       {/* <RSVPPopup /> */}
@@ -659,7 +643,10 @@ export default function Home() {
           buttonLabel="View More Testimonials"
         />
 
-        <section className="homepage-faq" aria-labelledby="homepage-faq-title">
+        <section
+          className="homepage-faq visually-hidden"
+          aria-labelledby="homepage-faq-title"
+        >
           <div className="homepage-faq__inner">
             <div className="homepage-faq__heading">
               <span className="homepage-faq__eyebrow">FAQ</span>
