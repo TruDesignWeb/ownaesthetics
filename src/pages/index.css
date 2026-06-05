@@ -86,7 +86,9 @@ body {
   display: inline-flex;
   padding: 0.72rem 1rem;
   text-decoration: none;
-  transition: background-color 0.2s ease, transform 0.2s ease;
+  transition:
+    background-color 0.2s ease,
+    transform 0.2s ease;
 }
 
 .homepage-faq__link-pill:hover {
@@ -179,4 +181,8 @@ button:focus-visible {
     border-radius: 22px;
     padding: 1.35rem;
   }
+}
+
+.visually-hidden {
+  display: none;
 }
