@@ -590,6 +590,19 @@ const homepageSchema = {
   ],
 };
 
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: homepageFaqs.map((item) => ({
+    "@type": "Question",
+    name: item.question,
+    acceptedAnswer: {
+      "@type": "Answer",
+      text: item.answers.join(" "),
+    },
+  })),
+};
+
 export default function Home() {
   useRevealOnScroll();
   return (
@@ -599,6 +612,10 @@ export default function Home() {
         description="Own Aesthetics is a medical spa in West Des Moines offering injectables, facials, laser resurfacing, skincare analysis, and personalized treatment planning."
         path="/"
         schema={homepageSchema}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
       {/* <CustomCursor /> */}
       <Navbar />
