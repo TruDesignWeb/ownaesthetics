@@ -1,5 +1,7 @@
 // File: src/pages/Home.jsx
 import React from "react";
+import { useEffect, useRef, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import Navbar from "../components/navbar";
 
 import Footer from "../components/footer";
@@ -10,12 +12,23 @@ import "../styles/animations.css";
 import Banner2 from "../components/banner2";
 import "./about.css";
 
-import { useEffect, useRef, useState } from "react";
-
 export default function About({}) {
   useRevealOnScroll();
+  const navigate = useNavigate();
   const imgRef = useRef(null);
   const [y, setY] = useState(0);
+  const [easterClickCount, setEasterClickCount] = useState(0);
+
+  useEffect(() => {
+    if (easterClickCount >= 5) {
+      setEasterClickCount(0);
+      navigate("/bryan");
+    }
+  }, [easterClickCount, navigate]);
+
+  const handleEasterClick = () => {
+    setEasterClickCount((prev) => prev + 1);
+  };
 
   useEffect(() => {
     let ticking = false;
@@ -158,10 +171,11 @@ export default function About({}) {
               className="image-card"
               ref={imgRef}
               style={{ transform: `translateY(${y}px)` }}
+              onClick={handleEasterClick}
             >
               <img
                 src="/assets/images/images/DSC_2001.jpg"
-                alt="Spa reception with serene, warm tones"
+                alt="Dr. Bryan Folkers"
               />
             </div>
           </div>

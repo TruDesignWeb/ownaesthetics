@@ -1,47 +1,47 @@
-import { Navigate, Routes, Route } from 'react-router-dom';
-import Home from './pages/index';
-import About from './pages/about';
-import Services from './pages/services';
-import Contact from './pages/contact';
+import { Navigate, Routes, Route } from "react-router-dom";
+import Home from "./pages/index";
+import About from "./pages/about";
+import Services from "./pages/services";
+import Contact from "./pages/contact";
 
-import Dashboard from './pages/dashboard';
-import Login from './components/login';
-import ProtectedRoute from './components/protectedroute';
-import GuestRoute from './components/guestroute';
-import Register from './components/register';
-import Skincare from './pages/collabpartners';
-import Reviews from './pages/reviews.jsx';
-import Membership from './pages/membership';
-import Appointments from './pages/appointments';
-import Socials from './pages/socials.jsx';
-import Refer from './pages/referringpartners.jsx';
+import Dashboard from "./pages/dashboard";
+import Login from "./components/login";
+import ProtectedRoute from "./components/protectedroute";
+import GuestRoute from "./components/guestroute";
+import Register from "./components/register";
+import Skincare from "./pages/collabpartners";
+import Reviews from "./pages/reviews.jsx";
+import Membership from "./pages/membership";
+import Appointments from "./pages/appointments";
+import Socials from "./pages/socials.jsx";
+import Refer from "./pages/referringpartners.jsx";
 
-import AntiWrinkle from './pages/services/antiwrinkle';
-import Aquafirme from './pages/services/aquafirme';
-import NouvaDerm from './pages/services/nouvaderm';
-import SaltFacial from './pages/services/saltfacial';
-import Cellenis from './pages/services/cellenis';
-import ChemicalPeels from './pages/services/chemicalpeels';
-import Consultation from './pages/services/consultation';
-import Exosomes from './pages/services/exosomes';
-import Facials from './pages/services/facials';
-import HairTreatments from './pages/services/hairtreatments';
-import Juvederm from './pages/services/juvederm';
-import Kybella from './pages/services/kybella';
-import Sclerotherapy from './pages/services/sclerotherapy';
-import Sculptra from './pages/services/sculptra';
-import SkinPen from './pages/services/skinpen';
-import SkinTypes from './pages/services/skintypes';
-import Terms from './pages/termsofservice';
-import Privacy from './pages/privacypolicy';
-import CancellationPolicy from './pages/cancellationpolicy';
-import ScrollToTop from './components/scrolltotop.jsx';
-import RSVP from './pages/rsvp.jsx';
-import ServiceRouteSeo from './components/service-route-seo.jsx';
-import AppRouteSeo from './components/app-route-seo.jsx';
-import CoreServiceLandingPage from './pages/core-service-landing.jsx';
-import LocationLandingPage from './pages/location-landing.jsx';
-
+import AntiWrinkle from "./pages/services/antiwrinkle";
+import Aquafirme from "./pages/services/aquafirme";
+import NouvaDerm from "./pages/services/nouvaderm";
+import SaltFacial from "./pages/services/saltfacial";
+import Cellenis from "./pages/services/cellenis";
+import ChemicalPeels from "./pages/services/chemicalpeels";
+import Consultation from "./pages/services/consultation";
+import Exosomes from "./pages/services/exosomes";
+import Facials from "./pages/services/facials";
+import HairTreatments from "./pages/services/hairtreatments";
+import Juvederm from "./pages/services/juvederm";
+import Kybella from "./pages/services/kybella";
+import Sclerotherapy from "./pages/services/sclerotherapy";
+import Sculptra from "./pages/services/sculptra";
+import SkinPen from "./pages/services/skinpen";
+import SkinTypes from "./pages/services/skintypes";
+import Terms from "./pages/termsofservice";
+import Privacy from "./pages/privacypolicy";
+import CancellationPolicy from "./pages/cancellationpolicy";
+import Bryan from "./pages/bryan";
+import ScrollToTop from "./components/scrolltotop.jsx";
+import RSVP from "./pages/rsvp.jsx";
+import ServiceRouteSeo from "./components/service-route-seo.jsx";
+import AppRouteSeo from "./components/app-route-seo.jsx";
+import CoreServiceLandingPage from "./pages/core-service-landing.jsx";
+import LocationLandingPage from "./pages/location-landing.jsx";
 
 export default function App() {
   return (
@@ -50,7 +50,6 @@ export default function App() {
       <AppRouteSeo />
       <ServiceRouteSeo />
       <Routes>
-        
         <Route path="/membership" element={<Membership />} />
         <Route path="/socials" element={<Socials />} />
         <Route path="/Socials" element={<Navigate to="/socials" replace />} />
@@ -58,7 +57,6 @@ export default function App() {
         <Route path="/rsvp" element={<RSVP />} />
         <Route path="/referring-partners" element={<Refer />} />
 
-        
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/services" element={<Services />} />
@@ -68,72 +66,70 @@ export default function App() {
         <Route path="/reviews" element={<Reviews />} />
         <Route path="/appointments" element={<Appointments />} />
 
+        <Route path="services/antiwrinkle" element={<AntiWrinkle />} />
+        <Route path="services/aquafirme" element={<Aquafirme />} />
+        <Route path="services/nouvaderm" element={<NouvaDerm />} />
+        <Route path="services/saltfacial" element={<SaltFacial />} />
 
+        <Route path="services/cellenis" element={<Cellenis />} />
+        <Route path="services/chemicalpeels" element={<ChemicalPeels />} />
+        <Route path="services/consultation" element={<Consultation />} />
+        <Route path="services/exosomes" element={<Exosomes />} />
 
-        <Route path = "services/antiwrinkle" element={<AntiWrinkle />} />
-        <Route path = "services/aquafirme" element={<Aquafirme />} />
-        <Route path = "services/nouvaderm" element={<NouvaDerm />} />
-        <Route path = "services/saltfacial" element={<SaltFacial />} />
+        <Route path="services/facials" element={<Facials />} />
+        <Route path="services/hairtreatments" element={<HairTreatments />} />
+        <Route path="services/juvederm" element={<Juvederm />} />
+        <Route path="services/kybella" element={<Kybella />} />
 
-        <Route path = "services/cellenis" element={<Cellenis />} />
-        <Route path = "services/chemicalpeels" element={<ChemicalPeels />} />
-        <Route path = "services/consultation" element={<Consultation />} />
-        <Route path = "services/exosomes" element={<Exosomes />} />
+        <Route path="services/sclerotherapy" element={<Sclerotherapy />} />
+        <Route path="services/sculptra" element={<Sculptra />} />
+        <Route path="services/skinpen" element={<SkinPen />} />
+        <Route path="services/skintypes" element={<SkinTypes />} />
+        <Route
+          path="services/:serviceSlug"
+          element={<CoreServiceLandingPage />}
+        />
 
-        <Route path = "services/facials" element={<Facials />} />
-        <Route path = "services/hairtreatments" element={<HairTreatments />} />
-        <Route path = "services/juvederm" element={<Juvederm />} />
-        <Route path = "services/kybella" element={<Kybella />} />
-
-        <Route path = "services/sclerotherapy" element={<Sclerotherapy />} />
-        <Route path = "services/sculptra" element={<Sculptra />} />
-        <Route path = "services/skinpen" element={<SkinPen />} />
-        <Route path = "services/skintypes" element={<SkinTypes />} />
-        <Route path = "services/:serviceSlug" element={<CoreServiceLandingPage />} />
-
-
-        <Route path = "/terms" element={<Terms />} />
-        <Route path = "/privacy" element={<Privacy />} />
-        <Route path = "/cancellation" element={<CancellationPolicy />} />
-
-
-
+        <Route path="/terms" element={<Terms />} />
+        <Route path="/privacy" element={<Privacy />} />
+        <Route path="/cancellation" element={<CancellationPolicy />} />
+        <Route path="/bryan" element={<Bryan />} />
 
         <Route path="/login" element={<Login />} />
-        <Route path="/dashboard" element={
-        <ProtectedRoute>
-          <Dashboard />
-        </ProtectedRoute>
-        } />
-
+        <Route
+          path="/dashboard"
+          element={
+            <ProtectedRoute>
+              <Dashboard />
+            </ProtectedRoute>
+          }
+        />
 
         <Route
-        path="/login"
-        element={
-          <GuestRoute>
-            <Login />
-          </GuestRoute>
-        }
-      />
-      <Route
-        path="/register"
-        element={
-          <GuestRoute>
-            <Register />
-          </GuestRoute>
-        }
-      />
-      <Route
-        path="/dashboard"
-        element={
-          <ProtectedRoute>
-            <Dashboard />
-          </ProtectedRoute>
-        }
-      />
-        
+          path="/login"
+          element={
+            <GuestRoute>
+              <Login />
+            </GuestRoute>
+          }
+        />
+        <Route
+          path="/register"
+          element={
+            <GuestRoute>
+              <Register />
+            </GuestRoute>
+          }
+        />
+        <Route
+          path="/dashboard"
+          element={
+            <ProtectedRoute>
+              <Dashboard />
+            </ProtectedRoute>
+          }
+        />
       </Routes>
-      
     </>
   );
 }
