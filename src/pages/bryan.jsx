@@ -5,22 +5,22 @@ import "../styles/animations.css";
 
 /**
  * Forbidden photos:     {
-      src: "/assets/images/IMG_2957.jpeg",
+      src: "/assets/images/IMG_2957.webp",
     },
  */
 export default function Bryan() {
   const images = [
     {
-      src: "/assets/images/IMG_3922.jpeg",
+      src: "/assets/images/IMG_3922.webp",
     },
     {
-      src: "/assets/images/IMG_5641.jpeg",
+      src: "/assets/images/IMG_5641.webp",
     },
     {
-      src: "/assets/images/IMG_1031.jpeg",
+      src: "/assets/images/IMG_1031.webp",
     },
     {
-      src: "/assets/images/IMG_4199.jpeg",
+      src: "/assets/images/IMG_4199.webp",
     },
   ];
   return (

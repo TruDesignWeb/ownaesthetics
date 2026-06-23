@@ -16,7 +16,7 @@ export default function Skinpen() {
             <Navbar />
             
             <Banner3
-                image="/assets/images/images/sumner-mahaffey-7Y0NshQLohk-unsplash.jpg"
+                image="/assets/images/images/sumner-mahaffey-7Y0NshQLohk-unsplash.webp"
                 title="Skin Type Solutions"
                 subtitle="Discover Your Unique Skin Type and Unlock the Secrets to Radiant Skin with Our Personalized Skincare Solutions"
             />
@@ -30,8 +30,8 @@ export default function Skinpen() {
                     <div className="skintypesolutions-main-content">
                         <div className="skintypesolutions-image-gallery">
                             <img className="skintypesolutions-first-img" src="/assets/images/images/stsimg.webp" alt="Skin Type Solutions"/>
-                            <img src="/assets/images/images/stsfollowupinfo/skntyp.co_ShopOwn.png" alt="Shop Own"/>
-                            <img src="/assets/images/images/stsfollowupinfo/skntyp.co_OwnSkinQuiz.png" alt="Skin Quiz"/>
+                            <img src="/assets/images/images/stsfollowupinfo/skntyp.co_ShopOwn.webp" alt="Shop Own"/>
+                            <img src="/assets/images/images/stsfollowupinfo/skntyp.co_OwnSkinQuiz.webp" alt="Skin Quiz"/>
                         </div>
                         
                         <div className="skintypesolutions-content-text">

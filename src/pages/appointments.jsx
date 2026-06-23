@@ -117,7 +117,7 @@ export default function Contact() {
         
 //         <Navbar />
 //         <Banner2 
-//             image = "/assets/images/milky-way-full-stars-space.jpg"
+//             image = "/assets/images/milky-way-full-stars-space.webp"
 //             title = "Your Wellness starts here"
 //             subtitle= "Discover a new path to living with the fountain of youth"
 //         />

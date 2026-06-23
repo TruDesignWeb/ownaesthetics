@@ -12,7 +12,7 @@ export default function Chemicalpeels() {
             <Navbar />
 
             <Banner3
-                image="/assets/images/images/sumner-mahaffey-7Y0NshQLohk-unsplash.jpg"
+                image="/assets/images/images/sumner-mahaffey-7Y0NshQLohk-unsplash.webp"
                 title="Chemical Peels"
                 subtitle="Reveal Your Radiance with Our Expert Chemical Peels"
             />

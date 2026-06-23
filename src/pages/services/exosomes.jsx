@@ -12,7 +12,7 @@ export default function Exosomes() {
             <Navbar />
 
             <Banner3
-                image="/assets/images/images/sumner-mahaffey-7Y0NshQLohk-unsplash.jpg"
+                image="/assets/images/images/sumner-mahaffey-7Y0NshQLohk-unsplash.webp"
                 title="EXO|E® Skin Revitalizing Complex"
                 subtitle="Discover the Power of EXO|E®: A Revolutionary Skin Revitalizing Complex for Radiant, Youthful Skin"
             />
@@ -26,8 +26,8 @@ export default function Exosomes() {
                     <div className="exosomes-main-content">
                         <div className="exosomes-image-gallery">
                             <img src="/assets/images/images/IMG_8380.JPG" alt="EXO|E Before & After 1"/>
-                            <img src="/assets/images/images/exoe_digital_marketing_kit_-_12.11.2023/EXOE Digital Marketing Kit - 12.11.2023/15.png" alt="EXO|E Before & After 2"/>
-                            <img src="/assets/images/images/exoe_digital_marketing_kit_-_12.11.2023/EXOE Digital Marketing Kit - 12.11.2023/ex3.png" alt="EXO|E Before & After 3"/>
+                            <img src="/assets/images/images/exoe_digital_marketing_kit_-_12.11.2023/EXOE Digital Marketing Kit - 12.11.2023/15.webp" alt="EXO|E Before & After 2"/>
+                            <img src="/assets/images/images/exoe_digital_marketing_kit_-_12.11.2023/EXOE Digital Marketing Kit - 12.11.2023/ex3.webp" alt="EXO|E Before & After 3"/>
                         </div>
 
                         <div className="exosomes-content-text exosomes-animated">

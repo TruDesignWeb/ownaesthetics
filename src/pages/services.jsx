@@ -16,7 +16,7 @@ import { serviceCollectionSchema } from "../lib/serviceSeo";
 
 const featureCards = [
   {
-    imageSrc: "/assets/images/images/istock-consultation.jpg",
+    imageSrc: "/assets/images/images/istock-consultation.webp",
     altText: "Consultation",
     captionText: "Consultation",
     containerHeight: "350px",
@@ -33,7 +33,7 @@ const featureCards = [
     link: "/services/consultation",
   },
   {
-    imageSrc: "/assets/images/images/aquafirme4.jpg",
+    imageSrc: "/assets/images/images/aquafirme4.webp",
     altText: "AquaFirmeXS",
     captionText: "AquaFirmeXS",
     containerHeight: "350px",
@@ -50,7 +50,7 @@ const featureCards = [
     link: "/services/aquafirme",
   },
   {
-    imageSrc: "/assets/images/images/nouva4.jpg",
+    imageSrc: "/assets/images/images/nouva4.webp",
     altText: "NOUVADerm® Laser Treatment",
     captionText: "NOUVADerm® Laser Treatment",
     containerHeight: "350px",
@@ -70,7 +70,7 @@ const featureCards = [
   },
   {
     imageSrc:
-      "/assets/images/images/female-patient-receiving-botox-injection-forehead.jpg",
+      "/assets/images/images/female-patient-receiving-botox-injection-forehead.webp",
     altText: "Anti-Wrinkle Injections",
     captionText: "Anti-Wrinkle Injections",
     containerHeight: "350px",
@@ -89,7 +89,7 @@ const featureCards = [
     link: "/services/antiwrinkle",
   },
   {
-    imageSrc: "/assets/images/images/istock-kybella.jpg",
+    imageSrc: "/assets/images/images/istock-kybella.webp",
     altText: "Kybella®",
     captionText: "Kybella®",
     containerHeight: "350px",
@@ -107,7 +107,7 @@ const featureCards = [
   },
   {
     imageSrc:
-      "/assets/images/images/woman-doing-self-care-treatment-indoors.jpg",
+      "/assets/images/images/woman-doing-self-care-treatment-indoors.webp",
     altText: "Sclerotherapy – Spider Veins",
     captionText: "Sclerotherapy – Spider Veins",
     containerHeight: "350px",
@@ -127,7 +127,7 @@ const featureCards = [
   },
   {
     imageSrc:
-      "/assets/images/images/hand-with-latex-glove-holding-vaccine-syringe.jpg",
+      "/assets/images/images/hand-with-latex-glove-holding-vaccine-syringe.webp",
     altText: "HA Dermal Fillers",
     captionText: "HA Dermal Fillers",
     containerHeight: "350px",
@@ -144,7 +144,7 @@ const featureCards = [
     link: "/services/juvederm",
   },
   {
-    imageSrc: "/assets/images/images/istock-sculptra.jpg",
+    imageSrc: "/assets/images/images/istock-sculptra.webp",
     altText: "Sculptra",
     captionText: "Sculptra",
     containerHeight: "350px",
@@ -161,7 +161,7 @@ const featureCards = [
     link: "/services/sculptra",
   },
   {
-    imageSrc: "/assets/images/images/close-up-doctor-checking-smiley-woman.jpg",
+    imageSrc: "/assets/images/images/close-up-doctor-checking-smiley-woman.webp",
     altText: "PRF/PRF ezGel",
     captionText: "PRF/PRF ezGel",
     containerHeight: "350px",
@@ -178,7 +178,7 @@ const featureCards = [
     link: "/services/cellenis",
   },
   {
-    imageSrc: "/assets/images/images/man-fixed.jpg",
+    imageSrc: "/assets/images/images/man-fixed.webp",
     altText: "Hair Wellness & Restoration",
     captionText: "Hair Wellness & Restoration",
     containerHeight: "350px",
@@ -197,7 +197,7 @@ const featureCards = [
     link: "/services/hairtreatments",
   },
   {
-    imageSrc: "/assets/images/images/istock-chem.jpg",
+    imageSrc: "/assets/images/images/istock-chem.webp",
     altText: "Chemical Peels",
     captionText: "Chemical Peels",
     containerHeight: "350px",
@@ -214,7 +214,7 @@ const featureCards = [
     link: "/services/chemicalpeels",
   },
   {
-    imageSrc: "/assets/images/images/istock-facial_.jpg",
+    imageSrc: "/assets/images/images/istock-facial_.webp",
     altText: "Customized Facials",
     captionText: "Customized Facials",
     containerHeight: "350px",
@@ -232,7 +232,7 @@ const featureCards = [
   },
   {
     imageSrc:
-      "/assets/images/images/exoe_digital_marketing_kit_-_12.11.2023/EXOE Digital Marketing Kit - 12.11.2023/15.png",
+      "/assets/images/images/exoe_digital_marketing_kit_-_12.11.2023/EXOE Digital Marketing Kit - 12.11.2023/15.webp",
     altText: "EXO|E® Skin Revitalizing Complex",
     captionText: "EXO|E® Skin Revitalizing Complex",
     containerHeight: "350px",
@@ -251,7 +251,7 @@ const featureCards = [
     link: "/services/exosomes",
   },
   {
-    imageSrc: "/assets/images/images/istock-salt1.jpg",
+    imageSrc: "/assets/images/images/istock-salt1.webp",
     altText: "SaltFacial® Skin Renewal Therapy",
     captionText: "SaltFacial® Skin Renewal Therapy",
     containerHeight: "350px",
@@ -270,7 +270,7 @@ const featureCards = [
     link: "/services/saltfacial",
   },
   {
-    imageSrc: "/assets/images/images/istock-skinpen.jpg",
+    imageSrc: "/assets/images/images/istock-skinpen.webp",
     altText: "SkinPen® Microneedling",
     captionText: "SkinPen® Microneedling",
     containerHeight: "350px",
@@ -304,7 +304,7 @@ export default function About() {
 
       <Navbar />
       <Banner2
-        image="/assets/images/images/sumner-mahaffey-7Y0NshQLohk-unsplash.jpg"
+        image="/assets/images/images/sumner-mahaffey-7Y0NshQLohk-unsplash.webp"
         title="Services"
         subtitle="Reveal your best self with our expert-led, medical-grade treatments designed to rejuvenate, restore, and enhance your natural beauty."
         variant=""

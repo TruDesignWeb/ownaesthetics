@@ -12,7 +12,7 @@ export default function Aquafirme() {
             <Navbar />
 
             <Banner3
-                image="/assets/images/images/sumner-mahaffey-7Y0NshQLohk-unsplash.jpg"
+                image="/assets/images/images/sumner-mahaffey-7Y0NshQLohk-unsplash.webp"
                 title="AquaFirmeXS"
                 subtitle="Experience the Ultimate Skin Rejuvenation with AquaFirmeXS: A Revolutionary Treatment for Radiant, Youthful Skin"
             />
@@ -25,8 +25,8 @@ export default function Aquafirme() {
 
                     <div className="aquafirme-main-content">
                         <div className="aquafirme-image-gallery">
-                            <img src="/assets/images/aquafirme1.png" alt="AquaFirmeXS Before & After 1"/>
-                            <img src="/assets/images/aquafirme2.jpeg" alt="AquaFirmeXS Before & After 2"/>
+                            <img src="/assets/images/aquafirme1.webp" alt="AquaFirmeXS Before & After 1"/>
+                            <img src="/assets/images/aquafirme2.webp" alt="AquaFirmeXS Before & After 2"/>
                             <img src="/assets/images/images/ABB4D0E0-2BF2-4275-A151-655022AC1C04.JPG" alt="AquaFirmeXS Before & After 3"/>
                         </div>
 

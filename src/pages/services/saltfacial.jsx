@@ -13,7 +13,7 @@ export default function SaltFacial() {
             <Navbar />
 
             <Banner3
-                image="/assets/images/images/sumner-mahaffey-7Y0NshQLohk-unsplash.jpg"
+                image="/assets/images/images/sumner-mahaffey-7Y0NshQLohk-unsplash.webp"
                 title="SaltFacial® Skin Renewal Therapy"
                 subtitle="Experience the Power of Sea Salt in Our Medical-Grade Facial Treatment"
             />
@@ -26,9 +26,9 @@ export default function SaltFacial() {
 
                     <div className="saltfacial-main-content">
                         <div className="saltfacial-image-gallery">
-                            <img src="/assets/images/images/salt-b4+after[1].png" alt="Salt Facial Before & After 1"/>
-                            <img src="/assets/images/images/salt-b4+after[2].png" alt="Salt Facial Before & After 2"/>
-                            <img src="/assets/images/images/salt-b4+after[3].png" alt="Salt Facial Before & After 3"/>
+                            <img src="/assets/images/images/salt-b4+after[1].webp" alt="Salt Facial Before & After 1"/>
+                            <img src="/assets/images/images/salt-b4+after[2].webp" alt="Salt Facial Before & After 2"/>
+                            <img src="/assets/images/images/salt-b4+after[3].webp" alt="Salt Facial Before & After 3"/>
                         </div>
 
                         <div className="saltfacial-content-text">

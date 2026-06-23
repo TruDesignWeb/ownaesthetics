@@ -12,7 +12,7 @@ export default function Kybella() {
       <Navbar />
 
       <Banner3
-        image="/assets/images/images/sumner-mahaffey-7Y0NshQLohk-unsplash.jpg"
+        image="/assets/images/images/sumner-mahaffey-7Y0NshQLohk-unsplash.webp"
         title="Kybella®"
         subtitle="Sculpt Your Profile with Kybella® - The Only FDA-Approved Injectable for Double Chin Reduction"
       />
@@ -23,7 +23,7 @@ export default function Kybella() {
           <div className="kybella-row">
             <div className="kybella-image-gallery">
               <img
-                src="/assets/images/kybellabefore+after.jpeg"
+                src="/assets/images/kybellabefore+after.webp"
                 alt="Kybella Before & After"
               />
             </div>

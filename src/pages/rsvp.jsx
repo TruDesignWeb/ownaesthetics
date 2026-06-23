@@ -58,7 +58,7 @@ export default function RSVP() {
       <Navbar />
 
       <Banner2
-        image="/assets/images/images/istock-brownplant.jpg"
+        image="/assets/images/images/istock-brownplant.webp"
         title="OWN Aesthetics Turns One"
         subtitle="You're Invited to Our Glow-Up Birthday Bash"
         variant=""

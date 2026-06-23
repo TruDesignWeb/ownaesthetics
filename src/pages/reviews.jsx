@@ -18,8 +18,8 @@ export default function Reviews({
      eyebrow = "Philosophy",
   title = "Look and feel your best naturally",
   copy = `We want to help you with your health and wellness at Total Health Initiative, I really like being healthy do you?`,
-  image = "/assets/images/milky-way-full-stars-space.jpg",
-  thimage = "/assets/images/milky-way-full-stars-space.jpg",
+  image = "/assets/images/milky-way-full-stars-space.webp",
+  thimage = "/assets/images/milky-way-full-stars-space.webp",
   
 }) {
     useRevealOnScroll()
@@ -122,7 +122,7 @@ const testimonials = [
         
         <Navbar />
         <Banner2 
-            image = "/assets/images/images/istock-wheat2.jpg"
+            image = "/assets/images/images/istock-wheat2.webp"
             title = "Reviews"
             subtitle= ""
             variant = ""

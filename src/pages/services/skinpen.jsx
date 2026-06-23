@@ -12,7 +12,7 @@ export default function Skinpen() {
       <Navbar />
 
       <Banner3
-        image="/assets/images/images/sumner-mahaffey-7Y0NshQLohk-unsplash.jpg"
+        image="/assets/images/images/sumner-mahaffey-7Y0NshQLohk-unsplash.webp"
         title="SkinPen® Microneedling"
         subtitle="Beautiful skin - naturally!"
       />
@@ -25,15 +25,15 @@ export default function Skinpen() {
           <div className="skinpen-row">
             <div className="skinpen-image-gallery">
               <img
-                src="/assets/images/skinpenbefore+after.jpeg"
+                src="/assets/images/skinpenbefore+after.webp"
                 alt="SkinPen Before & After"
               />
               <img
-                src="/assets/images/SkinPen Before & after 1.jpg"
+                src="/assets/images/SkinPen Before & after 1.webp"
                 alt="SkinPen before and After"
               />
               <img
-                src="/assets/images/Procedure-036_maxWidth_1200_maxHeight_1200_ppi_72.png"
+                src="/assets/images/Procedure-036_maxWidth_1200_maxHeight_1200_ppi_72.webp"
                 alt="SkinPen before and After"
               />
             </div>

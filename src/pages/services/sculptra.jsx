@@ -12,7 +12,7 @@ export default function Sculptra() {
             <Navbar />
 
             <Banner3
-                image="/assets/images/images/sumner-mahaffey-7Y0NshQLohk-unsplash.jpg"
+                image="/assets/images/images/sumner-mahaffey-7Y0NshQLohk-unsplash.webp"
                 title="Sculptra®"
                 subtitle="Sculptra®: The Original Collagen Stimulator for Natural, Long-Lasting Results"
             />

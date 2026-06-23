@@ -7,10 +7,10 @@ const SocialMedia = () => {
             <p className = "social-media-title">Follow us on Social Media!</p>
             <div className = "icons-container">
                 <a href="https://www.facebook.com/p/Own-Aesthetics-61576022630962/" target="_blank" rel="noopener noreferrer">
-                    <img className="social-media-icon" src = "/assets\images\images\facebook-icon.png"></img>
+                    <img className="social-media-icon" src = "/assets\images\images\facebook-icon.webp"></img>
                 </a>
                 <a href="https://www.instagram.com/ownaestheticsdsm/" target="_blank" rel="noopener noreferrer" >
-                    <img className="social-media-icon" src = "/assets\images\images\instagram-icon.png"></img>
+                    <img className="social-media-icon" src = "/assets\images\images\instagram-icon.webp"></img>
                 </a>
             </div>
             

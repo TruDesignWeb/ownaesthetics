@@ -69,7 +69,7 @@ export default function Navbar() {
               <Link to="/About" className="top-nav-link">
                 <img
                   className="th-logo"
-                  src="/assets/images/TotalHealthLogo_HorizontalWhite.png"
+                  src="/assets/images/TotalHealthLogo_HorizontalWhite.webp"
                 />
               </Link>
             </ul>

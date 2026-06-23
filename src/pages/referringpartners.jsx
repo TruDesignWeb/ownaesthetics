@@ -76,7 +76,7 @@ export default function Home() {
       {/* <CustomCursor /> */}
       <Navbar />
       <Banner2 
-        image = "/assets/images/milky-way-full-stars-space.jpg"
+        image = "/assets/images/milky-way-full-stars-space.webp"
         title = "Podcasts"
         subtitle= "Join our podcasts for our latest info"
         variant = ""

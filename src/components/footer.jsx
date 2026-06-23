@@ -49,7 +49,7 @@ export default function Footer() {
               rel="noopener noreferrer"
               aria-label="Own Aesthetics on Facebook"
             >
-              <img src="/assets/images/images/facebook-icon.png" alt="" />
+              <img src="/assets/images/images/facebook-icon.webp" alt="" />
               <span>Facebook</span>
             </a>
             <a
@@ -58,7 +58,7 @@ export default function Footer() {
               rel="noopener noreferrer"
               aria-label="Own Aesthetics on Instagram"
             >
-              <img src="/assets/images/images/instagram-icon.png" alt="" />
+              <img src="/assets/images/images/instagram-icon.webp" alt="" />
               <span>Instagram</span>
             </a>
           </div>

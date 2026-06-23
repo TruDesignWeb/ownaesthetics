@@ -85,7 +85,7 @@ export default function LocationLandingPage() {
       {/* <CustomCursor /> */}
       <Navbar />
       <Banner3
-        image="/assets/images/images/sumner-mahaffey-7Y0NshQLohk-unsplash.jpg"
+        image="/assets/images/images/sumner-mahaffey-7Y0NshQLohk-unsplash.webp"
         title={page.heroTitle}
         subtitle={page.heroSubtitle}
       />

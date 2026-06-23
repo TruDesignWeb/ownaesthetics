@@ -12,7 +12,7 @@ export default function Cellenis() {
       <Navbar />
 
       <Banner3
-        image="/assets/images/images/sumner-mahaffey-7Y0NshQLohk-unsplash.jpg"
+        image="/assets/images/images/sumner-mahaffey-7Y0NshQLohk-unsplash.webp"
         title="Cellenis® Derma PRP/PRF"
         subtitle="Rejuvenate Your Skin with Cellenis® Derma PRP/PRF: A Natural Approach to Radiant, Youthful Skin"
       />
@@ -25,7 +25,7 @@ export default function Cellenis() {
           <div className="cellenis-row">
             <div className="cellenis-image-gallery">
               <img
-                src="/assets/images/prfbefore+after.jpeg"
+                src="/assets/images/prfbefore+after.webp"
                 alt="Cellenis Before & After"
               />
             </div>

@@ -12,7 +12,7 @@ export default function Juvederm() {
       <Navbar />
 
       <Banner3
-        image="/assets/images/images/sumner-mahaffey-7Y0NshQLohk-unsplash.jpg"
+        image="/assets/images/images/sumner-mahaffey-7Y0NshQLohk-unsplash.webp"
         title="JUVÉDERM® Injectable HA Dermal Fillers"
         subtitle="Enhance Your Natural Beauty with the JUVÉDERM® Collection of Injectable HA Dermal Fillers"
       />
@@ -25,15 +25,15 @@ export default function Juvederm() {
           <div className="juvederm-row">
             <div className="juvederm-image-gallery">
               <img
-                src="/assets/images/fillerbefore+after.jpeg"
+                src="/assets/images/fillerbefore+after.webp"
                 alt="Juvederm Before & After"
               />
               <img
-                src="/assets/images/fillerb4+after2.jpeg"
+                src="/assets/images/fillerb4+after2.webp"
                 alt="Juvederm before and After"
               />
               <img
-                src="/assets/images/fillerb4+after3.jpeg"
+                src="/assets/images/fillerb4+after3.webp"
                 alt="Juvederm Before and After"
               />
             </div>

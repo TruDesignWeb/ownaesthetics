@@ -26,7 +26,7 @@ import Seo from "../components/seo";
 
 const featureCards = [
   {
-    imageSrc: "/assets/images/images/istock-salt1.jpg",
+    imageSrc: "/assets/images/images/istock-salt1.webp",
     altText: "The SaltFacial®",
     captionText: "The SaltFacial®",
     containerHeight: "350px",
@@ -43,7 +43,7 @@ const featureCards = [
     link: "/services/saltfacial",
   },
   {
-    imageSrc: "/assets/images/images/aquafirme4.jpg",
+    imageSrc: "/assets/images/images/aquafirme4.webp",
     altText: "AquaFirmeXS",
     captionText: "AquaFirmeXS",
     containerHeight: "350px",
@@ -60,7 +60,7 @@ const featureCards = [
     link: "services/aquafirme",
   },
   {
-    imageSrc: "/assets/images/images/nouva4.jpg",
+    imageSrc: "/assets/images/images/nouva4.webp",
     altText: "NOUVADerm™ Laser Treatment",
     captionText: "NOUVADerm™ Laser Treatment",
     containerHeight: "350px",
@@ -620,7 +620,7 @@ export default function Home() {
           title="Our Vision"
           text="Own Aesthetics is a medical spa born from a desire to serve those who want to Own their Aesthetic. We believe in enhancing your natural evolution, so you feel like your best self through every phase of life. With knowledgeable expertise, we offer the best and latest options for skin health, sorting trends from reliable solutions."
           buttonLabel="Learn More"
-          imageSrc="/assets/images/christmas-staff.jpeg"
+          imageSrc="/assets/images/christmas-staff.webp"
           imageAlt="MRI imaging suite"
           backgroundColor={"#133550"}
         />
@@ -632,7 +632,7 @@ export default function Home() {
           text="Experience the ultimate skin rejuvenation with the SaltFacial®. This exfoliating treatment combines the power of sea salt,
                 skincare, and technology to detoxify, hydrate, and renew your skin, leaving you with a smooth, glowing, and refreshed complexion."
           buttonLabel="Learn More"
-          imageSrc="/assets/images/images/istock-salt1.jpg"
+          imageSrc="/assets/images/images/istock-salt1.webp"
           imageAlt="MRI imaging suite"
           backgroundColor={"#9B5B3E"}
         />

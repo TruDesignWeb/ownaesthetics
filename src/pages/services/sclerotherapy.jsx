@@ -12,7 +12,7 @@ export default function Sclerotherapy() {
             <Navbar />
 
             <Banner3
-                image="/assets/images/images/sumner-mahaffey-7Y0NshQLohk-unsplash.jpg"
+                image="/assets/images/images/sumner-mahaffey-7Y0NshQLohk-unsplash.webp"
                 title="Sclerotherapy - Spider Veins"
                 subtitle="Say Goodbye to Spider Veins: Sclerotherapy for Smooth, Clear Legs"
             />

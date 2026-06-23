@@ -13,7 +13,7 @@ export default function Facials() {
       <Navbar />
 
       <Banner3
-        image="/assets/images/images/sumner-mahaffey-7Y0NshQLohk-unsplash.jpg"
+        image="/assets/images/images/sumner-mahaffey-7Y0NshQLohk-unsplash.webp"
         title="Customized Facials"
         subtitle="Experience the Ultimate in Skincare with Our Customized Facials"
       />
@@ -26,7 +26,7 @@ export default function Facials() {
           <div className="facials-row">
             <div className="facials-image-gallery">
               <img
-                src="/assets/images/facialbefore+after.jpeg"
+                src="/assets/images/facialbefore+after.webp"
                 alt="Facial Before & After"
               />
             </div>

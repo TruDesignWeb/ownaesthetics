@@ -12,7 +12,7 @@ export default function AntiWrinkle() {
       <Navbar />
 
       <Banner3
-        image="/assets/images/images/sumner-mahaffey-7Y0NshQLohk-unsplash.jpg"
+        image="/assets/images/images/sumner-mahaffey-7Y0NshQLohk-unsplash.webp"
         title="Anti-Wrinkle Injections"
         subtitle="Smooth and Rejuvenate Your Skin with Our Expert Anti-Wrinkle Injections"
       />
@@ -22,15 +22,15 @@ export default function AntiWrinkle() {
           <div className="antiwrinkle-main-content">
             <div className="antiwrinkle-image-gallery">
               <img
-                src="/assets/images/antiwrinklebefore+after.jpeg"
+                src="/assets/images/antiwrinklebefore+after.webp"
                 alt="Antiwrinkle Before & After"
               />
               <img
-                src="/assets/images/antiwrinklebefore+after2.jpeg"
+                src="/assets/images/antiwrinklebefore+after2.webp"
                 alt="Antiwrinkle before and After"
               />
               <img
-                src="/assets/images/antiwrinklebefore+after3.jpeg"
+                src="/assets/images/antiwrinklebefore+after3.webp"
                 alt="Antiwrinkle Before and After"
               />
             </div>

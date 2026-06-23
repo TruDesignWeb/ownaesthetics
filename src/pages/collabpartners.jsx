@@ -13,7 +13,7 @@ export default function ServiceHub() {
       <Navbar />
 
       <Banner3
-        image="/assets/images/skincarebannerimg.jpg"
+        image="/assets/images/skincarebannerimg.webp"
         title="Explore Our Advanced Treatments"
         subtitle="Personalized solutions designed for your unique goals"
         className="collabpartners-banner"
@@ -27,7 +27,7 @@ export default function ServiceHub() {
         text="AlumierMD is a professionally dispensed skincare brand with a rapidly expanding global network of partner clinics. Our mission is to empower you to feel confident and powerful in your own skin. We achieve this by pushing the boundaries of skincare science and combining clinically proven ingredients with advanced technologies that deliver transformative results. Our goal is to connect you to our global community of trusted skincare professionals and unlock your skin's potential with a 360Â° approach to skin health."
         buttonLabel="Shop Now"
         buttonLink="https://www.alumiermd.com?code=28FZHTV9"
-        imageSrc="assets\images\images\wetransfer_photos_2025-04-09_1731\PHOTOS\HP 1 AlumierMD Pigmentation.jpg"
+        imageSrc="assets\images\images\wetransfer_photos_2025-04-09_1731\PHOTOS\HP 1 AlumierMD Pigmentation.webp"
         reverse={true}
         backgroundColor="#ffffff"
       />

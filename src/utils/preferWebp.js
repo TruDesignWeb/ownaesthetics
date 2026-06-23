@@ -3,9 +3,11 @@ export default function preferWebp() {
   if (typeof window === "undefined" || !window.document) return;
 
   function trySwap(img) {
-    const srcAttr = img.getAttribute("src") || "";
+    // prefer the raw attribute, fall back to currentSrc (from srcset/picture) or src
+    const attr = img.getAttribute && img.getAttribute("src");
+    const srcAttr = attr || img.currentSrc || img.src || "";
     if (!srcAttr) return;
-    const src = srcAttr.replace(/\\/g, "/");
+    const src = String(srcAttr).replace(/\\/g, "/");
     // only target assets images with common raster extensions
     if (!/\/assets\/images\//i.test(src)) return;
     if (!/\.(png|jpe?g|gif|bmp)$/i.test(src)) return;
@@ -13,7 +15,11 @@ export default function preferWebp() {
     const webp = src.replace(/\.(png|jpe?g|gif|bmp)$/i, ".webp");
     if (webp === src) return;
     // store original for fallback
-    img.dataset.ownOriginalSrc = src;
+    try {
+      img.dataset.ownOriginalSrc = src;
+    } catch (e) {
+      // ignore if dataset isn't writable for some reason
+    }
 
     const restore = () => {
       if (img.dataset.ownOriginalSrc) {
@@ -29,7 +35,11 @@ export default function preferWebp() {
 
     img.addEventListener("error", onError);
     // set src to webp; if it 404s, onError restores original
-    img.src = webp;
+    try {
+      img.src = webp;
+    } catch (e) {
+      onError();
+    }
   }
 
   function runOnce() {

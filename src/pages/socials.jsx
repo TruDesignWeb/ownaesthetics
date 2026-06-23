@@ -13,7 +13,7 @@ import Banner2 from '../components/banner2';
 
 const featureCards = [
     {
-      imageSrc: '/assets/images/images/facebook-icon.png',
+      imageSrc: '/assets/images/images/facebook-icon.webp',
       altText: 'Facebook',
       captionText: 'Facebook',
       containerHeight: '350px',
@@ -29,7 +29,7 @@ const featureCards = [
       backgroundColor: 'rgba(0,0,0,0)',
       link: 'https://www.facebook.com/p/Own-Aesthetics-61576022630962/'
     },{
-      imageSrc: '/assets/images/images/instagram-icon.png',
+      imageSrc: '/assets/images/images/instagram-icon.webp',
       altText: 'Instagram',
       captionText: 'Instagram',
       containerHeight: '350px',
@@ -45,7 +45,7 @@ const featureCards = [
       backgroundColor: 'rgba(0,0,0,0)',
       link: 'https://www.instagram.com/ownaestheticsdsm/'
       },{
-      imageSrc: '/assets/images/images/googleplay.png',
+      imageSrc: '/assets/images/images/googleplay.webp',
       altText: 'Google',
       captionText: 'Google',
       containerHeight: '350px',
@@ -70,7 +70,7 @@ export default function Home() {
       {/* <CustomCursor /> */}
       <Navbar />
       <Banner2 
-        image = "/assets/images/images/someimagestotry1/daniel-j-schwarz-UK-EzGvEZIk-unsplash.jpg"
+        image = "/assets/images/images/someimagestotry1/daniel-j-schwarz-UK-EzGvEZIk-unsplash.webp"
         title = "Socials"
         subtitle= "Join our socials for our latest info"
         variant = ""

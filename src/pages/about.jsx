@@ -72,7 +72,7 @@ export default function About({}) {
 
       <Navbar />
       <Banner2
-        image="/assets/images/images/istock-brownplant.jpg"
+        image="/assets/images/images/istock-brownplant.webp"
         title="About Us"
         subtitle="We are committed to serving our community as a trusted resource, offering care from well-trained, highly educated practitioners — all under the guidance of Dr. Bryan Folkers, a reputable, double board-certified Plastic and Reconstructive surgeon"
         variant=" about"
@@ -130,7 +130,7 @@ export default function About({}) {
               style={{ transform: `translateY(${y}px)` }}
             >
               <img
-                src="/assets/images/christmas-staff.jpeg"
+                src="/assets/images/christmas-staff.webp"
                 alt="Spa reception with serene, warm tones"
               />
             </div>
@@ -174,7 +174,7 @@ export default function About({}) {
               onClick={handleEasterClick}
             >
               <img
-                src="/assets/images/images/DSC_2001.jpg"
+                src="/assets/images/images/DSC_2001.webp"
                 alt="Dr. Bryan Folkers"
               />
             </div>
@@ -229,7 +229,7 @@ export default function About({}) {
               style={{ transform: `translateY(${y}px)` }}
             >
               <img
-                src="/assets/images/images/DSC_2023.jpg"
+                src="/assets/images/images/DSC_2023.webp"
                 alt="Spa reception with serene, warm tones"
               />
             </div>
@@ -253,7 +253,7 @@ export default function About({}) {
               style={{ transform: `translateY(${y}px)` }}
             >
               <img
-                src="/assets/images/images/DSC_1914.jpg"
+                src="/assets/images/images/DSC_1914.webp"
                 alt="Spa reception with serene, warm tones"
               />
             </div>
@@ -307,7 +307,7 @@ export default function About({}) {
               style={{ transform: `translateY(${y}px)` }}
             >
               <img
-                src="/assets/images/images/DSC_1960.jpg"
+                src="/assets/images/images/DSC_1960.webp"
                 alt="Spa reception with serene, warm tones"
               />
             </div>
@@ -331,7 +331,7 @@ export default function About({}) {
               style={{ transform: `translateY(${y}px)` }}
             >
               <img
-                src="/assets/images/images/marriah1.jpeg"
+                src="/assets/images/images/marriah1.webp"
                 alt="Spa reception with serene, warm tones"
               />
             </div>
