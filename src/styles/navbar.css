@@ -67,6 +67,19 @@
   transition: all 0.3s ease;
 }
 
+.nav-link.cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.nav-icon {
+  display: inline-block;
+  vertical-align: middle;
+  width: 25px;
+  height: auto;
+}
+
 .main-navbar {
   width: 100%;
   background: rgba(0, 0, 0, 0);

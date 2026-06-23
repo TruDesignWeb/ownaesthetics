@@ -65,11 +65,6 @@ export default function Navbar() {
             </Link>
           </ul>
           <ul>
-            <a href="tel:15156721860" className="top-nav-link">
-              (515) 672-1860
-            </a>
-          </ul>
-          <ul>
             <Link to="/About" className="top-nav-link">
               <img
                 className="th-logo"
@@ -122,6 +117,12 @@ export default function Navbar() {
               <Link to="/Skincare" className="nav-link">
                 Skincare
               </Link>
+            </li>
+            <li>
+              <a href="tel:15156721860" className="nav-link cta">
+                <img src="/assets/phone.svg" className="nav-icon" />
+                (515) 672-1860
+              </a>
             </li>
             <li className="nav-item" onClick={click}>
               <Link to="#book-now" className="nav-link cta">
