@@ -41,98 +41,118 @@ export default function Navbar() {
   };
 
   return (
-    <div
-      className={`navbar-container ${scrolled ? "scrolled" : ""}`}
-      id="navbar-container"
-    >
-      {/* Top Navigation Strip */}
-      <div className="top-navbar">
-        <div className="top-nav-content">
-          {/* <ul><Link to="/Membership" className="top-nav-link">Membership</Link></ul> */}
-          {/* <ul>
+    <>
+      <div
+        className={`navbar-container ${scrolled ? "scrolled" : ""}`}
+        id="navbar-container"
+      >
+        {/* Top Navigation Strip */}
+        <div className="top-navbar">
+          <div className="top-nav-content">
+            {/* <ul><Link to="/Membership" className="top-nav-link">Membership</Link></ul> */}
+            {/* <ul>
             <Link to="/rsvp" className="top-nav-link">
               1 Year Anniversary!
             </Link>
           </ul> */}
-          <ul>
-            <Link to="/Socials" className="top-nav-link">
-              Socials
-            </Link>
-          </ul>
-          <ul>
-            <Link to="/Contact" className="top-nav-link">
-              Contact Us
-            </Link>
-          </ul>
-          <ul>
-            <Link to="/About" className="top-nav-link">
+            <ul>
+              <Link to="/Socials" className="top-nav-link">
+                Socials
+              </Link>
+            </ul>
+            <ul>
+              <Link to="/Contact" className="top-nav-link">
+                Contact Us
+              </Link>
+            </ul>
+            <ul>
+              <Link to="/About" className="top-nav-link">
+                <img
+                  className="th-logo"
+                  src="/assets/images/TotalHealthLogo_HorizontalWhite.png"
+                />
+              </Link>
+            </ul>
+            {/* <ul><Link to="/Referring-Partners" className="top-nav-link">Referring Partners</Link></ul> */}
+          </div>
+        </div>
+
+        {/* Main Navigation */}
+        <nav className="main-navbar" id="navbar">
+          <div className="nav-container">
+            <Link to="/" className="logo">
               <img
-                className="th-logo"
-                src="/assets/images/TotalHealthLogo_HorizontalWhite.png"
+                src="\assets\images\OWN Branding\OWN Final Logos\Print CMYK\Logo Icon\PNG\OWN_Icon_CMYK_White.png"
+                alt="Total Health Logo"
+                className="logo-img"
               />
             </Link>
-          </ul>
-          {/* <ul><Link to="/Referring-Partners" className="top-nav-link">Referring Partners</Link></ul> */}
-        </div>
+
+            <div
+              className={`hamburger ${menuOpen ? "active" : ""}`}
+              id="hamburger"
+              onClick={toggleMenu}
+            >
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+
+            <ul
+              className={`nav-menu ${menuOpen ? "active" : ""}`}
+              id="nav-menu"
+            >
+              <li className="nav-item">
+                <Link to="/About" className="nav-link">
+                  About
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link to="/Services" className="nav-link">
+                  Services
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link to="/Reviews" className="nav-link">
+                  Reviews
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link to="/Skincare" className="nav-link">
+                  Skincare
+                </Link>
+              </li>
+              <li>
+                <a href="tel:15156721860" className="nav-link cta">
+                  <img src="/assets/phone.svg" className="nav-icon" />
+                  (515) 672-1860
+                </a>
+              </li>
+              <li className="nav-item" onClick={click}>
+                <Link to="#book-now" className="nav-link cta">
+                  Book Now
+                </Link>
+              </li>
+              {/* /Appointments */}
+            </ul>
+          </div>
+        </nav>
       </div>
 
-      {/* Main Navigation */}
-      <nav className="main-navbar" id="navbar">
-        <div className="nav-container">
-          <Link to="/" className="logo">
-            <img
-              src="\assets\images\OWN Branding\OWN Final Logos\Print CMYK\Logo Icon\PNG\OWN_Icon_CMYK_White.png"
-              alt="Total Health Logo"
-              className="logo-img"
-            />
-          </Link>
-
-          <div
-            className={`hamburger ${menuOpen ? "active" : ""}`}
-            id="hamburger"
-            onClick={toggleMenu}
-          >
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-
-          <ul className={`nav-menu ${menuOpen ? "active" : ""}`} id="nav-menu">
-            <li className="nav-item">
-              <Link to="/About" className="nav-link">
-                About
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link to="/Services" className="nav-link">
-                Services
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link to="/Reviews" className="nav-link">
-                Reviews
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link to="/Skincare" className="nav-link">
-                Skincare
-              </Link>
-            </li>
-            <li>
-              <a href="tel:15156721860" className="nav-link cta">
-                <img src="/assets/phone.svg" className="nav-icon" />
-                (515) 672-1860
-              </a>
-            </li>
-            <li className="nav-item" onClick={click}>
-              <Link to="#book-now" className="nav-link cta">
-                Book Now
-              </Link>
-            </li>
-            {/* /Appointments */}
-          </ul>
-        </div>
-      </nav>
-    </div>
+      <div className="mobile-cta-bar">
+        <a href="tel:15156721860" className="mobile-cta-btn phone">
+          <img src="/assets/phone.svg" className="mobile-cta-icon" alt="Call" />
+          Call Now
+        </a>
+        <a
+          href="https://www.joinblvd.com/b/ownaesthetics/widget#/visit-type"
+          className="mobile-cta-btn book"
+        >
+          <button type="button" className="mobile-cta-btn book">
+            Book Now
+          </button>
+        </a>
+      </div>
+    </>
   );
 }
