@@ -3,11 +3,13 @@ import Navbar from "../components/navbar";
 import Footer from "../components/footer";
 import "../styles/animations.css";
 
-export default function Bryan() {
-  const images = [
-    {
+/**
+ * Forbidden photos:     {
       src: "/assets/images/IMG_2957.jpeg",
     },
+ */
+export default function Bryan() {
+  const images = [
     {
       src: "/assets/images/IMG_3922.jpeg",
     },
@@ -44,7 +46,7 @@ export default function Bryan() {
             gridTemplateColumns: "repeat(auto-fit, minmax(180px, 1fr))",
           }}
         >
-          {[...Array(5)].map((_, index) => (
+          {[...Array(4)].map((_, index) => (
             <div
               key={index}
               className="bryan-image-slot"
