@@ -331,8 +331,7 @@ export default function About({}) {
               style={{ transform: `translateY(${y}px)` }}
             >
               <img
-                className="marriah-img"
-                src="/assets/images/images/marriah1.webp"
+                src="/assets/images/images/marriah1.jpeg"
                 alt="Spa reception with serene, warm tones"
               />
             </div>
