@@ -42,20 +42,27 @@ body {
   padding: 0;
 }
 
+html {
+  --home-banner-height: 100vh;
+  font-size: 90%;
+}
+
 body {
   font-family: montserrat;
   line-height: 1.6;
 }
 
-@media (max-width: 900px), (max-height: 760px) {
+@media (max-width: 900px) {
   html {
-    font-size: 93.75%;
+    --home-banner-height: 76vh;
+    font-size: 87.5%;
   }
 }
 
 @media (max-width: 600px) {
   html {
-    font-size: 90%;
+    --home-banner-height: 64vh;
+    font-size: 85%;
   }
 }
 
@@ -63,7 +70,7 @@ body {
 .content-wrapper {
   position: relative;
   z-index: 2; /* Higher than banner */
-  margin-top: 100vh; /* Push content down by full viewport height */
+  margin-top: var(--home-banner-height); /* Match the fixed home banner height */
   transition: transform 0.1s ease-out;
   width: 100%;
 }

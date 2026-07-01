@@ -1,6 +1,6 @@
 .banner2 {
   position: relative;
-  height: 440px;
+  height: 400px;
   width: 100%;
   background-size: cover;
   background-position: center;
@@ -30,7 +30,7 @@
   z-index: 2;
   text-align: center;
   color: #fff;
-  padding: 0 1.5rem 4rem;
+  padding: 0 1.5rem 3.25rem;
   max-width: 700px;
 }
 
@@ -72,12 +72,27 @@
 
 @media (max-width: 768px) {
   .banner2 {
-    height: 360px;
+    height: 320px;
   }
 
   .banner2-content.about {
-    padding: 2rem 1.5rem 1.5rem;
+    padding: 6rem 1.25rem 1.75rem;
   }
+
+  .banner2.about {
+    height: 360px;
+  }
+
+  .banner2-content.about .banner2-title {
+    font-size: clamp(2rem, 10vw, 2.6rem);
+    line-height: 1.2;
+  }
+
+  .banner2-content.about .banner2-subtitle {
+    font-size: 0.9rem;
+    line-height: 1.55;
+  }
+
   .banner2-content {
     padding-bottom: 2rem;
     padding-top: 2rem;

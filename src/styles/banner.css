@@ -4,7 +4,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 100vh; /* Full viewport height */
+  height: var(--home-banner-height); /* Full viewport height on large screens */
   z-index: 1; /* Lower than content wrapper */
 
   background: transparent;
@@ -35,9 +35,9 @@
 
 .banner-content {
   z-index: 3;
-  margin-top: 100px;
+  margin-top: clamp(40px, 8vh, 100px);
   max-width: 800px;
-  padding-top: 4rem;
+  padding-top: clamp(2rem, 5vh, 4rem);
 }
 
 .banner h1 {
@@ -77,11 +77,53 @@
 } */
 
 .banner-logo {
-  width: 50%;
+  width: 42%;
 }
 
 .banner-text {
-  padding-top: 20px;
+  padding-top: clamp(12px, 2vh, 20px);
+}
+
+@media (max-width: 900px) {
+  .banner-content {
+    margin-top: clamp(24px, 5vh, 56px);
+    padding: 1.5rem 1.25rem 0;
+  }
+
+  .banner-logo {
+    width: min(48%, 300px);
+  }
+}
+
+@media (max-width: 600px) {
+  .banner {
+    overflow: hidden;
+  }
+
+  .banner-content {
+    margin-top: 2.5rem;
+    padding: 4.25rem 1rem 1.25rem;
+    max-width: 92vw;
+  }
+
+  .banner-logo {
+    width: min(48%, 190px);
+  }
+
+  .banner p {
+    font-size: clamp(1.15rem, 6vw, 1.55rem);
+    line-height: 1.35;
+    margin-bottom: 1rem;
+    padding-top: 0.75rem;
+  }
+
+  .banner-btn button {
+    border-radius: 14px;
+    font-size: 1.15rem;
+    line-height: 1;
+    min-width: 176px;
+    padding: 0.9rem 1.4rem;
+  }
 }
 
 @keyframes fadeInUp {

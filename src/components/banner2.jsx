@@ -1,9 +1,11 @@
 import "../styles/banner2.css";
 
 export default function Banner2({ image, title, subtitle, variant }) {
+  const variantClass = variant ? variant.trim() : "";
+
   return (
     <section
-      className="banner2"
+      className={`banner2 ${variantClass}`.trim()}
       style={{ backgroundImage: `url(${image})` }}
     >
       <div className="banner2-gradient" />
