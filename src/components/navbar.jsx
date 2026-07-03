@@ -1,8 +1,8 @@
+"use client";
 // File: src/components/Navbar.jsx
 import React, { useEffect, useState, useRef } from "react";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 import "../styles/navbar.css";
-import Home from "../pages/index";
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -49,38 +49,38 @@ export default function Navbar() {
         {/* Top Navigation Strip */}
         <div className="top-navbar">
           <div className="top-nav-content">
-            {/* <ul><Link to="/Membership" className="top-nav-link">Membership</Link></ul> */}
+            {/* <ul><Link href="/Membership" className="top-nav-link">Membership</Link></ul> */}
             {/* <ul>
-            <Link to="/rsvp" className="top-nav-link">
+            <Link href="/rsvp" className="top-nav-link">
               1 Year Anniversary!
             </Link>
           </ul> */}
             <ul>
-              <Link to="/Socials" className="top-nav-link">
+              <Link href="/socials" className="top-nav-link">
                 Socials
               </Link>
             </ul>
             <ul>
-              <Link to="/Contact" className="top-nav-link">
+              <Link href="/contact" className="top-nav-link">
                 Contact Us
               </Link>
             </ul>
             <ul>
-              <Link to="/About" className="top-nav-link">
+              <Link href="/about" className="top-nav-link">
                 <img
                   className="th-logo"
                   src="/assets/images/TotalHealthLogo_HorizontalWhite.webp"
                 />
               </Link>
             </ul>
-            {/* <ul><Link to="/Referring-Partners" className="top-nav-link">Referring Partners</Link></ul> */}
+            {/* <ul><Link href="/Referring-Partners" className="top-nav-link">Referring Partners</Link></ul> */}
           </div>
         </div>
 
         {/* Main Navigation */}
         <nav className="main-navbar" id="navbar">
           <div className="nav-container">
-            <Link to="/" className="logo">
+            <Link href="/" className="logo">
               <img
                 src="\assets\images\OWN Branding\OWN Final Logos\Print CMYK\Logo Icon\PNG\OWN_Icon_CMYK_White.png"
                 alt="Total Health Logo"
@@ -103,22 +103,22 @@ export default function Navbar() {
               id="nav-menu"
             >
               <li className="nav-item">
-                <Link to="/About" className="nav-link">
+                <Link href="/about" className="nav-link">
                   About
                 </Link>
               </li>
               <li className="nav-item">
-                <Link to="/Services" className="nav-link">
+                <Link href="/services" className="nav-link">
                   Services
                 </Link>
               </li>
               <li className="nav-item">
-                <Link to="/Reviews" className="nav-link">
+                <Link href="/reviews" className="nav-link">
                   Reviews
                 </Link>
               </li>
               <li className="nav-item">
-                <Link to="/Skincare" className="nav-link">
+                <Link href="/skincare" className="nav-link">
                   Skincare
                 </Link>
               </li>
@@ -129,7 +129,7 @@ export default function Navbar() {
                 </a>
               </li>
               <li className="nav-item" onClick={click}>
-                <Link to="#book-now" className="nav-link cta">
+                <Link href="#book-now" className="nav-link cta">
                   Book Now
                 </Link>
               </li>

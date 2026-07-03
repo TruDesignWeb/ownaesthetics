@@ -1,8 +1,18 @@
 // src/components/GuestRoute.jsx
-import { Navigate } from "react-router-dom";
+"use client";
+import { useEffect } from "react";
+import { useRouter } from "next/navigation";
 import { useAuth } from "../auth/authcontext";
 
 export default function GuestRoute({ children, redirectTo = "/dashboard" }) {
   const { isAuthenticated } = useAuth();
-  return isAuthenticated ? <Navigate to={redirectTo} replace /> : children;
+  const router = useRouter();
+
+  useEffect(() => {
+    if (isAuthenticated) {
+      router.replace(redirectTo);
+    }
+  }, [isAuthenticated, redirectTo, router]);
+
+  return isAuthenticated ? null : children;
 }

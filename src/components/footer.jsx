@@ -1,10 +1,7 @@
 // File: src/components/Footer.jsx
 import React from "react";
 import "../styles/footer.css";
-import ContactForm from "../components/contactform";
-import { useState } from "react";
-import axios from "axios";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 
 export default function Footer() {
   return (
@@ -170,7 +167,7 @@ export default function Footer() {
       <div className="footer-bottom">
         <p>&copy; 2025 Own Aesthetics.</p>
         <Link
-          to="/terms"
+          href="/terms"
           style={{
             color: "white",
             textDecoration: "none",
@@ -179,48 +176,48 @@ export default function Footer() {
         >
           Terms of Service
         </Link>
-        <Link to="/privacy" style={{ color: "white", textDecoration: "none" }}>
+        <Link href="/privacy" style={{ color: "white", textDecoration: "none" }}>
           Privacy Policy
         </Link>
         <Link
-          to="/cancellation"
+          href="/cancellation"
           style={{ color: "white", textDecoration: "none", marginLeft: "15px" }}
         >
           Cancellation Policy
         </Link>
         <div style={{ marginTop: "12px" }}>
           <Link
-            to="/services/injectables"
+            href="/services/injectables"
             style={{ color: "white", textDecoration: "none", marginRight: "15px" }}
           >
             Injectables
           </Link>
           <Link
-            to="/services/facials"
+            href="/services/facials"
             style={{ color: "white", textDecoration: "none", marginRight: "15px" }}
           >
             Facials
           </Link>
           <Link
-            to="/services/nouvaderm-laser-resurfacing"
+            href="/services/nouvaderm-laser-resurfacing"
             style={{ color: "white", textDecoration: "none", marginRight: "15px" }}
           >
             NOUVADerm Laser
           </Link>
           <Link
-            to="/locations/des-moines"
+            href="/locations/des-moines"
             style={{ color: "white", textDecoration: "none", marginRight: "15px" }}
           >
             Des Moines
           </Link>
           <Link
-            to="/locations/west-des-moines"
+            href="/locations/west-des-moines"
             style={{ color: "white", textDecoration: "none", marginRight: "15px" }}
           >
             West Des Moines
           </Link>
           <Link
-            to="/locations/waukee"
+            href="/locations/waukee"
             style={{ color: "white", textDecoration: "none" }}
           >
             Waukee

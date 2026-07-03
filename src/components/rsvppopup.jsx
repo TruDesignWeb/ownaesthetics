@@ -1,12 +1,13 @@
+"use client";
 import { useEffect, useMemo, useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useRouter } from "next/navigation";
 import "../styles/rsvppopup.css";
 
 const STORAGE_KEY = "own-aesthetics-rsvp-popup-dismissed";
 const RSVP_POPUP_DELAY = 2500;
 
 export default function RSVPPopup() {
-  const navigate = useNavigate();
+  const router = useRouter();
   const [isVisible, setIsVisible] = useState(false);
   const [formData, setFormData] = useState({
     firstName: "",
@@ -107,7 +108,7 @@ export default function RSVPPopup() {
 
     localStorage.setItem(STORAGE_KEY, "true");
     setIsVisible(false);
-    navigate(`/rsvp${queryString ? `?${queryString}` : ""}`);
+    router.push(`/rsvp${queryString ? `?${queryString}` : ""}`);
   };
 
   if (!isVisible) {

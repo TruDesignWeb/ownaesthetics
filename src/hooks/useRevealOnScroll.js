@@ -1,3 +1,4 @@
+"use client";
 
 // File: src/hooks/useRevealOnScroll.js
 import { useEffect } from 'react';

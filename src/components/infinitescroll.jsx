@@ -1,3 +1,4 @@
+"use client";
 // File: src/components/InfiniteScroll.jsx
 import { useRef, useEffect } from 'react';
 import { gsap } from 'gsap';

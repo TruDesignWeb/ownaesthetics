@@ -1,0 +1,342 @@
+"use client";
+// File: src/pages/Home
+import React from "react";
+import Navbar from "../components/navbar";
+import Features from "../components/features";
+
+import Footer from "../components/footer";
+import CustomCursor from "../components/customcursor";
+import useRevealOnScroll from "../hooks/useRevealOnScroll";
+import "../styles/animations.css";
+
+import Banner2 from "../components/banner2";
+import SocialMedia from "../components/social-media";
+import { serviceCollectionSchema } from "../lib/serviceSeo";
+
+const featureCards = [
+  {
+    imageSrc: "/assets/images/images/istock-consultation.webp",
+    altText: "Consultation",
+    captionText: "Consultation",
+    containerHeight: "350px",
+    containerWidth: "300px",
+    imageHeight: "350px",
+    imageWidth: "300px",
+    rotateAmplitude: 12,
+    scaleOnHover: 1.1,
+    showMobileWarning: false,
+    showTooltip: true,
+    displayOverlayContent: true,
+    overlayContent: <p className="tilted-card-demo-text">Consultation</p>,
+    backgroundColor: "rgba(0,0,0,0)",
+    link: "/services/consultation",
+  },
+  {
+    imageSrc: "/assets/images/images/aquafirme4.webp",
+    altText: "AquaFirmeXS",
+    captionText: "AquaFirmeXS",
+    containerHeight: "350px",
+    containerWidth: "300px",
+    imageHeight: "350px",
+    imageWidth: "300px",
+    rotateAmplitude: 12,
+    scaleOnHover: 1.1,
+    showMobileWarning: false,
+    showTooltip: true,
+    displayOverlayContent: true,
+    overlayContent: <p className="tilted-card-demo-text">AquaFirmeXS</p>,
+    backgroundColor: "rgba(0,0,0,0)",
+    link: "/services/aquafirme",
+  },
+  {
+    imageSrc: "/assets/images/images/nouva4.webp",
+    altText: "NOUVADerm® Laser Treatment",
+    captionText: "NOUVADerm® Laser Treatment",
+    containerHeight: "350px",
+    containerWidth: "300px",
+    imageHeight: "350px",
+    imageWidth: "300px",
+    rotateAmplitude: 12,
+    scaleOnHover: 1.1,
+    showMobileWarning: false,
+    showTooltip: true,
+    displayOverlayContent: true,
+    overlayContent: (
+      <p className="tilted-card-demo-text">NOUVADerm® Laser Treatment</p>
+    ),
+    backgroundColor: "rgba(0,0,0,0)",
+    link: "/services/nouvaderm",
+  },
+  {
+    imageSrc:
+      "/assets/images/images/female-patient-receiving-botox-injection-forehead.webp",
+    altText: "Anti-Wrinkle Injections",
+    captionText: "Anti-Wrinkle Injections",
+    containerHeight: "350px",
+    containerWidth: "300px",
+    imageHeight: "350px",
+    imageWidth: "300px",
+    rotateAmplitude: 12,
+    scaleOnHover: 1.1,
+    showMobileWarning: false,
+    showTooltip: true,
+    displayOverlayContent: true,
+    overlayContent: (
+      <p className="tilted-card-demo-text">Anti-Wrinkle Injections</p>
+    ),
+    backgroundColor: "rgba(0,0,0,0)",
+    link: "/services/antiwrinkle",
+  },
+  {
+    imageSrc: "/assets/images/images/istock-kybella.webp",
+    altText: "Kybella®",
+    captionText: "Kybella®",
+    containerHeight: "350px",
+    containerWidth: "300px",
+    imageHeight: "350px",
+    imageWidth: "300px",
+    rotateAmplitude: 12,
+    scaleOnHover: 1.1,
+    showMobileWarning: false,
+    showTooltip: true,
+    displayOverlayContent: true,
+    overlayContent: <p className="tilted-card-demo-text">Kybella®</p>,
+    backgroundColor: "rgba(0,0,0,0)",
+    link: "/services/kybella",
+  },
+  {
+    imageSrc:
+      "/assets/images/images/woman-doing-self-care-treatment-indoors.webp",
+    altText: "Sclerotherapy – Spider Veins",
+    captionText: "Sclerotherapy – Spider Veins",
+    containerHeight: "350px",
+    containerWidth: "300px",
+    imageHeight: "350px",
+    imageWidth: "300px",
+    rotateAmplitude: 12,
+    scaleOnHover: 1.1,
+    showMobileWarning: false,
+    showTooltip: true,
+    displayOverlayContent: true,
+    overlayContent: (
+      <p className="tilted-card-demo-text">Sclerotherapy – Spider Veins</p>
+    ),
+    backgroundColor: "rgba(0,0,0,0)",
+    link: "/services/sclerotherapy",
+  },
+  {
+    imageSrc:
+      "/assets/images/images/hand-with-latex-glove-holding-vaccine-syringe.webp",
+    altText: "HA Dermal Fillers",
+    captionText: "HA Dermal Fillers",
+    containerHeight: "350px",
+    containerWidth: "300px",
+    imageHeight: "350px",
+    imageWidth: "300px",
+    rotateAmplitude: 12,
+    scaleOnHover: 1.1,
+    showMobileWarning: false,
+    showTooltip: true,
+    displayOverlayContent: true,
+    overlayContent: <p className="tilted-card-demo-text">HA Dermal Fillers</p>,
+    backgroundColor: "rgba(0,0,0,0)",
+    link: "/services/juvederm",
+  },
+  {
+    imageSrc: "/assets/images/images/istock-sculptra.webp",
+    altText: "Sculptra",
+    captionText: "Sculptra",
+    containerHeight: "350px",
+    containerWidth: "300px",
+    imageHeight: "350px",
+    imageWidth: "300px",
+    rotateAmplitude: 12,
+    scaleOnHover: 1.1,
+    showMobileWarning: false,
+    showTooltip: true,
+    displayOverlayContent: true,
+    overlayContent: <p className="tilted-card-demo-text">Sculptra</p>,
+    backgroundColor: "rgba(0,0,0,0)",
+    link: "/services/sculptra",
+  },
+  {
+    imageSrc: "/assets/images/images/close-up-doctor-checking-smiley-woman.webp",
+    altText: "PRF/PRF ezGel",
+    captionText: "PRF/PRF ezGel",
+    containerHeight: "350px",
+    containerWidth: "300px",
+    imageHeight: "350px",
+    imageWidth: "300px",
+    rotateAmplitude: 12,
+    scaleOnHover: 1.1,
+    showMobileWarning: false,
+    showTooltip: true,
+    displayOverlayContent: true,
+    overlayContent: <p className="tilted-card-demo-text">PRF/PRF ezGel</p>,
+    backgroundColor: "rgba(0,0,0,0)",
+    link: "/services/cellenis",
+  },
+  {
+    imageSrc: "/assets/images/images/man-fixed.webp",
+    altText: "Hair Wellness & Restoration",
+    captionText: "Hair Wellness & Restoration",
+    containerHeight: "350px",
+    containerWidth: "300px",
+    imageHeight: "350px",
+    imageWidth: "300px",
+    rotateAmplitude: 12,
+    scaleOnHover: 1.1,
+    showMobileWarning: false,
+    showTooltip: true,
+    displayOverlayContent: true,
+    overlayContent: (
+      <p className="tilted-card-demo-text">Hair Wellness & Restoration</p>
+    ),
+    backgroundColor: "rgba(0,0,0,0)",
+    link: "/services/hairtreatments",
+  },
+  {
+    imageSrc: "/assets/images/images/istock-chem.webp",
+    altText: "Chemical Peels",
+    captionText: "Chemical Peels",
+    containerHeight: "350px",
+    containerWidth: "300px",
+    imageHeight: "350px",
+    imageWidth: "300px",
+    rotateAmplitude: 12,
+    scaleOnHover: 1.1,
+    showMobileWarning: false,
+    showTooltip: true,
+    displayOverlayContent: true,
+    overlayContent: <p className="tilted-card-demo-text">Chemical Peels</p>,
+    backgroundColor: "rgba(0,0,0,0)",
+    link: "/services/chemicalpeels",
+  },
+  {
+    imageSrc: "/assets/images/images/istock-facial_.webp",
+    altText: "Customized Facials",
+    captionText: "Customized Facials",
+    containerHeight: "350px",
+    containerWidth: "300px",
+    imageHeight: "350px",
+    imageWidth: "300px",
+    rotateAmplitude: 12,
+    scaleOnHover: 1.1,
+    showMobileWarning: false,
+    showTooltip: true,
+    displayOverlayContent: true,
+    overlayContent: <p className="tilted-card-demo-text">Customized Facials</p>,
+    backgroundColor: "rgba(0,0,0,0)",
+    link: "/services/facials",
+  },
+  {
+    imageSrc:
+      "/assets/images/images/exoe_digital_marketing_kit_-_12.11.2023/EXOE Digital Marketing Kit - 12.11.2023/15.webp",
+    altText: "EXO|E® Skin Revitalizing Complex",
+    captionText: "EXO|E® Skin Revitalizing Complex",
+    containerHeight: "350px",
+    containerWidth: "300px",
+    imageHeight: "350px",
+    imageWidth: "300px",
+    rotateAmplitude: 12,
+    scaleOnHover: 1.1,
+    showMobileWarning: false,
+    showTooltip: true,
+    displayOverlayContent: true,
+    overlayContent: (
+      <p className="tilted-card-demo-text">EXO|E® Skin Revitalizing Complex</p>
+    ),
+    backgroundColor: "rgba(0,0,0,0)",
+    link: "/services/exosomes",
+  },
+  {
+    imageSrc: "/assets/images/images/istock-salt1.webp",
+    altText: "SaltFacial® Skin Renewal Therapy",
+    captionText: "SaltFacial® Skin Renewal Therapy",
+    containerHeight: "350px",
+    containerWidth: "300px",
+    imageHeight: "350px",
+    imageWidth: "300px",
+    rotateAmplitude: 12,
+    scaleOnHover: 1.1,
+    showMobileWarning: false,
+    showTooltip: true,
+    displayOverlayContent: true,
+    overlayContent: (
+      <p className="tilted-card-demo-text">SaltFacial® Skin Renewal Therapy</p>
+    ),
+    backgroundColor: "rgba(0,0,0,0)",
+    link: "/services/saltfacial",
+  },
+  {
+    imageSrc: "/assets/images/images/istock-skinpen.webp",
+    altText: "SkinPen® Microneedling",
+    captionText: "SkinPen® Microneedling",
+    containerHeight: "350px",
+    containerWidth: "300px",
+    imageHeight: "350px",
+    imageWidth: "300px",
+    rotateAmplitude: 12,
+    scaleOnHover: 1.1,
+    showMobileWarning: false,
+    showTooltip: true,
+    displayOverlayContent: true,
+    overlayContent: (
+      <p className="tilted-card-demo-text">SkinPen® Microneedling</p>
+    ),
+    backgroundColor: "rgba(0,0,0,0)",
+    link: "/services/skinpen",
+  },
+  {
+    imageSrc: "/assets/images/images/stsimg.webp",
+    altText: "Skin Type Solutions",
+    captionText: "Skin Type Solutions",
+    containerHeight: "350px",
+    containerWidth: "300px",
+    imageHeight: "350px",
+    imageWidth: "300px",
+    rotateAmplitude: 12,
+    scaleOnHover: 1.1,
+    showMobileWarning: false,
+    showTooltip: true,
+    displayOverlayContent: true,
+    overlayContent: (
+      <p className="tilted-card-demo-text">Skin Type Solutions</p>
+    ),
+    backgroundColor: "rgba(0,0,0,0)",
+    link: "/services/skintypes",
+  },
+];
+
+export default function About() {
+  useRevealOnScroll();
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(serviceCollectionSchema),
+        }}
+      />
+      {/* <CustomCursor /> */}
+
+      <Navbar />
+      <Banner2
+        image="/assets/images/images/sumner-mahaffey-7Y0NshQLohk-unsplash.webp"
+        title="Services"
+        subtitle="Reveal your best self with our expert-led, medical-grade treatments designed to rejuvenate, restore, and enhance your natural beauty."
+        variant=""
+      />
+
+      <Features
+        title=""
+        cards={featureCards}
+        variant="" // Optional: for different styles
+      />
+
+      <SocialMedia />
+
+      <Footer />
+    </>
+  );
+}

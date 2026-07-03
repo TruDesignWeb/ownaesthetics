@@ -1,4 +1,4 @@
-const SITE_URL = "https://ownaesthetics.com";
+const SITE_URL = "https://www.ownaesthetics.com";
 
 const PROVIDER = {
   "@type": ["DaySpa", "MedicalBusiness"],

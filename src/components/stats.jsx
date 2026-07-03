@@ -1,3 +1,4 @@
+"use client";
 // File: src/components/Stats.jsx
 import React, { useEffect, useRef, useState } from 'react';
 import '../styles/stats.css';

@@ -1,4 +1,4 @@
-export const SITE_URL = "https://ownaesthetics.com";
+export const SITE_URL = "https://www.ownaesthetics.com";
 export const SITE_NAME = "Own Aesthetics";
 export const DEFAULT_OG_IMAGE = `${SITE_URL}/assets/images/own-fb-hom.png`;
 

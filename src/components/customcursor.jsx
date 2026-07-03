@@ -1,3 +1,4 @@
+"use client";
 // File: src/components/CustomCursor.jsx
 import React, { useEffect, useState } from 'react';
 import '../styles/customcursor.css';

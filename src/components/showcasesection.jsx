@@ -1,7 +1,7 @@
+"use client";
 import "../styles/showcasesection.css";
 import React from 'react';
-import { Routes, Route } from 'react-router-dom';
-import { Link } from 'react-router-dom';
+import Link from "next/link";
 
 
 export default function ShowcaseSection({eyebrow,
@@ -34,7 +34,7 @@ export default function ShowcaseSection({eyebrow,
           <h2>{title}</h2>
           <p>{text}</p>
           {buttonLabel && (
-            <Link to={buttonLink} className="feature-button-link">
+            <Link href={buttonLink || "/"} className="feature-button-link">
             <button className="feature-button" onClick={() => console.log("clicked")}>
               {buttonLabel}
             </button>

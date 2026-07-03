@@ -1,3 +1,4 @@
+"use client";
 // File: src/components/TiltedCard.jsx
 import { useRef, useState } from "react";
 import { motion, useMotionValue, useSpring } from "framer-motion";

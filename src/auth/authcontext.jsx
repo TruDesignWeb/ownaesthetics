@@ -1,10 +1,15 @@
+"use client";
 import { createContext, useContext, useEffect, useState } from "react";
 
 const AuthContext = createContext(null);
 
 export function AuthProvider({ children }) {
-  const [token, setToken] = useState(() => localStorage.getItem("token") || null);
+  const [token, setToken] = useState(null);
   const isAuthenticated = !!token;
+
+  useEffect(() => {
+    setToken(localStorage.getItem("token") || null);
+  }, []);
 
   const login = (jwt) => {
     setToken(jwt);

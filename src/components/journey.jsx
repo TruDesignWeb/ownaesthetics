@@ -2,7 +2,7 @@
 // File: src/components/Journey.jsx
 import React from 'react';
 import '../styles/journey.css';
-import { Link } from 'react-router-dom';
+import Link from "next/link";
 
 export default function Journey({
   title = 'Your journey starts here',
@@ -21,23 +21,28 @@ export default function Journey({
           
 
           {/* Make the CTA a link (internal by default) */}
-          <Link to={ctaLink} className="journey-cta-button">
+          <Link href={ctaLink || "/"} className="journey-cta-button">
             {ctaText}
           </Link>
         </div>
 
-        {features.map(({ title, description, className, link }, idx) => (
-          <Link key = {idx} to={link}>
-          <div
-            key={idx}
-            className={`journey-feature-card ${className ?? ''}`.trim()}
-          >
-            <h2 className="journey-feature-title">{title}</h2>
-            <p className="journey-feature-description">{description}</p>
-          </div>
-          </Link>
-
-        ))}
+        {features.map(({ title, description, className, link }, idx) => {
+          const card = (
+            <div
+              className={`journey-feature-card ${className ?? ''}`.trim()}
+            >
+              <h2 className="journey-feature-title">{title}</h2>
+              <p className="journey-feature-description">{description}</p>
+            </div>
+          );
+          return link ? (
+            <Link key={idx} href={link}>
+              {card}
+            </Link>
+          ) : (
+            <React.Fragment key={idx}>{card}</React.Fragment>
+          );
+        })}
       </div>
     </section>
   );
