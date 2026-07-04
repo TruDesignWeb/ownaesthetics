@@ -82,7 +82,7 @@ export default function Navbar() {
           <div className="nav-container">
             <Link href="/" className="logo">
               <img
-                src="\assets\images\OWN Branding\OWN Final Logos\Print CMYK\Logo Icon\PNG\OWN_Icon_CMYK_White.png"
+                src="/assets/images/OWN Branding/OWN Final Logos/Print CMYK/Logo Icon/PNG/OWN_Icon_CMYK_White.png"
                 alt="Total Health Logo"
                 className="logo-img"
               />

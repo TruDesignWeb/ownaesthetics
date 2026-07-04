@@ -29,7 +29,7 @@ export default function Skinpen() {
                 alt="SkinPen Before & After"
               />
               <img
-                src="/assets/images/SkinPen Before & after 1.webp"
+                src="/assets/images/SkinPen Before %26 after 1.webp"
                 alt="SkinPen before and After"
               />
               <img

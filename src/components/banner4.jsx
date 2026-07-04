@@ -1,4 +1,4 @@
-import "../styles/Banner4.css";
+import "../styles/banner4.css";
 
 export default function Banner4({ logoSrc, bgImage }) {
   return (

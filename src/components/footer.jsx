@@ -10,7 +10,7 @@ export default function Footer() {
         <div className="footer-section-1">
           <img
             className="logo-img"
-            src="\assets\images\OWN Branding\OWN Final Logos\Print CMYK\Logo Icon\PNG\OWN_Icon_CMYK_Black.png"
+            src="/assets/images/OWN Branding/OWN Final Logos/Print CMYK/Logo Icon/PNG/OWN_Icon_CMYK_Black.png"
           />
 
           <p>
