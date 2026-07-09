@@ -25,7 +25,7 @@ export default function Login({ handleLogin }) {
   };
 
   return (
-    <div className="login-container">
+    <div className="">
       <h2>Login</h2>
       {error && <p style={{ color: "red" }}>{error}</p>}
       <form onSubmit={onSubmit}>

@@ -8,8 +8,6 @@ import Features from '../components/features';
 import Footer from '../components/footer';
 import CustomCursor from '../components/customcursor';
 import useRevealOnScroll from '../hooks/useRevealOnScroll';
-import './socials.css';
-
 import Banner2 from '../components/banner2';
 
 const featureCards = [
@@ -26,7 +24,7 @@ const featureCards = [
       showMobileWarning: false,
       showTooltip: true,
       displayOverlayContent: true,
-      overlayContent: <p className="tilted-card-demo-text">Facebook</p>,
+      overlayContent: <p className="[.home-density_.features-_&]:[font-size:0.95rem]">Facebook</p>,
       backgroundColor: 'rgba(0,0,0,0)',
       link: 'https://www.facebook.com/p/Own-Aesthetics-61576022630962/'
     },{
@@ -42,7 +40,7 @@ const featureCards = [
       showMobileWarning: false,
       showTooltip: true,
       displayOverlayContent: true,
-      overlayContent: <p className="tilted-card-demo-text">Instagram</p>,
+      overlayContent: <p className="[.home-density_.features-_&]:[font-size:0.95rem]">Instagram</p>,
       backgroundColor: 'rgba(0,0,0,0)',
       link: 'https://www.instagram.com/ownaestheticsdsm/'
       },{
@@ -58,7 +56,7 @@ const featureCards = [
       showMobileWarning: false,
       showTooltip: true,
       displayOverlayContent: true,
-      overlayContent: <p className="tilted-card-demo-text">Google</p>,
+      overlayContent: <p className="[.home-density_.features-_&]:[font-size:0.95rem]">Google</p>,
       backgroundColor: 'rgba(0,0,0,0)',
       link: 'https://www.google.com/maps/place/Own+Aesthetics+PLC/@41.5868727,-94.9654378,9z/data=!4m10!1m2!2m1!1sown+aesthetics!3m6!1s0x87ec2183bd08ca1d:0x769a96c0fa498807!8m2!3d41.5868727!4d-93.8118733!15sCg5vd24gYWVzdGhldGljc5IBC21lZGljYWxfc3BhqgFLEAEqEiIOb3duIGFlc3RoZXRpY3MoADIfEAEiGxQYyzhi_LQcyRViqag_cSExnuB2n5YyK36nMDISEAIiDm93biBhZXN0aGV0aWNz4AEA!16s%2Fg%2F11mdb849vx?entry=ttu&g_ep=EgoyMDI1MDQyMy4wIKXMDSoASAFQAw%3D%3D'
       }

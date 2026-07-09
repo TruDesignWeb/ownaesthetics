@@ -1,8 +1,6 @@
 "use client";
 import { useState } from "react";
 import axios from "axios";
-import "../styles/contactform.css";
-
 export default function NewsletterSignup({
   title = "Subscribe to our Newsletter",
   subtitle = "Get updates about wellness, promotions, and more.",
@@ -39,11 +37,11 @@ export default function NewsletterSignup({
   };
 
   return (
-    <div className="newsletter-container">
+    <div className="[padding:clamp(1.35rem,_2.4vw,_2.35rem)]! [background:#f7f7f7] [text-align:center] [border-radius:12px] [max-width:600px] [margin:2rem_auto] [box-shadow:0_8px_20px_rgba(0,_0,_0,_0.05)] [&_h2]:[font-size:1.8rem] [&_h2]:[margin-bottom:0.5rem] [&_h2]:[color:#222] [&_p]:[font-size:1rem] [&_p]:[color:#555] [&_p]:[margin-bottom:1.5rem]">
       <h2>{title}</h2>
       <p>{subtitle}</p>
 
-      <form onSubmit={handleSubmit} className="newsletter-form">
+      <form onSubmit={handleSubmit} className="[display:flex] [flex-direction:column] [gap:1rem] [align-items:center] [&_input]:[padding:0.75rem_1rem] [&_input]:[border:1px_solid_#ccc] [&_input]:[border-radius:8px] [&_input]:[font-size:1rem] [&_input]:[width:100%] [&_input]:[max-width:300px] [&_button]:[background-color:#454142] [&_button]:[color:white] [&_button]:[padding:0.75rem_1.5rem] [&_button]:[border:none] [&_button]:[border-radius:8px] [&_button]:[font-size:1rem] [&_button]:[cursor:pointer] [&_button]:[transition:background_0.3s_ease] [&_button:hover]:[background-color:#454142bd]">
         <input
           type="email"
           placeholder={placeholder}
@@ -56,8 +54,8 @@ export default function NewsletterSignup({
         </button>
       </form>
 
-      {submitted && <p className="thank-you-msg">Thanks for subscribing!</p>}
-      {error && <p className="error-msg">{error}</p>}
+      {submitted && <p className="[margin-top:1rem] [color:green] [font-weight:bold]">Thanks for subscribing!</p>}
+      {error && <p className="">{error}</p>}
     </div>
   );
 }

@@ -7,8 +7,6 @@ import Features from "../components/features";
 import Footer from "../components/footer";
 import CustomCursor from "../components/customcursor";
 import useRevealOnScroll from "../hooks/useRevealOnScroll";
-import "../styles/animations.css";
-
 import Banner2 from "../components/banner2";
 import SocialMedia from "../components/social-media";
 import { serviceCollectionSchema } from "../lib/serviceSeo";
@@ -27,7 +25,7 @@ const featureCards = [
     showMobileWarning: false,
     showTooltip: true,
     displayOverlayContent: true,
-    overlayContent: <p className="tilted-card-demo-text">Consultation</p>,
+    overlayContent: <p className="[.home-density_.features-_&]:[font-size:0.95rem]">Consultation</p>,
     backgroundColor: "rgba(0,0,0,0)",
     link: "/services/consultation",
   },
@@ -44,7 +42,7 @@ const featureCards = [
     showMobileWarning: false,
     showTooltip: true,
     displayOverlayContent: true,
-    overlayContent: <p className="tilted-card-demo-text">AquaFirmeXS</p>,
+    overlayContent: <p className="[.home-density_.features-_&]:[font-size:0.95rem]">AquaFirmeXS</p>,
     backgroundColor: "rgba(0,0,0,0)",
     link: "/services/aquafirme",
   },
@@ -62,7 +60,7 @@ const featureCards = [
     showTooltip: true,
     displayOverlayContent: true,
     overlayContent: (
-      <p className="tilted-card-demo-text">NOUVADerm® Laser Treatment</p>
+      <p className="[.home-density_.features-_&]:[font-size:0.95rem]">NOUVADerm® Laser Treatment</p>
     ),
     backgroundColor: "rgba(0,0,0,0)",
     link: "/services/nouvaderm",
@@ -82,7 +80,7 @@ const featureCards = [
     showTooltip: true,
     displayOverlayContent: true,
     overlayContent: (
-      <p className="tilted-card-demo-text">Anti-Wrinkle Injections</p>
+      <p className="[.home-density_.features-_&]:[font-size:0.95rem]">Anti-Wrinkle Injections</p>
     ),
     backgroundColor: "rgba(0,0,0,0)",
     link: "/services/antiwrinkle",
@@ -100,7 +98,7 @@ const featureCards = [
     showMobileWarning: false,
     showTooltip: true,
     displayOverlayContent: true,
-    overlayContent: <p className="tilted-card-demo-text">Kybella®</p>,
+    overlayContent: <p className="[.home-density_.features-_&]:[font-size:0.95rem]">Kybella®</p>,
     backgroundColor: "rgba(0,0,0,0)",
     link: "/services/kybella",
   },
@@ -119,7 +117,7 @@ const featureCards = [
     showTooltip: true,
     displayOverlayContent: true,
     overlayContent: (
-      <p className="tilted-card-demo-text">Sclerotherapy – Spider Veins</p>
+      <p className="[.home-density_.features-_&]:[font-size:0.95rem]">Sclerotherapy – Spider Veins</p>
     ),
     backgroundColor: "rgba(0,0,0,0)",
     link: "/services/sclerotherapy",
@@ -138,7 +136,7 @@ const featureCards = [
     showMobileWarning: false,
     showTooltip: true,
     displayOverlayContent: true,
-    overlayContent: <p className="tilted-card-demo-text">HA Dermal Fillers</p>,
+    overlayContent: <p className="[.home-density_.features-_&]:[font-size:0.95rem]">HA Dermal Fillers</p>,
     backgroundColor: "rgba(0,0,0,0)",
     link: "/services/juvederm",
   },
@@ -155,7 +153,7 @@ const featureCards = [
     showMobileWarning: false,
     showTooltip: true,
     displayOverlayContent: true,
-    overlayContent: <p className="tilted-card-demo-text">Sculptra</p>,
+    overlayContent: <p className="[.home-density_.features-_&]:[font-size:0.95rem]">Sculptra</p>,
     backgroundColor: "rgba(0,0,0,0)",
     link: "/services/sculptra",
   },
@@ -172,7 +170,7 @@ const featureCards = [
     showMobileWarning: false,
     showTooltip: true,
     displayOverlayContent: true,
-    overlayContent: <p className="tilted-card-demo-text">PRF/PRF ezGel</p>,
+    overlayContent: <p className="[.home-density_.features-_&]:[font-size:0.95rem]">PRF/PRF ezGel</p>,
     backgroundColor: "rgba(0,0,0,0)",
     link: "/services/cellenis",
   },
@@ -190,7 +188,7 @@ const featureCards = [
     showTooltip: true,
     displayOverlayContent: true,
     overlayContent: (
-      <p className="tilted-card-demo-text">Hair Wellness & Restoration</p>
+      <p className="[.home-density_.features-_&]:[font-size:0.95rem]">Hair Wellness & Restoration</p>
     ),
     backgroundColor: "rgba(0,0,0,0)",
     link: "/services/hairtreatments",
@@ -208,7 +206,7 @@ const featureCards = [
     showMobileWarning: false,
     showTooltip: true,
     displayOverlayContent: true,
-    overlayContent: <p className="tilted-card-demo-text">Chemical Peels</p>,
+    overlayContent: <p className="[.home-density_.features-_&]:[font-size:0.95rem]">Chemical Peels</p>,
     backgroundColor: "rgba(0,0,0,0)",
     link: "/services/chemicalpeels",
   },
@@ -225,7 +223,7 @@ const featureCards = [
     showMobileWarning: false,
     showTooltip: true,
     displayOverlayContent: true,
-    overlayContent: <p className="tilted-card-demo-text">Customized Facials</p>,
+    overlayContent: <p className="[.home-density_.features-_&]:[font-size:0.95rem]">Customized Facials</p>,
     backgroundColor: "rgba(0,0,0,0)",
     link: "/services/facials",
   },
@@ -244,7 +242,7 @@ const featureCards = [
     showTooltip: true,
     displayOverlayContent: true,
     overlayContent: (
-      <p className="tilted-card-demo-text">EXO|E® Skin Revitalizing Complex</p>
+      <p className="[.home-density_.features-_&]:[font-size:0.95rem]">EXO|E® Skin Revitalizing Complex</p>
     ),
     backgroundColor: "rgba(0,0,0,0)",
     link: "/services/exosomes",
@@ -263,7 +261,7 @@ const featureCards = [
     showTooltip: true,
     displayOverlayContent: true,
     overlayContent: (
-      <p className="tilted-card-demo-text">SaltFacial® Skin Renewal Therapy</p>
+      <p className="[.home-density_.features-_&]:[font-size:0.95rem]">SaltFacial® Skin Renewal Therapy</p>
     ),
     backgroundColor: "rgba(0,0,0,0)",
     link: "/services/saltfacial",
@@ -282,7 +280,7 @@ const featureCards = [
     showTooltip: true,
     displayOverlayContent: true,
     overlayContent: (
-      <p className="tilted-card-demo-text">SkinPen® Microneedling</p>
+      <p className="[.home-density_.features-_&]:[font-size:0.95rem]">SkinPen® Microneedling</p>
     ),
     backgroundColor: "rgba(0,0,0,0)",
     link: "/services/skinpen",
@@ -301,7 +299,7 @@ const featureCards = [
     showTooltip: true,
     displayOverlayContent: true,
     overlayContent: (
-      <p className="tilted-card-demo-text">Skin Type Solutions</p>
+      <p className="[.home-density_.features-_&]:[font-size:0.95rem]">Skin Type Solutions</p>
     ),
     backgroundColor: "rgba(0,0,0,0)",
     link: "/services/skintypes",

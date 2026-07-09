@@ -5,9 +5,6 @@ import Banner2 from '../../components/banner2';
 import Banner3 from '../../components/banner3';
 import CustomCursor from '../../components/customcursor';
 import ServiceHighlightBox from '../../components/servicehighlightbox';
-import './skinpen.css';
-
-
 export default function Skinpen() {
     return (
         <>
@@ -21,14 +18,14 @@ export default function Skinpen() {
             />
 
             <section id="skintypesolutions-services">
-                <div className="skintypesolutions-content-wrapper">
-                    <div className="skintypesolutions-title skintypesolutions-animated">
+                <div className="">
+                    <div className="">
                         {/* About Skin Type Solutions */}
                     </div>
                     
                     <div className="skintypesolutions-main-content">
                         <div className="skintypesolutions-image-gallery">
-                            <img className="skintypesolutions-first-img" src="/assets/images/images/stsimg.webp" alt="Skin Type Solutions"/>
+                            <img className="" src="/assets/images/images/stsimg.webp" alt="Skin Type Solutions"/>
                             <img src="/assets/images/images/stsfollowupinfo/skntyp.co_ShopOwn.webp" alt="Shop Own"/>
                             <img src="/assets/images/images/stsfollowupinfo/skntyp.co_OwnSkinQuiz.webp" alt="Skin Quiz"/>
                         </div>
@@ -42,7 +39,7 @@ export default function Skinpen() {
                                 Get the best treatment possible with our <strong>Own Aesthetics</strong> fine-tuned product lines. After determining your skin type, you will have access to the most suitable moisturizers, eye creams, sunscreens, masks, toners, supplements, serums and more. Your skin will be nourished and protected all year round. <strong>Skin Type Solutions</strong> will provide all the products you need to keep your skin happy, healthy, and beautiful.
                             </p>
 
-                            <div className="skintypesolutions-highlight-section">
+                            <div className="">
                                 With <strong>Skin Type Solutions</strong>, you’re getting more than just the right skin care products from high-quality, exclusive brands. Thanks to our extensive resources, you will also receive in-depth explanations about your skin type and why it acts the way it does, expert dietary and lifestyle advice, updates on cosmetic procedures and treatments, and year-round skin care advice.
                             </div>
 
@@ -52,7 +49,7 @@ export default function Skinpen() {
                                 Before you start your new <strong>Skin Type Solutions</strong> skin care routine, you need to determine your skin type. Did you know that 80% of people don’t know their skin type? Thanks to the revolutionary skin typing system created by Dr. Leslie Baumann, you can discover your true skin type.
                                 <br/><br/>
                                 <a href="https://skntyp.co/OwnSkinQuiz">
-                                    <button type="button" className="btn btn-outline-light">
+                                    <button type="button" className="[background:var(--accent-2)] [color:#0e1b15] [border:none] [padding:10px_14px] [border-radius:10px] [font-weight:800] [cursor:pointer] [&:hover]:[filter:brightness(1.05)]">
                                         SkinTypes Quiz
                                     </button>
                                 </a>

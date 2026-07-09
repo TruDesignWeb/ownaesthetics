@@ -5,14 +5,12 @@ import Banner from '../components/banner';
 import Features from '../components/features';
 import Stats from '../components/stats';
 import Programs from '../components/programs';
-import Membership from '../components/membership';
+import Membership from '../components/membership-component';
 import Outcomes from '../components/outcomes';
 import Journey from '../components/journey';
 import Footer from '../components/footer';
 import CustomCursor from '../components/customcursor';
-import useRevealOnScroll from '../hooks/useRevealOnScroll';
-import '../styles/animations.css';
-import InfiniteScroll from '../components/infinitescroll';
+import useRevealOnScroll from '../hooks/useRevealOnScroll';import InfiniteScroll from '../components/infinitescroll';
 import TiltedCard from '../components/tiltedcard';
 import FluidGlass from '../components/fluidglass';
 import Register from '../components/register';
@@ -34,7 +32,7 @@ const featureCards = [
       showMobileWarning: false,
       showTooltip: true,
       displayOverlayContent: true,
-      overlayContent: <p className="tilted-card-demo-text">Kendrick Lamar - GNX</p>,
+      overlayContent: <p className="[.home-density_.features-_&]:[font-size:0.95rem]">Kendrick Lamar - GNX</p>,
       backgroundColor: 'rgba(0,0,0,0)',
     },{
       imageSrc: 'https://i.scdn.co/image/ab67616d0000b273d9985092cd88bffd97653b58',
@@ -49,7 +47,7 @@ const featureCards = [
       showMobileWarning: false,
       showTooltip: true,
       displayOverlayContent: true,
-      overlayContent: <p className="tilted-card-demo-text">Kendrick Lamar - GNX</p>,
+      overlayContent: <p className="[.home-density_.features-_&]:[font-size:0.95rem]">Kendrick Lamar - GNX</p>,
       backgroundColor: 'rgba(0,0,0,0)',
       },
     {
@@ -65,7 +63,7 @@ const featureCards = [
       showMobileWarning: false,
       showTooltip: true,
       displayOverlayContent: true,
-      overlayContent: <p className="tilted-card-demo-text">Kendrick Lamar - GNX</p>,
+      overlayContent: <p className="[.home-density_.features-_&]:[font-size:0.95rem]">Kendrick Lamar - GNX</p>,
       backgroundColor: 'rgba(0,0,0,0)',
       }];
 

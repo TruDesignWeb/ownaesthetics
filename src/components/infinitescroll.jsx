@@ -3,8 +3,6 @@
 import { useRef, useEffect } from 'react';
 import { gsap } from 'gsap';
 import { Observer } from 'gsap/Observer';
-import '../styles/infinitescroll.css';
-
 gsap.registerPlugin(Observer);
 
 export default function InfiniteScroll({
@@ -134,14 +132,14 @@ export default function InfiniteScroll({
         }
       `}</style>
 
-      <div className="infinite-scroll-wrapper" ref={wrapperRef}>
+      <div className="[position:relative] [display:flex] [align-items:center] [justify-content:center] [width:100%] [overflow:hidden] [overscroll-behavior:none] [&::before]:[content:''] [&::before]:[position:absolute] [&::before]:[background:linear-gradient(var(--dir,_to_bottom),_#060010,_transparent)] [&::before]:[height:25%] [&::before]:[width:100%] [&::before]:[z-index:1] [&::before]:[pointer-events:none] [&::after]:[content:''] [&::after]:[position:absolute] [&::after]:[background:linear-gradient(var(--dir,_to_bottom),_#060010,_transparent)] [&::after]:[height:25%] [&::after]:[width:100%] [&::after]:[z-index:1] [&::after]:[pointer-events:none] [&::before]:[top:0] [&::after]:[--dir:to_top] [&::after]:[bottom:0]" ref={wrapperRef}>
         <div
-          className="infinite-scroll-container"
+          className="[display:flex] [flex-direction:column] [overscroll-behavior:contain] [padding-inline:1rem] [cursor:grab] [transform-origin:center_center]"
           ref={containerRef}
           style={{ transform: getTiltTransform() }}
         >
           {items.map((item, i) => (
-            <div className='infinite-scroll-item' key={i}>
+            <div className="[--accent-color:#ffffff] [border-radius:15px] [display:flex] [align-items:center] [justify-content:center] [padding:1rem] [font-size:1.25rem] [font-weight:600] [text-align:center] [border:2px_solid_var(--accent-color)] [user-select:none] [box-sizing:border-box] [position:relative]" key={i}>
               {item.content}
             </div>
           ))}

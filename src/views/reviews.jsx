@@ -6,11 +6,7 @@ import Navbar from '../components/navbar';
 import Footer from '../components/footer';
 import CustomCursor from '../components/customcursor';
 import useRevealOnScroll from '../hooks/useRevealOnScroll';
-import '../styles/animations.css';
-
 import Banner2 from '../components/banner2';
-import './reviews.css';
-
 import { useEffect, useRef, useState } from "react";
 import TestimonialShowcase from '../components/testimonial-showcase';
 

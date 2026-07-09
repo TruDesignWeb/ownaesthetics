@@ -1,9 +1,6 @@
 import React from "react";
 import Navbar from "../components/navbar";
-import Footer from "../components/footer";
-import "../styles/animations.css";
-
-/**
+import Footer from "../components/footer";/**
  * Forbidden photos:     {
       src: "/assets/images/IMG_2957.webp",
     },
@@ -26,9 +23,9 @@ export default function Bryan() {
   return (
     <>
       <Navbar />
-      <main className="bryan-page" style={{ padding: "6rem 1.5rem 3rem" }}>
+      <main className="" style={{ padding: "6rem 1.5rem 3rem" }}>
         <header
-          className="bryan-header"
+          className=""
           style={{
             minHeight: "140px",
             borderBottom: "1px solid rgba(0,0,0,0.1)",
@@ -39,7 +36,7 @@ export default function Bryan() {
         </header>
 
         <section
-          className="bryan-gallery"
+          className=""
           style={{
             display: "grid",
             gap: "1rem",
@@ -49,7 +46,7 @@ export default function Bryan() {
           {[...Array(4)].map((_, index) => (
             <div
               key={index}
-              className="bryan-image-slot"
+              className=""
               style={{
                 minHeight: "180px",
                 background: "rgba(0, 0, 0, 0.04)",

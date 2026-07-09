@@ -3,8 +3,6 @@ import Footer from '../../components/footer';
 import Banner3 from '../../components/banner3';
 import CustomCursor from '../../components/customcursor';
 import ServiceHighlightBox from '../../components/servicehighlightbox';
-import './consultation.css';
-
 export default function Consultation() {
     return (
         <>
@@ -17,13 +15,13 @@ export default function Consultation() {
                 subtitle="Discover Your Unique Beauty with Our LifeViz® Infinity Pro Consultation"
             />
 
-            <div id="consultation-services">
-                <div className="consultation-container">
-                    <div className="consultation-title consultation-animated">
+            <div id="consultation-services" className="svc-section [background:#f8f9fa] [padding:80px_0_100px_0]">
+                <div className="">
+                    <div className="[#consultation-services_&]:[font-size:42px] [#consultation-services_&]:[font-weight:600] [#consultation-services_&]:[text-align:center] [#consultation-services_&]:[margin-bottom:40px] [#consultation-services_&]:[color:#2d2d2d] [#consultation-services_&]:[letter-spacing:0.5px] [animation:consultation-fadeUp_0.8s_ease_forwards]">
                         {/* LifeViz® Infinity Pro Consultation */}
                     </div>
-                    <div className="consultation-row">
-                        <div className="consultation-services-text consultation-service-boxes consultation-animated">
+                    <div className="consultation-row [#consultation-services_&]:[display:flex] [#consultation-services_&]:[justify-content:center]">
+                        <div className="consultation-services-text [max-width:900px] [width:100%] [font-size:20px] [line-height:1.9] [color:#444] [padding:40px_50px] [background:white] [border-radius:12px] [box-shadow:0_10px_30px_rgba(0,_0,_0,_0.06)] [transition:all_0.4s_ease] [&:hover]:[transform:translateY(-4px)] [&:hover]:[box-shadow:0_18px_40px_rgba(0,_0,_0,_0.08)] [&_p_strong]:[font-weight:600] [&_p_strong]:[color:#ffffff] [&_p:last-child]:[font-weight:600] [&_p:last-child]:[color:#ffffff] [animation:consultation-fadeUp_0.8s_ease_forwards]">
                             <p>
                                 We believe every person is valuable and beautiful in their own skin. Our approach is centered
                                 on individualized care - helping you feel empowered, confident, and supported as you embrace

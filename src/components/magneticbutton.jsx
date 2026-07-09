@@ -2,7 +2,7 @@
 import { motion, useMotionValue, useSpring, useTransform } from "framer-motion";
 import { useRef } from "react";
 
-export default function MagnetButton({ children = "Hover Me", className = "", size = "px-8 py-4 text-lg", shape = "rounded-full"}) {
+export default function MagnetButton({ children = "Hover Me", className = "" }) {
   const ref = useRef(null);
 
   const mouseX = useMotionValue(0);
@@ -33,7 +33,7 @@ export default function MagnetButton({ children = "Hover Me", className = "", si
   return (
     <motion.button
       ref={ref}
-      className={`${size} ${shape} bg-black text-white rounded-full transition-colors ${className}`}
+      className={className}
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
       style={{ x, y, rotateX, rotateY }}

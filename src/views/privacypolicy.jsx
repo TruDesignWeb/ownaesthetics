@@ -8,14 +8,7 @@ import Features from '../components/features';
 import Footer from '../components/footer';
 import CustomCursor from '../components/customcursor';
 import useRevealOnScroll from '../hooks/useRevealOnScroll';
-import './treatments.css';
-
 import Banner2 from '../components/banner2';
-import './privacypolicy.css';
-
-
-
-
 export default function Home() {
     useRevealOnScroll();
   return (
@@ -29,8 +22,8 @@ export default function Home() {
         variant = ""
     />
 
-      <div className="priv-container">
-      <div className="priv-container-text">
+      <div className="[background:#f8f9fa] [padding:80px_0_100px_0] [&_h1]:[font-size:42px] [&_h1]:[font-weight:600] [&_h1]:[text-align:center] [&_h1]:[margin-bottom:40px] [&_h1]:[color:#2d2d2d] [&_h1]:[letter-spacing:0.5px] [&_h2]:[font-size:22px] [&_h2]:[font-weight:600] [&_h2]:[color:#2d2d2d] [&_h2]:[margin-top:2rem] [&_h2]:[margin-bottom:0.5rem] [&_h3]:[font-size:18px] [&_h3]:[font-weight:600] [&_h3]:[color:#2d2d2d] [&_h3]:[margin-top:1.5rem] [&_h3]:[margin-bottom:0.5rem] [&_p]:[font-size:16px] [&_p]:[line-height:1.9] [&_p]:[color:#444] [&_li]:[font-size:16px] [&_li]:[line-height:1.9] [&_li]:[color:#444] [&_ul]:[padding-left:1.5rem] [&_ul]:[margin-bottom:1rem] [&_ol]:[padding-left:1.5rem] [&_ol]:[margin-bottom:1rem] [&_a]:[color:#9f6048] [&_a]:[text-decoration:underline] [&_a:hover]:[color:#7a4535] [&_p_strong]:[font-weight:600] [&_p_strong]:[color:#9f6048] max-[768px]:[padding:50px_0_70px_0] max-[768px]:[&_h1]:[font-size:28px] max-[768px]:[&_h2]:[font-size:18px]">
+      <div className="[max-width:900px] [width:100%] [padding:40px_50px] [background:white] [border-radius:12px] [box-shadow:0_10px_30px_rgba(0,_0,_0,_0.06)] [transition:all_0.4s_ease] [margin:0_auto] [&:hover]:[transform:translateY(-4px)] [&:hover]:[box-shadow:0_18px_40px_rgba(0,_0,_0,_0.08)] max-[768px]:[padding:30px_24px]">
         {/* <h1>Privacy Notice</h1> */}
         <p><strong>Last updated: April 28, 2025</strong></p>
 

@@ -5,9 +5,6 @@ import Banner2 from '../../components/banner2';
 import Banner3 from '../../components/banner3';
 import CustomCursor from '../../components/customcursor';
 import ServiceHighlightBox from '../../components/servicehighlightbox';
-import './nouvaderm.css';
-
-
 export default function NouvaDerm() {
     return (
         <>
@@ -20,14 +17,14 @@ export default function NouvaDerm() {
                 subtitle="Experience the Power of NOUVADerm™: The Ultimate Laser Treatment for Radiant Skin"
             />
 
-            <section id="nouvaderm-services">
-                <div className="nouvaderm-content-wrapper">
-                    <div className="nouvaderm-title nouvaderm-animated">
+            <section id="nouvaderm-services" className="svc-section [background:#f8f9fa] [padding:80px_0_100px_0]">
+                <div className="">
+                    <div className="[#nouvaderm-services_&]:[font-size:42px] [#nouvaderm-services_&]:[font-weight:600] [#nouvaderm-services_&]:[text-align:center] [#nouvaderm-services_&]:[margin-bottom:40px] [#nouvaderm-services_&]:[color:#2d2d2d] [#nouvaderm-services_&]:[letter-spacing:0.5px] [animation:nouvaderm-fadeUp_0.8s_ease_forwards] max-[600px]:[#nouvaderm-services_&]:[font-size:32px]">
                         {/* NOUVADerm™ Laser Treatment */}
                     </div>
 
-                    <div className="nouvaderm-main-content">
-                        <div className="nouvaderm-image-gallery">
+                    <div className="nouvaderm-main-content [display:flex] [gap:50px] [align-items:center] [justify-content:center] [flex-wrap:wrap] max-[992px]:[flex-direction:column]">
+                        <div className="nouvaderm-image-gallery [display:flex] [flex-direction:column] [gap:20px] [&_img]:[width:320px] [&_img]:[border-radius:12px] [&_img]:[object-fit:cover] [&_img]:[box-shadow:0_10px_30px_rgba(0,_0,_0,_0.08)] [&_img]:[transition:all_0.4s_ease] [&_img:hover]:[transform:translateY(-6px)] [&_img:hover]:[box-shadow:0_18px_40px_rgba(0,_0,_0,_0.12)] max-[992px]:[flex-direction:row] max-[992px]:[flex-wrap:wrap] max-[992px]:[justify-content:center] max-[992px]:[&_img]:[width:45%] max-[600px]:[&_img]:[width:100%]">
                             <img
                                 src="/assets/images/images/IMG_0173.JPG"
                                 alt="NOUVADerm Treatment 1"
@@ -42,7 +39,7 @@ export default function NouvaDerm() {
                             />
                         </div>
 
-                        <div className="nouvaderm-content-text nouvaderm-animated">
+                        <div className="nouvaderm-content-text [max-width:600px] [font-size:19px] [line-height:1.9] [padding:45px_50px] [background:white] [border-radius:12px] [box-shadow:0_10px_30px_rgba(0,_0,_0,_0.06)] [transition:all_0.4s_ease] [&:hover]:[transform:translateY(-4px)] [&:hover]:[box-shadow:0_18px_40px_rgba(0,_0,_0,_0.08)] [color:#9f6048] [font-weight:600] [animation:nouvaderm-fadeUp_0.8s_ease_forwards] max-[992px]:[max-width:100%] max-[992px]:[padding:35px]">
                             <p>
                                 The <strong>NOUVADerm™ Laser</strong> is designed for flexibility,
                                 allowing treatments to be customized to each patient’s unique skin

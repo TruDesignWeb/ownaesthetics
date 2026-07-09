@@ -1,32 +1,29 @@
 
 
 // File: src/components/Membership.jsx
-import React from 'react';
-import '../styles/membership.css';
-
-export default function Membership() {
+import React from 'react';export default function Membership() {
   return (
-    <div className="membership-container">
-      <div className="membership-card">
-        <h2 className="card-title">CORE</h2>
-        <h3 className="card-subtitle">Don't die from something stupid</h3>
-        <p className="card-description">Our advanced diagnostics program focused on early disease detection</p>
-        <a href="/Membership" className="learn-more-btn">Learn More</a>
+    <div className="[position:relative] [z-index:5] [display:flex] [margin:0_auto] [align-items:center] [justify-content:center] [gap:1rem] [background:rgba(255,255,220)] [padding:150px] max-[768px]:[flex-direction:column] max-[768px]:[padding:1rem] max-[768px]:[gap:1rem]">
+      <div className="[width:280px] [height:380px] [background:rgba(20,_28,_39,_0.95)] [border-radius:12px] [padding:2.5rem_1.8rem] [text-align:center] [transition:all_0.4s_ease] [border:1px_solid_rgba(71,_85,_105,_0.3)] [backdrop-filter:blur(20px)] [position:relative] [z-index:1] [transform:scale(0.9)] [&:nth-child(1)]:[z-index:1] [&:nth-child(1)]:[transform:scale(0.9)] [&:nth-child(2)]:[z-index:3] [&:nth-child(2)]:[transform:scale(1.0)] [&:nth-child(2)]:[width:320px] [&:nth-child(2)]:[height:400px] [&:nth-child(2)]:[padding:3rem_2rem] [&:nth-child(3)]:[z-index:1] [&:nth-child(3)]:[transform:scale(0.9)] [&::before]:[content:''] [&::before]:[position:absolute] [&::before]:[top:0] [&::before]:[left:0] [&::before]:[right:0] [&::before]:[bottom:0] [&::before]:[background:linear-gradient(135deg,_rgba(96,_165,_250,_0.05),_rgba(59,_130,_246,_0.05))] [&::before]:[opacity:0] [&::before]:[transition:opacity_0.4s_ease] [&::before]:[z-index:-1] [&::before]:[border-radius:12px] [&:hover::before]:[opacity:1] [&:hover]:[transform:translateY(-8px)_scale(1.02)] [&:hover]:[border-color:rgba(96,_165,_250,_0.4)] [&:hover]:[box-shadow:0_15px_35px_rgba(0,_0,_0,_0.3)] [&:hover]:[z-index:5] [&:nth-child(2):hover]:[transform:translateY(-8px)_scale(1.04)] max-[768px]:[margin:0] max-[768px]:[width:100%] max-[768px]:[max-width:320px] max-[768px]:[&:nth-child(2)]:[transform:none] max-[768px]:[padding:2rem_1.5rem] max-[768px]:[height:auto]">
+        <h2 className="[font-size:3rem] [font-weight:bold] [margin-bottom:1rem] [letter-spacing:2px] [color:white] max-[768px]:[font-size:2.5rem]">CORE</h2>
+        <h3 className="[font-size:1.2rem] [font-weight:bold] [margin-bottom:0.5rem] [color:#e2e8f0] [.epic-card_&]:[color:#fbbf24]">Don't die from something stupid</h3>
+        <p className="[font-size:1rem] [line-height:1.6] [margin-bottom:2rem] [color:#cbd5e1]">Our advanced diagnostics program focused on early disease detection</p>
+        <a href="/membership" className="[display:inline-flex] [align-items:center] [gap:0.5rem] [text-decoration:none] [font-weight:bold] [transition:all_0.3s_ease] [position:relative] [&::after]:[content:'->'] [&::after]:[transition:transform_0.3s_ease] [&:hover]:[color:#3b82f6] [&:hover]:[transform:translateX(5px)] [&:hover::after]:[transform:translateX(5px)] [.epic-card_&]:[color:#fbbf24] [.epic-card_&:hover]:[color:#f59e0b] [margin-top:1.5rem] [padding:0.75rem_1.5rem] [background-color:#a0ad93] [color:white] [border:none] [border-radius:4px] [font-size:1rem] [cursor:pointer]">Learn More</a>
       </div>
 
-      <div className="membership-card apex-card">
-        <div className="recommended-badge">Recommended</div>
-        <h2 className="card-title">APEX</h2>
-        <h3 className="card-subtitle">Live without limits</h3>
-        <p className="card-description">The world's leading longevity membership for those who refuse to settle</p>
-        <a href="/Membership" className="learn-more-btn">Learn More</a>
+      <div className="[width:280px] [height:380px] [border-radius:12px] [padding:2.5rem_1.8rem] [text-align:center] [transition:all_0.4s_ease] [backdrop-filter:blur(20px)] [position:relative] [z-index:1] [transform:scale(0.9)] [&:nth-child(1)]:[z-index:1] [&:nth-child(1)]:[transform:scale(0.9)] [&:nth-child(2)]:[z-index:3] [&:nth-child(2)]:[transform:scale(1.0)] [&:nth-child(2)]:[width:320px] [&:nth-child(2)]:[height:400px] [&:nth-child(2)]:[padding:3rem_2rem] [&:nth-child(3)]:[z-index:1] [&:nth-child(3)]:[transform:scale(0.9)] [&::before]:[content:''] [&::before]:[position:absolute] [&::before]:[top:0] [&::before]:[left:0] [&::before]:[right:0] [&::before]:[bottom:0] [&::before]:[background:linear-gradient(135deg,_rgba(96,_165,_250,_0.05),_rgba(59,_130,_246,_0.05))] [&::before]:[opacity:0] [&::before]:[transition:opacity_0.4s_ease] [&::before]:[z-index:-1] [&::before]:[border-radius:12px] [&:hover::before]:[opacity:1] [&:hover]:[z-index:5] [&:nth-child(2):hover]:[transform:translateY(-8px)_scale(1.04)] [border:1px_solid_rgba(96,_165,_250,_0.4)] [background:rgba(20,_28,_39,_0.98)] [box-shadow:0_8px_25px_rgba(96,_165,_250,_0.15)] [&:hover]:[transform:translateY(-8px)_scale(1.04)] [&:hover]:[border-color:rgba(96,_165,_250,_0.6)] [&:hover]:[box-shadow:0_20px_40px_rgba(96,_165,_250,_0.25)] max-[768px]:[margin:0] max-[768px]:[width:100%] max-[768px]:[max-width:320px] max-[768px]:[&:nth-child(2)]:[transform:none] max-[768px]:[padding:2rem_1.5rem] max-[768px]:[height:auto]">
+        <div className="[position:absolute] [top:-12px] [left:50%] [transform:translateX(-50%)] [background:linear-gradient(90deg,_#64748b,_#475569)] [color:white] [padding:0.4rem_1.2rem] [border-radius:6px] [font-size:0.85rem] [font-weight:500] [box-shadow:0_2px_8px_rgba(0,_0,_0,_0.4)] [letter-spacing:0.5px]">Recommended</div>
+        <h2 className="[font-size:3rem] [font-weight:bold] [margin-bottom:1rem] [letter-spacing:2px] [color:white] max-[768px]:[font-size:2.5rem]">APEX</h2>
+        <h3 className="[font-size:1.2rem] [font-weight:bold] [margin-bottom:0.5rem] [color:#e2e8f0] [.epic-card_&]:[color:#fbbf24]">Live without limits</h3>
+        <p className="[font-size:1rem] [line-height:1.6] [margin-bottom:2rem] [color:#cbd5e1]">The world's leading longevity membership for those who refuse to settle</p>
+        <a href="/membership" className="[display:inline-flex] [align-items:center] [gap:0.5rem] [text-decoration:none] [font-weight:bold] [transition:all_0.3s_ease] [position:relative] [&::after]:[content:'->'] [&::after]:[transition:transform_0.3s_ease] [&:hover]:[color:#3b82f6] [&:hover]:[transform:translateX(5px)] [&:hover::after]:[transform:translateX(5px)] [.epic-card_&]:[color:#fbbf24] [.epic-card_&:hover]:[color:#f59e0b] [margin-top:1.5rem] [padding:0.75rem_1.5rem] [background-color:#a0ad93] [color:white] [border:none] [border-radius:4px] [font-size:1rem] [cursor:pointer]">Learn More</a>
       </div>
 
-      <div className="membership-card epic-card">
-        <h2 className="card-title">EPIC</h2>
-        <h3 className="card-subtitle">Re-engineer your potential<br/>(Interview Only)</h3>
-        <p className="card-description">Our personalized high performance membership.</p>
-        <a href="/Membership" className="learn-more-btn">Request Interview</a>
+      <div className="epic-card [width:280px] [height:380px] [background:rgba(20,_28,_39,_0.95)] [border-radius:12px] [padding:2.5rem_1.8rem] [text-align:center] [transition:all_0.4s_ease] [border:1px_solid_rgba(71,_85,_105,_0.3)] [backdrop-filter:blur(20px)] [position:relative] [z-index:1] [transform:scale(0.9)] [&:nth-child(1)]:[z-index:1] [&:nth-child(1)]:[transform:scale(0.9)] [&:nth-child(2)]:[z-index:3] [&:nth-child(2)]:[transform:scale(1.0)] [&:nth-child(2)]:[width:320px] [&:nth-child(2)]:[height:400px] [&:nth-child(2)]:[padding:3rem_2rem] [&:nth-child(3)]:[z-index:1] [&:nth-child(3)]:[transform:scale(0.9)] [&::before]:[content:''] [&::before]:[position:absolute] [&::before]:[top:0] [&::before]:[left:0] [&::before]:[right:0] [&::before]:[bottom:0] [&::before]:[background:linear-gradient(135deg,_rgba(96,_165,_250,_0.05),_rgba(59,_130,_246,_0.05))] [&::before]:[opacity:0] [&::before]:[transition:opacity_0.4s_ease] [&::before]:[z-index:-1] [&::before]:[border-radius:12px] [&:hover::before]:[opacity:1] [&:hover]:[transform:translateY(-8px)_scale(1.02)] [&:hover]:[border-color:rgba(96,_165,_250,_0.4)] [&:hover]:[box-shadow:0_15px_35px_rgba(0,_0,_0,_0.3)] [&:hover]:[z-index:5] [&:nth-child(2):hover]:[transform:translateY(-8px)_scale(1.04)] max-[768px]:[margin:0] max-[768px]:[width:100%] max-[768px]:[max-width:320px] max-[768px]:[&:nth-child(2)]:[transform:none] max-[768px]:[padding:2rem_1.5rem] max-[768px]:[height:auto]">
+        <h2 className="[font-size:3rem] [font-weight:bold] [margin-bottom:1rem] [letter-spacing:2px] [color:white] max-[768px]:[font-size:2.5rem]">EPIC</h2>
+        <h3 className="[font-size:1.2rem] [font-weight:bold] [margin-bottom:0.5rem] [color:#e2e8f0] [.epic-card_&]:[color:#fbbf24]">Re-engineer your potential<br/>(Interview Only)</h3>
+        <p className="[font-size:1rem] [line-height:1.6] [margin-bottom:2rem] [color:#cbd5e1]">Our personalized high performance membership.</p>
+        <a href="/membership" className="[display:inline-flex] [align-items:center] [gap:0.5rem] [text-decoration:none] [font-weight:bold] [transition:all_0.3s_ease] [position:relative] [&::after]:[content:'->'] [&::after]:[transition:transform_0.3s_ease] [&:hover]:[color:#3b82f6] [&:hover]:[transform:translateX(5px)] [&:hover::after]:[transform:translateX(5px)] [.epic-card_&]:[color:#fbbf24] [.epic-card_&:hover]:[color:#f59e0b] [margin-top:1.5rem] [padding:0.75rem_1.5rem] [background-color:#a0ad93] [color:white] [border:none] [border-radius:4px] [font-size:1rem] [cursor:pointer]">Request Interview</a>
       </div>
     </div>
   );

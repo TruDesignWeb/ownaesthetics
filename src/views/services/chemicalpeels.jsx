@@ -3,8 +3,6 @@ import Footer from '../../components/footer';
 import Banner3 from '../../components/banner3';
 import CustomCursor from '../../components/customcursor';
 import ServiceHighlightBox from '../../components/servicehighlightbox';
-import './chemicalpeels.css';
-
 export default function Chemicalpeels() {
     return (
         <>
@@ -17,13 +15,13 @@ export default function Chemicalpeels() {
                 subtitle="Reveal Your Radiance with Our Expert Chemical Peels"
             />
 
-            <section id="chemicalpeels-services">
-                <div className="chemicalpeels-container">
-                    <div className="chemicalpeels-title chemicalpeels-animated">
+            <section id="chemicalpeels-services" className="svc-section [background:#f8f9fa] [padding:80px_0_100px_0]">
+                <div className="">
+                    <div className="[#chemicalpeels-services_&]:[font-size:42px] [#chemicalpeels-services_&]:[font-weight:600] [#chemicalpeels-services_&]:[text-align:center] [#chemicalpeels-services_&]:[margin-bottom:40px] [#chemicalpeels-services_&]:[color:#2d2d2d] [#chemicalpeels-services_&]:[letter-spacing:0.5px] [animation:chemicalpeels-fadeUp_0.8s_ease_forwards]">
                         {/* Chemical Peels */}
                     </div>
-                    <div className="chemicalpeels-row">
-                        <div className="chemicalpeels-services-text chemicalpeels-service-boxes chemicalpeels-animated">
+                    <div className="chemicalpeels-row [#chemicalpeels-services_&]:[display:flex] [#chemicalpeels-services_&]:[justify-content:center]">
+                        <div className="chemicalpeels-services-text [max-width:900px] [width:100%] [font-size:20px] [line-height:1.9] [color:#444] [padding:40px_50px] [background:white] [border-radius:12px] [box-shadow:0_10px_30px_rgba(0,_0,_0,_0.06)] [transition:all_0.4s_ease] [&:hover]:[transform:translateY(-4px)] [&:hover]:[box-shadow:0_18px_40px_rgba(0,_0,_0,_0.08)] [&_p_strong]:[font-weight:600] [&_p_strong]:[color:#ffffff] [&_p:last-child]:[font-weight:600] [&_p:last-child]:[color:#ffffff] [animation:chemicalpeels-fadeUp_0.8s_ease_forwards]">
                             <p>
                                 Chemical peels are a minimally invasive, effective treatment designed to improve overall skin
                                 tone and texture. Formulations can be tailored to all skin types, including sensitive skin, with

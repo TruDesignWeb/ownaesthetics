@@ -12,7 +12,6 @@ import Journey from "../components/journey";
 import Footer from "../components/footer";
 import CustomCursor from "../components/customcursor";
 import useRevealOnScroll from "../hooks/useRevealOnScroll";
-import "../styles/animations.css";
 import InfiniteScroll from "../components/infinitescroll";
 import TiltedCard from "../components/tiltedcard";
 import FluidGlass from "../components/fluidglass";
@@ -38,7 +37,7 @@ const featureCards = [
     showMobileWarning: false,
     showTooltip: true,
     displayOverlayContent: true,
-    overlayContent: <p className="tilted-card-demo-text">The SaltFacial®</p>,
+    overlayContent: <p className="[.home-density_.features-_&]:[font-size:0.95rem]">The SaltFacial®</p>,
     backgroundColor: "rgba(0,0,0,0)",
     link: "/services/saltfacial",
   },
@@ -55,7 +54,7 @@ const featureCards = [
     showMobileWarning: false,
     showTooltip: true,
     displayOverlayContent: true,
-    overlayContent: <p className="tilted-card-demo-text">AquaFirmeXS</p>,
+    overlayContent: <p className="[.home-density_.features-_&]:[font-size:0.95rem]">AquaFirmeXS</p>,
     backgroundColor: "rgba(0,0,0,0)",
     link: "services/aquafirme",
   },
@@ -73,7 +72,7 @@ const featureCards = [
     showTooltip: true,
     displayOverlayContent: true,
     overlayContent: (
-      <p className="tilted-card-demo-text">NOUVADerm™ Laser Treatment</p>
+      <p className="[.home-density_.features-_&]:[font-size:0.95rem]">NOUVADerm™ Laser Treatment</p>
     ),
     backgroundColor: "rgba(0,0,0,0)",
     link: "services/nouvaderm",
@@ -620,7 +619,7 @@ export default function Home() {
       {/* <RSVPPopup /> */}
       <Banner />
 
-      <div className="content-wrapper home-density" id="content">
+      <div className="home-density [position:relative] [z-index:2] [margin-top:var(--home-banner-height)] [transition:transform_0.1s_ease-out] [width:100%]" id="content">
         {/* luh comment so i can push sm  */}
         <Features
           title="Featured Services"
@@ -658,58 +657,58 @@ export default function Home() {
         />
 
         <section
-          className="homepage-faq visually-hidden"
+          className="[background:linear-gradient(180deg,_#f6efe8_0%,_#efe1d3_100%)] [color:#163041] [padding:3.8rem_1.25rem] max-[900px]:[padding:4.5rem_1.1rem] [display:none] [padding-top:clamp(2.5rem,_4.5vw,_4.4rem)]! [padding-bottom:clamp(2.5rem,_4.5vw,_4.4rem)]! max-[768px]:[padding-top:2rem]! max-[768px]:[padding-bottom:2rem]!"
           aria-labelledby="homepage-faq-title"
         >
-          <div className="homepage-faq__inner">
-            <div className="homepage-faq__heading">
-              <span className="homepage-faq__eyebrow">FAQ</span>
-              <h2 id="homepage-faq-title" className="homepage-faq__title">
+          <div className="[margin:0_auto] [max-width:1060px]!">
+            <div className="[margin-bottom:1.7rem] [max-width:660px]">
+              <span className="[color:#9b5b3e] [display:inline-block] [font-size:0.82rem] [letter-spacing:0.22em] [margin-bottom:0.9rem] [text-transform:uppercase]">FAQ</span>
+              <h2 id="homepage-faq-title" className="[color:#163041] [margin:0_0_1rem] [font-size:clamp(1.6rem,_2.8vw,_2.65rem)]! [line-height:1.12]!">
                 Questions People Ask Before Booking
               </h2>
-              <p className="homepage-faq__intro">
+              <p className="[color:rgba(22,_48,_65,_0.82)] [font-size:0.96rem] [line-height:1.75] [margin:0] [max-width:680px]">
                 Answers about pricing, timing, location, and what to expect at
                 Own Aesthetics in West Des Moines.
               </p>
-              <div className="homepage-faq__links">
+              <div className="[display:flex] [flex-wrap:wrap] [gap:0.8rem] [margin-top:1.35rem]">
                 <Link
-                  className="homepage-faq__link-pill"
+                  className="[background:rgba(22,_48,_65,_0.08)] [border-radius:999px] [color:#163041] [display:inline-flex] [padding:0.72rem_1rem] [text-decoration:none] [transition:background-color_0.2s_ease,_transform_0.2s_ease] [&:hover]:[background:rgba(22,_48,_65,_0.14)] [&:hover]:[color:#163041] [&:hover]:[transform:translateY(-1px)]"
                   href="/services/injectables"
                 >
                   Injectables
                 </Link>
                 <Link
-                  className="homepage-faq__link-pill"
+                  className="[background:rgba(22,_48,_65,_0.08)] [border-radius:999px] [color:#163041] [display:inline-flex] [padding:0.72rem_1rem] [text-decoration:none] [transition:background-color_0.2s_ease,_transform_0.2s_ease] [&:hover]:[background:rgba(22,_48,_65,_0.14)] [&:hover]:[color:#163041] [&:hover]:[transform:translateY(-1px)]"
                   href="/services/facials"
                 >
                   Facials
                 </Link>
                 <Link
-                  className="homepage-faq__link-pill"
+                  className="[background:rgba(22,_48,_65,_0.08)] [border-radius:999px] [color:#163041] [display:inline-flex] [padding:0.72rem_1rem] [text-decoration:none] [transition:background-color_0.2s_ease,_transform_0.2s_ease] [&:hover]:[background:rgba(22,_48,_65,_0.14)] [&:hover]:[color:#163041] [&:hover]:[transform:translateY(-1px)]"
                   href="/services/nouvaderm-laser-resurfacing"
                 >
                   NOUVADerm Laser Resurfacing
                 </Link>
                 <Link
-                  className="homepage-faq__link-pill"
+                  className="[background:rgba(22,_48,_65,_0.08)] [border-radius:999px] [color:#163041] [display:inline-flex] [padding:0.72rem_1rem] [text-decoration:none] [transition:background-color_0.2s_ease,_transform_0.2s_ease] [&:hover]:[background:rgba(22,_48,_65,_0.14)] [&:hover]:[color:#163041] [&:hover]:[transform:translateY(-1px)]"
                   href="/services/skincare-analysis"
                 >
                   Skincare Analysis
                 </Link>
                 <Link
-                  className="homepage-faq__link-pill"
+                  className="[background:rgba(22,_48,_65,_0.08)] [border-radius:999px] [color:#163041] [display:inline-flex] [padding:0.72rem_1rem] [text-decoration:none] [transition:background-color_0.2s_ease,_transform_0.2s_ease] [&:hover]:[background:rgba(22,_48,_65,_0.14)] [&:hover]:[color:#163041] [&:hover]:[transform:translateY(-1px)]"
                   href="/locations/des-moines"
                 >
                   Des Moines
                 </Link>
                 <Link
-                  className="homepage-faq__link-pill"
+                  className="[background:rgba(22,_48,_65,_0.08)] [border-radius:999px] [color:#163041] [display:inline-flex] [padding:0.72rem_1rem] [text-decoration:none] [transition:background-color_0.2s_ease,_transform_0.2s_ease] [&:hover]:[background:rgba(22,_48,_65,_0.14)] [&:hover]:[color:#163041] [&:hover]:[transform:translateY(-1px)]"
                   href="/locations/west-des-moines"
                 >
                   West Des Moines
                 </Link>
                 <Link
-                  className="homepage-faq__link-pill"
+                  className="[background:rgba(22,_48,_65,_0.08)] [border-radius:999px] [color:#163041] [display:inline-flex] [padding:0.72rem_1rem] [text-decoration:none] [transition:background-color_0.2s_ease,_transform_0.2s_ease] [&:hover]:[background:rgba(22,_48,_65,_0.14)] [&:hover]:[color:#163041] [&:hover]:[transform:translateY(-1px)]"
                   href="/locations/waukee"
                 >
                   Waukee
@@ -717,13 +716,13 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="homepage-faq__grid">
+            <div className="[display:grid] [gap:1rem] [grid-template-columns:repeat(2,_minmax(0,_1fr))] max-[900px]:[grid-template-columns:1fr]">
               {homepageFaqs.map((item) => (
-                <article className="homepage-faq__card" key={item.question}>
-                  <h3 className="homepage-faq__question">
+                <article className="[background:rgba(255,_255,_255,_0.82)] [border:1px_solid_rgba(22,_48,_65,_0.1)] [border-radius:18px] [box-shadow:0_22px_48px_rgba(22,_48,_65,_0.08)] [backdrop-filter:blur(10px)] max-[900px]:[border-radius:22px] [padding:clamp(1.35rem,_2.4vw,_2.35rem)]!" key={item.question}>
+                  <h3 className="[color:#163041] [font-size:1.02rem] [line-height:1.25] [margin:0_0_0.9rem]">
                     <strong>{item.question}</strong>
                   </h3>
-                  <div className="homepage-faq__answer">
+                  <div className="[&_p]:[color:rgba(22,_48,_65,_0.86)] [&_p]:[font-size:0.9rem] [&_p]:[line-height:1.62] [&_p]:[margin:0_0_0.7rem] [&_p:last-child]:[margin-bottom:0] [:where(&)_:where(p)]:[font-size:clamp(0.88rem,_1vw,_0.98rem)]! [:where(&)_:where(p)]:[line-height:1.6]!">
                     {item.answers.map((answer) => (
                       <p key={answer}>{answer}</p>
                     ))}
