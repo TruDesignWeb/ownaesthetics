@@ -1,10 +1,12 @@
+import { BOOKING_HASH } from "../lib/booking";
+
 export default function ServiceHighlightBox({
   summary,
   treatmentAreas = [],
   sessions,
   price,
   supportingNote,
-  bookHref = "#book-now",
+  bookHref = BOOKING_HASH,
   bookLabel = "Book This Service",
 }) {
   const hasAreas = treatmentAreas.length > 0;

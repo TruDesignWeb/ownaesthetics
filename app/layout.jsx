@@ -9,6 +9,7 @@ import {
   DEFAULT_SEO,
   DEFAULT_OG_IMAGE,
 } from "../src/lib/siteSeo";
+import { BOOKING_HASH, BOULEVARD_BUSINESS_ID } from "../src/lib/booking";
 
 export const metadata = {
   metadataBase: new URL(SITE_URL),
@@ -43,22 +44,31 @@ export default function RootLayout({ children }) {
         <PreferWebp />
         {/* Boulevard Self-Booking overlay */}
         <Script id="boulevard-booking" strategy="afterInteractive">
-          {`(function (a) {
-            var b = {
-              businessId: 'fa0706b5-be29-4bdb-92d2-2baec823e0fe',
+          {`(function (window, document) {
+            var config = {
+              businessId: ${JSON.stringify(BOULEVARD_BUSINESS_ID)},
+              hash: ${JSON.stringify(BOOKING_HASH)},
             };
 
-            var c = a.createElement('script');
-            var d = a.querySelector('script');
+            function initBoulevard() {
+              if (!window.blvd || window.__ownBoulevardInitialized) return;
+              window.__ownBoulevardInitialized = true;
+              window.blvd.init(config);
+            }
 
-            c.src = 'https://static.joinboulevard.com/injector.min.js';
-            c.async = true;
-            c.onload = function () {
-              blvd.init(b);
-            };
+            var existingScript = document.querySelector('script[src="https://static.joinboulevard.com/injector.min.js"]');
+            if (existingScript) {
+              existingScript.addEventListener('load', initBoulevard, { once: true });
+              initBoulevard();
+              return;
+            }
 
-            d.parentNode.insertBefore(c, d);
-          })(document);`}
+            var script = document.createElement('script');
+            script.src = 'https://static.joinboulevard.com/injector.min.js';
+            script.async = true;
+            script.onload = initBoulevard;
+            document.head.appendChild(script);
+          })(window, document);`}
         </Script>
       </body>
     </html>

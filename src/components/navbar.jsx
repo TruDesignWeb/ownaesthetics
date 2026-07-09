@@ -1,29 +1,12 @@
 "use client";
 // File: src/components/Navbar.jsx
-import React, { useEffect, useState, useRef } from "react";
+import React, { useEffect, useState } from "react";
 import Link from "next/link";
+import { BOOKING_HASH } from "../lib/booking";
+
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
-
-  function click() {
-    (function (a) {
-      var b = {
-        businessId: "fa0706b5-be29-4bdb-92d2-2baec823e0fe",
-      };
-
-      var c = a.createElement("script");
-      var d = a.querySelector("script");
-
-      c.src = "https://static.joinboulevard.com/injector.min.js";
-      c.async = true;
-      c.onload = function () {
-        blvd.init(b);
-      };
-
-      d.parentNode.insertBefore(c, d);
-    })(document);
-  }
 
   useEffect(() => {
     const handleScroll = () => {
@@ -126,10 +109,10 @@ export default function Navbar() {
                   (515) 672-1860
                 </a>
               </li>
-              <li className="[position:relative]" onClick={click}>
-                <Link href="#book-now" className="cta [&.cta]:[display:inline-flex] [&.cta]:[align-items:center] [&.cta]:[gap:0.5rem] [display:inline-flex] [align-items:center] [justify-content:center] [text-decoration:none] [font-size:1.2rem] [font-weight:400] [line-height:1] [padding:0.4rem_0.75rem] [border-radius:25px] [transition:font-size_0.3s_ease] [position:relative] [overflow:hidden] [transform-origin:center_center] [background-color:white] [color:black] [background-blend-mode:lighten] [.navbar-container.scrolled_&]:[font-size:1.1rem] [.navbar-container.scrolled_&]:[transform:translateY(5px)] [&:hover]:[transition:all_0.4s] [&:hover]:[opacity:1] [&:hover]:[background:rgba(255,_255,_255,_0.1)] [&:hover]:[transform:translateY(-1px)] max-[900px]:[width:100%] max-[900px]:[text-align:center] max-[900px]:[font-size:1.1rem] max-[900px]:[padding:0.75rem]">
+              <li className="[position:relative]">
+                <a href={BOOKING_HASH} className="cta [&.cta]:[display:inline-flex] [&.cta]:[align-items:center] [&.cta]:[gap:0.5rem] [display:inline-flex] [align-items:center] [justify-content:center] [text-decoration:none] [font-size:1.2rem] [font-weight:400] [line-height:1] [padding:0.4rem_0.75rem] [border-radius:25px] [transition:font-size_0.3s_ease] [position:relative] [overflow:hidden] [transform-origin:center_center] [background-color:white] [color:black] [background-blend-mode:lighten] [.navbar-container.scrolled_&]:[font-size:1.1rem] [.navbar-container.scrolled_&]:[transform:translateY(5px)] [&:hover]:[transition:all_0.4s] [&:hover]:[opacity:1] [&:hover]:[background:rgba(255,_255,_255,_0.1)] [&:hover]:[transform:translateY(-1px)] max-[900px]:[width:100%] max-[900px]:[text-align:center] max-[900px]:[font-size:1.1rem] max-[900px]:[padding:0.75rem]">
                   Book Now
-                </Link>
+                </a>
               </li>
               {/* /Appointments */}
             </ul>
@@ -143,12 +126,10 @@ export default function Navbar() {
           Call Now
         </a>
         <a
-          href="https://www.joinblvd.com/b/ownaesthetics/widget#/visit-type"
+          href={BOOKING_HASH}
           className="book [display:inline-flex] [align-items:center] [justify-content:center] [gap:0.5rem] [border:none] [border-radius:999px] [text-decoration:none] [font-size:1.15rem] [font-weight:600] [line-height:1] [min-height:46px] [padding:0.25rem_1rem] [&.phone]:[background:rgba(255,_255,_255,_0.08)] [&.phone]:[color:#fff] [&.phone]:[border:1px_solid_rgba(255,_255,_255,_0.2)] [&.book]:[background:#fff] [&.book]:[color:#000] max-[900px]:[flex:1] max-[900px]:[width:100%]"
         >
-          <button type="button" className="book [display:inline-flex] [align-items:center] [justify-content:center] [gap:0.5rem] [border:none] [border-radius:999px] [text-decoration:none] [font-size:1.15rem] [font-weight:600] [line-height:1] [min-height:46px] [padding:0.25rem_1rem] [&.phone]:[background:rgba(255,_255,_255,_0.08)] [&.phone]:[color:#fff] [&.phone]:[border:1px_solid_rgba(255,_255,_255,_0.2)] [&.book]:[background:#fff] [&.book]:[color:#000] max-[900px]:[flex:1] max-[900px]:[width:100%]">
-            Book Now
-          </button>
+          Book Now
         </a>
       </div>
     </>
