@@ -616,7 +616,7 @@ export default function Home() {
       >
         Own Aesthetics | Med Spa in West Des Moines, Iowa
       </h1>
-      {/* <RSVPPopup /> */}
+      <RSVPPopup />
       <Banner />
 
       <div className="home-density [position:relative] [z-index:2] [margin-top:var(--home-banner-height)] [transition:transform_0.1s_ease-out] [width:100%]" id="content">
