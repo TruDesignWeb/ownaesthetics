@@ -25,7 +25,11 @@ const featureCards = [
     showMobileWarning: false,
     showTooltip: true,
     displayOverlayContent: true,
-    overlayContent: <p className="[.home-density_.features-_&]:[font-size:0.95rem]">Consultation</p>,
+    overlayContent: (
+      <p className="[.home-density_.features-_&]:[font-size:0.95rem]">
+        Consultation
+      </p>
+    ),
     backgroundColor: "rgba(0,0,0,0)",
     link: "/services/consultation",
   },
@@ -42,7 +46,11 @@ const featureCards = [
     showMobileWarning: false,
     showTooltip: true,
     displayOverlayContent: true,
-    overlayContent: <p className="[.home-density_.features-_&]:[font-size:0.95rem]">AquaFirmeXS</p>,
+    overlayContent: (
+      <p className="[.home-density_.features-_&]:[font-size:0.95rem]">
+        AquaFirmeXS
+      </p>
+    ),
     backgroundColor: "rgba(0,0,0,0)",
     link: "/services/aquafirme",
   },
@@ -60,7 +68,9 @@ const featureCards = [
     showTooltip: true,
     displayOverlayContent: true,
     overlayContent: (
-      <p className="[.home-density_.features-_&]:[font-size:0.95rem]">NOUVADerm® Laser Treatment</p>
+      <p className="[.home-density_.features-_&]:[font-size:0.95rem]">
+        NOUVADerm® Laser Treatment
+      </p>
     ),
     backgroundColor: "rgba(0,0,0,0)",
     link: "/services/nouvaderm",
@@ -80,7 +90,9 @@ const featureCards = [
     showTooltip: true,
     displayOverlayContent: true,
     overlayContent: (
-      <p className="[.home-density_.features-_&]:[font-size:0.95rem]">Anti-Wrinkle Injections</p>
+      <p className="[.home-density_.features-_&]:[font-size:0.95rem]">
+        Anti-Wrinkle Injections
+      </p>
     ),
     backgroundColor: "rgba(0,0,0,0)",
     link: "/services/antiwrinkle",
@@ -98,7 +110,11 @@ const featureCards = [
     showMobileWarning: false,
     showTooltip: true,
     displayOverlayContent: true,
-    overlayContent: <p className="[.home-density_.features-_&]:[font-size:0.95rem]">Kybella®</p>,
+    overlayContent: (
+      <p className="[.home-density_.features-_&]:[font-size:0.95rem]">
+        Kybella®
+      </p>
+    ),
     backgroundColor: "rgba(0,0,0,0)",
     link: "/services/kybella",
   },
@@ -117,7 +133,9 @@ const featureCards = [
     showTooltip: true,
     displayOverlayContent: true,
     overlayContent: (
-      <p className="[.home-density_.features-_&]:[font-size:0.95rem]">Sclerotherapy – Spider Veins</p>
+      <p className="[.home-density_.features-_&]:[font-size:0.95rem]">
+        Sclerotherapy – Spider Veins
+      </p>
     ),
     backgroundColor: "rgba(0,0,0,0)",
     link: "/services/sclerotherapy",
@@ -136,7 +154,11 @@ const featureCards = [
     showMobileWarning: false,
     showTooltip: true,
     displayOverlayContent: true,
-    overlayContent: <p className="[.home-density_.features-_&]:[font-size:0.95rem]">HA Dermal Fillers</p>,
+    overlayContent: (
+      <p className="[.home-density_.features-_&]:[font-size:0.95rem]">
+        HA Dermal Fillers
+      </p>
+    ),
     backgroundColor: "rgba(0,0,0,0)",
     link: "/services/juvederm",
   },
@@ -153,12 +175,17 @@ const featureCards = [
     showMobileWarning: false,
     showTooltip: true,
     displayOverlayContent: true,
-    overlayContent: <p className="[.home-density_.features-_&]:[font-size:0.95rem]">Sculptra</p>,
+    overlayContent: (
+      <p className="[.home-density_.features-_&]:[font-size:0.95rem]">
+        Sculptra
+      </p>
+    ),
     backgroundColor: "rgba(0,0,0,0)",
     link: "/services/sculptra",
   },
   {
-    imageSrc: "/assets/images/images/close-up-doctor-checking-smiley-woman.webp",
+    imageSrc:
+      "/assets/images/images/close-up-doctor-checking-smiley-woman.webp",
     altText: "PRF/PRF ezGel",
     captionText: "PRF/PRF ezGel",
     containerHeight: "350px",
@@ -170,7 +197,11 @@ const featureCards = [
     showMobileWarning: false,
     showTooltip: true,
     displayOverlayContent: true,
-    overlayContent: <p className="[.home-density_.features-_&]:[font-size:0.95rem]">PRF/PRF ezGel</p>,
+    overlayContent: (
+      <p className="[.home-density_.features-_&]:[font-size:0.95rem]">
+        PRF/PRF ezGel
+      </p>
+    ),
     backgroundColor: "rgba(0,0,0,0)",
     link: "/services/cellenis",
   },
@@ -188,7 +219,9 @@ const featureCards = [
     showTooltip: true,
     displayOverlayContent: true,
     overlayContent: (
-      <p className="[.home-density_.features-_&]:[font-size:0.95rem]">Hair Wellness & Restoration</p>
+      <p className="[.home-density_.features-_&]:[font-size:0.95rem]">
+        Hair Wellness & Restoration
+      </p>
     ),
     backgroundColor: "rgba(0,0,0,0)",
     link: "/services/hairtreatments",
@@ -206,7 +239,11 @@ const featureCards = [
     showMobileWarning: false,
     showTooltip: true,
     displayOverlayContent: true,
-    overlayContent: <p className="[.home-density_.features-_&]:[font-size:0.95rem]">Chemical Peels</p>,
+    overlayContent: (
+      <p className="[.home-density_.features-_&]:[font-size:0.95rem]">
+        Chemical Peels
+      </p>
+    ),
     backgroundColor: "rgba(0,0,0,0)",
     link: "/services/chemicalpeels",
   },
@@ -223,7 +260,11 @@ const featureCards = [
     showMobileWarning: false,
     showTooltip: true,
     displayOverlayContent: true,
-    overlayContent: <p className="[.home-density_.features-_&]:[font-size:0.95rem]">Customized Facials</p>,
+    overlayContent: (
+      <p className="[.home-density_.features-_&]:[font-size:0.95rem]">
+        Customized Facials
+      </p>
+    ),
     backgroundColor: "rgba(0,0,0,0)",
     link: "/services/facials",
   },
@@ -242,7 +283,9 @@ const featureCards = [
     showTooltip: true,
     displayOverlayContent: true,
     overlayContent: (
-      <p className="[.home-density_.features-_&]:[font-size:0.95rem]">EXO|E® Skin Revitalizing Complex</p>
+      <p className="[.home-density_.features-_&]:[font-size:0.95rem]">
+        EXO|E® Skin Revitalizing Complex
+      </p>
     ),
     backgroundColor: "rgba(0,0,0,0)",
     link: "/services/exosomes",
@@ -261,7 +304,9 @@ const featureCards = [
     showTooltip: true,
     displayOverlayContent: true,
     overlayContent: (
-      <p className="[.home-density_.features-_&]:[font-size:0.95rem]">SaltFacial® Skin Renewal Therapy</p>
+      <p className="[.home-density_.features-_&]:[font-size:0.95rem]">
+        SaltFacial® Skin Renewal Therapy
+      </p>
     ),
     backgroundColor: "rgba(0,0,0,0)",
     link: "/services/saltfacial",
@@ -280,13 +325,15 @@ const featureCards = [
     showTooltip: true,
     displayOverlayContent: true,
     overlayContent: (
-      <p className="[.home-density_.features-_&]:[font-size:0.95rem]">SkinPen® Microneedling</p>
+      <p className="[.home-density_.features-_&]:[font-size:0.95rem]">
+        SkinPen® Microneedling
+      </p>
     ),
     backgroundColor: "rgba(0,0,0,0)",
     link: "/services/skinpen",
   },
   {
-    imageSrc: "/assets/images/images/stsimg.webp",
+    imageSrc: "/assets/images/stslogo.jpg",
     altText: "Skin Type Solutions",
     captionText: "Skin Type Solutions",
     containerHeight: "350px",
@@ -299,7 +346,9 @@ const featureCards = [
     showTooltip: true,
     displayOverlayContent: true,
     overlayContent: (
-      <p className="[.home-density_.features-_&]:[font-size:0.95rem]">Skin Type Solutions</p>
+      <p className="[.home-density_.features-_&]:[font-size:0.95rem]">
+        Skin Type Solutions
+      </p>
     ),
     backgroundColor: "rgba(0,0,0,0)",
     link: "/services/skintypes",
