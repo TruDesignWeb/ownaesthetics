@@ -76,12 +76,20 @@ export default function About({}) {
       />
 
       {/* TEXT FIRST PIC SEC */}
-      <section className="[padding-top:clamp(2.5rem,_4.5vw,_4.4rem)]! [padding-bottom:clamp(2.5rem,_4.5vw,_4.4rem)]! max-[768px]:[padding-top:2rem]! max-[768px]:[padding-bottom:2rem]! [background:#fffdf0] [padding:clamp(3rem,_6vw,_6rem)_1.5rem] min-[1280px]:[padding-left:2rem] min-[1280px]:[padding-right:2rem]" aria-labelledby="philo-title">
+      <section
+        className="[padding-top:clamp(2.5rem,_4.5vw,_4.4rem)]! [padding-bottom:clamp(2.5rem,_4.5vw,_4.4rem)]! max-[768px]:[padding-top:2rem]! max-[768px]:[padding-bottom:2rem]! [background:#fffdf0] [padding:clamp(3rem,_6vw,_6rem)_1.5rem] min-[1280px]:[padding-left:2rem] min-[1280px]:[padding-right:2rem]"
+        aria-labelledby="philo-title"
+      >
         <div className="[max-width:1060px]! [margin:0_auto] [display:grid] [grid-template-columns:1fr] [align-items:center] [gap:clamp(2rem,_5vw,_4rem)] min-[980px]:[grid-template-columns:1.1fr_1fr]">
           {/* Left: text */}
           <div className="[max-width:680px]">
-            <span className="[display:inline-block] [letter-spacing:0.18em] [text-transform:uppercase] [font-size:0.875rem] [color:#6b6b6b] [margin-bottom:1rem]">Philosophy</span>
-            <h2 id="philo-title" className="[font-size:clamp(1.6rem,_2.8vw,_2.65rem)]! [line-height:1.12]! [font-family:montserrat] [font-weight:600] [color:#111] [margin:0_0_1.25rem_0]">
+            <span className="[display:inline-block] [letter-spacing:0.18em] [text-transform:uppercase] [font-size:0.875rem] [color:#6b6b6b] [margin-bottom:1rem]">
+              Philosophy
+            </span>
+            <h2
+              id="philo-title"
+              className="[font-size:clamp(1.6rem,_2.8vw,_2.65rem)]! [line-height:1.12]! [font-family:montserrat] [font-weight:600] [color:#111] [margin:0_0_1.25rem_0]"
+            >
               What Makes Us Special?
             </h2>
             <p className="[font-size:clamp(0.88rem,_1vw,_0.98rem)]! [line-height:1.6]! [color:#2b2b2b]">
@@ -92,7 +100,10 @@ export default function About({}) {
               <br />
             </p>
 
-            <h2 id="philo-title" className="[font-size:clamp(1.6rem,_2.8vw,_2.65rem)]! [line-height:1.12]! [font-weight:600] [color:#111] [margin:0_0_1.25rem_0] [font-family:montserrat]">
+            <h2
+              id="philo-title"
+              className="[font-size:clamp(1.6rem,_2.8vw,_2.65rem)]! [line-height:1.12]! [font-weight:600] [color:#111] [margin:0_0_1.25rem_0] [font-family:montserrat]"
+            >
               Total Health Experience
             </h2>
             <p className="[font-size:clamp(0.88rem,_1vw,_0.98rem)]! [line-height:1.6]! [color:#2b2b2b]">
@@ -120,7 +131,10 @@ export default function About({}) {
 
           {/* Right: image stack with sage frame */}
           <div className="[position:relative] [min-height:420px] min-[640px]:[min-height:520px]">
-            <div className="[position:absolute] [inset:0] [background:#9fb0a6] [border-radius:8px] [transform:translate(6%,_-6%)]" aria-hidden="true" />
+            <div
+              className="[position:absolute] [inset:0] [background:#9fb0a6] [border-radius:8px] [transform:translate(6%,_-6%)]"
+              aria-hidden="true"
+            />
             <div
               className="[position:relative] [width:100%] [height:100%] [border-radius:8px] [overflow:hidden] [box-shadow:0_10px_30px_rgba(0,0,0,.12),_0_20px_60px_rgba(0,0,0,.06)] [will-change:transform] [transition:transform_120ms_linear] [background:#eaeaea] [&_img]:[width:100%] [&_img]:[height:100%] [&_img]:[object-fit:cover] [&_img]:[display:block]"
               ref={imgRef}
@@ -138,7 +152,9 @@ export default function About({}) {
       <section className="[padding-top:clamp(2.5rem,_4.5vw,_4.4rem)]! [padding-bottom:clamp(2.5rem,_4.5vw,_4.4rem)]! max-[768px]:[padding-top:2rem]! max-[768px]:[padding-bottom:2rem]! [background:#9b5b3e] [padding:clamp(2rem,_5vw,_4rem)_1.5rem] [text-align:center]">
         <div className="[max-width:1060px]! [padding:clamp(1.35rem,_2.4vw,_2.35rem)]! [margin:0_auto] [background-color:#fafafa] [border-radius:25px]">
           <div className="[margin-bottom:1.5rem] [padding:2rem]">
-            <h3 className="[font-size:clamp(1.6rem,_2.8vw,_2.65rem)]! [line-height:1.12]! [font-weight:700] [color:#333] [margin-bottom:1rem]">Our Mission</h3>
+            <h3 className="[font-size:clamp(1.6rem,_2.8vw,_2.65rem)]! [line-height:1.12]! [font-weight:700] [color:#333] [margin-bottom:1rem]">
+              Our Mission
+            </h3>
             <p className="[font-size:clamp(0.88rem,_1vw,_0.98rem)]! [line-height:1.6]! [color:#555]">
               Own Aesthetics&apos; mission is to partner with you to enhance
               your skin health so that you feel confident to own your aesthetic
@@ -148,14 +164,23 @@ export default function About({}) {
         </div>
       </section>
 
-      <section className="[padding-top:clamp(2.5rem,_4.5vw,_4.4rem)]! [padding-bottom:clamp(2.5rem,_4.5vw,_4.4rem)]! max-[768px]:[padding-top:2rem]! max-[768px]:[padding-bottom:2rem]! [background:#f9f4ef] [padding:clamp(3rem,_6vw,_6rem)_1.5rem]" aria-labelledby="team-title">
-        <h2 id="team-title" className="[font-size:clamp(1.6rem,_2.8vw,_2.65rem)]! [line-height:1.12]! [font-weight:600] [color:#111] [margin-bottom:2rem] [font-family:montserrat] [text-align:center]">
+      <section
+        className="[padding-top:clamp(2.5rem,_4.5vw,_4.4rem)]! [padding-bottom:clamp(2.5rem,_4.5vw,_4.4rem)]! max-[768px]:[padding-top:2rem]! max-[768px]:[padding-bottom:2rem]! [background:#f9f4ef] [padding:clamp(3rem,_6vw,_6rem)_1.5rem]"
+        aria-labelledby="team-title"
+      >
+        <h2
+          id="team-title"
+          className="[font-size:clamp(1.6rem,_2.8vw,_2.65rem)]! [line-height:1.12]! [font-weight:600] [color:#111] [margin-bottom:2rem] [font-family:montserrat] [text-align:center]"
+        >
           Meet Our Team
         </h2>
       </section>
 
       {/* PIC FIRST TEXT SEC */}
-      <section className="[padding-top:clamp(2.5rem,_4.5vw,_4.4rem)]! [padding-bottom:clamp(2.5rem,_4.5vw,_4.4rem)]! max-[768px]:[padding-top:2rem]! max-[768px]:[padding-bottom:2rem]! [background:#fffdf0] [padding:clamp(3rem,_6vw,_6rem)_1.5rem] min-[1280px]:[padding-left:2rem] min-[1280px]:[padding-right:2rem]" aria-labelledby="philo-title">
+      <section
+        className="[padding-top:clamp(2.5rem,_4.5vw,_4.4rem)]! [padding-bottom:clamp(2.5rem,_4.5vw,_4.4rem)]! max-[768px]:[padding-top:2rem]! max-[768px]:[padding-bottom:2rem]! [background:#fffdf0] [padding:clamp(3rem,_6vw,_6rem)_1.5rem] min-[1280px]:[padding-left:2rem] min-[1280px]:[padding-right:2rem]"
+        aria-labelledby="philo-title"
+      >
         <div className="[max-width:1060px]! [margin:0_auto] [display:grid] [grid-template-columns:1fr] [align-items:center] [gap:clamp(2rem,_5vw,_4rem)] min-[980px]:[grid-template-columns:1.1fr_1fr]">
           {/* left: image stack with sage frame */}
           <div className="[position:relative] [min-height:420px] min-[640px]:[min-height:520px]">
@@ -179,8 +204,13 @@ export default function About({}) {
 
           {/* rihgt: text */}
           <div className="[max-width:680px]">
-            <span className="[display:inline-block] [letter-spacing:0.18em] [text-transform:uppercase] [font-size:0.875rem] [color:#6b6b6b] [margin-bottom:1rem]">Founder</span>
-            <h2 id="philo-title" className="[font-size:clamp(1.6rem,_2.8vw,_2.65rem)]! [line-height:1.12]! [font-family:montserrat] [font-weight:600] [color:#111] [margin:0_0_1.25rem_0]">
+            <span className="[display:inline-block] [letter-spacing:0.18em] [text-transform:uppercase] [font-size:0.875rem] [color:#6b6b6b] [margin-bottom:1rem]">
+              Founder
+            </span>
+            <h2
+              id="philo-title"
+              className="[font-size:clamp(1.6rem,_2.8vw,_2.65rem)]! [line-height:1.12]! [font-family:montserrat] [font-weight:600] [color:#111] [margin:0_0_1.25rem_0]"
+            >
               Dr. Bryan Folkers
             </h2>
             <p className="[font-size:clamp(0.88rem,_1vw,_0.98rem)]! [line-height:1.6]! [color:#2b2b2b]">
@@ -196,12 +226,20 @@ export default function About({}) {
       </section>
 
       {/* TEXT FIRST PIC SEC */}
-      <section className="[padding-top:clamp(2.5rem,_4.5vw,_4.4rem)]! [padding-bottom:clamp(2.5rem,_4.5vw,_4.4rem)]! max-[768px]:[padding-top:2rem]! max-[768px]:[padding-bottom:2rem]! [background:#fffdf0] [padding:clamp(3rem,_6vw,_6rem)_1.5rem] min-[1280px]:[padding-left:2rem] min-[1280px]:[padding-right:2rem]" aria-labelledby="philo-title">
+      <section
+        className="[padding-top:clamp(2.5rem,_4.5vw,_4.4rem)]! [padding-bottom:clamp(2.5rem,_4.5vw,_4.4rem)]! max-[768px]:[padding-top:2rem]! max-[768px]:[padding-bottom:2rem]! [background:#fffdf0] [padding:clamp(3rem,_6vw,_6rem)_1.5rem] min-[1280px]:[padding-left:2rem] min-[1280px]:[padding-right:2rem]"
+        aria-labelledby="philo-title"
+      >
         <div className="[max-width:1060px]! [margin:0_auto] [display:grid] [grid-template-columns:1fr] [align-items:center] [gap:clamp(2rem,_5vw,_4rem)] min-[980px]:[grid-template-columns:1.1fr_1fr]">
           {/* Left: text */}
           <div className="[max-width:680px]">
-            <span className="[display:inline-block] [letter-spacing:0.18em] [text-transform:uppercase] [font-size:0.875rem] [color:#6b6b6b] [margin-bottom:1rem]">Business Manager</span>
-            <h2 id="philo-title" className="[font-size:clamp(1.6rem,_2.8vw,_2.65rem)]! [line-height:1.12]! [font-family:montserrat] [font-weight:600] [color:#111] [margin:0_0_1.25rem_0]">
+            <span className="[display:inline-block] [letter-spacing:0.18em] [text-transform:uppercase] [font-size:0.875rem] [color:#6b6b6b] [margin-bottom:1rem]">
+              Business Manager
+            </span>
+            <h2
+              id="philo-title"
+              className="[font-size:clamp(1.6rem,_2.8vw,_2.65rem)]! [line-height:1.12]! [font-family:montserrat] [font-weight:600] [color:#111] [margin:0_0_1.25rem_0]"
+            >
               Janet Calhoun
             </h2>
             <p className="[font-size:clamp(0.88rem,_1vw,_0.98rem)]! [line-height:1.6]! [color:#2b2b2b]">
@@ -219,7 +257,10 @@ export default function About({}) {
 
           {/* Right: image stack with sage frame */}
           <div className="[position:relative] [min-height:420px] min-[640px]:[min-height:520px]">
-            <div className="[position:absolute] [inset:0] [background:#9fb0a6] [border-radius:8px] [transform:translate(6%,_-6%)]" aria-hidden="true" />
+            <div
+              className="[position:absolute] [inset:0] [background:#9fb0a6] [border-radius:8px] [transform:translate(6%,_-6%)]"
+              aria-hidden="true"
+            />
             <div
               className="[position:relative] [width:100%] [height:100%] [border-radius:8px] [overflow:hidden] [box-shadow:0_10px_30px_rgba(0,0,0,.12),_0_20px_60px_rgba(0,0,0,.06)] [will-change:transform] [transition:transform_120ms_linear] [background:#eaeaea] [&_img]:[width:100%] [&_img]:[height:100%] [&_img]:[object-fit:cover] [&_img]:[display:block]"
               ref={imgRef}
@@ -235,7 +276,10 @@ export default function About({}) {
       </section>
 
       {/* PIC FIRST TEXT SEC */}
-      <section className="[padding-top:clamp(2.5rem,_4.5vw,_4.4rem)]! [padding-bottom:clamp(2.5rem,_4.5vw,_4.4rem)]! max-[768px]:[padding-top:2rem]! max-[768px]:[padding-bottom:2rem]! [background:#fffdf0] [padding:clamp(3rem,_6vw,_6rem)_1.5rem] min-[1280px]:[padding-left:2rem] min-[1280px]:[padding-right:2rem]" aria-labelledby="philo-title">
+      <section
+        className="[padding-top:clamp(2.5rem,_4.5vw,_4.4rem)]! [padding-bottom:clamp(2.5rem,_4.5vw,_4.4rem)]! max-[768px]:[padding-top:2rem]! max-[768px]:[padding-bottom:2rem]! [background:#fffdf0] [padding:clamp(3rem,_6vw,_6rem)_1.5rem] min-[1280px]:[padding-left:2rem] min-[1280px]:[padding-right:2rem]"
+        aria-labelledby="philo-title"
+      >
         <div className="[max-width:1060px]! [margin:0_auto] [display:grid] [grid-template-columns:1fr] [align-items:center] [gap:clamp(2rem,_5vw,_4rem)] min-[980px]:[grid-template-columns:1.1fr_1fr]">
           {/* left: image stack with sage frame */}
           <div className="[position:relative] [min-height:420px] min-[640px]:[min-height:520px]">
@@ -258,8 +302,13 @@ export default function About({}) {
 
           {/* rihgt: text */}
           <div className="[max-width:680px]">
-            <span className="[display:inline-block] [letter-spacing:0.18em] [text-transform:uppercase] [font-size:0.875rem] [color:#6b6b6b] [margin-bottom:1rem]">RN, LE</span>
-            <h2 id="philo-title" className="[font-size:clamp(1.6rem,_2.8vw,_2.65rem)]! [line-height:1.12]! [font-family:montserrat] [font-weight:600] [color:#111] [margin:0_0_1.25rem_0]">
+            <span className="[display:inline-block] [letter-spacing:0.18em] [text-transform:uppercase] [font-size:0.875rem] [color:#6b6b6b] [margin-bottom:1rem]">
+              RN, LE
+            </span>
+            <h2
+              id="philo-title"
+              className="[font-size:clamp(1.6rem,_2.8vw,_2.65rem)]! [line-height:1.12]! [font-family:montserrat] [font-weight:600] [color:#111] [margin:0_0_1.25rem_0]"
+            >
               Beth Pohl
             </h2>
             <p className="[font-size:clamp(0.88rem,_1vw,_0.98rem)]! [line-height:1.6]! [color:#2b2b2b]">
@@ -277,12 +326,20 @@ export default function About({}) {
       </section>
 
       {/* TEXT FIRST PIC SEC */}
-      <section className="[padding-top:clamp(2.5rem,_4.5vw,_4.4rem)]! [padding-bottom:clamp(2.5rem,_4.5vw,_4.4rem)]! max-[768px]:[padding-top:2rem]! max-[768px]:[padding-bottom:2rem]! [background:#fffdf0] [padding:clamp(3rem,_6vw,_6rem)_1.5rem] min-[1280px]:[padding-left:2rem] min-[1280px]:[padding-right:2rem]" aria-labelledby="philo-title">
+      <section
+        className="[padding-top:clamp(2.5rem,_4.5vw,_4.4rem)]! [padding-bottom:clamp(2.5rem,_4.5vw,_4.4rem)]! max-[768px]:[padding-top:2rem]! max-[768px]:[padding-bottom:2rem]! [background:#fffdf0] [padding:clamp(3rem,_6vw,_6rem)_1.5rem] min-[1280px]:[padding-left:2rem] min-[1280px]:[padding-right:2rem]"
+        aria-labelledby="philo-title"
+      >
         <div className="[max-width:1060px]! [margin:0_auto] [display:grid] [grid-template-columns:1fr] [align-items:center] [gap:clamp(2rem,_5vw,_4rem)] min-[980px]:[grid-template-columns:1.1fr_1fr]">
           {/* Left: text */}
           <div className="[max-width:680px]">
-            <span className="[display:inline-block] [letter-spacing:0.18em] [text-transform:uppercase] [font-size:0.875rem] [color:#6b6b6b] [margin-bottom:1rem]">RN</span>
-            <h2 id="philo-title" className="[font-size:clamp(1.6rem,_2.8vw,_2.65rem)]! [line-height:1.12]! [font-family:montserrat] [font-weight:600] [color:#111] [margin:0_0_1.25rem_0]">
+            <span className="[display:inline-block] [letter-spacing:0.18em] [text-transform:uppercase] [font-size:0.875rem] [color:#6b6b6b] [margin-bottom:1rem]">
+              RN
+            </span>
+            <h2
+              id="philo-title"
+              className="[font-size:clamp(1.6rem,_2.8vw,_2.65rem)]! [line-height:1.12]! [font-family:montserrat] [font-weight:600] [color:#111] [margin:0_0_1.25rem_0]"
+            >
               Lexi Majors
             </h2>
             <p className="[font-size:clamp(0.88rem,_1vw,_0.98rem)]! [line-height:1.6]! [color:#2b2b2b]">
@@ -297,7 +354,10 @@ export default function About({}) {
 
           {/* Right: image stack with sage frame */}
           <div className="[position:relative] [min-height:420px] min-[640px]:[min-height:520px]">
-            <div className="[position:absolute] [inset:0] [background:#9fb0a6] [border-radius:8px] [transform:translate(6%,_-6%)]" aria-hidden="true" />
+            <div
+              className="[position:absolute] [inset:0] [background:#9fb0a6] [border-radius:8px] [transform:translate(6%,_-6%)]"
+              aria-hidden="true"
+            />
             <div
               className="[position:relative] [width:100%] [height:100%] [border-radius:8px] [overflow:hidden] [box-shadow:0_10px_30px_rgba(0,0,0,.12),_0_20px_60px_rgba(0,0,0,.06)] [will-change:transform] [transition:transform_120ms_linear] [background:#eaeaea] [&_img]:[width:100%] [&_img]:[height:100%] [&_img]:[object-fit:cover] [&_img]:[display:block]"
               ref={imgRef}
@@ -313,9 +373,9 @@ export default function About({}) {
       </section>
 
       {/* PIC FIRST TEXT SEC */}
-      <section className="[padding-top:clamp(2.5rem,_4.5vw,_4.4rem)]! [padding-bottom:clamp(2.5rem,_4.5vw,_4.4rem)]! max-[768px]:[padding-top:2rem]! max-[768px]:[padding-bottom:2rem]! [background:#fffdf0] [padding:clamp(3rem,_6vw,_6rem)_1.5rem] min-[1280px]:[padding-left:2rem] min-[1280px]:[padding-right:2rem]" aria-labelledby="philo-title">
+      {/* <section className="[padding-top:clamp(2.5rem,_4.5vw,_4.4rem)]! [padding-bottom:clamp(2.5rem,_4.5vw,_4.4rem)]! max-[768px]:[padding-top:2rem]! max-[768px]:[padding-bottom:2rem]! [background:#fffdf0] [padding:clamp(3rem,_6vw,_6rem)_1.5rem] min-[1280px]:[padding-left:2rem] min-[1280px]:[padding-right:2rem]" aria-labelledby="philo-title">
         <div className="[max-width:1060px]! [margin:0_auto] [display:grid] [grid-template-columns:1fr] [align-items:center] [gap:clamp(2rem,_5vw,_4rem)] min-[980px]:[grid-template-columns:1.1fr_1fr]">
-          {/* left: image stack with sage frame */}
+          {/* left: image stack with sage frame 
           <div className="[position:relative] [min-height:420px] min-[640px]:[min-height:520px]">
             <div
               className="[position:absolute] [inset:0] [background:#9fb0a6] [border-radius:8px] [transform:translate(6%,_-6%)]"
@@ -334,7 +394,7 @@ export default function About({}) {
             </div>
           </div>
 
-          {/* rihgt: text */}
+          {/* rihgt: text *
           <div className="[max-width:680px]">
             <span className="[display:inline-block] [letter-spacing:0.18em] [text-transform:uppercase] [font-size:0.875rem] [color:#6b6b6b] [margin-bottom:1rem]">LE</span>
             <h2 id="philo-title" className="[font-size:clamp(1.6rem,_2.8vw,_2.65rem)]! [line-height:1.12]! [font-family:montserrat] [font-weight:600] [color:#111] [margin:0_0_1.25rem_0]">
@@ -352,15 +412,23 @@ export default function About({}) {
             </p>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* TEXT FIRST PIC SEC */}
-      <section className="[padding-top:clamp(2.5rem,_4.5vw,_4.4rem)]! [padding-bottom:clamp(2.5rem,_4.5vw,_4.4rem)]! max-[768px]:[padding-top:2rem]! max-[768px]:[padding-bottom:2rem]! [background:#fffdf0] [padding:clamp(3rem,_6vw,_6rem)_1.5rem] min-[1280px]:[padding-left:2rem] min-[1280px]:[padding-right:2rem]" aria-labelledby="philo-title">
+      <section
+        className="[padding-top:clamp(2.5rem,_4.5vw,_4.4rem)]! [padding-bottom:clamp(2.5rem,_4.5vw,_4.4rem)]! max-[768px]:[padding-top:2rem]! max-[768px]:[padding-bottom:2rem]! [background:#fffdf0] [padding:clamp(3rem,_6vw,_6rem)_1.5rem] min-[1280px]:[padding-left:2rem] min-[1280px]:[padding-right:2rem]"
+        aria-labelledby="philo-title"
+      >
         <div className="[max-width:1060px]! [margin:0_auto] [display:grid] [grid-template-columns:1fr] [align-items:center] [gap:clamp(2rem,_5vw,_4rem)] min-[980px]:[grid-template-columns:1.1fr_1fr]">
           {/* Left: text */}
           <div className="[max-width:680px]">
-            <span className="[display:inline-block] [letter-spacing:0.18em] [text-transform:uppercase] [font-size:0.875rem] [color:#6b6b6b] [margin-bottom:1rem]">LE</span>
-            <h2 id="philo-title" className="[font-size:clamp(1.6rem,_2.8vw,_2.65rem)]! [line-height:1.12]! [font-family:montserrat] [font-weight:600] [color:#111] [margin:0_0_1.25rem_0]">
+            <span className="[display:inline-block] [letter-spacing:0.18em] [text-transform:uppercase] [font-size:0.875rem] [color:#6b6b6b] [margin-bottom:1rem]">
+              LE
+            </span>
+            <h2
+              id="philo-title"
+              className="[font-size:clamp(1.6rem,_2.8vw,_2.65rem)]! [line-height:1.12]! [font-family:montserrat] [font-weight:600] [color:#111] [margin:0_0_1.25rem_0]"
+            >
               Jennifer Jensen
             </h2>
             <p className="[font-size:clamp(0.88rem,_1vw,_0.98rem)]! [line-height:1.6]! [color:#2b2b2b]">
@@ -373,7 +441,10 @@ export default function About({}) {
 
           {/* Right: image stack with sage frame */}
           <div className="[position:relative] [min-height:420px] min-[640px]:[min-height:520px]">
-            <div className="[position:absolute] [inset:0] [background:#9fb0a6] [border-radius:8px] [transform:translate(6%,_-6%)]" aria-hidden="true" />
+            <div
+              className="[position:absolute] [inset:0] [background:#9fb0a6] [border-radius:8px] [transform:translate(6%,_-6%)]"
+              aria-hidden="true"
+            />
             <div
               className="[position:relative] [width:100%] [height:100%] [border-radius:8px] [overflow:hidden] [box-shadow:0_10px_30px_rgba(0,0,0,.12),_0_20px_60px_rgba(0,0,0,.06)] [will-change:transform] [transition:transform_120ms_linear] [background:#eaeaea] [&_img]:[width:100%] [&_img]:[height:100%] [&_img]:[object-fit:cover] [&_img]:[display:block]"
               ref={imgRef}
