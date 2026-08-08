@@ -294,7 +294,7 @@ export default function About({}) {
               style={{ transform: `translateY(${y}px)` }}
             >
               <img
-                src="/assets/images/images/DSC_1914.webp"
+                src="/assets/images/beth.png"
                 alt="Spa reception with serene, warm tones"
               />
             </div>
