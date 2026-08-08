@@ -10,9 +10,10 @@ export default function ShowcaseSection({eyebrow,
   buttonLink,
   imageSrc,
   imageAlt,
-  reverse = false, 
-  backgroundImage, 
-  backgroundColor }) {
+  reverse = false,
+  backgroundImage,
+  backgroundColor,
+  imageMaxWidth }) {
 
     const sectionStyle = {
     backgroundColor: backgroundColor || undefined,
@@ -42,7 +43,10 @@ export default function ShowcaseSection({eyebrow,
         </div>
 
         {/* Image */}
-        <div className="[position:relative] [z-index:1] [pointer-events:none] [margin-left:-88px] [overflow:hidden] [border-radius:25px] [.feature-wrapper.reverse_&]:[margin-left:0] [.feature-wrapper.reverse_&]:[margin-right:-88px] [&_img]:[width:100%] [&_img]:[height:auto] [&_img]:[display:block] [&_img]:[transition:transform_0.4s_ease] [&_img]:[pointer-events:none] [.feature-wrapper:hover_&_img]:[transform:scale(1.05)] max-[768px]:[margin-left:0] max-[768px]:[margin-right:0] max-[768px]:[.feature-wrapper.reverse_&]:[margin-left:0] max-[768px]:[.feature-wrapper.reverse_&]:[margin-right:0]">
+        <div
+          className="[position:relative] [z-index:1] [pointer-events:none] [margin-left:-88px] [overflow:hidden] [border-radius:25px] [.feature-wrapper.reverse_&]:[margin-left:0] [.feature-wrapper.reverse_&]:[margin-right:-88px] [&_img]:[width:100%] [&_img]:[height:auto] [&_img]:[display:block] [&_img]:[transition:transform_0.4s_ease] [&_img]:[pointer-events:none] [.feature-wrapper:hover_&_img]:[transform:scale(1.05)] max-[768px]:[margin-left:0] max-[768px]:[margin-right:0] max-[768px]:[.feature-wrapper.reverse_&]:[margin-left:0] max-[768px]:[.feature-wrapper.reverse_&]:[margin-right:0]"
+          style={imageMaxWidth ? { maxWidth: imageMaxWidth, marginLeft: "auto", marginRight: "auto" } : undefined}
+        >
           <img
             src={imageSrc}
             alt={imageAlt || title}

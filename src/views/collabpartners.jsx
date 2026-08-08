@@ -27,6 +27,7 @@ import CustomCursor from "../components/customcursor";export default function S
         imageSrc="/assets/images/images/wetransfer_photos_2025-04-09_1731/PHOTOS/HP 1 AlumierMD Pigmentation.webp"
         reverse={true}
         backgroundColor="#ffffff"
+        imageMaxWidth="380px"
       />
 
       {/* SECTION 2 */}
@@ -39,6 +40,7 @@ import CustomCursor from "../components/customcursor";export default function S
         imageSrc="/assets/images/images/stsimg.webp"
         reverse={false}
         backgroundColor="#f8f9fa"
+        imageMaxWidth="380px"
       />
 
       <Footer />

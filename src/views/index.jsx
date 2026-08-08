@@ -28,10 +28,10 @@ const featureCards = [
     imageSrc: "/assets/images/images/istock-salt1.webp",
     altText: "The SaltFacial®",
     captionText: "The SaltFacial®",
-    containerHeight: "350px",
-    containerWidth: "300px",
-    imageHeight: "400px",
-    imageWidth: "350px",
+    containerHeight: "260px",
+    containerWidth: "220px",
+    imageHeight: "300px",
+    imageWidth: "260px",
     rotateAmplitude: 12,
     scaleOnHover: 1.1,
     showMobileWarning: false,
@@ -45,10 +45,10 @@ const featureCards = [
     imageSrc: "/assets/images/images/aquafirme4.webp",
     altText: "AquaFirmeXS",
     captionText: "AquaFirmeXS",
-    containerHeight: "350px",
-    containerWidth: "300px",
-    imageHeight: "400px",
-    imageWidth: "350px",
+    containerHeight: "260px",
+    containerWidth: "220px",
+    imageHeight: "300px",
+    imageWidth: "260px",
     rotateAmplitude: 12,
     scaleOnHover: 1.1,
     showMobileWarning: false,
@@ -62,10 +62,10 @@ const featureCards = [
     imageSrc: "/assets/images/images/nouva4.webp",
     altText: "NOUVADerm™ Laser Treatment",
     captionText: "NOUVADerm™ Laser Treatment",
-    containerHeight: "350px",
-    containerWidth: "300px",
-    imageHeight: "400px",
-    imageWidth: "350px",
+    containerHeight: "260px",
+    containerWidth: "220px",
+    imageHeight: "300px",
+    imageWidth: "260px",
     rotateAmplitude: 12,
     scaleOnHover: 1.1,
     showMobileWarning: false,
@@ -636,6 +636,7 @@ export default function Home() {
           imageSrc="/assets/images/christmas-staff.webp"
           imageAlt="MRI imaging suite"
           backgroundColor={"#133550"}
+          imageMaxWidth="380px"
         />
 
         <ShowcaseSection
@@ -648,6 +649,7 @@ export default function Home() {
           imageSrc="/assets/images/images/istock-salt1.webp"
           imageAlt="MRI imaging suite"
           backgroundColor={"#9B5B3E"}
+          imageMaxWidth="380px"
         />
 
         <TestimonialShowcase

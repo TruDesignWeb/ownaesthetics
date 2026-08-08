@@ -130,7 +130,7 @@ export default function About({}) {
           </div>
 
           {/* Right: image stack with sage frame */}
-          <div className="[position:relative] [min-height:420px] min-[640px]:[min-height:520px]">
+          <div className="[position:relative] [max-width:380px] [min-height:280px] min-[640px]:[min-height:340px]">
             <div
               className="[position:absolute] [inset:0] [background:#9fb0a6] [border-radius:8px] [transform:translate(6%,_-6%)]"
               aria-hidden="true"
@@ -183,7 +183,7 @@ export default function About({}) {
       >
         <div className="[max-width:1060px]! [margin:0_auto] [display:grid] [grid-template-columns:1fr] [align-items:center] [gap:clamp(2rem,_5vw,_4rem)] min-[980px]:[grid-template-columns:1.1fr_1fr]">
           {/* left: image stack with sage frame */}
-          <div className="[position:relative] [min-height:420px] min-[640px]:[min-height:520px]">
+          <div className="[position:relative] [max-width:380px] [min-height:280px] min-[640px]:[min-height:340px]">
             <div
               className="[position:absolute] [inset:0] [background:#9fb0a6] [border-radius:8px] [transform:translate(6%,_-6%)]"
               aria-hidden="true"
@@ -256,7 +256,7 @@ export default function About({}) {
           </div>
 
           {/* Right: image stack with sage frame */}
-          <div className="[position:relative] [min-height:420px] min-[640px]:[min-height:520px]">
+          <div className="[position:relative] [max-width:380px] [min-height:280px] min-[640px]:[min-height:340px]">
             <div
               className="[position:absolute] [inset:0] [background:#9fb0a6] [border-radius:8px] [transform:translate(6%,_-6%)]"
               aria-hidden="true"
@@ -282,7 +282,7 @@ export default function About({}) {
       >
         <div className="[max-width:1060px]! [margin:0_auto] [display:grid] [grid-template-columns:1fr] [align-items:center] [gap:clamp(2rem,_5vw,_4rem)] min-[980px]:[grid-template-columns:1.1fr_1fr]">
           {/* left: image stack with sage frame */}
-          <div className="[position:relative] [min-height:420px] min-[640px]:[min-height:520px]">
+          <div className="[position:relative] [max-width:380px] [min-height:280px] min-[640px]:[min-height:340px]">
             <div
               className="[position:absolute] [inset:0] [background:#9fb0a6] [border-radius:8px] [transform:translate(6%,_-6%)]"
               aria-hidden="true"
@@ -353,7 +353,7 @@ export default function About({}) {
           </div>
 
           {/* Right: image stack with sage frame */}
-          <div className="[position:relative] [min-height:420px] min-[640px]:[min-height:520px]">
+          <div className="[position:relative] [max-width:380px] [min-height:280px] min-[640px]:[min-height:340px]">
             <div
               className="[position:absolute] [inset:0] [background:#9fb0a6] [border-radius:8px] [transform:translate(6%,_-6%)]"
               aria-hidden="true"
@@ -440,7 +440,7 @@ export default function About({}) {
           </div>
 
           {/* Right: image stack with sage frame */}
-          <div className="[position:relative] [min-height:420px] min-[640px]:[min-height:520px]">
+          <div className="[position:relative] [max-width:380px] [min-height:280px] min-[640px]:[min-height:340px]">
             <div
               className="[position:absolute] [inset:0] [background:#9fb0a6] [border-radius:8px] [transform:translate(6%,_-6%)]"
               aria-hidden="true"
