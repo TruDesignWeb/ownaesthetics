@@ -33,7 +33,8 @@ export default function MagnetButton({ children = "Hover Me", className = "" }) 
   return (
     <motion.button
       ref={ref}
-      className={className}
+      type="button"
+      className={`[display:inline-flex] [align-items:center] [justify-content:center] [border:1px_solid_rgba(255,_255,_255,_0.75)] [border-radius:999px] [padding:0.95rem_1.7rem] [background:rgba(255,_255,_255,_0.12)] [backdrop-filter:blur(10px)] [color:white] [font:inherit] [font-size:1rem] [font-weight:600] [letter-spacing:0.08em] [text-transform:uppercase] [cursor:pointer] [box-shadow:0_10px_30px_rgba(0,_0,_0,_0.18)] [transition:background_0.3s_ease,_box-shadow_0.3s_ease,_border-color_0.3s_ease] [&:hover]:[background:rgba(255,_255,_255,_0.24)] [&:hover]:[border-color:white] [&:hover]:[box-shadow:0_14px_34px_rgba(0,_0,_0,_0.28)] ${className}`}
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
       style={{ x, y, rotateX, rotateY }}

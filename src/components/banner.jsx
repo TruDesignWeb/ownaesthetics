@@ -1,6 +1,7 @@
 
 // File: src/components/Banner.jsx
-import React from 'react';import MagnetButton from './magneticbutton';
+import React from 'react';
+import MagnetButton from './magneticbutton';
 
 export default function Banner() {
 
@@ -31,7 +32,7 @@ export default function Banner() {
         <img className="[width:42%] max-[900px]:[width:min(48%,_300px)] max-[600px]:[width:min(48%,_190px)]" src = "/assets/images/OWN Branding/OWN Final Logos/Print CMYK/Primary Logo/PNG/OWN_Primary Logo_CMYK_White_JustText.png" />
         <p className="[padding-top:clamp(12px,_2vh,_20px)]">where artistry enhances authenticity™</p>
         {/* className="" */}
-        <a href="#content"><div className="[display:inline-block] [background:rgba(255,_255,_255,_0.001)] [color:white] [text-decoration:none] [font-size:1.2rem] [font-weight:600] [transition:all_0.3s_ease] [animation:fadeInUp_1s_ease-out_0.6s_both] max-[600px]:[&_button]:[border-radius:14px] max-[600px]:[&_button]:[font-size:1.15rem] max-[600px]:[&_button]:[line-height:1] max-[600px]:[&_button]:[min-width:176px] max-[600px]:[&_button]:[padding:0.9rem_1.4rem]" style={{ perspective: 1000 }}>
+        <a href="#content"><div className="[display:inline-block] [background:rgba(255,_255,_255,_0.001)] [color:white] [text-decoration:none] [font-size:1.2rem] [font-weight:600] [transition:all_0.3s_ease] [animation:fadeInUp_1s_ease-out_0.6s_both] max-[600px]:[&_button]:[font-size:1.15rem] max-[600px]:[&_button]:[line-height:1] max-[600px]:[&_button]:[min-width:176px] max-[600px]:[&_button]:[padding:0.9rem_1.4rem]" style={{ perspective: 1000 }}>
             <MagnetButton href="#content">Explore Now</MagnetButton>
             </div></a>
       </div>
