@@ -73,38 +73,31 @@ export default function RSVPPopup() {
 
         <div className="[position:relative] [min-height:100%] [background:#e7e3df] max-[900px]:[min-height:230px] max-[768px]:[min-height:190px] max-[480px]:[min-height:160px]">
           <img
-            src="/assets/images/omnilux-contour-hero.webp"
+            src="/assets/images/ownlaser.png"
             alt="Client holding an illuminated Omnilux Contour LED light therapy mask"
             className="[position:absolute] [inset:0] [width:100%] [height:100%] [object-fit:cover] [object-position:center_28%]"
           />
         </div>
 
         <div className="[padding:2.5rem] [display:flex] [flex-direction:column] [justify-content:center] [gap:0.35rem] [background:linear-gradient(180deg,_#133550_0%,_#35586d_100%)] [color:white] [overflow-y:auto] max-[768px]:[padding:1.5rem_1.25rem] max-[480px]:[padding:1.25rem_1rem]">
-          <img
-            src="/assets/images/omnilux-logo-white.webp"
-            alt="Omnilux"
-            className="[width:150px] [height:auto] [margin-bottom:1.1rem] max-[768px]:[width:128px] max-[768px]:[margin-bottom:0.8rem]"
-          />
           <p className="[font-size:0.75rem] [letter-spacing:0.22em] [text-transform:uppercase] [color:rgba(241,_241,_194,_0.82)] [margin-bottom:0.6rem] max-[768px]:[font-size:0.68rem] max-[768px]:[margin-bottom:0.45rem]">
-            New at Own Aesthetics
+            NEW AT OWN
           </p>
           <h2
             id="omnilux-popup-title"
             className="[font-size:clamp(1.8rem,_3vw,_2.6rem)] [line-height:1.1] [font-weight:500] [margin-bottom:0.9rem] max-[768px]:[font-size:1.55rem] max-[768px]:[margin-bottom:0.6rem] max-[480px]:[font-size:1.4rem]"
           >
-            We now offer Omnilux&trade; LED Light Therapy
+            Meet the Enhancement Program
           </h2>
           <p className="[font-size:1.02rem] [line-height:1.65] [color:rgba(255,_255,_255,_0.86)] [margin-bottom:1.6rem] max-[768px]:[font-size:0.94rem] max-[768px]:[line-height:1.5] max-[768px]:[margin-bottom:1.1rem]">
-            Clinically proven, medical-grade LED to calm breakouts, boost
-            collagen, and reveal a healthier, radiant glow &mdash; now available
-            in-office and to take home.
+            Year-round regenerative skin care in one simple membership. Quarterly treatments, your Red Light Mask, annual skin imaging, and 20% off. Over $3,295 of care for $225 a month. Come in for a complimentary consult and we'll map out your plan.
           </p>
           <a
             href={BOOKING_HASH}
             onClick={handleClose}
             className="[display:inline-flex] [align-items:center] [justify-content:center] [text-decoration:none] [border:none] [border-radius:999px] [padding:0.95rem_1.5rem] [background:linear-gradient(135deg,_#f7f1e8_0%,_#ebe1d2_100%)] [color:#133550] [font-size:1rem] [font-weight:600] [cursor:pointer] [transition:transform_0.25s_ease,_box-shadow_0.25s_ease] [&:hover]:[transform:translateY(-1px)] [&:hover]:[box-shadow:0_12px_24px_rgba(0,_0,_0,_0.22)] max-[768px]:[width:100%] max-[768px]:[padding:0.9rem_1.2rem] max-[768px]:[font-size:0.98rem]"
           >
-            Book Your Session
+            Book a Consultation 
           </a>
           <button
             type="button"
