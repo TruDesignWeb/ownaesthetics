@@ -225,56 +225,6 @@ export default function About({}) {
         </div>
       </section>
 
-      {/* TEXT FIRST PIC SEC */}
-      <section
-        className="[padding-top:clamp(2.5rem,_4.5vw,_4.4rem)]! [padding-bottom:clamp(2.5rem,_4.5vw,_4.4rem)]! max-[768px]:[padding-top:2rem]! max-[768px]:[padding-bottom:2rem]! [background:#fffdf0] [padding:clamp(3rem,_6vw,_6rem)_1.5rem] min-[1280px]:[padding-left:2rem] min-[1280px]:[padding-right:2rem]"
-        aria-labelledby="philo-title"
-      >
-        <div className="[max-width:1060px]! [margin:0_auto] [display:grid] [grid-template-columns:1fr] [align-items:center] [gap:clamp(2rem,_5vw,_4rem)] min-[980px]:[grid-template-columns:1.1fr_1fr]">
-          {/* Left: text */}
-          <div className="[max-width:680px]">
-            <span className="[display:inline-block] [letter-spacing:0.18em] [text-transform:uppercase] [font-size:0.875rem] [color:#6b6b6b] [margin-bottom:1rem]">
-              Business Manager
-            </span>
-            <h2
-              id="philo-title"
-              className="[font-size:clamp(1.6rem,_2.8vw,_2.65rem)]! [line-height:1.12]! [font-family:montserrat] [font-weight:600] [color:#111] [margin:0_0_1.25rem_0]"
-            >
-              Janet Calhoun
-            </h2>
-            <p className="[font-size:clamp(0.88rem,_1vw,_0.98rem)]! [line-height:1.6]! [color:#2b2b2b]">
-              Janet&apos;s passion for cosmetic and medical skin health began in
-              1988 while working alongside her brother in his facial plastic
-              surgery practice. She is a licensed esthetician through the Aveda
-              Institute and has completed advanced certifications in laser
-              treatments, microneedling, and chemical peels at NIMA. With a BA
-              in Business Management from William Penn University, Janet has
-              successfully owned both a skin studio and a medical spa. She is
-              delighted to share her experience and passion as part of this
-              expert team.
-            </p>
-          </div>
-
-          {/* Right: image stack with sage frame */}
-          <div className="[position:relative] [max-width:380px] [min-height:280px] min-[640px]:[min-height:340px]">
-            <div
-              className="[position:absolute] [inset:0] [background:#9fb0a6] [border-radius:8px] [transform:translate(6%,_-6%)]"
-              aria-hidden="true"
-            />
-            <div
-              className="[position:relative] [width:100%] [height:100%] [border-radius:8px] [overflow:hidden] [box-shadow:0_10px_30px_rgba(0,0,0,.12),_0_20px_60px_rgba(0,0,0,.06)] [will-change:transform] [transition:transform_120ms_linear] [background:#eaeaea] [&_img]:[width:100%] [&_img]:[height:100%] [&_img]:[object-fit:cover] [&_img]:[display:block]"
-              ref={imgRef}
-              style={{ transform: `translateY(${y}px)` }}
-            >
-              <img
-                src="/assets/images/images/DSC_2023.webp"
-                alt="Spa reception with serene, warm tones"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* PIC FIRST TEXT SEC */}
       <section
         className="[padding-top:clamp(2.5rem,_4.5vw,_4.4rem)]! [padding-bottom:clamp(2.5rem,_4.5vw,_4.4rem)]! max-[768px]:[padding-top:2rem]! max-[768px]:[padding-bottom:2rem]! [background:#fffdf0] [padding:clamp(3rem,_6vw,_6rem)_1.5rem] min-[1280px]:[padding-left:2rem] min-[1280px]:[padding-right:2rem]"
