@@ -2,16 +2,16 @@
 import { useEffect, useState } from "react";
 import { BOOKING_HASH } from "../lib/booking";
 const STORAGE_KEY = "own-aesthetics-omnilux-popup-dismissed";
-const RSVP_POPUP_DELAY = 2500;
+const RSVP_POPUP_DELAY = 1000;
 
 export default function RSVPPopup() {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
-    const isDismissed = localStorage.getItem(STORAGE_KEY);
-    if (isDismissed) {
-      return undefined;
-    }
+    // const isDismissed = localStorage.getItem(STORAGE_KEY);
+    // if (isDismissed) {
+    //   return undefined;
+    // }
 
     const timer = window.setTimeout(() => {
       setIsVisible(true);
