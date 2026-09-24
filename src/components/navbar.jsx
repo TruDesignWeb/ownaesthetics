@@ -46,15 +46,6 @@ export default function Navbar() {
                 Contact Us
               </Link>
             </ul>
-            <ul>
-              <Link href="/about" className="[color:white] [text-decoration:none] [font-size:1.02rem] [font-weight:400] [padding:0.2rem_0.7rem] [border-radius:15px] [transition:all_0.3s_ease] [opacity:0.8] [&:hover]:[opacity:1] [&:hover]:[background:rgba(255,_255,_255,_0.1)] [&:hover]:[transform:translateY(-1px)] max-[900px]:[color:white] max-[900px]:[text-decoration:none] max-[900px]:[font-size:0.9rem] max-[900px]:[font-weight:400] max-[900px]:[padding:0.1rem_0.5rem] max-[900px]:[border-radius:15px] max-[900px]:[transition:all_0.3s_ease] max-[900px]:[opacity:0.8]">
-                <img
-                  className="[height:20px] [transition:all_0.3s_ease] max-[900px]:[height:15px] max-[900px]:[display:none]"
-                  src="/assets/images/TotalHealthLogo_HorizontalWhite.webp"
-                />
-              </Link>
-            </ul>
-            {/* <ul><Link href="/Referring-Partners" className="[color:white] [text-decoration:none] [font-size:1.02rem] [font-weight:400] [padding:0.2rem_0.7rem] [border-radius:15px] [transition:all_0.3s_ease] [opacity:0.8] [&:hover]:[opacity:1] [&:hover]:[background:rgba(255,_255,_255,_0.1)] [&:hover]:[transform:translateY(-1px)] max-[900px]:[color:white] max-[900px]:[text-decoration:none] max-[900px]:[font-size:0.9rem] max-[900px]:[font-weight:400] max-[900px]:[padding:0.1rem_0.5rem] max-[900px]:[border-radius:15px] max-[900px]:[transition:all_0.3s_ease] max-[900px]:[opacity:0.8]">Referring Partners</Link></ul> */}
           </div>
         </div>
 
@@ -63,8 +54,8 @@ export default function Navbar() {
           <div className="[max-width:1200px] [margin:0_auto] [padding:0_2rem] [display:flex] [justify-content:space-between] [align-items:center] [z-index:2] [position:relative] [overflow:visible] max-[900px]:[padding:0_1rem]">
             <Link href="/" className="[font-size:2.5rem] [font-weight:bold] [color:white] [text-decoration:none] [transition:font-size_0.3s_ease] [text-shadow:2px_2px_4px_rgba(0,_0,_0,_0.3)] [transform-origin:left_center] [.navbar-container.scrolled_&]:[font-size:1.8rem]">
               <img
-                src="/assets/images/OWN Branding/OWN Final Logos/Print CMYK/Logo Icon/PNG/OWN_Icon_CMYK_White.png"
-                alt="Total Health Logo"
+                src="/assets/images/OWN Branding/OWN Final Logos/Print CMYK/Logo Icon/PNG/OWN_Icon_CMYK_White.webp"
+                alt="Own Aesthetics Logo"
                 className="[width:92px] max-[900px]:[width:64px]"
               />
             </Link>

@@ -12,7 +12,6 @@ import Footer from '../components/footer';
 import CustomCursor from '../components/customcursor';
 import useRevealOnScroll from '../hooks/useRevealOnScroll';import InfiniteScroll from '../components/infinitescroll';
 import TiltedCard from '../components/tiltedcard';
-import FluidGlass from '../components/fluidglass';
 import Register from '../components/register';
 import Login from '../components/login';
 import Banner2 from '../components/banner2';

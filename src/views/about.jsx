@@ -9,7 +9,7 @@ import Footer from "../components/footer";
 import CustomCursor from "../components/customcursor";
 import useRevealOnScroll from "../hooks/useRevealOnScroll";
 import Banner2 from "../components/banner2";
-export default function About({}) {
+export default function About() {
   useRevealOnScroll();
   const router = useRouter();
   const imgRef = useRef(null);
@@ -244,8 +244,8 @@ export default function About({}) {
               style={{ transform: `translateY(${y}px)` }}
             >
               <img
-                src="/assets/images/beth.png"
-                alt="Spa reception with serene, warm tones"
+                src="/assets/images/beth.webp"
+                alt="Beth, RN at Own Aesthetics"
               />
             </div>
           </div>
@@ -338,8 +338,8 @@ export default function About({}) {
               style={{ transform: `translateY(${y}px)` }}
             >
               <img
-                src="/assets/images/images/marriah1.jpeg"
-                alt="Spa reception with serene, warm tones"
+                src="/assets/images/images/marriah1.webp"
+                alt="Marriah, Licensed Esthetician at Own Aesthetics"
               />
             </div>
           </div>

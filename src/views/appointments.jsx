@@ -14,7 +14,6 @@ import CustomCursor from '../components/customcursor';
 import useRevealOnScroll from '../hooks/useRevealOnScroll';
 import InfiniteScroll from '../components/infinitescroll';
 import TiltedCard from '../components/tiltedcard';
-import FluidGlass from '../components/fluidglass';
 import Banner2 from '../components/banner2';
 import { useState, useEffect } from "react";
 import axios from "axios";

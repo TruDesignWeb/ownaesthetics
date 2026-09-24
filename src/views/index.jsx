@@ -4,26 +4,38 @@ import React from "react";
 import Navbar from "../components/navbar";
 import Banner from "../components/banner";
 import Features from "../components/features";
-import Stats from "../components/stats";
-import Programs from "../components/programs";
-import Membership from "../components/membership-component";
-import Outcomes from "../components/outcomes";
-import Journey from "../components/journey";
 import Footer from "../components/footer";
-import CustomCursor from "../components/customcursor";
 import useRevealOnScroll from "../hooks/useRevealOnScroll";
-import InfiniteScroll from "../components/infinitescroll";
-import TiltedCard from "../components/tiltedcard";
-import FluidGlass from "../components/fluidglass";
-import Register from "../components/register";
-import Login from "../components/login";
 import ShowcaseSection from "../components/showcasesection";
 import TestimonialShowcase from "../components/testimonial-showcase";
+import dynamic from "next/dynamic";
 import SocialMedia from "../components/social-media";
-import RSVPPopup from "../components/rsvppopup";
 import Link from "next/link";
 
+const RSVPPopup = dynamic(() => import("../components/rsvppopup"), {
+  ssr: false,
+});
+
 const featureCards = [
+  {
+    imageSrc: "/assets/images/images/nouva4.webp",
+    altText: "NOUVADerm™ Laser Treatment",
+    captionText: "NOUVADerm™ Laser Treatment",
+    containerHeight: "260px",
+    containerWidth: "220px",
+    imageHeight: "300px",
+    imageWidth: "260px",
+    rotateAmplitude: 12,
+    scaleOnHover: 1.1,
+    showMobileWarning: false,
+    showTooltip: true,
+    displayOverlayContent: true,
+    overlayContent: (
+      <p className="[.home-density_.features-_&]:[font-size:0.95rem]">NOUVADerm™ Laser Treatment</p>
+    ),
+    backgroundColor: "rgba(0,0,0,0)",
+    link: "/services/nouvaderm",
+  },
   {
     imageSrc: "/assets/images/images/istock-salt1.webp",
     altText: "The SaltFacial®",
@@ -56,26 +68,7 @@ const featureCards = [
     displayOverlayContent: true,
     overlayContent: <p className="[.home-density_.features-_&]:[font-size:0.95rem]">AquaFirmeXS</p>,
     backgroundColor: "rgba(0,0,0,0)",
-    link: "services/aquafirme",
-  },
-  {
-    imageSrc: "/assets/images/images/nouva4.webp",
-    altText: "NOUVADerm™ Laser Treatment",
-    captionText: "NOUVADerm™ Laser Treatment",
-    containerHeight: "260px",
-    containerWidth: "220px",
-    imageHeight: "300px",
-    imageWidth: "260px",
-    rotateAmplitude: 12,
-    scaleOnHover: 1.1,
-    showMobileWarning: false,
-    showTooltip: true,
-    displayOverlayContent: true,
-    overlayContent: (
-      <p className="[.home-density_.features-_&]:[font-size:0.95rem]">NOUVADerm™ Laser Treatment</p>
-    ),
-    backgroundColor: "rgba(0,0,0,0)",
-    link: "services/nouvaderm",
+    link: "/services/aquafirme",
   },
 ];
 
@@ -634,7 +627,7 @@ export default function Home() {
           text="Own Aesthetics is a medical spa born from a desire to serve those who want to Own their Aesthetic. We believe in enhancing your natural evolution, so you feel like your best self through every phase of life. With knowledgeable expertise, we offer the best and latest options for skin health, sorting trends from reliable solutions."
           buttonLabel="Learn More"
           imageSrc="/assets/images/christmas-staff.webp"
-          imageAlt="MRI imaging suite"
+          imageAlt="Own Aesthetics team in West Des Moines"
           backgroundColor={"#133550"}
           imageMaxWidth="380px"
         />
@@ -647,7 +640,7 @@ export default function Home() {
                 skincare, and technology to detoxify, hydrate, and renew your skin, leaving you with a smooth, glowing, and refreshed complexion."
           buttonLabel="Learn More"
           imageSrc="/assets/images/images/istock-salt1.webp"
-          imageAlt="MRI imaging suite"
+          imageAlt="The SaltFacial skin renewal treatment at Own Aesthetics"
           backgroundColor={"#9B5B3E"}
           imageMaxWidth="380px"
         />
@@ -659,7 +652,7 @@ export default function Home() {
         />
 
         <section
-          className="[background:linear-gradient(180deg,_#f6efe8_0%,_#efe1d3_100%)] [color:#163041] [padding:3.8rem_1.25rem] max-[900px]:[padding:4.5rem_1.1rem] [display:none] [padding-top:clamp(2.5rem,_4.5vw,_4.4rem)]! [padding-bottom:clamp(2.5rem,_4.5vw,_4.4rem)]! max-[768px]:[padding-top:2rem]! max-[768px]:[padding-bottom:2rem]!"
+          className="[background:linear-gradient(180deg,_#f6efe8_0%,_#efe1d3_100%)] [color:#163041] [padding:3.8rem_1.25rem] max-[900px]:[padding:4.5rem_1.1rem] [padding-top:clamp(2.5rem,_4.5vw,_4.4rem)]! [padding-bottom:clamp(2.5rem,_4.5vw,_4.4rem)]! max-[768px]:[padding-top:2rem]! max-[768px]:[padding-bottom:2rem]!"
           aria-labelledby="homepage-faq-title"
         >
           <div className="[margin:0_auto] [max-width:1060px]!">

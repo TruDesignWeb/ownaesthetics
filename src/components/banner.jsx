@@ -28,8 +28,11 @@ export default function Banner() {
         <div className="[position:absolute] [top:0] [left:0] [width:100%] [height:100%] [background:rgba(0,_0,_0,_0.4)] [z-index:1]" />
       </div>
       <div className="[z-index:3] [margin-top:clamp(40px,_8vh,_100px)] [max-width:800px] [padding-top:clamp(2rem,_5vh,_4rem)] max-[900px]:[margin-top:clamp(24px,_5vh,_56px)] max-[900px]:[padding:1.5rem_1.25rem_0] max-[600px]:[margin-top:2.5rem] max-[600px]:[padding:4.25rem_1rem_1.25rem] max-[600px]:[max-width:92vw]">
-        {/* <h1>Welcome to Total Health</h1> */}
-        <img className="[width:42%] max-[900px]:[width:min(48%,_300px)] max-[600px]:[width:min(48%,_190px)]" src = "/assets/images/OWN Branding/OWN Final Logos/Print CMYK/Primary Logo/PNG/OWN_Primary Logo_CMYK_White_JustText.png" />
+        <img
+          className="[width:42%] max-[900px]:[width:min(48%,_300px)] max-[600px]:[width:min(48%,_190px)]"
+          src="/assets/images/OWN Branding/OWN Final Logos/Print CMYK/Primary Logo/PNG/OWN_Primary Logo_CMYK_White_JustText.webp"
+          alt="Own Aesthetics Logo"
+        />
         <p className="[padding-top:clamp(12px,_2vh,_20px)]">where artistry enhances authenticity™</p>
         {/* className="" */}
         <a href="#content"><div className="[display:inline-block] [background:rgba(255,_255,_255,_0.001)] [color:white] [text-decoration:none] [font-size:1.2rem] [font-weight:600] [transition:all_0.3s_ease] [animation:fadeInUp_1s_ease-out_0.6s_both] max-[600px]:[&_button]:[font-size:1.15rem] max-[600px]:[&_button]:[line-height:1] max-[600px]:[&_button]:[min-width:176px] max-[600px]:[&_button]:[padding:0.9rem_1.4rem]" style={{ perspective: 1000 }}>

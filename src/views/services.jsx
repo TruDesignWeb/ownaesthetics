@@ -34,27 +34,6 @@ const featureCards = [
     link: "/services/consultation",
   },
   {
-    imageSrc: "/assets/images/images/aquafirme4.webp",
-    altText: "AquaFirmeXS",
-    captionText: "AquaFirmeXS",
-    containerHeight: "260px",
-    containerWidth: "220px",
-    imageHeight: "260px",
-    imageWidth: "220px",
-    rotateAmplitude: 12,
-    scaleOnHover: 1.1,
-    showMobileWarning: false,
-    showTooltip: true,
-    displayOverlayContent: true,
-    overlayContent: (
-      <p className="[.home-density_.features-_&]:[font-size:0.95rem]">
-        AquaFirmeXS
-      </p>
-    ),
-    backgroundColor: "rgba(0,0,0,0)",
-    link: "/services/aquafirme",
-  },
-  {
     imageSrc: "/assets/images/images/nouva4.webp",
     altText: "NOUVADerm® Laser Treatment",
     captionText: "NOUVADerm® Laser Treatment",
@@ -96,49 +75,6 @@ const featureCards = [
     ),
     backgroundColor: "rgba(0,0,0,0)",
     link: "/services/antiwrinkle",
-  },
-  {
-    imageSrc: "/assets/images/images/istock-kybella.webp",
-    altText: "Kybella®",
-    captionText: "Kybella®",
-    containerHeight: "260px",
-    containerWidth: "220px",
-    imageHeight: "260px",
-    imageWidth: "220px",
-    rotateAmplitude: 12,
-    scaleOnHover: 1.1,
-    showMobileWarning: false,
-    showTooltip: true,
-    displayOverlayContent: true,
-    overlayContent: (
-      <p className="[.home-density_.features-_&]:[font-size:0.95rem]">
-        Kybella®
-      </p>
-    ),
-    backgroundColor: "rgba(0,0,0,0)",
-    link: "/services/kybella",
-  },
-  {
-    imageSrc:
-      "/assets/images/images/woman-doing-self-care-treatment-indoors.webp",
-    altText: "Sclerotherapy – Spider Veins",
-    captionText: "Sclerotherapy – Spider Veins",
-    containerHeight: "260px",
-    containerWidth: "220px",
-    imageHeight: "260px",
-    imageWidth: "220px",
-    rotateAmplitude: 12,
-    scaleOnHover: 1.1,
-    showMobileWarning: false,
-    showTooltip: true,
-    displayOverlayContent: true,
-    overlayContent: (
-      <p className="[.home-density_.features-_&]:[font-size:0.95rem]">
-        Sclerotherapy – Spider Veins
-      </p>
-    ),
-    backgroundColor: "rgba(0,0,0,0)",
-    link: "/services/sclerotherapy",
   },
   {
     imageSrc:
@@ -184,6 +120,69 @@ const featureCards = [
     link: "/services/sculptra",
   },
   {
+    imageSrc: "/assets/images/images/istock-salt1.webp",
+    altText: "SaltFacial® Skin Renewal Therapy",
+    captionText: "SaltFacial® Skin Renewal Therapy",
+    containerHeight: "260px",
+    containerWidth: "220px",
+    imageHeight: "260px",
+    imageWidth: "220px",
+    rotateAmplitude: 12,
+    scaleOnHover: 1.1,
+    showMobileWarning: false,
+    showTooltip: true,
+    displayOverlayContent: true,
+    overlayContent: (
+      <p className="[.home-density_.features-_&]:[font-size:0.95rem]">
+        SaltFacial® Skin Renewal Therapy
+      </p>
+    ),
+    backgroundColor: "rgba(0,0,0,0)",
+    link: "/services/saltfacial",
+  },
+  {
+    imageSrc: "/assets/images/images/aquafirme4.webp",
+    altText: "AquaFirmeXS",
+    captionText: "AquaFirmeXS",
+    containerHeight: "260px",
+    containerWidth: "220px",
+    imageHeight: "260px",
+    imageWidth: "220px",
+    rotateAmplitude: 12,
+    scaleOnHover: 1.1,
+    showMobileWarning: false,
+    showTooltip: true,
+    displayOverlayContent: true,
+    overlayContent: (
+      <p className="[.home-density_.features-_&]:[font-size:0.95rem]">
+        AquaFirmeXS
+      </p>
+    ),
+    backgroundColor: "rgba(0,0,0,0)",
+    link: "/services/aquafirme",
+  },
+  {
+    imageSrc: "/assets/images/images/man-fixed.webp",
+    altText: "Hair Wellness & Restoration",
+    captionText: "Hair Wellness & Restoration",
+    containerHeight: "260px",
+    containerWidth: "220px",
+    imageHeight: "260px",
+    imageWidth: "220px",
+    rotateAmplitude: 12,
+    scaleOnHover: 1.1,
+    showMobileWarning: false,
+    showTooltip: true,
+    displayOverlayContent: true,
+    overlayContent: (
+      <p className="[.home-density_.features-_&]:[font-size:0.95rem]">
+        Hair Wellness & Restoration
+      </p>
+    ),
+    backgroundColor: "rgba(0,0,0,0)",
+    link: "/services/hairtreatments",
+  },
+  {
     imageSrc:
       "/assets/images/images/close-up-doctor-checking-smiley-woman.webp",
     altText: "PRF/PRF ezGel",
@@ -206,9 +205,9 @@ const featureCards = [
     link: "/services/cellenis",
   },
   {
-    imageSrc: "/assets/images/images/man-fixed.webp",
-    altText: "Hair Wellness & Restoration",
-    captionText: "Hair Wellness & Restoration",
+    imageSrc: "/assets/images/images/istock-skinpen.webp",
+    altText: "SkinPen® Microneedling",
+    captionText: "SkinPen® Microneedling",
     containerHeight: "260px",
     containerWidth: "220px",
     imageHeight: "260px",
@@ -220,11 +219,54 @@ const featureCards = [
     displayOverlayContent: true,
     overlayContent: (
       <p className="[.home-density_.features-_&]:[font-size:0.95rem]">
-        Hair Wellness & Restoration
+        SkinPen® Microneedling
       </p>
     ),
     backgroundColor: "rgba(0,0,0,0)",
-    link: "/services/hairtreatments",
+    link: "/services/skinpen",
+  },
+  {
+    imageSrc: "/assets/images/images/istock-kybella.webp",
+    altText: "Kybella®",
+    captionText: "Kybella®",
+    containerHeight: "260px",
+    containerWidth: "220px",
+    imageHeight: "260px",
+    imageWidth: "220px",
+    rotateAmplitude: 12,
+    scaleOnHover: 1.1,
+    showMobileWarning: false,
+    showTooltip: true,
+    displayOverlayContent: true,
+    overlayContent: (
+      <p className="[.home-density_.features-_&]:[font-size:0.95rem]">
+        Kybella®
+      </p>
+    ),
+    backgroundColor: "rgba(0,0,0,0)",
+    link: "/services/kybella",
+  },
+  {
+    imageSrc:
+      "/assets/images/images/woman-doing-self-care-treatment-indoors.webp",
+    altText: "Sclerotherapy – Spider Veins",
+    captionText: "Sclerotherapy – Spider Veins",
+    containerHeight: "260px",
+    containerWidth: "220px",
+    imageHeight: "260px",
+    imageWidth: "220px",
+    rotateAmplitude: 12,
+    scaleOnHover: 1.1,
+    showMobileWarning: false,
+    showTooltip: true,
+    displayOverlayContent: true,
+    overlayContent: (
+      <p className="[.home-density_.features-_&]:[font-size:0.95rem]">
+        Sclerotherapy – Spider Veins
+      </p>
+    ),
+    backgroundColor: "rgba(0,0,0,0)",
+    link: "/services/sclerotherapy",
   },
   {
     imageSrc: "/assets/images/images/istock-chem.webp",
@@ -291,49 +333,7 @@ const featureCards = [
     link: "/services/exosomes",
   },
   {
-    imageSrc: "/assets/images/images/istock-salt1.webp",
-    altText: "SaltFacial® Skin Renewal Therapy",
-    captionText: "SaltFacial® Skin Renewal Therapy",
-    containerHeight: "260px",
-    containerWidth: "220px",
-    imageHeight: "260px",
-    imageWidth: "220px",
-    rotateAmplitude: 12,
-    scaleOnHover: 1.1,
-    showMobileWarning: false,
-    showTooltip: true,
-    displayOverlayContent: true,
-    overlayContent: (
-      <p className="[.home-density_.features-_&]:[font-size:0.95rem]">
-        SaltFacial® Skin Renewal Therapy
-      </p>
-    ),
-    backgroundColor: "rgba(0,0,0,0)",
-    link: "/services/saltfacial",
-  },
-  {
-    imageSrc: "/assets/images/images/istock-skinpen.webp",
-    altText: "SkinPen® Microneedling",
-    captionText: "SkinPen® Microneedling",
-    containerHeight: "260px",
-    containerWidth: "220px",
-    imageHeight: "260px",
-    imageWidth: "220px",
-    rotateAmplitude: 12,
-    scaleOnHover: 1.1,
-    showMobileWarning: false,
-    showTooltip: true,
-    displayOverlayContent: true,
-    overlayContent: (
-      <p className="[.home-density_.features-_&]:[font-size:0.95rem]">
-        SkinPen® Microneedling
-      </p>
-    ),
-    backgroundColor: "rgba(0,0,0,0)",
-    link: "/services/skinpen",
-  },
-  {
-    imageSrc: "/assets/images/stslogo.jpg",
+    imageSrc: "/assets/images/stslogo.webp",
     altText: "Skin Type Solutions",
     captionText: "Skin Type Solutions",
     containerHeight: "260px",

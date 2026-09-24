@@ -2,16 +2,16 @@
 import { useEffect, useState } from "react";
 import { BOOKING_HASH } from "../lib/booking";
 const STORAGE_KEY = "own-aesthetics-omnilux-popup-dismissed";
-const RSVP_POPUP_DELAY = 1000;
+const RSVP_POPUP_DELAY = 10000;
 
 export default function RSVPPopup() {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
-    // const isDismissed = localStorage.getItem(STORAGE_KEY);
-    // if (isDismissed) {
-    //   return undefined;
-    // }
+    const isDismissed = localStorage.getItem(STORAGE_KEY);
+    if (isDismissed) {
+      return undefined;
+    }
 
     const timer = window.setTimeout(() => {
       setIsVisible(true);
@@ -73,7 +73,7 @@ export default function RSVPPopup() {
 
         <div className="[position:relative] [min-height:100%] [background:#e7e3df] max-[900px]:[min-height:230px] max-[768px]:[min-height:190px] max-[480px]:[min-height:160px]">
           <img
-            src="/assets/images/ownlaser.png"
+            src="/assets/images/ownlaser.webp"
             alt="Client holding an illuminated Omnilux Contour LED light therapy mask"
             className="[position:absolute] [inset:0] [width:100%] [height:100%] [object-fit:cover] [object-position:center_28%]"
           />

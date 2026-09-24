@@ -9,7 +9,8 @@ export default function Footer() {
         <div className="[:where(&)_:where(p)]:[font-size:clamp(0.88rem,_1vw,_0.98rem)]! [:where(&)_:where(p)]:[line-height:1.6]! [:where(&)_:where(a)]:[font-size:clamp(0.88rem,_1vw,_0.98rem)]! [:where(&)_:where(a)]:[line-height:1.6]! [&_h3]:[color:#9e9c8d] [&_h3]:[margin-bottom:20px] [&_h3]:[font-size:1.3rem] [&_h3]:[display:flex] [&_h3]:[align-items:center] [&_h3]:[gap:10px] [&_h3]:[justify-content:center] [&_h3::before]:[content:attr(data-icon)] [&_h3::before]:[font-size:1.5rem] [&_p]:[opacity:0.8] [&_p]:[line-height:1.6] [&_p]:[color:white] [&_p]:[text-decoration:none] [&_p]:[transition:all_0.3s_ease] [&_a:hover]:[color:#00d4ff] [&_a:hover]:[transform:translateX(5px)] max-[768px]:[&_h3]:[font-size:1.1rem] max-[768px]:[&_h3]:[margin-bottom:15px] max-[768px]:[&_h3::before]:[font-size:1.2rem] max-[768px]:[&_p]:[font-size:0.9rem] max-[768px]:[&_a]:[font-size:0.9rem]">
           <img
             className="[width:92px] max-[900px]:[width:64px]"
-            src="/assets/images/OWN Branding/OWN Final Logos/Print CMYK/Logo Icon/PNG/OWN_Icon_CMYK_Black.png"
+            src="/assets/images/OWN Branding/OWN Final Logos/Print CMYK/Logo Icon/PNG/OWN_Icon_CMYK_Black.webp"
+            alt="Own Aesthetics Logo"
           />
 
           <p>
@@ -18,9 +19,17 @@ export default function Footer() {
             <br />
             West Des Moines, IA 50266
           </p>
-          <a href="https://www.google.com/maps/place/Own+Aesthetics+PLC/@41.5868727,-94.9654378,9z/data=!4m10!1m2!2m1!1sown+aesthetics!3m6!1s0x87ec2183bd08ca1d:0x769a96c0fa498807!8m2!3d41.5868727!4d-93.8118733!15sCg5vd24gYWVzdGhldGljc5IBC21lZGljYWxfc3BhqgFLEAEqEiIOb3duIGFlc3RoZXRpY3MoADIfEAEiGxQYyzhi_LQcyRViqag_cSExnuB2n5YyK36nMDISEAIiDm93biBhZXN0aGV0aWNz4AEA!16s%2Fg%2F11mdb849vx?entry=ttu&g_ep=EgoyMDI1MDQyMy4wIKXMDSoASAFQAw%3D%3D">
+          <p className="[font-size:0.85rem] [line-height:1.5] [opacity:0.85] [max-width:320px] [margin:0_auto_6px]">
+            A block West of Jordan Creek Parkway. Located inside “Total Health Experience” in suite 115. Look for the sign right above our door.
+          </p>
+          <a
+            href="https://www.google.com/maps/place/Own+Aesthetics+PLC/@41.5868727,-94.9654378,9z/data=!4m10!1m2!2m1!1sown+aesthetics!3m6!1s0x87ec2183bd08ca1d:0x769a96c0fa498807!8m2!3d41.5868727!4d-93.8118733!15sCg5vd24gYWVzdGhldGljc5IBC21lZGljYWxfc3BhqgFLEAEqEiIOb3duIGFlc3RoZXRpY3MoADIfEAEiGxQYyzhi_LQcyRViqag_cSExnuB2n5YyK36nMDISEAIiDm93biBhZXN0aGV0aWNz4AEA!16s%2Fg%2F11mdb849vx?entry=ttu&g_ep=EgoyMDI1MDQyMy4wIKXMDSoASAFQAw%3D%3D"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="View Own Aesthetics on Google Maps"
+          >
             <button type="button" className="[box-shadow:none] [border:none] [margin:10px] [background-image:linear-gradient(to_right,_#bd725b,_#9f6048)] [border-radius:50px] max-[768px]:[margin:8px_5px] max-[768px]:[padding:0.6rem_1.2rem] max-[768px]:[font-size:0.85rem]">
-              Directions
+              Map
             </button>
           </a>
           <p>
