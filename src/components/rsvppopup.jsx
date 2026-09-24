@@ -8,10 +8,10 @@ export default function RSVPPopup() {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
-    const isDismissed = localStorage.getItem(STORAGE_KEY);
-    if (isDismissed) {
-      return undefined;
-    }
+    // const isDismissed = localStorage.getItem(STORAGE_KEY);
+    // if (isDismissed) {
+    //   return undefined;
+    // }
 
     const timer = window.setTimeout(() => {
       setIsVisible(true);
