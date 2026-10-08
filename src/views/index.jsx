@@ -31,7 +31,9 @@ const featureCards = [
     showTooltip: true,
     displayOverlayContent: true,
     overlayContent: (
-      <p className="[.home-density_.features-_&]:[font-size:0.95rem]">NOUVADerm™ Laser Treatment</p>
+      <p className="[.home-density_.features-_&]:[font-size:0.95rem]">
+        NOUVADerm™ Laser Treatment
+      </p>
     ),
     backgroundColor: "rgba(0,0,0,0)",
     link: "/services/nouvaderm",
@@ -49,7 +51,11 @@ const featureCards = [
     showMobileWarning: false,
     showTooltip: true,
     displayOverlayContent: true,
-    overlayContent: <p className="[.home-density_.features-_&]:[font-size:0.95rem]">The SaltFacial®</p>,
+    overlayContent: (
+      <p className="[.home-density_.features-_&]:[font-size:0.95rem]">
+        The SaltFacial®
+      </p>
+    ),
     backgroundColor: "rgba(0,0,0,0)",
     link: "/services/saltfacial",
   },
@@ -66,7 +72,11 @@ const featureCards = [
     showMobileWarning: false,
     showTooltip: true,
     displayOverlayContent: true,
-    overlayContent: <p className="[.home-density_.features-_&]:[font-size:0.95rem]">AquaFirmeXS</p>,
+    overlayContent: (
+      <p className="[.home-density_.features-_&]:[font-size:0.95rem]">
+        AquaFirmeXS
+      </p>
+    ),
     backgroundColor: "rgba(0,0,0,0)",
     link: "/services/aquafirme",
   },
@@ -259,7 +269,9 @@ const homepageSchema = {
           },
           {
             "@type": "Offer",
-            itemOffered: { "@id": "https://www.ownaesthetics.com/#service-peels" },
+            itemOffered: {
+              "@id": "https://www.ownaesthetics.com/#service-peels",
+            },
           },
           {
             "@type": "Offer",
@@ -275,7 +287,9 @@ const homepageSchema = {
           },
           {
             "@type": "Offer",
-            itemOffered: { "@id": "https://www.ownaesthetics.com/#service-botox" },
+            itemOffered: {
+              "@id": "https://www.ownaesthetics.com/#service-botox",
+            },
           },
           {
             "@type": "Offer",
@@ -291,7 +305,9 @@ const homepageSchema = {
           },
           {
             "@type": "Offer",
-            itemOffered: { "@id": "https://www.ownaesthetics.com/#service-prf" },
+            itemOffered: {
+              "@id": "https://www.ownaesthetics.com/#service-prf",
+            },
           },
           {
             "@type": "Offer",
@@ -609,10 +625,13 @@ export default function Home() {
       >
         Own Aesthetics | Med Spa in West Des Moines, Iowa
       </h1>
-      <RSVPPopup />
+      {/* <RSVPPopup /> */}
       <Banner />
 
-      <div className="home-density [position:relative] [z-index:2] [margin-top:var(--home-banner-height)] [transition:transform_0.1s_ease-out] [width:100%]" id="content">
+      <div
+        className="home-density [position:relative] [z-index:2] [margin-top:var(--home-banner-height)] [transition:transform_0.1s_ease-out] [width:100%]"
+        id="content"
+      >
         {/* luh comment so i can push sm  */}
         <Features
           title="Featured Services"
@@ -657,8 +676,13 @@ export default function Home() {
         >
           <div className="[margin:0_auto] [max-width:1060px]!">
             <div className="[margin-bottom:1.7rem] [max-width:660px]">
-              <span className="[color:#9b5b3e] [display:inline-block] [font-size:0.82rem] [letter-spacing:0.22em] [margin-bottom:0.9rem] [text-transform:uppercase]">FAQ</span>
-              <h2 id="homepage-faq-title" className="[color:#163041] [margin:0_0_1rem] [font-size:clamp(1.6rem,_2.8vw,_2.65rem)]! [line-height:1.12]!">
+              <span className="[color:#9b5b3e] [display:inline-block] [font-size:0.82rem] [letter-spacing:0.22em] [margin-bottom:0.9rem] [text-transform:uppercase]">
+                FAQ
+              </span>
+              <h2
+                id="homepage-faq-title"
+                className="[color:#163041] [margin:0_0_1rem] [font-size:clamp(1.6rem,_2.8vw,_2.65rem)]! [line-height:1.12]!"
+              >
                 Questions People Ask Before Booking
               </h2>
               <p className="[color:rgba(22,_48,_65,_0.82)] [font-size:0.96rem] [line-height:1.75] [margin:0] [max-width:680px]">
@@ -713,7 +737,10 @@ export default function Home() {
 
             <div className="[display:grid] [gap:1rem] [grid-template-columns:repeat(2,_minmax(0,_1fr))] max-[900px]:[grid-template-columns:1fr]">
               {homepageFaqs.map((item) => (
-                <article className="[background:rgba(255,_255,_255,_0.82)] [border:1px_solid_rgba(22,_48,_65,_0.1)] [border-radius:18px] [box-shadow:0_22px_48px_rgba(22,_48,_65,_0.08)] [backdrop-filter:blur(10px)] max-[900px]:[border-radius:22px] [padding:clamp(1.35rem,_2.4vw,_2.35rem)]!" key={item.question}>
+                <article
+                  className="[background:rgba(255,_255,_255,_0.82)] [border:1px_solid_rgba(22,_48,_65,_0.1)] [border-radius:18px] [box-shadow:0_22px_48px_rgba(22,_48,_65,_0.08)] [backdrop-filter:blur(10px)] max-[900px]:[border-radius:22px] [padding:clamp(1.35rem,_2.4vw,_2.35rem)]!"
+                  key={item.question}
+                >
                   <h3 className="[color:#163041] [font-size:1.02rem] [line-height:1.25] [margin:0_0_0.9rem]">
                     <strong>{item.question}</strong>
                   </h3>
