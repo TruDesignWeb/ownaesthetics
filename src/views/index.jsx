@@ -8,35 +8,27 @@ import Footer from "../components/footer";
 import useRevealOnScroll from "../hooks/useRevealOnScroll";
 import ShowcaseSection from "../components/showcasesection";
 import TestimonialShowcase from "../components/testimonial-showcase";
-import dynamic from "next/dynamic";
 import SocialMedia from "../components/social-media";
 import Link from "next/link";
 import MembershipBanner from "../components/membership-banner";
 
-const RSVPPopup = dynamic(() => import("../components/rsvppopup"), {
-  ssr: false,
-});
-
 const featureCards = [
   {
     image: "/assets/images/images/nouva4.webp",
-    alt: "NOUVADerm laser treatment",
-    title: "NOUVADerm™ Laser",
-    description: "Targeted skin resurfacing with a plan tailored to your skin.",
+    alt: "NOUVADerm™ laser treatment for Chest",
+    title: "NOUVADerm™ laser treatment for Chest",
     link: "/services/nouvaderm",
   },
   {
     image: "/assets/images/images/istock-salt1.webp",
-    alt: "The SaltFacial skin renewal treatment",
+    alt: "The SaltFacial®",
     title: "The SaltFacial®",
-    description: "A multi-step skin renewal treatment to exfoliate and hydrate.",
     link: "/services/saltfacial",
   },
   {
     image: "/assets/images/images/aquafirme4.webp",
-    alt: "AquaFirmeXS skin treatment",
-    title: "AquaFirmeXS",
-    description: "A customizable treatment with targeted serum options.",
+    alt: "AquaFirmeXS with 2 serums",
+    title: "AquaFirmeXS with 2 serums",
     link: "/services/aquafirme",
   },
 ];
@@ -578,7 +570,6 @@ export default function Home() {
       >
         Own Aesthetics | Med Spa in West Des Moines, Iowa
       </h1>
-      <RSVPPopup />
       <Banner />
 
       <div className="home-density [position:relative] [z-index:2] [margin-top:var(--home-banner-height)] [transition:transform_0.1s_ease-out] [width:100%]" id="content">

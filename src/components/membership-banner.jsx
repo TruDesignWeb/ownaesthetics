@@ -15,17 +15,17 @@ export default function MembershipBanner() {
     >
       <div className="membership-banner-copy">
         <div className="membership-banner-eyebrow">
-          <p>Care that keeps showing up for you</p>
+          <p>One treatment of your choosing every month</p>
           <span>No enrollment fee</span>
         </div>
-        <h2>One monthly treatment. A plan that feels like yours.</h2>
-        <span className="membership-banner-action">Explore membership</span>
+        <h2>The Own Aesthetics Membership</h2>
+        <span className="membership-banner-action">Explore the Membership</span>
       </div>
       <div className="membership-banner-levels" aria-label="Membership levels">
         {levels.map(([name, price]) => (
           <div className="membership-banner-level" key={name}>
             <span>{name}</span>
-            <strong>{price}<small>/mo</small></strong>
+            <strong>{price}<small>/month</small></strong>
           </div>
         ))}
       </div>

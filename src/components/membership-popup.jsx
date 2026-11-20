@@ -5,7 +5,7 @@ import { usePathname } from "next/navigation";
 import { useCallback, useEffect, useRef, useState } from "react";
 
 const STORAGE_KEY = "own-membership-popup-dismissed-at";
-const SHOW_AFTER = 8000;
+const SHOW_AFTER = 3000;
 const SUPPRESS_FOR = 14 * 24 * 60 * 60 * 1000;
 
 export default function MembershipPopup() {
@@ -23,7 +23,7 @@ export default function MembershipPopup() {
   }, []);
 
   useEffect(() => {
-    if (["/", "/membership", "/login", "/register", "/dashboard", "/appointments"].includes(pathname)) {
+    if (["/membership", "/login", "/register", "/dashboard", "/appointments"].includes(pathname)) {
       return undefined;
     }
 
@@ -121,16 +121,15 @@ export default function MembershipPopup() {
         >
           ×
         </button>
-        <div className="membership-popup-image" role="img" aria-label="A relaxing facial treatment" />
+        <div className="membership-popup-image" role="img" aria-label="Own Aesthetics" />
         <div className="membership-popup-copy">
-          <p className="membership-popup-kicker">A little more care, every month</p>
-          <h2 id="membership-popup-title">Make room for your skin.</h2>
+          <p className="membership-popup-kicker">INTRODUCING</p>
+          <h2 id="membership-popup-title">The Own Aesthetics Membership</h2>
           <p>
-            Choose one treatment each month, enjoy member pricing, and build a
-            routine with our team. Memberships start at $179 per month.
+            Three levels from $179/month<br />No enrollment fee
           </p>
           <Link className="membership-popup-cta" href="/membership" onClick={dismiss}>
-            Compare the levels
+            View the Options
           </Link>
           <button className="membership-popup-later" type="button" onClick={dismiss}>
             Maybe later

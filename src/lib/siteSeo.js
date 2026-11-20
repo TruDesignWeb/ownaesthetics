@@ -47,9 +47,9 @@ export const routeSeo = {
     robots: "noindex,follow",
   },
   "/membership": {
-    title: "Skin Care Memberships from $179 | Own Aesthetics",
+    title: "Own Aesthetics Membership",
     description:
-      "Choose a monthly skin treatment and enjoy member pricing on services, skincare, Botox, Dysport, and filler at Own Aesthetics in West Des Moines.",
+      "Join The Own Aesthetics Membership: choose one skin treatment every month, member pricing on Botox, filler and skincare. Three levels from $179. West Des Moines.",
   },
   "/referring-partners": {
     title: "Referring Partners | Own Aesthetics",

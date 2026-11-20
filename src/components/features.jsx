@@ -23,9 +23,9 @@ export default function Features({ title = "Featured Services", cards = [], vari
     <section className="featured-services" aria-labelledby="featured-services-title">
       <div className="featured-services-inner">
         <div className="featured-services-heading">
-          <p>Thoughtful treatments, chosen for you</p>
+          <p>All levels, every day</p>
           <h2 id="featured-services-title">{title}</h2>
-          <span>Explore a few of the ways we help skin look and feel its best.</span>
+          <span>One treatment of your choosing every month, member pricing on everything else, and a skin plan built around you.</span>
         </div>
         <div className="featured-services-grid">
           {cards.map((card) => (
@@ -35,14 +35,12 @@ export default function Features({ title = "Featured Services", cards = [], vari
               </div>
               <div className="featured-service-copy">
                 <h3>{card.title}</h3>
-                <p>{card.description}</p>
-                <span>Explore treatment</span>
               </div>
             </Link>
           ))}
         </div>
         <Link className="featured-services-all-link" href="/services">
-          View all services
+          Services
         </Link>
       </div>
     </section>
