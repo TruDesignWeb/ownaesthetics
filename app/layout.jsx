@@ -10,6 +10,7 @@ import {
   DEFAULT_OG_IMAGE,
 } from "../src/lib/siteSeo";
 import { BOOKING_HASH, BOULEVARD_BUSINESS_ID } from "../src/lib/booking";
+import { Analytics } from "@vercel/analytics/next"
 
 export const metadata = {
   metadataBase: new URL(SITE_URL),
@@ -40,6 +41,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
+        <Analytics />
         <AuthProvider>{children}</AuthProvider>
         <PreferWebp />
         {/* Boulevard Self-Booking overlay */}
