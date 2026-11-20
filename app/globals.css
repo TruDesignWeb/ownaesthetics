@@ -885,6 +885,68 @@
 .membership-popup-later { align-self: center; min-height: 44px; margin-top: 8px; padding: 5px 12px; border: 0; background: transparent; color: #4a5a68; text-decoration: underline; text-underline-offset: 3px; }
 .membership-popup-close { position: absolute; z-index: 1; top: 10px; right: 10px; display: grid; width: 42px; height: 42px; place-items: center; border: 0; background: #f7f2eb; color: #133550; font-size: 1.7rem; line-height: 1; }
 
+.newsletter-popup {
+  position: fixed;
+  z-index: 11001;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background: rgb(19 53 80 / 68%);
+  font-family: var(--font-montserrat);
+}
+.newsletter-popup-panel {
+  position: relative;
+  width: min(520px, 100%);
+  max-height: calc(100dvh - 40px);
+  overflow: auto;
+  padding: clamp(28px, 5vw, 52px);
+  background: #f7f2eb;
+  color: #133550;
+}
+.newsletter-popup-panel h2 { max-width: 12ch; margin-bottom: 12px; font-size: clamp(2rem, 5vw, 3rem); font-weight: 300; line-height: 1.1; }
+.newsletter-popup-panel > p { margin-bottom: 22px; color: #4a5a68; font-size: 0.94rem; line-height: 1.65; }
+.newsletter-popup-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: grid;
+  width: 42px;
+  height: 42px;
+  place-items: center;
+  border: 0;
+  background: transparent;
+  color: #133550;
+  font-size: 1.7rem;
+}
+.newsletter-popup-form { display: grid; gap: 16px; }
+.newsletter-popup-email { display: grid; gap: 7px; color: #133550; font-size: 0.86rem; font-weight: 600; }
+.newsletter-popup-email input {
+  width: 100%;
+  min-height: 50px;
+  padding: 11px 13px;
+  border: 1px solid #8193a0;
+  border-radius: 0;
+  background: #fffdf9;
+  color: #133550;
+  font: inherit;
+}
+.newsletter-popup-consent { display: flex; align-items: flex-start; gap: 10px; color: #4a5a68; font-size: 0.82rem; line-height: 1.5; }
+.newsletter-popup-consent input { width: 18px; height: 18px; flex: none; margin-top: 1px; accent-color: #133550; }
+.newsletter-popup-form > button {
+  min-height: 48px;
+  padding: 10px 18px;
+  border: 0;
+  background: #133550;
+  color: #f7f2eb;
+  font-size: 0.86rem;
+  font-weight: 700;
+}
+.newsletter-popup-form > button:hover { background: #254c66; }
+.newsletter-popup-later { display: block; min-height: 44px; margin: 8px auto 0; padding: 5px 12px; border: 0; background: transparent; color: #4a5a68; text-decoration: underline; text-underline-offset: 3px; }
+.newsletter-popup :focus-visible { outline: 3px solid #9b5b3e; outline-offset: 3px; }
+
 @media (max-width: 800px) {
   .membership-hero { grid-template-columns: 1fr; min-height: 0; padding: 120px 24px 32px; gap: 34px; }
   .membership-hero h1 { max-width: 15ch; font-size: clamp(2.6rem, 9vw, 4.5rem); }
@@ -913,6 +975,8 @@
   .membership-popup-image { min-height: 180px; }
   .membership-popup-copy { padding: 23px 22px 18px; }
   .membership-popup-copy h2 { font-size: 2rem; }
+  .newsletter-popup { align-items: flex-end; padding: 10px; }
+  .newsletter-popup-panel { max-height: calc(100dvh - 20px); padding: 28px 22px 18px; }
 }
 
 @media (prefers-reduced-motion: reduce) {

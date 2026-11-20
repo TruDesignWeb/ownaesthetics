@@ -1,6 +1,7 @@
 // File: src/components/Footer.jsx
 import React from "react";
 import Link from "next/link";
+import NewsletterForm from "./newsletter-form";
 
 export default function Footer() {
   return (
@@ -96,80 +97,7 @@ export default function Footer() {
             placeholder="you@example.com"
             buttonText="Join Now"
               /> */}
-          <div className="newsletter-container [padding:clamp(1.35rem,_2.4vw,_2.35rem)]! [background:#f7f7f7] [text-align:center] [border-radius:12px] [max-width:600px] [margin:2rem_auto] [box-shadow:0_8px_20px_rgba(0,_0,_0,_0.05)] [&.newsletter-container_h2]:[font-size:1.8rem] [&.newsletter-container_h2]:[margin-bottom:0.5rem] [&.newsletter-container_h2]:[color:#222] [&.newsletter-container_p]:[font-size:1rem] [&.newsletter-container_p]:[color:#555] [&.newsletter-container_p]:[margin-bottom:1.5rem]">
-            <h2>
-              <b>Want to learn more?</b>
-            </h2>
-            <p>Enter your information below and we'll get back to you!</p>
-
-            <form
-              className="[display:flex] [flex-direction:column] [gap:1rem] [align-items:center] [&_input]:[padding:0.75rem_1rem] [&_input]:[border:1px_solid_#ccc] [&_input]:[border-radius:8px] [&_input]:[font-size:1rem] [&_input]:[width:100%] [&_input]:[max-width:300px] [&_button]:[background-color:#454142] [&_button]:[color:white] [&_button]:[padding:0.75rem_1.5rem] [&_button]:[border:none] [&_button]:[border-radius:8px] [&_button]:[font-size:1rem] [&_button]:[cursor:pointer] [&_button]:[transition:background_0.3s_ease] [&_button:hover]:[background-color:#454142bd]"
-              action="https://api.web3forms.com/submit"
-              method="POST"
-            >
-              <input
-                type="hidden"
-                name="access_key"
-                value="d2c03bfd-17bb-4683-b096-fc7df9822b38"
-              />
-
-              <input
-                type="text"
-                className=""
-                placeholder="Your name"
-                name="name"
-                required
-              />
-
-              <input
-                type="email"
-                className=""
-                placeholder="Your email"
-                name="email"
-                required
-              />
-
-              <input
-                type="tel"
-                className=""
-                placeholder="Your phone number"
-                name="phone"
-                required
-              />
-
-              <input
-                type="text"
-                className=""
-                placeholder="How can we help?"
-                name="interest"
-              />
-
-              {/* ✅ Checkbox group */}
-              <div className="checkbox-group [display:flex] [flex-direction:column] [gap:10px] [margin:15px_0] [&_label]:[display:flex] [&_label]:[align-items:center] [&_label]:[gap:10px] [&_label]:[color:black] [&_label]:[font-size:14px] [&_label]:[cursor:pointer]">
-                <label>
-                  <input
-                    type="checkbox"
-                    name="preferences[]"
-                    value="newsletter"
-                  />
-                  Please add me to your newsletter/special offer email list
-                </label>
-
-                <label>
-                  <input
-                    type="checkbox"
-                    name="preferences[]"
-                    value="information"
-                  />
-                  I would like more information about a service or product
-                </label>
-              </div>
-
-              <button type="submit" className="[background:var(--accent-2)] [color:#0e1b15] [border:none] [padding:10px_14px] [border-radius:10px] [font-weight:800] [cursor:pointer] [&:hover]:[filter:brightness(1.05)]">
-                Subscribe
-              </button>
-            </form>
-          </div>
+          <NewsletterForm />
         </div>
       </div>
       <div className="[border-top:1px_solid_rgba(0,_212,_255,_0.2)] [padding-top:20px] [opacity:0.6] [color:burlywood] max-[768px]:[padding-top:15px] max-[768px]:[font-size:0.85rem]">

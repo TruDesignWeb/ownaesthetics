@@ -5,7 +5,7 @@ import { usePathname } from "next/navigation";
 import { useCallback, useEffect, useRef, useState } from "react";
 
 const STORAGE_KEY = "own-membership-popup-dismissed-at";
-const SHOW_AFTER = 3000;
+const SHOW_AFTER = 15000;
 const SUPPRESS_FOR = 14 * 24 * 60 * 60 * 1000;
 
 function hasVisibleModal() {
