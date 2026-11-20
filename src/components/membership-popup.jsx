@@ -8,6 +8,13 @@ const STORAGE_KEY = "own-membership-popup-dismissed-at";
 const SHOW_AFTER = 3000;
 const SUPPRESS_FOR = 14 * 24 * 60 * 60 * 1000;
 
+function hasVisibleModal() {
+  return [...document.querySelectorAll('[aria-modal="true"]')].some((modal) => {
+    const style = window.getComputedStyle(modal);
+    return style.display !== "none" && style.visibility !== "hidden" && modal.getClientRects().length > 0;
+  });
+}
+
 export default function MembershipPopup() {
   const pathname = usePathname();
   const [isOpen, setIsOpen] = useState(false);
@@ -38,14 +45,14 @@ export default function MembershipPopup() {
       if (closedAt && Date.now() - closedAt < SUPPRESS_FOR) return;
 
       const openWhenAvailable = () => {
-        if (document.querySelector('[aria-modal="true"]')) {
+        if (hasVisibleModal()) {
           observer = new MutationObserver(() => {
-            if (!document.querySelector('[aria-modal="true"]')) {
+            if (!hasVisibleModal()) {
               observer.disconnect();
               setIsOpen(true);
             }
           });
-          observer.observe(document.body, { childList: true, subtree: true });
+          observer.observe(document.body, { attributes: true, childList: true, subtree: true });
           return;
         }
         setIsOpen(true);
