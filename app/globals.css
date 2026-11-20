@@ -875,6 +875,7 @@
   overflow: auto;
   background: #f7f2eb;
   color: #133550;
+  animation: popup-rise-in 240ms cubic-bezier(0.2, 0.75, 0.3, 1) both;
 }
 .membership-popup-image { min-height: 420px; background: #d5c7b5 url("/assets/images/images/istock-facial_.webp") center / cover no-repeat; }
 .membership-popup-copy { display: flex; flex-direction: column; justify-content: center; padding: clamp(28px, 5vw, 60px); }
@@ -904,6 +905,7 @@
   padding: clamp(28px, 5vw, 52px);
   background: #f7f2eb;
   color: #133550;
+  animation: popup-rise-in 240ms cubic-bezier(0.2, 0.75, 0.3, 1) both;
 }
 .newsletter-popup-panel h2 { max-width: 12ch; margin-bottom: 12px; font-size: clamp(2rem, 5vw, 3rem); font-weight: 300; line-height: 1.1; }
 .newsletter-popup-panel > p { margin-bottom: 22px; color: #4a5a68; font-size: 0.94rem; line-height: 1.65; }
@@ -947,6 +949,11 @@
 .newsletter-popup-later { display: block; min-height: 44px; margin: 8px auto 0; padding: 5px 12px; border: 0; background: transparent; color: #4a5a68; text-decoration: underline; text-underline-offset: 3px; }
 .newsletter-popup :focus-visible { outline: 3px solid #9b5b3e; outline-offset: 3px; }
 
+@keyframes popup-rise-in {
+  from { opacity: 0.75; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
 @media (max-width: 800px) {
   .membership-hero { grid-template-columns: 1fr; min-height: 0; padding: 120px 24px 32px; gap: 34px; }
   .membership-hero h1 { max-width: 15ch; font-size: clamp(2.6rem, 9vw, 4.5rem); }
@@ -982,6 +989,8 @@
 @media (prefers-reduced-motion: reduce) {
   .membership-button,
   .featured-service-image img { transition: none; }
+  .membership-popup-panel,
+  .newsletter-popup-panel { animation: none; }
 }
 
 .featured-services-all-link {
