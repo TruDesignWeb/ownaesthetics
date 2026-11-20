@@ -11,6 +11,7 @@ import TestimonialShowcase from "../components/testimonial-showcase";
 import dynamic from "next/dynamic";
 import SocialMedia from "../components/social-media";
 import Link from "next/link";
+import MembershipBanner from "../components/membership-banner";
 
 const RSVPPopup = dynamic(() => import("../components/rsvppopup"), {
   ssr: false,
@@ -18,56 +19,24 @@ const RSVPPopup = dynamic(() => import("../components/rsvppopup"), {
 
 const featureCards = [
   {
-    imageSrc: "/assets/images/images/nouva4.webp",
-    altText: "NOUVADerm™ Laser Treatment",
-    captionText: "NOUVADerm™ Laser Treatment",
-    containerHeight: "260px",
-    containerWidth: "220px",
-    imageHeight: "300px",
-    imageWidth: "260px",
-    rotateAmplitude: 12,
-    scaleOnHover: 1.1,
-    showMobileWarning: false,
-    showTooltip: true,
-    displayOverlayContent: true,
-    overlayContent: (
-      <p className="[.home-density_.features-_&]:[font-size:0.95rem]">NOUVADerm™ Laser Treatment</p>
-    ),
-    backgroundColor: "rgba(0,0,0,0)",
+    image: "/assets/images/images/nouva4.webp",
+    alt: "NOUVADerm laser treatment",
+    title: "NOUVADerm™ Laser",
+    description: "Targeted skin resurfacing with a plan tailored to your skin.",
     link: "/services/nouvaderm",
   },
   {
-    imageSrc: "/assets/images/images/istock-salt1.webp",
-    altText: "The SaltFacial®",
-    captionText: "The SaltFacial®",
-    containerHeight: "260px",
-    containerWidth: "220px",
-    imageHeight: "300px",
-    imageWidth: "260px",
-    rotateAmplitude: 12,
-    scaleOnHover: 1.1,
-    showMobileWarning: false,
-    showTooltip: true,
-    displayOverlayContent: true,
-    overlayContent: <p className="[.home-density_.features-_&]:[font-size:0.95rem]">The SaltFacial®</p>,
-    backgroundColor: "rgba(0,0,0,0)",
+    image: "/assets/images/images/istock-salt1.webp",
+    alt: "The SaltFacial skin renewal treatment",
+    title: "The SaltFacial®",
+    description: "A multi-step skin renewal treatment to exfoliate and hydrate.",
     link: "/services/saltfacial",
   },
   {
-    imageSrc: "/assets/images/images/aquafirme4.webp",
-    altText: "AquaFirmeXS",
-    captionText: "AquaFirmeXS",
-    containerHeight: "260px",
-    containerWidth: "220px",
-    imageHeight: "300px",
-    imageWidth: "260px",
-    rotateAmplitude: 12,
-    scaleOnHover: 1.1,
-    showMobileWarning: false,
-    showTooltip: true,
-    displayOverlayContent: true,
-    overlayContent: <p className="[.home-density_.features-_&]:[font-size:0.95rem]">AquaFirmeXS</p>,
-    backgroundColor: "rgba(0,0,0,0)",
+    image: "/assets/images/images/aquafirme4.webp",
+    alt: "AquaFirmeXS skin treatment",
+    title: "AquaFirmeXS",
+    description: "A customizable treatment with targeted serum options.",
     link: "/services/aquafirme",
   },
 ];
@@ -614,9 +583,11 @@ export default function Home() {
 
       <div className="home-density [position:relative] [z-index:2] [margin-top:var(--home-banner-height)] [transition:transform_0.1s_ease-out] [width:100%]" id="content">
         {/* luh comment so i can push sm  */}
+        <MembershipBanner />
         <Features
           title="Featured Services"
           cards={featureCards}
+          variant="modern"
           // Optional: for different styles variant=""
         />
         <ShowcaseSection
@@ -645,11 +616,13 @@ export default function Home() {
           imageMaxWidth="380px"
         />
 
-        <TestimonialShowcase
-          testimonials={testimonials}
-          initialCount={2}
-          buttonLabel="View More Testimonials"
-        />
+        <div className="home-testimonials-shell">
+          <TestimonialShowcase
+            testimonials={testimonials}
+            initialCount={2}
+            buttonLabel="View More Testimonials"
+          />
+        </div>
 
         <section
           className="[background:linear-gradient(180deg,_#f6efe8_0%,_#efe1d3_100%)] [color:#163041] [padding:3.8rem_1.25rem] max-[900px]:[padding:4.5rem_1.1rem] [padding-top:clamp(2.5rem,_4.5vw,_4.4rem)]! [padding-bottom:clamp(2.5rem,_4.5vw,_4.4rem)]! max-[768px]:[padding-top:2rem]! max-[768px]:[padding-bottom:2rem]!"
@@ -845,7 +818,9 @@ export default function Home() {
           pauseOnHover={true}
         />       */}
 
-      <Footer />
+      <div className="home-footer-shell">
+        <Footer />
+      </div>
     </>
   );
 }

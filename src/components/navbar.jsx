@@ -94,6 +94,11 @@ export default function Navbar() {
                   Skincare
                 </Link>
               </li>
+              <li className="[position:relative]">
+                <Link href="/membership" className="[&.cta]:[display:inline-flex] [&.cta]:[align-items:center] [&.cta]:[gap:0.5rem] [display:inline-flex] [align-items:center] [justify-content:center] [color:white] [text-decoration:none] [font-size:1.2rem] [font-weight:400] [line-height:1] [padding:0.4rem_0.75rem] [border-radius:25px] [transition:font-size_0.3s_ease] [position:relative] [overflow:hidden] [transform-origin:center_center] [.navbar-container.scrolled_&]:[font-size:1.1rem] [.navbar-container.scrolled_&]:[transform:translateY(5px)] [&:hover]:[transition:all_0.4s] [&:hover]:[opacity:1] [&:hover]:[background:rgba(255,_255,_255,_0.1)] [&:hover]:[transform:translateY(-1px)] max-[900px]:[width:100%] max-[900px]:[text-align:center] max-[900px]:[font-size:1.1rem] max-[900px]:[padding:0.75rem]">
+                  Membership
+                </Link>
+              </li>
               <li>
                 <a href="tel:15156721860" className="cta [&.cta]:[display:inline-flex] [&.cta]:[align-items:center] [&.cta]:[gap:0.5rem] [display:inline-flex] [align-items:center] [justify-content:center] [text-decoration:none] [font-size:1.2rem] [font-weight:400] [line-height:1] [padding:0.4rem_0.75rem] [border-radius:25px] [transition:font-size_0.3s_ease] [position:relative] [overflow:hidden] [transform-origin:center_center] [background-color:white] [color:black] [background-blend-mode:lighten] [.navbar-container.scrolled_&]:[font-size:1.1rem] [.navbar-container.scrolled_&]:[transform:translateY(5px)] [&:hover]:[transition:all_0.4s] [&:hover]:[opacity:1] [&:hover]:[background:rgba(255,_255,_255,_0.1)] [&:hover]:[transform:translateY(-1px)] max-[900px]:[width:100%] max-[900px]:[text-align:center] max-[900px]:[font-size:1.1rem] max-[900px]:[padding:0.75rem]">
                   <img src="/assets/phone.svg" className="[display:inline-block] [vertical-align:middle] [width:25px] [height:auto]" />

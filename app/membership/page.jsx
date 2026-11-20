@@ -6,7 +6,6 @@ export const metadata = buildMetadata({
   title: routeSeo["/membership"].title,
   description: routeSeo["/membership"].description,
   path: "/membership",
-  noindex: true,
 });
 
 export default function MembershipPage() {

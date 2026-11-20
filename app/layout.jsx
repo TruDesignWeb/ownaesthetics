@@ -3,6 +3,7 @@ import "./globals.css";
 
 import { AuthProvider } from "../src/auth/authcontext";
 import PreferWebp from "../src/components/prefer-webp";
+import MembershipPopup from "../src/components/membership-popup";
 import {
   SITE_URL,
   SITE_NAME,
@@ -43,6 +44,7 @@ export default function RootLayout({ children }) {
       <body>
         <Analytics />
         <AuthProvider>{children}</AuthProvider>
+        <MembershipPopup />
         <PreferWebp />
         {/* Boulevard Self-Booking overlay */}
         <Script id="boulevard-booking" strategy="afterInteractive">
