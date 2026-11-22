@@ -86,11 +86,11 @@ export default function GiftCardPopup() {
             <span className="gift-card-bonus-value">+20%</span>
           </div>
           <div className="gift-card-main">
-            <div className="gift-card-brand">
-              <span className="gift-card-monogram">A</span>
-              <span className="gift-card-name">OWN</span>
-              <span className="gift-card-subname">AESTHETICS</span>
-            </div>
+            <img
+              className="gift-card-brand"
+              src="/assets/images/OWN%20Branding/OWN%20Final%20Logos/Print%20CMYK/Primary%20Logo/PNG/OWN_Primary%20Logo_CMYK_White.png"
+              alt=""
+            />
             <span className="gift-card-title">Gift Card</span>
           </div>
         </div>
