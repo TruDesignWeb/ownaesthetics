@@ -21,7 +21,15 @@ export default function GiftCardPopup() {
   }, []);
 
   useEffect(() => {
-    if (["/membership", "/login", "/register", "/dashboard", "/appointments"].includes(pathname)) {
+    if (
+      [
+        "/membership",
+        "/login",
+        "/register",
+        "/dashboard",
+        "/appointments",
+      ].includes(pathname)
+    ) {
       return undefined;
     }
 
@@ -29,7 +37,8 @@ export default function GiftCardPopup() {
     try {
       dismissedAt = Number(localStorage.getItem(STORAGE_KEY));
     } catch {}
-    if (dismissedAt && Date.now() - dismissedAt < SUPPRESS_FOR) return undefined;
+    if (dismissedAt && Date.now() - dismissedAt < SUPPRESS_FOR)
+      return undefined;
 
     const timer = window.setTimeout(() => setIsOpen(true), SHOW_AFTER);
     return () => window.clearTimeout(timer);
@@ -105,7 +114,11 @@ export default function GiftCardPopup() {
             Buy a gift card in any amount and get a bonus gift card worth 20%.
             Your bonus card is emailed separately within 24 hours.
           </p>
-          <a className="gift-card-popup-cta" href={BOOKING_HASH} onClick={dismiss}>
+          <a
+            className="gift-card-popup-cta"
+            href="https://blvd.me/ownaesthetics/gift-cards"
+            onClick={dismiss}
+          >
             SHOP GIFT CARDS
           </a>
         </div>
